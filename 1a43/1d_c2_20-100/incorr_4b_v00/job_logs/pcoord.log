@@ -1,0 +1,88 @@
+
+CPPTRAJ: Trajectory Analysis. V4.14.0 (AmberTools V19.11)
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 07/01/22 16:03:29
+| Available memory: 7.832 GB
+
+INPUT: Reading input from 'STDIN'
+  [parm /ihome/lchong/dty7/ix/hiv1_capsid/we/1a43/1d_c2_20-100/4b_v00/common_files/1A43_solv.prmtop]
+	Reading '/ihome/lchong/dty7/ix/hiv1_capsid/we/1a43/1d_c2_20-100/4b_v00/common_files/1A43_solv.prmtop' as Amber Topology
+	Radius Set: modified Bondi radii (mbondi)
+  [trajin /ihome/lchong/dty7/ix/hiv1_capsid/we/1a43/1d_c2_20-100/4b_v00/bstates/v03.rst]
+	Reading '/ihome/lchong/dty7/ix/hiv1_capsid/we/1a43/1d_c2_20-100/4b_v00/bstates/v03.rst' as Amber NC Restart
+  [autoimage]
+    AUTOIMAGE: To box center based on center of mass, anchor is first molecule.
+  [vector D1 :1-75@CA,C,O,N :39@CA,C,O,N]
+    VECTOR: Type Mask, mask [:1-75@CA,C,O,N], second mask [:39@CA,C,O,N]
+  [vector D2 :89-163@CA,C,O,N :127@CA,C,O,N]
+    VECTOR: Type Mask, mask [:89-163@CA,C,O,N], second mask [:127@CA,C,O,N]
+  [vectormath vec1 D1 vec2 D2 out 1_75_39_c2.dat name 1_75_39_c2 dotangle]
+    VECTORMATH: Calculating Angle from dot product of vectors D1 and D2
+	Vectors will be normalized.
+	Results are written to 1_75_39_c2.dat
+  [go]
+---------- RUN BEGIN -------------------------------------------------
+
+PARAMETER FILES (1 total):
+ 0: 1A43_solv.prmtop, 54644 atoms, 17472 res, box: Trunc. Oct., 17298 mol, 17294 solvent
+
+INPUT TRAJECTORIES (1 total):
+ 0: 'v03.rst' is a NetCDF AMBER restart file with coordinates, velocities, time, replica indices, coordinate indices, box, Parm 1A43_solv.prmtop (Trunc. Oct. box) (reading 1 of 1)
+  Coordinate processing will occur on 1 frames.
+
+BEGIN TRAJECTORY PROCESSING:
+.....................................................
+ACTION SETUP FOR PARM '1A43_solv.prmtop' (3 actions):
+  0: [autoimage]
+	Original box is truncated octahedron, turning on 'familiar'.
+	Using first molecule as anchor.
+	1 molecules are fixed to anchor: 2
+	17296 molecules are mobile.
+  1: [vector D1 :1-75@CA,C,O,N :39@CA,C,O,N]
+	Mask [:1-75@CA,C,O,N] corresponds to 300 atoms.
+	Mask [:39@CA,C,O,N] corresponds to 4 atoms.
+  2: [vector D2 :89-163@CA,C,O,N :127@CA,C,O,N]
+	Mask [:89-163@CA,C,O,N] corresponds to 300 atoms.
+	Mask [:127@CA,C,O,N] corresponds to 4 atoms.
+----- v03.rst (1-1, 1) -----
+100% Complete.
+
+Read 1 frames and processed 1 frames.
+TIME: Avg. throughput= 42.4520 frames / second.
+
+ACTION OUTPUT:
+
+ANALYSIS: Performing 1 analyses:
+  0: [vectormath vec1 D1 vec2 D2 out 1_75_39_c2.dat name 1_75_39_c2 dotangle]
+	'D1' size 1, 'D2' size 1, output size 1
+
+TIME: Analyses took 0.0000 seconds.
+
+DATASETS (3 total):
+	D1 "D1" (vector, vector), size is 1 (0.052 kB)
+	D2 "D2" (vector, vector), size is 1 (0.052 kB)
+	1_75_39_c2 "1_75_39_c2" (double), size is 1 (0.008 kB)
+    Total data set memory usage is at least 0.112 kB
+
+DATAFILES (1 total):
+  1_75_39_c2.dat (Standard Data File):  1_75_39_c2
+
+RUN TIMING:
+TIME:		Init               : 0.0000 s (  0.06%)
+TIME:		Trajectory Process : 0.0236 s ( 95.17%)
+TIME:		Action Post        : 0.0000 s (  0.00%)
+TIME:		Analysis           : 0.0000 s (  0.06%)
+TIME:		Data File Write    : 0.0009 s (  3.45%)
+TIME:		Other              : 0.0003 s (  0.01%)
+TIME:	Run Total 0.0248 s
+---------- RUN END ---------------------------------------------------
+TIME: Total execution time: 0.1302 seconds.
+--------------------------------------------------------------------------------
+To cite CPPTRAJ use:
+Daniel R. Roe and Thomas E. Cheatham, III, "PTRAJ and CPPTRAJ: Software for
+  Processing and Analysis of Molecular Dynamics Trajectory Data". J. Chem.
+  Theory Comput., 2013, 9 (7), pp 3084-3095.
+

@@ -1,0 +1,41 @@
+System is being built only off of the system driver
+Maximum wallclock time: 6 days, 0:00:00
+
+Thu Jun 16 17:09:19 2022
+Iteration 537 (750 requested)
+0 segments remain in iteration 537 (120 total)
+22 of 24 (91.666667%) active bins are populated
+per-bin minimum non-zero probability:       2.4228e-13
+per-bin maximum probability:                0.280885
+per-bin probability dynamic range (kT):     27.7789
+per-segment minimum non-zero probability:   4.65924e-14
+per-segment maximum non-zero probability:   0.0681603
+per-segment probability dynamic range (kT): 28.0114
+norm = 1, error in norm = 2.22045e-16 (1*epsilon)
+Iteration wallclock: 0:28:56.407085, cputime: 2:44:38.093430
+
+
+Thu Jun 16 17:10:59 2022
+Iteration 538 (750 requested)
+Beginning iteration 538
+120 segments remain in iteration 538 (120 total)
+22 of 24 (91.666667%) active bins are populated
+per-bin minimum non-zero probability:       1.7639e-11
+per-bin maximum probability:                0.386294
+per-bin probability dynamic range (kT):     23.8098
+per-segment minimum non-zero probability:   3.5278e-12
+per-segment maximum non-zero probability:   0.114039
+per-segment probability dynamic range (kT): 24.1991
+norm = 1, error in norm = 0 (0*epsilon)
+-- ERROR    [manager] -- propagation failed for 1 segment(s):
+38
+exception caught; shutting down
+-- ERROR    [w_run] -- Traceback (most recent call last):
+  File "/ihome/lchong/dty7/Apps/anaconda3/lib/python3.8/site-packages/westpa-2.0.dev1+15.g3c23d97-py3.8-linux-x86_64.egg/westpa/cli/core/w_run.py", line 62, in run_simulation
+    sim_manager.run()
+  File "/ix/lchong/dty7/hiv1_capsid/we/1a43/1d_c2_20-100/v00/manager.py", line 708, in run
+    self.check_propagation()
+  File "/ix/lchong/dty7/hiv1_capsid/we/1a43/1d_c2_20-100/v00/manager.py", line 607, in check_propagation
+    raise PropagationError('propagation failed for {:d} segments'.format(len(failed_segments)))
+manager.PropagationError: propagation failed for 1 segments
+
