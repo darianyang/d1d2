@@ -1,0 +1,34 @@
+* now trying a 1d we simulation using the orientation angle (X plane) as the pcoord
+* same settings as the 1d_c2_20-80 simulation
+
+v00:
+    * using o_angle with 0-100° caps
+    * using tstate directionality of 1 so forward, might be interesting with 0 (no directionality)
+    * using 8 segments per bin target, should help with the 4 GPU usage
+        * 20 MAB bins (160 theoretical segments)
+    * adjusted for amber 22 in env.sh
+    * fixed the rst file stripping in runseg
+
+v01:
+    * same as v00 with the following changes:
+        * using 20-70° caps
+        * using 4 segments per bin and 25 MAB bins (100 theoretical segments)
+
+v02:
+    * same as v01
+
+2d_1b_v00:
+    * using v02 as template
+    * using a 2d mab binning scheme: 5 x 5 = 25 bins with 4 walkers per bin
+        * same 100 total segments
+        * mins are 0, 0
+        * maxs are 70, 70
+    * but now using just the 2kod 05_eq3.rst structure as 1 basis state
+        * actually, using m01_2kod 04_eq2 since this is more akin to nmr structure
+        * the 05_eq3 was already at 40 and 40 for o1 and o2 angles
+        * I want to see the whole evolution of the initial structure, even though it seems like all of my std MD simulations, the 1ns prod for eq3 tilted it to 40 and 40 ish
+    * also using 2d pcoord of m1 o_angle and m2 o_angle
+    * including hex and pent rmsd as aux data
+
+std:
+    * std MD simulations starting from v00 (i405, s169, last frame)

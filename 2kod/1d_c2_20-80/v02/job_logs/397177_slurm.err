@@ -4184,3 +4184,5 @@ export CONDA_PROMPT_MODIFIER='\''(base) '\'''
 + sort
 + echo 'CUDA_VISIBLE_DEVICES = '
 + w_run --work-manager=zmq --n-workers=4 --zmq-mode=client --zmq-read-host-info=/ix/lchong/dty7/hiv1_capsid/d1d2/2kod/1d_c2_20-80/v02/west_zmq_info-397177.json --zmq-comm-mode=tcp
++ echo 'Shutting down.  Hopefully this was on purpose?'
++ echo 'Shutting down.  Hopefully this was on purpose?'
