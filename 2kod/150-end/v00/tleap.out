@@ -1,0 +1,76 @@
+-I: Adding /ihome/lchong/dty7/Apps/anaconda3/envs/md/dat/leap/prep to search path.
+-I: Adding /ihome/lchong/dty7/Apps/anaconda3/envs/md/dat/leap/lib to search path.
+-I: Adding /ihome/lchong/dty7/Apps/anaconda3/envs/md/dat/leap/parm to search path.
+-I: Adding /ihome/lchong/dty7/Apps/anaconda3/envs/md/dat/leap/cmd to search path.
+-f: Source tleap.in.
+
+Welcome to LEaP!
+(no leaprc in search path)
+Sourcing: ./tleap.in
+----- Source: /ihome/lchong/dty7/Apps/anaconda3/envs/md/dat/leap/cmd/leaprc.protein.ff15ipq
+----- Source of /ihome/lchong/dty7/Apps/anaconda3/envs/md/dat/leap/cmd/leaprc.protein.ff15ipq done
+Log file: ./leap.log
+Loading parameters: /ihome/lchong/dty7/Apps/anaconda3/envs/md/dat/leap/parm/parm15ipq_10.3.dat
+Reading title:
+Parm15 developmental parameter set
+Loading library: /ihome/lchong/dty7/Apps/anaconda3/envs/md/dat/leap/lib/amino15ipq_10.0.lib
+Loading library: /ihome/lchong/dty7/Apps/anaconda3/envs/md/dat/leap/lib/aminoct15ipq_10.0.lib
+Loading library: /ihome/lchong/dty7/Apps/anaconda3/envs/md/dat/leap/lib/aminont15ipq_10.0.lib
+----- Source: /ihome/lchong/dty7/Apps/anaconda3/envs/md/dat/leap/cmd/leaprc.water.spce
+----- Source of /ihome/lchong/dty7/Apps/anaconda3/envs/md/dat/leap/cmd/leaprc.water.spce done
+Loading library: /ihome/lchong/dty7/Apps/anaconda3/envs/md/dat/leap/lib/atomic_ions.lib
+Loading library: /ihome/lchong/dty7/Apps/anaconda3/envs/md/dat/leap/lib/solvents.lib
+Loading parameters: /ihome/lchong/dty7/Apps/anaconda3/envs/md/dat/leap/parm/frcmod.spce
+Reading force field modification type file (frcmod)
+Reading title:
+This is the additional/replacement parameter set for SPC/E water
+Loading parameters: /ihome/lchong/dty7/Apps/anaconda3/envs/md/dat/leap/parm/frcmod.ionsjc_spce
+Reading force field modification type file (frcmod)
+Reading title:
+Monovalent ion parameters for Ewald and SPC/E water from Joung & Cheatham JPCB (2008)
+Loading parameters: /ihome/lchong/dty7/Apps/anaconda3/envs/md/dat/leap/parm/frcmod.ions234lm_126_spce
+Reading force field modification type file (frcmod)
+Reading title:
+Li/Merz ion parameters of divalent to tetravalent ions for SPC/E water model (12-6 normal usage set)
+Loading PDB file: ./150end_leap.pdb
+Created a new atom named: H within residue: .R<NILE 150>
+Created a new atom named: H within residue: .R<NILE 232>
+  total atoms in file: 2580
+  Leap added 6 missing atoms according to residue templates:
+       6 H / lone pairs
+  The file contained 2 atoms not in residue templates
+Total unperturbed charge:   2.000000
+Total perturbed charge:     2.000000
+
+/ihome/lchong/dty7/Apps/anaconda3/envs/md/bin/teLeap: Warning!
+addIons: 1st Ion & target unit have charges of the same sign:
+     unit charge = 2; ion1 charge = 1;
+     can't neutralize.
+2 Cl- ions required to neutralize.
+Adding 2 counter ions to "mol" using 1A grid
+Used default radius  1.50 for 2 atoms
+Grid extends from solute vdw + 2.71  to  8.71
+Resolution:      1.00 Angstrom.
+ (no solvent present)
+Calculating grid charges
+Placed Cl- in mol at (-8.89, -9.27, -4.04).
+Placed Cl- in mol at (11.11, -4.27, 3.96).
+
+Done adding ions.
+Scaling up box by a factor of 1.443088 to meet diagonal cut criterion
+  Solute vdw bounding box:              45.277 37.804 71.510
+  Total bounding box for atom centers:  106.144 106.144 106.144
+      (box expansion for 'iso' is  94.6%)
+  Solvent unit box:                     18.774 18.774 18.774
+  Volume: 615002.137 A^3 (oct)
+  Mass > 334737.180 amu,  Density > 0.904 g/cc
+      (type - hence mass - of one or more atoms could not be found)
+  Added 17559 residues.
+Checking Unit.
+FATAL:  Atom .R<NILE 150>.A<H 22> does not have a type.
+FATAL:  Atom .R<NILE 232>.A<H 22> does not have a type.
+
+/ihome/lchong/dty7/Apps/anaconda3/envs/md/bin/teLeap: Fatal Error!
+Failed to generate parameters
+
+Exiting LEaP: Errors = 1; Warnings = 1; Notes = 0.
