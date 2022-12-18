@@ -30,5 +30,24 @@ v02:
     * also using 2d pcoord of m1 o_angle and m2 o_angle
     * including hex and pent rmsd as aux data
 
-std:
+stdMD:
     * std MD simulations starting from v00 (i405, s169, last frame)
+
+lo_2d_v00:
+    * used 2d_1b_v00 as template
+    * using 1 basis state of the lo_pH 2kod structure
+    * changed m1/h9 and m2/h9 rmsd from heavy to bb since using lo_pH ref so no common heavy atoms
+    * seemed to focus MAB based sampling on the lower regions
+lo_2d_v01:
+    * same as lo_2d_v00 except using 20-70° caps again
+    * I made a mistake, didn't put any MAB bin so it was just a few std simulations basically
+lo_2d_v02:
+    * same as lo_2d_v01 but fixed the MAB placement
+    * some interesting results and can more accurately see the dist of symmetric peaks
+
+2d_1b_v01:
+    * using 2d_1b_v00 as template
+        * updating to use 05_eq3.rst as basis
+    * copying the lo_2d_v02 setup but with the std pH 05_eq3.rst structure
+    * so using mab with both oangles and 20-70 constraints
+
