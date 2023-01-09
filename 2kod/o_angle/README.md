@@ -51,3 +51,13 @@ lo_2d_v02:
     * copying the lo_2d_v02 setup but with the std pH 05_eq3.rst structure
     * so using mab with both oangles and 20-70 constraints
 
+TODO:
+1d_oapdt_v00:
+    * using 2d_1b_v01 as template
+    * changing to pdt of oangles as pcoord
+    * 25 mab bins in 1d
+
+lo_1d_oapdt_v00:
+    * using lo_2d_v02 as template
+    * changing to pdt of oangles as pcoord
+    * 25 mab bins in 1d
