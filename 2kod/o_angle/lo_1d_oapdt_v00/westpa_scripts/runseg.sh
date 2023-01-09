@@ -178,7 +178,10 @@ CMD="$CMD go \n"
 echo -e "$CMD" | $CPPTRAJ 
 
 ### PCOORD ###
-paste <(cat o_angle.dat | tail -n +2 | awk {'print $2'}) <(cat o_angle.dat | tail -n +2 | awk {'print $3'}) > $WEST_PCOORD_RETURN
+#paste <(cat o_angle.dat | tail -n +2 | awk {'print $2'}) <(cat o_angle.dat | tail -n +2 | awk {'print $3'}) > $WEST_PCOORD_RETURN
+# pcoord using the pdt of the o_angles
+python $WEST_SIM_ROOT/scripts/calc_oa_pdt.py o_angle.dat oapdt.dat
+paste <(cat oapdt.dat) > $WEST_PCOORD_RETURN
 
 ### AUXDATA ###
 
@@ -225,6 +228,9 @@ cat rms_bb_pent.dat | tail -n +2 | awk {'print $2'} > $WEST_RMS_BB_PENT_RETURN
 # angles
 cat c2_angle.dat | tail -n +2 | awk {'print $2'} > $WEST_C2_ANGLE_RETURN
 cat angle_3pt.dat | tail -n +2 | awk {'print $2'} > $WEST_ANGLE_3PT_RETURN
+
+cat o_angle.dat | tail -n +2 | awk {'print $2'} > $WEST_O_ANGLE_M1_RETURN
+cat o_angle.dat | tail -n +2 | awk {'print $3'} > $WEST_O_ANGLE_M2_RETURN
 
 # rog, sasa, dssp, contacts
 cat rog.dat | tail -n +2 | awk {'print $2'} > $WEST_ROG_RETURN

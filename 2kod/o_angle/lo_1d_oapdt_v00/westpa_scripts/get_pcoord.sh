@@ -29,10 +29,14 @@ CMD="$CMD go \n"
 
 echo -e "$CMD" | cpptraj #$CPPTRAJ
 
+# pcoord using the pdt of the o_angles
+python $WEST_SIM_ROOT/scripts/calc_oa_pdt.py pcoord.dat oapdt.dat
+paste <(cat oapdt.dat) > $WEST_PCOORD_RETURN
+
 # before this had parentheses but it didn't work in terms of the permissions
 # this was more so before using updated we 2.0 setup
 #paste < $TMP | tail -n +2 | awk {'print $2'} < $TMP | tail -n +2 | awk {'print $3'} > $WEST_PCOORD_RETURN
-paste <(cat pcoord.dat | tail -n +2 | awk {'print $2'}) <(cat pcoord.dat | tail -n +2 | awk {'print $3'}) > $WEST_PCOORD_RETURN
+#paste <(cat pcoord.dat | tail -n +2 | awk {'print $2'}) <(cat pcoord.dat | tail -n +2 | awk {'print $3'}) > $WEST_PCOORD_RETURN
 
 #rm -v $TMP
 

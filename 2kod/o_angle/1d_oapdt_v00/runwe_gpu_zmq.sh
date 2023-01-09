@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=2d1bv01_2kod_o_angle
+#SBATCH --job-name=oapdt_v00_2kod_we
 #SBATCH --output=job_logs/%j_slurm.out
 #SBATCH --error=job_logs/%j_slurm.err
 #SBATCH --nodes=2

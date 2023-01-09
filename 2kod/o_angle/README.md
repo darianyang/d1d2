@@ -55,9 +55,11 @@ TODO:
 1d_oapdt_v00:
     * using 2d_1b_v01 as template
     * changing to pdt of oangles as pcoord
+        * thus added oangle 1 and 2 to aux data
     * 25 mab bins in 1d
 
 lo_1d_oapdt_v00:
     * using lo_2d_v02 as template
     * changing to pdt of oangles as pcoord
+        * thus added oangle 1 and 2 to aux data
     * 25 mab bins in 1d
