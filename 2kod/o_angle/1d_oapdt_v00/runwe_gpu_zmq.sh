@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=oapdt_v00_2kod_we
+#SBATCH --job-name=oapdt_v00_2kod_we_1d
 #SBATCH --output=job_logs/%j_slurm.out
 #SBATCH --error=job_logs/%j_slurm.err
 #SBATCH --nodes=2
@@ -8,7 +8,7 @@
 #SBATCH --partition=a100_multi
 #SBATCH --gres=gpu:4
 #SBATCH --mem=16g
-#SBATCH --time=72:00:00
+#SBATCH --time=144:00:00
 #SBATCH --mail-user=dty7@pitt.edu
 #SBATCH --mail-type=END,FAIL,BEGIN
 

@@ -1,0 +1,32 @@
+Updating system with the options from the configuration file
+Maximum wallclock time: 3 days, 0:00:00
+
+Thu Sep 21 12:51:05 2023
+Iteration 1001 (1500 requested)
+Beginning iteration 1001
+68 segments remain in iteration 1001 (68 total)
+13 of 41 (31.707317%) active bins are populated
+per-bin minimum non-zero probability:       1.98423e-20
+per-bin maximum probability:                0.290745
+per-bin probability dynamic range (kT):     44.1312
+per-segment minimum non-zero probability:   4.96056e-21
+per-segment maximum non-zero probability:   0.0876748
+per-segment probability dynamic range (kT): 44.3186
+norm = 1, error in norm = -6.66134e-16 (-3*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+-- ERROR    [westpa.work_managers.zeromq.core.ZMQWorkManager.f07224ba-b2bd-49f8-8eea-24a657f5d21a] -- startup phase elapsed with no contact from workers; shutting down
+exception caught; shutting down
+-- ERROR    [w_run] -- error message: no workers available
+-- ERROR    [w_run] -- Traceback (most recent call last):
+  File "/ihome/lchong/dty7/Apps/westpa/src/westpa/cli/core/w_run.py", line 62, in run_simulation
+    sim_manager.run()
+  File "/ihome/lchong/dty7/Apps/westpa/src/westpa/core/sim_manager.py", line 747, in run
+    self.prepare_iteration()
+  File "/ihome/lchong/dty7/Apps/westpa/src/westpa/core/binning/mab_manager.py", line 172, in prepare_iteration
+    self.work_manager.submit(wm_ops.prep_iter, args=(self.n_iter, segments)).get_result()
+  File "/ihome/lchong/dty7/Apps/westpa/src/westpa/work_managers/core.py", line 343, in get_result
+    raise self._exception.with_traceback(self._traceback)
+westpa.work_managers.zeromq.core.ZMQWorkerMissing: no workers available
+

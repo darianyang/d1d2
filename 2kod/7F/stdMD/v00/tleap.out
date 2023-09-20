@@ -40,7 +40,7 @@ Loading parameters: /ihome/lchong/dty7/Apps/anaconda3/envs/md/dat/leap/parm/frcm
 Reading force field modification type file (frcmod)
 Reading title:
 Li/Merz ion parameters of divalent to tetravalent ions for SPC/E water model (12-6 normal usage set)
-Loading PDB file: ./2kod_4f_leap.pdb
+Loading PDB file: ./2kod_7f_leap.pdb
   total atoms in file: 2760
 Total unperturbed charge:   2.000000
 Total perturbed charge:     2.000000
@@ -89,7 +89,7 @@ Marking per-residue atom chain types.
 	WAT	17294
   )
  (no restraints)
-Writing pdb file: 2kod_4f_solv.pdb
+Writing pdb file: 2kod_7f_solv.pdb
    printing CRYST1 record to PDB file with box info
 
 /ihome/lchong/dty7/Apps/anaconda3/envs/md/bin/teLeap: Warning!

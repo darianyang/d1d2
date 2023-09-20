@@ -11,15 +11,15 @@ fi
 
 cd $WEST_SIM_ROOT/common_files
 
-CMD="     parm $WEST_SIM_ROOT/common_files/m01_2kod_12A.prmtop \n" 
+CMD="     parm $WEST_SIM_ROOT/common_files/150end_solv.prmtop \n" 
 CMD="$CMD trajin $WEST_STRUCT_DATA_REF \n"
 CMD="$CMD autoimage \n"
 
 # calc dimer orientation angle using vectors
-CMD="$CMD vector O1 :18-22@CA,C,O,N :46-49@CA,C,O,N \n"
-CMD="$CMD vector O2 :18-22@CA,C,O,N :134-137@CA,C,O,N \n"
-CMD="$CMD vector O3 :106-110@CA,C,O,N :46-49@CA,C,O,N \n"
-CMD="$CMD vector O4 :106-110@CA,C,O,N :134-137@CA,C,O,N \n"
+CMD="$CMD vector O1 :12-16@CA,C,O,N :40-43@CA,C,O,N \n"
+CMD="$CMD vector O2 :12-16@CA,C,O,N :122-125@CA,C,O,N \n"
+CMD="$CMD vector O3 :94-98@CA,C,O,N :40-43@CA,C,O,N \n"
+CMD="$CMD vector O4 :94-98@CA,C,O,N :122-125@CA,C,O,N \n"
 #CMD="$CMD vectormath vec1 O1 vec2 O2 out $TMP name o_angle_m1 dotangle \n"
 #CMD="$CMD vectormath vec1 O3 vec2 O4 out $TMP name o_angle_m2 dotangle \n"
 CMD="$CMD vectormath vec1 O1 vec2 O2 out pcoord.dat name o_angle_m1 dotangle \n"

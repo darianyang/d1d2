@@ -1,0 +1,109 @@
+
+CPPTRAJ: Trajectory Analysis. V6.4.4 (AmberTools)
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 05/17/23 13:06:27
+| Available memory: 20.734 GB
+
+INPUT: Reading input from 'STDIN'
+  [parm /ihome/lchong/dty7/ix/d1d2/2kod/7F/1d_oamax_v03/common_files/2kod_7f_solv.prmtop]
+	Reading '/ihome/lchong/dty7/ix/d1d2/2kod/7F/1d_oamax_v03/common_files/2kod_7f_solv.prmtop' as Amber Topology
+	Radius Set: modified Bondi radii (mbondi)
+  [trajin /ihome/lchong/dty7/ix/d1d2/2kod/7F/1d_oamax_v03/bstates/05_eq3.rst]
+	Reading '/ihome/lchong/dty7/ix/d1d2/2kod/7F/1d_oamax_v03/bstates/05_eq3.rst' as Amber NC Restart
+  [autoimage]
+    AUTOIMAGE: To box center based on center of mass, anchor is first molecule.
+  [vector O1 :18-22@CA,C,O,N :46-49@CA,C,O,N]
+    VECTOR: Type Mask, mask [:18-22@CA,C,O,N], second mask [:46-49@CA,C,O,N]
+  [vector O2 :18-22@CA,C,O,N :134-137@CA,C,O,N]
+    VECTOR: Type Mask, mask [:18-22@CA,C,O,N], second mask [:134-137@CA,C,O,N]
+  [vector O3 :106-110@CA,C,O,N :46-49@CA,C,O,N]
+    VECTOR: Type Mask, mask [:106-110@CA,C,O,N], second mask [:46-49@CA,C,O,N]
+  [vector O4 :106-110@CA,C,O,N :134-137@CA,C,O,N]
+    VECTOR: Type Mask, mask [:106-110@CA,C,O,N], second mask [:134-137@CA,C,O,N]
+  [vectormath vec1 O1 vec2 O2 out pcoord.dat name o_angle_m1 dotangle]
+    VECTORMATH: Calculating Angle from dot product of vectors O1 and O2
+	Vectors will be normalized.
+	Results are written to pcoord.dat
+  [vectormath vec1 O3 vec2 O4 out pcoord.dat name o_angle_m2 dotangle]
+    VECTORMATH: Calculating Angle from dot product of vectors O3 and O4
+	Vectors will be normalized.
+	Results are written to pcoord.dat
+  [go]
+---------- RUN BEGIN -------------------------------------------------
+
+PARAMETER FILES (1 total):
+ 0: 2kod_7f_solv.prmtop, 54644 atoms, 17472 res, box: Truncated octahedron, 17298 mol, 17294 solvent
+
+INPUT TRAJECTORIES (1 total):
+ 0: '05_eq3.rst' is a NetCDF AMBER restart file with coordinates, velocities, time, box, Parm 2kod_7f_solv.prmtop (Truncated octahedron box) (reading 1 of 1)
+  Coordinate processing will occur on 1 frames.
+
+BEGIN TRAJECTORY PROCESSING:
+.....................................................
+ACTION SETUP FOR PARM '2kod_7f_solv.prmtop' (5 actions):
+  0: [autoimage]
+	Original box is truncated octahedron, turning on 'familiar'.
+	Using first molecule as anchor.
+	1 molecules are fixed to anchor: 2
+	17296 molecules are mobile.
+  1: [vector O1 :18-22@CA,C,O,N :46-49@CA,C,O,N]
+	Mask [:18-22@CA,C,O,N] corresponds to 20 atoms.
+	Mask [:46-49@CA,C,O,N] corresponds to 16 atoms.
+  2: [vector O2 :18-22@CA,C,O,N :134-137@CA,C,O,N]
+	Mask [:18-22@CA,C,O,N] corresponds to 20 atoms.
+	Mask [:134-137@CA,C,O,N] corresponds to 16 atoms.
+  3: [vector O3 :106-110@CA,C,O,N :46-49@CA,C,O,N]
+	Mask [:106-110@CA,C,O,N] corresponds to 20 atoms.
+	Mask [:46-49@CA,C,O,N] corresponds to 16 atoms.
+  4: [vector O4 :106-110@CA,C,O,N :134-137@CA,C,O,N]
+	Mask [:106-110@CA,C,O,N] corresponds to 20 atoms.
+	Mask [:134-137@CA,C,O,N] corresponds to 16 atoms.
+----- 05_eq3.rst (1-1, 1) -----
+100% Complete.
+
+Read 1 frames and processed 1 frames.
+TIME: Avg. throughput= 49.0436 frames / second.
+
+ACTION OUTPUT:
+
+ANALYSIS: Performing 2 analyses:
+  0: [vectormath vec1 O1 vec2 O2 out pcoord.dat name o_angle_m1 dotangle]
+	'O1' size 1, 'O2' size 1, output size 1
+  1: [vectormath vec1 O3 vec2 O4 out pcoord.dat name o_angle_m2 dotangle]
+	'O3' size 1, 'O4' size 1, output size 1
+
+TIME: Analyses took 0.0000 seconds.
+
+DATASETS (6 total):
+	O1 "O1" (vector, vector), size is 1 (0.052 kB)
+	O2 "O2" (vector, vector), size is 1 (0.052 kB)
+	O3 "O3" (vector, vector), size is 1 (0.052 kB)
+	O4 "O4" (vector, vector), size is 1 (0.052 kB)
+	o_angle_m1 "o_angle_m1" (double), size is 1 (0.008 kB)
+	o_angle_m2 "o_angle_m2" (double), size is 1 (0.008 kB)
+    Total data set memory usage is at least 0.224 kB
+
+DATAFILES (1 total):
+  pcoord.dat (Standard Data File):  o_angle_m1 o_angle_m2
+
+RUN TIMING:
+TIME:		Init               : 0.0000 s (  0.13%)
+TIME:		Trajectory Process : 0.0204 s ( 92.28%)
+TIME:		Action Post        : 0.0000 s (  0.00%)
+TIME:		Analysis           : 0.0000 s (  0.14%)
+TIME:		Data File Write    : 0.0009 s (  4.06%)
+TIME:		Other              : 0.0007 s (  0.03%)
+TIME:	Run Total 0.0221 s
+---------- RUN END ---------------------------------------------------
+TIME: Total execution time: 0.2386 seconds.
+--------------------------------------------------------------------------------
+To cite CPPTRAJ use:
+Daniel R. Roe and Thomas E. Cheatham, III, "PTRAJ and CPPTRAJ: Software for
+  Processing and Analysis of Molecular Dynamics Trajectory Data". J. Chem.
+  Theory Comput., 2013, 9 (7), pp 3084-3095.
+
+M1: 28.7498 and M2: 29.3871
+28.7498 <= 29.3871

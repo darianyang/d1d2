@@ -168,7 +168,7 @@ echo -e "$CMD" | $CPPTRAJ
 # strip rst file 
 CMD="     parm $WEST_SIM_ROOT/common_files/$PRMTOP \n" 
 CMD="$CMD trajin $WEST_CURRENT_SEG_DATA_REF/seg.rst \n" 
-CMD="$CMD autoimage anchor \n" 
+CMD="$CMD autoimage \n" 
 # strip and replace solv rst file 
 CMD="$CMD strip :WAT,Cl-,Na+ \n"  
 # need to have separate rst stripper 

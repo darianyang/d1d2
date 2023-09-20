@@ -20,7 +20,7 @@ CMD="$CMD parm ref/pent_leap.pdb [pentparm] \n"
 CMD="$CMD reference ref/pent_leap.pdb parm [pentparm] name [pent] \n"
 CMD="$CMD autoimage \n"
 
-# NMR ref rms calcs
+# NMR ref rms calcs (1-10)
 CMD="$CMD rms Fit_M2_NMR :94-163&!@H= ref [nmr] \n"
 CMD="$CMD rms RMS_M1_NMR :6-75&!@H= ref [nmr] nofit mass time 1 out $OUT \n"
 CMD="$CMD rms RMS_H9M1_NMR :36-49&!@H= nofit ref [nmr] out $OUT mass time 1 \n"
@@ -34,7 +34,7 @@ CMD="$CMD rms RMS_Backbone_NMR :6-75,94-163@CA,C,O,N ref [nmr] mass time 1 out $
 CMD="$CMD rms RMS_Dimer_Int_NMR :7,8,34,35,37,38,41,42,45,46,49,95,96,122,123,125,126,129,130,133,134,137&!@H= ref [nmr] mass time 1 out $OUT \n"
 CMD="$CMD rms RMS_Key_Int_NMR :38,41,42,126,129,130&!@H= ref [nmr] mass time 1 out $OUT \n"
 
-# XTAL ref rms calcs
+# XTAL ref rms calcs (11-20)
 CMD="$CMD rms Fit_M2_XTAL :94-163&!@H= ref [xtal] \n"
 CMD="$CMD rms RMS_M1_XTAL :6-75&!@H= ref [xtal] nofit mass time 1 out $OUT \n"
 CMD="$CMD rms RMS_H9M1_XTAL :36-49&!@H= nofit ref [xtal] out $OUT mass time 1 \n"
@@ -76,7 +76,7 @@ CMD="$CMD rms RMS_Backbone_PENT :6-75,94-163@CA,C,O,N ref [pent] mass time 1 out
 CMD="$CMD rms RMS_Dimer_Int_PENT :7,8,34,35,37,38,41,42,45,46,49,95,96,122,123,125,126,129,130,133,134,137&!@H= ref [pent] mass time 1 out $OUT \n"
 CMD="$CMD rms RMS_Key_Int_PENT :38,41,42,126,129,130&!@H= ref [pent] mass time 1 out $OUT \n"
 
-# dimer angle calc, vector based
+# dimer angle calc, vector based (41)
 CMD="$CMD vector D1 :1-75@CA,C,O,N :39@CA,C,O,N  \n"
 CMD="$CMD vector D2 :89-163@CA,C,O,N :127@CA,C,O,N  \n"
 CMD="$CMD vectormath vec1 D1 vec2 D2 out $OUT name c2_angle dotangle \n"
@@ -87,6 +87,7 @@ CMD="$CMD vector O1 :18-22@CA,C,O,N :46-49@CA,C,O,N \n"
 CMD="$CMD vector O2 :18-22@CA,C,O,N :134-137@CA,C,O,N \n"
 CMD="$CMD vector O3 :106-110@CA,C,O,N :46-49@CA,C,O,N \n"
 CMD="$CMD vector O4 :106-110@CA,C,O,N :134-137@CA,C,O,N \n"
+# 43 and 44
 CMD="$CMD vectormath vec1 O1 vec2 O2 out $OUT name o_angle_m1 dotangle \n"
 CMD="$CMD vectormath vec1 O3 vec2 O4 out $OUT name o_angle_m2 dotangle \n"
 

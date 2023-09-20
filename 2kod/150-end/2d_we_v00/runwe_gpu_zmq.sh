@@ -2,13 +2,13 @@
 #SBATCH --job-name=2d_150end_v00_ctd_o_angle
 #SBATCH --output=job_logs/%j_slurm.out
 #SBATCH --error=job_logs/%j_slurm.err
-#SBATCH --nodes=2
+#SBATCH --nodes=1
 #SBATCH --ntasks-per-node=4
 #SBATCH --cluster=gpu
-#SBATCH --partition=a100_multi
+#SBATCH --partition=a100
 #SBATCH --gres=gpu:4
 #SBATCH --mem=16g
-#SBATCH --time=72:00:00
+#SBATCH --time=120:00:00
 #SBATCH --mail-user=dty7@pitt.edu
 #SBATCH --mail-type=END,FAIL,BEGIN
 

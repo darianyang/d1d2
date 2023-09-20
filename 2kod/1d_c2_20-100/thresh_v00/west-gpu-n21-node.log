@@ -1,8 +1,0 @@
-System is being built only off of the system driver
--- ERROR    [westpa.core.propagators.executable] -- could not read pcoord from '/tmp/tmp9ior_kbk': FileNotFoundError(2, 'No such file or directory')
--- ERROR    [westpa.core.propagators.executable] -- could not read pcoord from '/tmp/tmpmkn_efqs': FileNotFoundError(2, 'No such file or directory')
--- WARNING  [westpa.work_managers.zeromq.core.ZMQWorker.037002c0-37dc-4661-bc4e-88eab0cd7c2d] -- sending SIGKILL to worker process 16989
--- WARNING  [westpa.work_managers.zeromq.core] -- sending SIGKILL to worker process 16964
--- WARNING  [westpa.work_managers.zeromq.core] -- sending SIGKILL to worker process 16966
--- ERROR    [westpa.core.propagators.executable] -- could not read pcoord from '/tmp/tmplh0xm1br': FileNotFoundError(2, 'No such file or directory')
--- ERROR    [westpa.core.propagators.executable] -- could not read pcoord from '/tmp/tmpos03msms': FileNotFoundError(2, 'No such file or directory')

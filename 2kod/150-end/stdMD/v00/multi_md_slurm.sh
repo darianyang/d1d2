@@ -16,6 +16,7 @@ for PROD in {06..10} ; do
     # var for input coordinate file
     # unique values for first prod run
     if [ $PROD == 06 ] ; then
+        mkdir strip
         CRD=05_eq3.rst
         PARMOUT="parmout ${PDB}_dry.prmtop"
     else
@@ -61,7 +62,7 @@ SANDER=pmemd.cuda
 echo "parm ${PDB}_solv.prmtop"                              > strip/strip_${PROD}.in
 echo "trajin ${PROD}_prod.nc"                               >> strip/strip_${PROD}.in
 echo "autoimage"                                            >> strip/strip_${PROD}.in
-echo "strip/strip :WAT,Cl-,Na+ $PARMOUT"                    >> strip/strip_${PROD}.in
+echo "strip :WAT,Cl-,Na+ $PARMOUT"                          >> strip/strip_${PROD}.in
 echo "trajout ${PROD}_prod_dry.nc"                          >> strip/strip_${PROD}.in
 echo "go"                                                   >> strip/strip_${PROD}.in
 echo "quit"                                                 >> strip/strip_${PROD}.in

@@ -1,0 +1,41 @@
+Updating system with the options from the configuration file
+Maximum wallclock time: 3 days, 0:00:00
+
+Tue Sep 26 15:06:46 2023
+Iteration 4000 (5000 requested)
+0 segments remain in iteration 4000 (16 total)
+1 of 26 (3.846154%) active bins are populated
+per-bin minimum non-zero probability:       1
+per-bin maximum probability:                1
+per-bin probability dynamic range (kT):     0
+per-segment minimum non-zero probability:   1.2816e-34
+per-segment maximum non-zero probability:   0.309351
+per-segment probability dynamic range (kT): 76.8665
+norm = 1, error in norm = -7.77156e-16 (-3.5*epsilon)
+Recycled 0.939855 probability (11 walkers) from target state 'D2'
+exception caught; shutting down
+-- ERROR    [w_run] -- error message: All chunk dimensions must be positive (all chunk dimensions must be positive)
+-- ERROR    [w_run] -- Traceback (most recent call last):
+  File "/ihome/lchong/dty7/Apps/westpa/src/westpa/cli/core/w_run.py", line 62, in run_simulation
+    sim_manager.run()
+  File "/ix/lchong/dty7/d1d2/2kod/o_angle/3d_oamax_1_2_ss_v00/manager.py", line 720, in run
+    self.prepare_new_iteration()
+  File "/ix/lchong/dty7/d1d2/2kod/o_angle/3d_oamax_1_2_ss_v00/manager.py", line 673, in prepare_new_iteration
+    self.data_manager.prepare_iteration(self.n_iter+1, list(self.we_driver.next_iter_segments))
+  File "/ihome/lchong/dty7/Apps/westpa/src/westpa/core/data_manager.py", line 853, in prepare_iteration
+    pcoord_ds = create_dataset_from_dsopts(iter_group, pcoord_opts, shape, pcoord_dtype)
+  File "/ihome/lchong/dty7/Apps/westpa/src/westpa/core/data_manager.py", line 1643, in create_dataset_from_dsopts
+    dset = containing_group.require_dataset(h5_dsname, **opts)
+  File "/ihome/lchong/dty7/Apps/anaconda3/lib/python3.8/site-packages/h5py/_hl/group.py", line 191, in require_dataset
+    return self.create_dataset(name, *(shape, dtype), **kwds)
+  File "/ihome/lchong/dty7/Apps/anaconda3/lib/python3.8/site-packages/h5py/_hl/group.py", line 136, in create_dataset
+    dsid = dataset.make_new_dset(self, shape, dtype, data, **kwds)
+  File "/ihome/lchong/dty7/Apps/anaconda3/lib/python3.8/site-packages/h5py/_hl/dataset.py", line 137, in make_new_dset
+    dcpl = filters.fill_dcpl(
+  File "/ihome/lchong/dty7/Apps/anaconda3/lib/python3.8/site-packages/h5py/_hl/filters.py", line 209, in fill_dcpl
+    plist.set_chunk(chunks)
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5p.pyx", line 430, in h5py.h5p.PropDCID.set_chunk
+ValueError: All chunk dimensions must be positive (all chunk dimensions must be positive)
+
