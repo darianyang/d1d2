@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/ihome/lchong/dty7/Apps/anaconda3/bin/w_run", line 33, in <module>
+    sys.exit(load_entry_point('westpa', 'console_scripts', 'w_run')())
+  File "/ihome/lchong/dty7/Apps/westpa/src/westpa/cli/core/w_run.py", line 29, in entry_point
+    run_simulation()
+  File "/ihome/lchong/dty7/Apps/westpa/src/westpa/cli/core/w_run.py", line 37, in run_simulation
+    sim_manager = westpa.rc.get_sim_manager()
+  File "/ihome/lchong/dty7/Apps/westpa/src/westpa/core/_rc.py", line 366, in get_sim_manager
+    self._sim_manager = self.new_sim_manager()
+  File "/ihome/lchong/dty7/Apps/westpa/src/westpa/core/_rc.py", line 343, in new_sim_manager
+    use_mab = self.detect_mab_mapper()
+  File "/ihome/lchong/dty7/Apps/westpa/src/westpa/core/_rc.py", line 327, in detect_mab_mapper
+    mapper = bins_from_yaml_dict(bin_dict)
+  File "/ihome/lchong/dty7/Apps/westpa/src/westpa/core/_rc.py", line 62, in bins_from_yaml_dict
+    mapper_configs = kwargs.pop('mappers')
+KeyError: 'mappers'

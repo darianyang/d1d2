@@ -6,7 +6,7 @@ SEG=$2
 FRAME=$3
 
 cat << EOF > seg_to_pdb.cpp
-parm common_files/1A43_200ns_dry.prmtop
+parm common_files/m01_2kod_dry.prmtop
 trajin traj_segs/$ITER/$SEG/seg.nc $FRAME $FRAME
 trajout i${ITER}_s${SEG}_f${FRAME}.pdb pdb
 EOF
