@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=2d_ssWE_oa12_v00_2kod
+#SBATCH --job-name=2d_min_ssWE_oa12_v00_2kod
 #SBATCH --output=job_logs/%j_slurm.out
 #SBATCH --error=job_logs/%j_slurm.err
 #SBATCH --nodes=2
