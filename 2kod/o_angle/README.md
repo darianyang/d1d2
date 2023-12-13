@@ -191,3 +191,87 @@ lo_1d_oapdt_v00:
     * from 2d_min_1_2_ss_v00
     * making 4D, so adding to tstate def the W184 chi1 angles for M1 and M2
     * tstate still using 15° for oa1/2
+    * also adding W184 chi1 and chi2 angles to aux data
+    * failed at i946 since a seg value was exactly 180 and therefore outside of bin
+        * revamped a little, since no recycling so far, changed oa1/2 from 15/15 to 20/20
+        * then adjusted w184 chi1 angles from -180 and 180 minmax bounds to -inf and inf
+    * stopped it at i1162, had a decent amount of recycling events, but at ~1e-100 probs
+        * changing to tstate <30 degs oa1/2 since my 4d plots pcoord indicate this is reasonable 
+            * but note that the oa1 and oa2 is slightly asymmetric here
+
+4d_min_oa12w184chi1m1m2_ss_v01:
+    * trying to start from the beginning with 30 deg oa1/2 tstate def
+        * also a slight adjustment to chi1 from -75 --> -85 degs
+            * and the other bound from -50 --> -40 degs
+        * might be a bit different / faster
+    * also adjusted n mab bins, so less of oa 5-->2 and more for chi1 angles 1-->3
+    * some seg errors at 403i:
+        * didn't get too far though, the better way may be to initially focus on o_angles
+        * then switch to dihedrals using a multi-mab scheme
+          bins:
+            type: RecursiveBinMapper
+            base:
+              type: RectilinearBinMapper
+              boundaries:
+                # oa1
+                - [0, 20, 45, 'inf']
+                # oa2
+                - [0, 20, 45, 'inf']
+                # M1 W184 chi1
+                - ['-inf', -85, -40, 'inf']
+                # M2 W184 chi1
+                - ['-inf', -85, -40, 'inf']
+            mappers:
+                # initially focus on o_angles
+              - type: MABBinMapper
+                nbins: [5, 5, 1, 1]
+                direction: [-1, -1, 1, 1]
+                #skip: [0, 0, 1, 1]
+                at: [40, 40, -100, -100]
+                # after <20 oa, switch to focus on W184 chi1s
+              - type: MABBinMapper
+                nbins: [1, 1, 5, 5]
+                direction: [0, 0, 1, 1]
+                #skip: [1, 1, 0, 0]
+                at: [10, 10, -100, -100]
+
+3d_min_oamax_w184m1m2chi1_ss_v00:
+    * trying something here: maybe using the oamax pcoord to try to sample the low angles, for some reason the oamax worked well in the past so why not
+    * using 4d_min_oa12w184chi1m1m2_ss_v01 as a template
+    * so 3 pcoords, oamax, then the chi1 angles just to form the tstate definition
+      bins:
+        type: RecursiveBinMapper
+        base:
+          type: RectilinearBinMapper
+          boundaries:
+            # oa_max
+            - [0, 15, 45, 'inf']
+            # M1 W184 chi1
+            - ['-inf', -85, -40, 'inf']
+            # M2 W184 chi1
+            - ['-inf', -85, -40, 'inf']
+        mappers:
+            # initially focus on o_angles
+          - type: MABBinMapper
+            nbins: [10, 1, 1]
+            direction: [-1, 1, 1]
+            skip: [0, 1, 1]
+            at: [40, -100, -100]
+            # then focus on chi1 angles
+          - type: MABBinMapper
+            nbins: [1, 3, 3]
+            direction: [0, 1, 1]
+            skip: [1, 0, 0]
+            at: [5, -60, -60]
+      # Number walkers per bin
+      bin_target_counts: 4
+3d_min_oamax_w184m1m2chi1_ss_v01:
+    * v00 didn't work well at all, could be due to an issue with the bin skipping
+    * trying same thing but without skipping
+    * also adjusting oamax lower bound 15-->10 influenced from stability test pdist results
+
+stability_test:
+    * using 3d_min_oamax_w184m1m2chi1_ss_v00 as template
+    * this is using 68 bstates from 3d_oamax_1_2_ss_v00 i1500
+    * reducing to 2d oa1 oa2 pcoord
+    * so one inf bin, no recycling, just basically running stdMD
