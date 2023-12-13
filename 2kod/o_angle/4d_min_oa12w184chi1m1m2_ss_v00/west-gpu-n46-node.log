@@ -1,0 +1,10 @@
+Updating system with the options from the configuration file
+-- ERROR    [westpa.work_managers.zeromq.core.ZMQWorker.4192641f-0daf-4e0f-b886-59a6820af30a] -- startup phase elapsed with no contact from master; shutting down
+-- ERROR    [westpa.work_managers.zeromq.core.ZMQWorker.ae08a544-664d-4604-b0ae-99fa962c9b4f] -- startup phase elapsed with no contact from master; shutting down
+-- ERROR    [westpa.work_managers.zeromq.core.ZMQNode.fc05008f-e364-4bc7-b2ce-ec2ba2dd2b75] -- startup phase elapsed with no contact from peer; shutting down
+-- ERROR    [westpa.work_managers.zeromq.core.ZMQWorker.df62ff09-b7bc-4c38-a48a-81e08ca248f5] -- startup phase elapsed with no contact from master; shutting down
+-- ERROR    [westpa.work_managers.zeromq.core.ZMQWorker.7083e660-42c1-40af-b25d-a97e5b1b99c1] -- startup phase elapsed with no contact from master; shutting down
+-- WARNING  [westpa.work_managers.zeromq.core.ZMQWorker.4192641f-0daf-4e0f-b886-59a6820af30a] -- sending SIGKILL to worker process 20040
+-- WARNING  [westpa.work_managers.zeromq.core.ZMQWorker.ae08a544-664d-4604-b0ae-99fa962c9b4f] -- sending SIGKILL to worker process 20046
+-- WARNING  [westpa.work_managers.zeromq.core.ZMQWorker.df62ff09-b7bc-4c38-a48a-81e08ca248f5] -- sending SIGKILL to worker process 20057
+-- WARNING  [westpa.work_managers.zeromq.core.ZMQWorker.7083e660-42c1-40af-b25d-a97e5b1b99c1] -- sending SIGKILL to worker process 20064

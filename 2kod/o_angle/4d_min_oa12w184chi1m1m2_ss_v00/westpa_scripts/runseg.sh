@@ -149,6 +149,16 @@ CMD="$CMD               dihtype chi3:CB:CG:CD:OE1 "
 CMD="$CMD               resrange 120-120"
 CMD="$CMD               out M2_E175_chi123.dat \n"
 
+# dihedral angles of W184
+CMD="$CMD multidihedral dihtype chi1:N:CA:CB:CG "
+CMD="$CMD               dihtype chi2:CA:CB:CG:CD1 "
+CMD="$CMD               resrange 41-41"
+CMD="$CMD               out M1_W184_chi12.dat \n"
+CMD="$CMD multidihedral dihtype chi1:N:CA:CB:CG "
+CMD="$CMD               dihtype chi2:CA:CB:CG:CD1 "
+CMD="$CMD               resrange 129-129"
+CMD="$CMD               out M2_W184_chi12.dat \n"
+
 # done
 CMD="$CMD go \n"
 
@@ -193,7 +203,7 @@ echo -e "$CMD" | $CPPTRAJ
 #    paste <(cat o_angle.dat | tail -n +2 | awk '{print $3}') <(cat o_angle.dat | tail -n +2 | awk '{print $2}') <(cat o_angle.dat | tail -n +2 | awk '{print $3}')> $WEST_PCOORD_RETURN
 #fi
 
-paste <(cat o_angle.dat | tail -n +2 | awk '{print $2}') <(cat o_angle.dat | tail -n +2 | awk '{print $3}')> $WEST_PCOORD_RETURN
+paste <(cat o_angle.dat | tail -n +2 | awk '{print $2}') <(cat o_angle.dat | tail -n +2 | awk '{print $3}') <(cat M1_W184_chi12.dat | tail -n +2 | awk '{print $2}') <(cat M2_W184_chi12.dat | tail -n +2 | awk '{print $2}')> $WEST_PCOORD_RETURN
 
 
 ### AUXDATA ###
@@ -275,6 +285,14 @@ cat M2_E175_psi.dat | tail -n +2 | awk {'print $2'} > $WEST_M2_E175_PSI_RETURN
 cat M2_E175_chi123.dat | tail -n +2 | awk {'print $2'} > $WEST_M2_E175_CHI1_RETURN
 cat M2_E175_chi123.dat | tail -n +2 | awk {'print $3'} > $WEST_M2_E175_CHI2_RETURN
 cat M2_E175_chi123.dat | tail -n +2 | awk {'print $4'} > $WEST_M2_E175_CHI3_RETURN
+
+# M1 W184 dihedrals
+cat M1_W184_chi12.dat | tail -n +2 | awk {'print $2'} > $WEST_M1_W184_CHI1_RETURN
+cat M1_W184_chi12.dat | tail -n +2 | awk {'print $3'} > $WEST_M1_W184_CHI2_RETURN
+# M2 W184 dihedrals
+cat M2_W184_chi12.dat | tail -n +2 | awk {'print $2'} > $WEST_M2_W184_CHI1_RETURN
+cat M2_W184_chi12.dat | tail -n +2 | awk {'print $3'} > $WEST_M2_W184_CHI2_RETURN
+
 
 # Clean up
 rm -f md.in $PRMTOP parent.rst seg.nfo seg.pdb *.dat* 

@@ -3,7 +3,7 @@
 #SBATCH --output=job_logs/%j_slurm.out
 #SBATCH --error=job_logs/%j_slurm.err
 #SBATCH --nodes=2
-#SBATCH --ntasks-per-node=2
+#SBATCH --ntasks-per-node=4
 #SBATCH --cluster=gpu
 #SBATCH --partition=a100_multi
 #SBATCH --gres=gpu:4

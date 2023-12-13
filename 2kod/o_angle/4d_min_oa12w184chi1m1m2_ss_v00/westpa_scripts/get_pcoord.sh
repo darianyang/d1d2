@@ -9,6 +9,9 @@ fi
 #TMP=$(mktemp -u)
 #echo "MADE TMP: $TMP"
 
+#source $AMBERHOME/amber.sh
+#echo $AMBERHOME
+
 cd $WEST_SIM_ROOT/common_files
 
 CMD="     parm $WEST_SIM_ROOT/common_files/m01_2kod_12A.prmtop \n" 
@@ -25,12 +28,20 @@ CMD="$CMD vector O4 :106-110@CA,C,O,N :134-137@CA,C,O,N \n"
 CMD="$CMD vectormath vec1 O1 vec2 O2 out pcoord.dat name o_angle_m1 dotangle \n"
 CMD="$CMD vectormath vec1 O3 vec2 O4 out pcoord.dat name o_angle_m2 dotangle \n"
 # dimer angle calc, vector based
-CMD="$CMD vector D1 :1-75@CA,C,O,N :39@CA,C,O,N  \n"
-CMD="$CMD vector D2 :89-163@CA,C,O,N :127@CA,C,O,N  \n"
-CMD="$CMD vectormath vec1 D1 vec2 D2 out pcoord.dat name c2_angle dotangle \n"
+#CMD="$CMD vector D1 :1-75@CA,C,O,N :39@CA,C,O,N  \n"
+#CMD="$CMD vector D2 :89-163@CA,C,O,N :127@CA,C,O,N  \n"
+#CMD="$CMD vectormath vec1 D1 vec2 D2 out pcoord.dat name c2_angle dotangle \n"
+# dihedral angles of W184
+CMD="$CMD multidihedral dihtype chi1:N:CA:CB:CG "
+CMD="$CMD               resrange 41-41"
+CMD="$CMD               out pcoord.dat \n"
+CMD="$CMD multidihedral dihtype chi1:N:CA:CB:CG "
+CMD="$CMD               resrange 129-129"
+CMD="$CMD               out pcoord.dat \n"
 
 CMD="$CMD go \n"
 
+echo -e "$CMD" > cpptraj.in
 echo -e "$CMD" | cpptraj #$CPPTRAJ
 
 ### POORD ###
@@ -49,7 +60,8 @@ echo -e "$CMD" | cpptraj #$CPPTRAJ
 #    paste <(cat pcoord.dat | tail -n +2 | awk '{print $3}') <(cat pcoord.dat | tail -n +2 | awk '{print $2}') <(cat pcoord.dat | tail -n +2 | awk '{print $3}')> $WEST_PCOORD_RETURN
 #fi
 
-paste <(cat pcoord.dat | tail -n +2 | awk '{print $2}') <(cat pcoord.dat | tail -n +2 | awk '{print $3}')> $WEST_PCOORD_RETURN
+paste <(cat pcoord.dat | tail -n +2 | awk '{print $2}') <(cat pcoord.dat | tail -n +2 | awk '{print $3}') <(cat pcoord.dat | tail -n +2 | awk '{print $4}') <(cat pcoord.dat | tail -n +2 | awk '{print $5}')> $WEST_PCOORD_RETURN
+#paste <(cat $TMP | tail -n +2 | awk '{print $2}') <(cat $TMP | tail -n +2 | awk '{print $3}') <(cat $TMP | tail -n +2 | awk '{print $4}') <(cat $TMP | tail -n +2 | awk '{print $5}')> $WEST_PCOORD_RETURN
 
 # before this had parentheses but it didn't work in terms of the permissions
 # this was more so before using updated we 2.0 setup

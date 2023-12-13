@@ -1,0 +1,3 @@
+Updating system with the options from the configuration file
+-- ERROR    [westpa.core.propagators.executable] -- could not read pcoord from '/tmp/tmpts_s4jo4': ValueError('cannot reshape array of size 0 into shape (11,4)')
+-- WARNING  [westpa.work_managers.zeromq.core] -- sending SIGKILL to worker process 104417

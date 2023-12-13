@@ -8,6 +8,8 @@ module load gcc/8.2.0
 module load openmpi/4.0.3
 module load amber/22
 
+#source $AMBERHOME/amber.sh
+
 # This is our local scratch, where we'll store files during the dynamics.
 export NODELOC=$LOCAL
 export USE_LOCAL_SCRATCH=1
