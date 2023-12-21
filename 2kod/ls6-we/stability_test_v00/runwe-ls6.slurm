@@ -3,7 +3,7 @@
 #SBATCH -o job_logs/slurm_%j.out
 #SBATCH -e job_logs/slurm_%j.err
 #SBATCH -t 48:00:00
-#SBATCH -N 2
+#SBATCH -N 4
 #SBATCH --ntasks-per-node 3
 #SBATCH -p gpu-a100
 #SBATCH -A MCB23004
@@ -71,7 +71,7 @@ echo "Hostlist: ${SLURM_NODELIST}"
         $CUDA_VISIBLE_DEVICES \
           --verbose \
           --work-manager=zmq \
-	  --n-workers=$SLURM_NTASKS_PER_NODE \
+	      --n-workers=$SLURM_NTASKS_PER_NODE \
           --zmq-mode=client \
           --zmq-read-host-info=$SERVER_INFO \
           --zmq-comm-mode=tcp &> node.log$$ &
