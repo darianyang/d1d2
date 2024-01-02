@@ -1,22 +1,23 @@
 #!/bin/bash
-#SBATCH --job-name=WE_1A43_AGG_RST_STRIP
-#SBATCH --nodes=1 
-#SBATCH --ntasks-per-node=1 
-#SBATCH --cluster=invest
-#SBATCH --partition=lchong
-##SBATCH --mem=16g
-#SBATCH --time=23:59:59 
+#SBATCH -J grab_segs_stability_test_v00
+#SBATCH -o job_logs/analysis_%j.out
+#SBATCH -e job_logs/analysis_%j.err
+#SBATCH -t 24:00:00
+#SBATCH -N 1
+#SBATCH --ntasks-per-node 1
+#SBATCH -p vm-small
+#SBATCH -A MCB23004
 #SBATCH --mail-user=dty7@pitt.edu
 #SBATCH --mail-type=END,FAIL
-#SBATCH --output=job_logs/slurm_rst_strip.out 
-#SBATCH --error=job_logs/slurm_rst_strip.err 
+###SBATCH --reservation=root_45
 
-# load appropriate modules.  First purge all modules then load in intel (a prereq for loading in amber) and then amber 
-module purge
-module load intel/2017.3.196
-module load amber/18
+echo "START `date +"%Y"-%m-%dT%T` `date +"%s"`" 
+echo "JobID:    ${SLURM_JOB_ID}"
+echo "User:     ${USER}"
+echo "Hostlist: ${SLURM_NODELIST}"
 
-# echo commands to stdout
-set -x
+source env.sh || exit 1
 
-bash run_cpp_in_traj_segs.sh
+#bash grab_segs.sh
+cpptraj -i grab_segs.cpp > grab_segs.out
+

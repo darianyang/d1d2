@@ -8,6 +8,7 @@ from __future__ import print_function, division; __metaclass__ = type
 import numpy
 import h5py
 import os
+import time
 import sys
 from westpa.core import h5io
 from westpa.cli.tools.w_crawl import WESTPACrawler
@@ -32,9 +33,9 @@ class IterationProcessor(object):
     # Define the pattern used for finding each segment's traj file
     iter_pattern = 'iterations/iter_{n_iter:08d}'
     traj_pattern = 'traj_segs/{n_iter:06d}/{seg_id:06d}/{filey}'
-    parent_pattern = 'traj_segs/{parent_iter:06d}/{parent_id:06d}/seg-nowat.rst'
+    parent_pattern = 'traj_segs/{parent_iter:06d}/{parent_id:06d}/seg-nowat.ncrst'
     # In this example, there are three frames saved for each segment.
-    nframes = 101
+    nframes = 11
 
     def __init__(self):
         '''
@@ -89,37 +90,51 @@ class IterationProcessor(object):
             pathy = self.iter_pattern.format(n_iter=n_iter)
             with h5py.File("./west.h5") as f:
                 parent_seg = int(f[pathy]['seg_index']['parent_id'][iseg])
+                # unique bstates case since no resampling for stability test
+                bstate_ref = f['ibstates/0/bstate_index']['auxref'][iseg].decode('UTF-8')
             if parent_seg < 0:
                 parent_seg = parent_seg*-1
             # Generate a path to the traj file
-            parentpath = os.path.join(os.environ['WEST_SIM_ROOT'], self.traj_pattern.format(n_iter=parent_iter,seg_id=parent_seg,filey="seg-nowat.rst") )
+            parentpath = os.path.join(os.environ['WEST_SIM_ROOT'], self.traj_pattern.format(n_iter=parent_iter,seg_id=parent_seg,filey="seg-nowat.ncrst") )
             trajpath = os.path.join(os.environ['WEST_SIM_ROOT'], self.traj_pattern.format(n_iter=n_iter,seg_id=iseg,filey="seg.nc") )
 
             # Open up the traj file for the segment
             fin = open("wcrawl/CPP_TEMP_ID.temp", 'rt') 
             data = fin.read()
             if n_iter == 1:
-                data = data.replace('PARENT', 'bstates/06_prod_dry.rst')
+                # bstates
+                #data = data.replace('PARENT', 'bstates/06_prod_dry.rst')
+                data = data.replace('PARENT', f'bstates/dry_{bstate_ref}')
             else:
                 data = data.replace('PARENT', parentpath)
             #data = data.replace('PARENT', parentpath)
             data = data.replace('TRAJ', trajpath)
             data = data.replace('TOP', self.topology_filename)
-            data = data.replace('AUX_NAME', "wcrawl/" + aux_name)
+            data = data.replace('AUX_NAME', "wcrawl/" + f'{aux_name}_{n_iter}_{iseg}')
             fin.close()
+
+            # write out the input script
             fout = open(f"wcrawl/{aux_name}_{n_iter}_{iseg}.in", 'wt') 
             fout.write(data)
             fout.close()
+
+            # run cpptraj
             cpptrajcommand = f"cpptraj -i wcrawl/{aux_name}_{n_iter}_{iseg}.in >/dev/null 2>&1"
             os.system(cpptrajcommand)
-            os.remove(f"wcrawl/{aux_name}_{n_iter}_{iseg}.in")
+            time.sleep(5)
+
+            # fill out the data array
             xs = []
-            with open(f"wcrawl/{aux_name}.dat", 'r') as f:
+            with open(f"wcrawl/{aux_name}_{n_iter}_{iseg}.dat", 'r') as f:
                 lines = f.readlines()[1:]
                 for x in lines:
                      xs.append(float(x.split()[1]))
 
-            # Iterate over each timestep and calculate the quantities of interest.
+            # clean up
+            os.remove(f"wcrawl/{aux_name}_{n_iter}_{iseg}.in")
+            os.remove(f"wcrawl/{aux_name}_{n_iter}_{iseg}.dat")
+
+            # Iterate over each timestep and calculate/fill the quantities of interest.
             for num, val in enumerate(xs):
                 #print(num,val)
                 # Run some calculation here and add the result for the current 
