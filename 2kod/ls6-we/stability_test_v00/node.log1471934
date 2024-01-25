@@ -1,0 +1,43 @@
+Resetting modules to system default. Resetting $MODULEPATH back to system default. All extra directories will be removed from $MODULEPATH.
+BEGIN INSIDE ENV.SH
+
+Currently Loaded Modules:
+  1) cmake/3.24.2   6) impi/19.0.9          11) openmm/7.7.0_a
+  2) pmix/3.2.3     7) cuda/11.3       (g)  12) swig/4.1.1_b
+  3) xalt/2.10.32   8) conda/4.12.0_a       13) boost/1.72.0_a
+  4) TACC           9) envwestpa/1.0_b      14) amber/22_a
+  5) intel/19.1.1  10) fftw/3.3.10_a        15) westpa/22.06_b
+
+  Where:
+   g:  built for GPU
+
+ 
+
+/work/09416/dty7/ls6/module_build_we_amber/modules/envwestpa/1.0_b/bin/python
+END   INSIDE ENV.SH
+starting WEST client processes on: 
+c309-004.ls6.tacc.utexas.edu
+current directory is /home1/09416/dty7/scratch/d1d2/2kod/ls6-we/stability_test_v00
+environment is: 
+CUDA_VISIBLE_DEVICES =  0,1,2
+-- INFO     [westpa.rc] -- loading system driver 'westpa.core.systems.WESTSystem'
+-- INFO     [westpa.rc] -- Loading system options from configuration file
+Updating system with the options from the configuration file
+-- INFO     [westpa.rc] -- Overwriting system option: pcoord_ndim
+-- INFO     [westpa.rc] -- Overwriting system option: pcoord_len
+-- INFO     [westpa.rc] -- Overwriting system option: pcoord_dtype
+-- INFO     [westpa.rc] -- Overwriting system option: bin_mapper
+-- INFO     [westpa.rc] -- Overwriting system option: bin_target_counts
+-- INFO     [driver] -- Adjust counts to exactly match target_counts: True
+-- INFO     [driver] -- Split threshold: 2.0
+-- INFO     [driver] -- Merge cutoff: 1.0
+-- INFO     [westpa.work_managers.zeromq.core.ZMQWorker.d70edf63-c715-4437-bffa-44c52f9b9a98] -- This is ZMQWorker on c309-004.ls6.tacc.utexas.edu at PID 3870448
+-- INFO     [westpa.work_managers.zeromq.core.ZMQWorker.90d1fd2a-ab36-4e11-b449-5ff0b88831dd] -- This is ZMQWorker on c309-004.ls6.tacc.utexas.edu at PID 3870448
+-- INFO     [westpa.work_managers.zeromq.core.ZMQExecutor.8ba4200d-4c7c-47c3-b900-ed77f000e3cf] -- This is ZMQExecutor on c309-004.ls6.tacc.utexas.edu at PID 3870455
+-- INFO     [westpa.work_managers.zeromq.core.ZMQExecutor.bebe7fd9-c01c-4abb-b525-014a4a49d377] -- This is ZMQExecutor on c309-004.ls6.tacc.utexas.edu at PID 3870450
+-- INFO     [westpa.work_managers.zeromq.core.ZMQWorker.3cdf11d0-7a5e-4c49-b76a-ffd162e18716] -- This is ZMQWorker on c309-004.ls6.tacc.utexas.edu at PID 3870448
+-- INFO     [westpa.work_managers.zeromq.core.ZMQExecutor.843d9dbb-097d-4de1-9055-0369c07b5f05] -- This is ZMQExecutor on c309-004.ls6.tacc.utexas.edu at PID 3870464
+-- WARNING  [westpa.work_managers.zeromq.core] -- sending SIGKILL to worker process 3870450
+-- WARNING  [westpa.work_managers.zeromq.core] -- sending SIGKILL to worker process 3870455
+-- WARNING  [westpa.work_managers.zeromq.core] -- sending SIGKILL to worker process 3870464
+Shutting down.  Hopefully this was on purpose?

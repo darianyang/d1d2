@@ -30,4 +30,8 @@ Updating system with the options from the configuration file
 -- INFO     -- INFO     [westpa.work_managers.zeromq.core.ZMQWorker.92e11d33-f59a-4a86--- INFO     [westpa.work_managers.zeromq.core.ZMQWorker.c6ee68ba-2af9-4b21-8497-3887eb5a7cd7] -- This is ZMQWorker on c309-004.ls6.tacc.utexas.edu at PID 1020654
 -- INFO     [westpa.work_managers.zeromq.core.ZMQWorker.173bcac5-7841-4824-915d-6c52473-- INFO     [westpa.work_managers.zeromq.core.ZMQExecutor.127a0f2e-583a-4c8-- INFO     [westpa.work_managers.zeromq.core.ZMQExecutor.f8609162-4d0b-4e3f-bdf3-5c635f1b4e47] -- This is ZMQExecutor on c309-004.ls6.tacc.utexas.edu at PID 1020656
 -- INFO     [westpa.work_managers.zeromq.core.ZMQExecutor.fa50217f-4228-47c7-b4a8-eb08cee25-- INFO     [westpa.work_managers.zeromq.core.ZMQWorker.153f803f-b7c1-4471--- INFO     [westpa.work_managers.zeromq.core.ZMQWorker.a9217314-63de-4316-a78c-a1677167415f] -- This is ZMQWorker on c309-004.ls6.tacc.utexas.edu at PID 1020654
--- INFO     [westpa.work_managers.zeromq.core.ZMQExecutor.046d17f6-b54a-4182-95d9-a684789db12b] -- This is ZMQExecutor on c309-004.ls6.tacc.utexas.edu at PID 1020670
+-- INFO     [westpa.work_managers.zeromq.core.ZMQExecutor.046d17f6-b54a-4182-95d9-a684789db-- WARNING  [westpa.work_managers.zeromq.core] -- sending SIGKILL to worker-- WARNING  [west-- WARNING  [westpa.work_managers.zeromq.core] -- sending SIGKILL to worker process 1669554
+-- WARNING  [westpa.work_managers.zeromq.core] -- sending SIGKILL to worker process 1669565
+Shutting down.  Hopefully this was on purpose?
+Connection to c316-002 closed by remote host.
+efully this was on purpose?
