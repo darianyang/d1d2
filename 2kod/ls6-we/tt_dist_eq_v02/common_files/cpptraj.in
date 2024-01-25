@@ -1,0 +1,6 @@
+     parm /home1/09416/dty7/scratch/d1d2/2kod/ls6-we/tt_dist_eq_v02/common_files/m01_2kod_12A.prmtop 
+ trajin /home1/09416/dty7/scratch/d1d2/2kod/ls6-we/tt_dist_eq_v02/bstates/09_prod.rst 
+ autoimage 
+ distance T45-T133 :45&!@CA,C,O,N,H :133&!@CA,C,O,N,H out pcoord.dat 
+ go 
+
