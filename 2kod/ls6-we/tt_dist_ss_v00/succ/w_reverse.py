@@ -4,6 +4,7 @@ import numpy as np
 from tqdm.auto import tqdm
 import os
 import shutil
+import argparse
 
 
 class W_Reverse:
@@ -109,6 +110,9 @@ class W_Reverse:
                 # find the corresponding restart file
                 rst_file_path = f"{self.traj_segs}/{it:06d}/{wlk:06d}/{self.rst_name}"
                 rst_dest_name = f"{it:06d}_{wlk:06d}.{self.rst_extension}"
+                # if bstate file exists, skip
+                if os.path.exists(f"{self.output_bstates_dir}/{rst_dest_name}"):
+                    continue
                 # copy to bstates_reverse directory (source, dest)
                 shutil.copyfile(rst_file_path, 
                                 f"{self.output_bstates_dir}/{rst_dest_name}")
@@ -120,7 +124,71 @@ class W_Reverse:
                 else:
                     bstates_f.write(f"{idx} 1 {rst_dest_name}\n") 
 
+def parse_arguments():
+    parser = argparse.ArgumentParser(
+        description="w_reverse: a tool for generating bstates for a subsequent " + 
+                    "WE simulation in the opposite direction."
+    )
+    parser.add_argument(
+        "-W", "-w", "--west", "--west-data", "-h5", "--h5file",
+        dest="h5",
+        type=str,
+        default="west.h5",
+        help="Path to west.h5 file"
+    )
+    parser.add_argument(
+        "--first-iter", "-fi",
+        dest="first_iter",
+        type=int,
+        default=1,
+        help="First iteration to consider (default: 1)"
+    )
+    parser.add_argument(
+        "--last-iter", "-li",
+        dest="last_iter",
+        type=int,
+        default=None,
+        help="Last iteration to consider (default: last recorded iteration in west.h5)"
+    )
+    parser.add_argument(
+        "--traj-segs",
+        dest="traj_segs",
+        type=str,
+        default="traj_segs",
+        help="Path to the traj_segs directory"
+    )
+    parser.add_argument(
+        "--rst-name",
+        dest="rst_name",
+        type=str,
+        default="seg.rst",
+        help="Name of the restart file within each traj_segs/ subdirectory"
+    )
+    parser.add_argument(
+        "--output-bstates-dir", "-obd",
+        dest="output_bstates_dir",
+        type=str,
+        default="bstates_reverse",
+        help="Output directory for the bstates and output_bstates_file"
+    )
+    parser.add_argument(
+        "--output-bstates-file", "-obf",
+        dest="output_bstates_file",
+        type=str,
+        default="bstates.txt",
+        help="Name of the output bstates file"
+    )
+    # TODO: may need to be adjusted to store False when included
+    parser.add_argument(
+        "--use-weights",
+        dest="use_weights",
+        action="store_true",
+        help="Include the recycled event weight when making the bstates.txt file"
+    )
+    return parser.parse_args()
+
 
 if __name__ == "__main__":
-    reverse = W_Reverse(traj_segs="../traj_segs")
+    args = parse_arguments()
+    reverse = W_Reverse(**vars(args))
     reverse.w_reverse()
