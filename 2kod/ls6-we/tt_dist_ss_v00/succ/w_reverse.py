@@ -18,13 +18,13 @@ class W_Reverse:
 
     TODO:
         * option to use w_assign/assign.h5 output for successful bstate selection
-        * adapt for WE simulations using the hdf5 framework
+        * adapt for WE simulation traj_segs that used the hdf5 framework
         * integrate into WESTPA, pull instance attributes from west.cfg
-        * change printing to logging
+        * change printing to west logging
     """
 
-    def __init__(self, h5="west.h5", first_iter=1, last_iter=None, traj_segs="traj_segs", 
-                 rst_name="seg.rst",
+    def __init__(self, h5="west.h5", first_iter=1, last_iter=None, 
+                 traj_segs="traj_segs", rst_name="seg.rst", max_n_bstates=10000,
                  output_bstates_dir="bstates_reverse", output_bstates_file="bstates.txt",
                  use_weights=True):
         """
@@ -40,6 +40,9 @@ class W_Reverse:
             Path to the traj_segs directory. Default current directory.
         rst_name : str
             Name of the restart file within each traj_segs/ subdirectory.
+        max_n_bstates : int
+            Max number of bstates to copy over. Adjust this if you prefer only the first
+            n bstates found, default 10,000.
         output_bstates_dir : str
             Output directory for the bstates and output_bstates_file.
             Default './bstates_reverse'.'
@@ -58,6 +61,7 @@ class W_Reverse:
         self.traj_segs = str(traj_segs)
         self.rst_name = str(rst_name)
         self.rst_extension = rst_name.rsplit('.', 1)[1]
+        self.max_n_bstates = int(max_n_bstates)
         self.output_bstates_dir = str(output_bstates_dir)
         self.output_bstates_file = str(output_bstates_file)
         self.use_weights = use_weights
@@ -103,31 +107,43 @@ class W_Reverse:
         # create bstates.txt file
         with open(f"{self.output_bstates_dir}/{self.output_bstates_file}", "w") as bstates_f:
     
+            # control max number of reverse bstates created
+            n_bstates = 0
+            # different totals if the max is less than total succ_pairs to loop
+            if self.max_n_bstates < len(succ_pairs):
+                total_pairs = self.max_n_bstates
+            else:
+                total_pairs = len(succ_pairs)
+
             # then for each pair
             for idx, (it, wlk, weight) in tqdm(enumerate(succ_pairs), 
-                                               total=len(succ_pairs),
+                                               total=total_pairs,
                                                desc="New bstates"):    
-                # find the corresponding restart file
-                rst_file_path = f"{self.traj_segs}/{it:06d}/{wlk:06d}/{self.rst_name}"
-                rst_dest_name = f"{it:06d}_{wlk:06d}.{self.rst_extension}"
-                # if bstate file exists, skip
-                if os.path.exists(f"{self.output_bstates_dir}/{rst_dest_name}"):
-                    continue
-                # copy to bstates_reverse directory (source, dest)
-                shutil.copyfile(rst_file_path, 
-                                f"{self.output_bstates_dir}/{rst_dest_name}")
-                # fill out the bstates.txt file with name and weight
-                # but only use weights if requested, otherwise use equal weights
-                # bstates.txt row format: bstate_n | weight | bstate_filename
-                if self.use_weights:
-                    bstates_f.write(f"{idx} {weight} {rst_dest_name}\n") 
+                if n_bstates < self.max_n_bstates:
+                    # find the corresponding restart file
+                    rst_file_path = f"{self.traj_segs}/{it:06d}/{wlk:06d}/{self.rst_name}"
+                    rst_dest_name = f"{it:06d}_{wlk:06d}.{self.rst_extension}"
+                    # if bstate file exists, skip
+                    if os.path.exists(f"{self.output_bstates_dir}/{rst_dest_name}"):
+                        continue
+                    # copy to bstates_reverse directory (source, dest)
+                    shutil.copyfile(rst_file_path, 
+                                    f"{self.output_bstates_dir}/{rst_dest_name}")
+                    # fill out the bstates.txt file with name and weight
+                    # but only use weights if requested, otherwise use equal weights
+                    # bstates.txt row format: bstate_n | weight | bstate_filename
+                    if self.use_weights:
+                        bstates_f.write(f"{idx} {weight} {rst_dest_name}\n") 
+                    else:
+                        bstates_f.write(f"{idx} 1 {rst_dest_name}\n") 
+                    n_bstates += 1
                 else:
-                    bstates_f.write(f"{idx} 1 {rst_dest_name}\n") 
+                    break
 
 def parse_arguments():
     parser = argparse.ArgumentParser(
         description="w_reverse: a tool for generating bstates for a subsequent " + 
-                    "WE simulation in the opposite direction."
+                    "steady-state WE simulation in the opposite direction."
     )
     parser.add_argument(
         "-W", "-w", "--west", "--west-data", "-h5", "--h5file",
@@ -163,6 +179,14 @@ def parse_arguments():
         type=str,
         default="seg.rst",
         help="Name of the restart file within each traj_segs/ subdirectory"
+    )
+    parser.add_argument(
+        "--max-n-bstates", "-max", "-mnb",
+        dest="max_n_bstates",
+        type=int,
+        default=10000,
+        help="Max number of bstates to copy over. Adjust this if you prefer " +
+             "a subset of the first bstates found. Default max of 10000."
     )
     parser.add_argument(
         "--output-bstates-dir", "-obd",
