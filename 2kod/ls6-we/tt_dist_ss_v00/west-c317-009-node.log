@@ -1,0 +1,21 @@
+-- INFO     [westpa.rc] -- loading system driver 'westpa.core.systems.WESTSystem'
+-- INFO     [westpa.rc] -- Loading system options from configuration file
+Updating system with the options from the configuration file
+-- INFO     [westpa.rc] -- Overwriting system option: pcoord_ndim
+-- INFO     [westpa.rc] -- Overwriting system option: pcoord_len
+-- INFO     [westpa.rc] -- Overwriting system option: pcoord_dtype
+-- INFO     [westpa.rc] -- Overwriting system option: bin_mapper
+-- INFO     [westpa.rc] -- Overwriting system option: bin_target_counts
+-- INFO     [driver] -- Adjust counts to exactly match target_counts: True
+-- INFO     [driver] -- Split threshold: 2.0
+-- INFO     [driver] -- Merge cutoff: 1.0
+-- INFO     [westpa.work_managers.zeromq.core.ZMQWorker.e25c1f89-0095-4cae-8152-e0772e7ab543] -- This is ZMQWorker on c317-009.ls6.tacc.utexas.edu at PID 3241665
+-- INFO     [westpa.work_managers.zeromq.core.ZMQExecutor.8d5a33b2-35f8-4669-b958-6037a874e3b0] -- This is ZMQExecutor on c317-009.ls6.tacc.utexas.edu at PID 3241667
+-- INFO     [westpa.work_managers.zeromq.core.ZMQWorker.1beb1093-74ac-44be-86ca-e7430343fcc4] -- This is ZMQWorker on c317-009.ls6.tacc.utexas.edu at PID 3241665
+-- INFO     [westpa.work_managers.zeromq.core.ZMQExecutor.34e2e138-b7ef-4056-84d4-c5bdec2e83bf] -- This is ZMQExecutor on c317-009.ls6.tacc.utexas.edu at PID 3241674
+-- INFO     [westpa.work_managers.zeromq.core.ZMQWorker.444f13b1-428c-4c1a-ae6f-245a90d94361] -- This is ZMQWorker on c317-009.ls6.tacc.utexas.edu at PID 3241665
+-- INFO     [westpa.work_managers.zeromq.core.ZMQExecutor.9b630b35-2d65-4dde-8744-16c826223c44] -- This is ZMQExecutor on c317-009.ls6.tacc.utexas.edu at PID 3241681
+-- ERROR    [westpa.core.propagators.executable] -- could not read pcoord from '/tmp/tmpux269o6c': ValueError('cannot reshape array of size 0 into shape (11,1)')
+-- WARNING  [westpa.work_managers.zeromq.core] -- sending SIGKILL to worker process 3241667
+-- WARNING  [westpa.work_managers.zeromq.core] -- sending SIGKILL to worker process 3241674
+-- WARNING  [westpa.work_managers.zeromq.core] -- sending SIGKILL to worker process 3241681

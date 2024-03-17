@@ -1,0 +1,20 @@
+-- INFO     [westpa.rc] -- loading system driver 'westpa.core.systems.WESTSystem'
+-- INFO     [westpa.rc] -- Loading system options from configuration file
+Updating system with the options from the configuration file
+-- INFO     [westpa.rc] -- Overwriting system option: pcoord_ndim
+-- INFO     [westpa.rc] -- Overwriting system option: pcoord_len
+-- INFO     [westpa.rc] -- Overwriting system option: pcoord_dtype
+-- INFO     [westpa.rc] -- Overwriting system option: bin_mapper
+-- INFO     [westpa.rc] -- Overwriting system option: bin_target_counts
+-- INFO     [driver] -- Adjust counts to exactly match target_counts: True
+-- INFO     [driver] -- Split threshold: 2.0
+-- INFO     [driver] -- Merge cutoff: 1.0
+-- INFO     [westpa.work_managers.zeromq.core.ZMQWorker.fc9204ec-5fcf-46fe-b0d6-2f5e5bcd1e27] -- This is ZMQWorker on c317-013.ls6.tacc.utexas.edu at PID 2382757
+-- INFO     [westpa.work_managers.zeromq.core.ZMQWorker.f76a03e1-4bb0-4e7d-b569-4c9a0c231cff] -- This is ZMQWorker on c317-013.ls6.tacc.utexas.edu at PID 2382757
+-- INFO     [westpa.work_managers.zeromq.core.ZMQExecutor.f46e57d8-2848-4157-aa66-18922e199f33] -- This is ZMQExecutor on c317-013.ls6.tacc.utexas.edu at PID 2382762
+-- INFO     [westpa.work_managers.zeromq.core.ZMQExecutor.57be34fd-8e26-45a8-9942-4813f0884b4d] -- This is ZMQExecutor on c317-013.ls6.tacc.utexas.edu at PID 2382759
+-- INFO     [westpa.work_managers.zeromq.core.ZMQWorker.88d74712-b037-4b94-99b6-d5c96a095f1a] -- This is ZMQWorker on c317-013.ls6.tacc.utexas.edu at PID 2382757
+-- INFO     [westpa.work_managers.zeromq.core.ZMQExecutor.f3c62a1d-0094-44e8-943f-921df0f40b62] -- This is ZMQExecutor on c317-013.ls6.tacc.utexas.edu at PID 2382773
+-- WARNING  [westpa.work_managers.zeromq.core] -- sending SIGKILL to worker process 2382759
+-- WARNING  [westpa.work_managers.zeromq.core] -- sending SIGKILL to worker process 2382762
+-- WARNING  [westpa.work_managers.zeromq.core] -- sending SIGKILL to worker process 2382773
