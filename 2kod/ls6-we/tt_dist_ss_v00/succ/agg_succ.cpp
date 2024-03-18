@@ -502,5 +502,8 @@ parm ../common_files/m01_2kod_12A.prmtop
  trajin bstates_reverse/000998_000000.rst 
  trajin bstates_reverse/000998_000006.rst 
  trajin bstates_reverse/000998_000009.rst 
- trajout agg_succ.nc 
+ autoimage 
+ strip :WAT,Cl-,Na+ 
+ trajout agg_succ_dry.dcd 
+ go 
 
