@@ -1,0 +1,205 @@
+MPI startup(): PMI server not found. Please set I_MPI_PMI_LIBRARY variable if it is not a singleton case.
+Updating system with the options from the configuration file
+Maximum wallclock time: 1 day, 0:00:00
+
+Mon Feb 12 23:38:48 2024
+Iteration 976 (5000 requested)
+0 segments remain in iteration 976 (192 total)
+33 of 35 (94.285714%) active bins are populated
+per-bin minimum non-zero probability:       1.26573e-22
+per-bin maximum probability:                0.795446
+per-bin probability dynamic range (kT):     50.1924
+per-segment minimum non-zero probability:   2.10955e-23
+per-segment maximum non-zero probability:   0.223808
+per-segment probability dynamic range (kT): 50.716
+norm = 1, error in norm = 0 (0*epsilon)
+Iteration wallclock: 0:13:07.981310, cputime: 1:37:15.306240
+
+
+Mon Feb 12 23:40:29 2024
+Iteration 977 (5000 requested)
+Beginning iteration 977
+180 segments remain in iteration 977 (180 total)
+30 of 35 (85.714286%) active bins are populated
+per-bin minimum non-zero probability:       8.01007e-22
+per-bin maximum probability:                0.731995
+per-bin probability dynamic range (kT):     48.2642
+per-segment minimum non-zero probability:   2.34635e-23
+per-segment maximum non-zero probability:   0.13699
+per-segment probability dynamic range (kT): 50.1187
+norm = 1, error in norm = 2.22045e-16 (1*epsilon)
+Iteration wallclock: 0:13:04.756688, cputime: 1:31:15.332807
+
+
+Mon Feb 12 23:53:34 2024
+Iteration 978 (5000 requested)
+Beginning iteration 978
+192 segments remain in iteration 978 (192 total)
+32 of 35 (91.428571%) active bins are populated
+per-bin minimum non-zero probability:       1.96592e-22
+per-bin maximum probability:                0.735219
+per-bin probability dynamic range (kT):     49.6733
+per-segment minimum non-zero probability:   3.27653e-23
+per-segment maximum non-zero probability:   0.13699
+per-segment probability dynamic range (kT): 49.7848
+norm = 1, error in norm = -1.11022e-16 (-0.5*epsilon)
+Iteration wallclock: 0:13:27.293494, cputime: 1:37:18.703799
+
+
+Tue Feb 13 00:07:01 2024
+Iteration 979 (5000 requested)
+Beginning iteration 979
+186 segments remain in iteration 979 (186 total)
+31 of 35 (88.571429%) active bins are populated
+per-bin minimum non-zero probability:       3.27653e-23
+per-bin maximum probability:                0.615949
+per-bin probability dynamic range (kT):     51.2881
+per-segment minimum non-zero probability:   5.46088e-24
+per-segment maximum non-zero probability:   0.132592
+per-segment probability dynamic range (kT): 51.544
+norm = 1, error in norm = 0 (0*epsilon)
+Iteration wallclock: 0:12:43.634446, cputime: 1:34:06.677090
+
+
+Tue Feb 13 00:19:45 2024
+Iteration 980 (5000 requested)
+Beginning iteration 980
+192 segments remain in iteration 980 (192 total)
+32 of 35 (91.428571%) active bins are populated
+per-bin minimum non-zero probability:       1.99241e-22
+per-bin maximum probability:                0.767916
+per-bin probability dynamic range (kT):     49.7035
+per-segment minimum non-zero probability:   3.32069e-23
+per-segment maximum non-zero probability:   0.151967
+per-segment probability dynamic range (kT): 49.8752
+norm = 1, error in norm = 0 (0*epsilon)
+Iteration wallclock: 0:13:23.631086, cputime: 1:37:36.937254
+
+
+Tue Feb 13 00:33:09 2024
+Iteration 981 (5000 requested)
+Beginning iteration 981
+192 segments remain in iteration 981 (192 total)
+32 of 35 (91.428571%) active bins are populated
+per-bin minimum non-zero probability:       9.96206e-23
+per-bin maximum probability:                0.746815
+per-bin probability dynamic range (kT):     50.3687
+per-segment minimum non-zero probability:   1.66034e-23
+per-segment maximum non-zero probability:   0.151967
+per-segment probability dynamic range (kT): 50.5683
+norm = 1, error in norm = 2.22045e-16 (1*epsilon)
+Iteration wallclock: 0:13:48.701215, cputime: 1:37:54.168175
+
+
+Tue Feb 13 00:46:57 2024
+Iteration 982 (5000 requested)
+Beginning iteration 982
+198 segments remain in iteration 982 (198 total)
+33 of 35 (94.285714%) active bins are populated
+per-bin minimum non-zero probability:       1.66034e-23
+per-bin maximum probability:                0.576143
+per-bin probability dynamic range (kT):     51.901
+per-segment minimum non-zero probability:   2.76724e-24
+per-segment maximum non-zero probability:   0.132592
+per-segment probability dynamic range (kT): 52.2237
+norm = 1, error in norm = 0 (0*epsilon)
+Iteration wallclock: 0:13:52.692300, cputime: 1:40:56.617716
+
+
+Tue Feb 13 01:00:50 2024
+Iteration 983 (5000 requested)
+Beginning iteration 983
+192 segments remain in iteration 983 (192 total)
+32 of 35 (91.428571%) active bins are populated
+per-bin minimum non-zero probability:       8.56973e-24
+per-bin maximum probability:                0.506208
+per-bin probability dynamic range (kT):     52.433
+per-segment minimum non-zero probability:   1.42829e-24
+per-segment maximum non-zero probability:   0.116343
+per-segment probability dynamic range (kT): 52.7543
+norm = 1, error in norm = 0 (0*epsilon)
+Iteration wallclock: 0:14:47.558946, cputime: 1:37:15.940156
+
+
+Tue Feb 13 01:15:38 2024
+Iteration 984 (5000 requested)
+Beginning iteration 984
+192 segments remain in iteration 984 (192 total)
+32 of 35 (91.428571%) active bins are populated
+per-bin minimum non-zero probability:       2.80123e-23
+per-bin maximum probability:                0.798932
+per-bin probability dynamic range (kT):     51.7049
+per-segment minimum non-zero probability:   4.66872e-24
+per-segment maximum non-zero probability:   0.177929
+per-segment probability dynamic range (kT): 51.9948
+norm = 1, error in norm = 0 (0*epsilon)
+Iteration wallclock: 0:13:21.693471, cputime: 1:37:33.597162
+
+
+Tue Feb 13 01:29:00 2024
+Iteration 985 (5000 requested)
+Beginning iteration 985
+192 segments remain in iteration 985 (192 total)
+32 of 35 (91.428571%) active bins are populated
+per-bin minimum non-zero probability:       4.66872e-24
+per-bin maximum probability:                0.797065
+per-bin probability dynamic range (kT):     53.4943
+per-segment minimum non-zero probability:   7.7812e-25
+per-segment maximum non-zero probability:   0.177929
+per-segment probability dynamic range (kT): 53.7865
+norm = 1, error in norm = 0 (0*epsilon)
+Iteration wallclock: 0:14:24.738374, cputime: 1:37:59.589317
+
+
+Tue Feb 13 01:43:24 2024
+Iteration 986 (5000 requested)
+Beginning iteration 986
+180 segments remain in iteration 986 (180 total)
+30 of 35 (85.714286%) active bins are populated
+per-bin minimum non-zero probability:       8.97813e-23
+per-bin maximum probability:                0.600075
+per-bin probability dynamic range (kT):     50.254
+per-segment minimum non-zero probability:   2.33436e-24
+per-segment maximum non-zero probability:   0.140761
+per-segment probability dynamic range (kT): 52.4536
+norm = 1, error in norm = 0 (0*epsilon)
+-- ERROR    [westpa.work_managers.core] -- uncaught exception in remote function
+Traceback (most recent call last):
+  File "/home1/09416/dty7/work/module_build_we_amber/modules/westpa/22.06_b/lib/python3.9/site-packages/westpa/core/propagators/executable.py", line 520, in prepare_file_system
+    os.makedirs(environ[self.ENV_CURRENT_SEG_DATA_REF])
+  File "/work/09416/dty7/ls6/module_build_we_amber/modules/envwestpa/1.0_b/lib/python3.9/os.py", line 225, in makedirs
+    mkdir(name, mode)
+FileNotFoundError: [Errno 2] No such file or directory: '/home1/09416/dty7/scratch/d1d2/2kod/ls6-we/tt_dist_eq_v03/traj_segs/000986/000000'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home1/09416/dty7/work/module_build_we_amber/modules/westpa/22.06_b/lib/python3.9/site-packages/westpa/work_managers/zeromq/core.py", line 153, in execute
+    rsl.result = self.fn(*self.args, **self.kwargs)
+  File "/home1/09416/dty7/work/module_build_we_amber/modules/westpa/22.06_b/lib/python3.9/site-packages/westpa/core/wm_ops.py", line 40, in propagate
+    incoming_segments = {segment.seg_id: segment for segment in propagator.propagate(segments)}
+  File "/home1/09416/dty7/work/module_build_we_amber/modules/westpa/22.06_b/lib/python3.9/site-packages/westpa/core/propagators/executable.py", line 681, in propagate
+    rc, rusage = self.exec_for_segment(child_info, segment, addtl_env)
+  File "/home1/09416/dty7/work/module_build_we_amber/modules/westpa/22.06_b/lib/python3.9/site-packages/westpa/core/propagators/executable.py", line 489, in exec_for_segment
+    self.prepare_file_system(segment, environ)
+  File "/home1/09416/dty7/work/module_build_we_amber/modules/westpa/22.06_b/lib/python3.9/site-packages/westpa/core/propagators/executable.py", line 523, in prepare_file_system
+    shutil.rmtree(environ[self.ENV_CURRENT_SEG_DATA_REF])
+  File "/work/09416/dty7/ls6/module_build_we_amber/modules/envwestpa/1.0_b/lib/python3.9/shutil.py", line 724, in rmtree
+    onerror(os.lstat, path, sys.exc_info())
+  File "/work/09416/dty7/ls6/module_build_we_amber/modules/envwestpa/1.0_b/lib/python3.9/shutil.py", line 722, in rmtree
+    orig_st = os.lstat(path)
+FileNotFoundError: [Errno 2] No such file or directory: '/home1/09416/dty7/scratch/d1d2/2kod/ls6-we/tt_dist_eq_v03/traj_segs/000986/000000'
+
+exception caught; shutting down
+-- ERROR    [w_run] -- error message: [Errno 2] No such file or directory: '/home1/09416/dty7/scratch/d1d2/2kod/ls6-we/tt_dist_eq_v03/traj_segs/000986/000000'
+-- ERROR    [w_run] -- Traceback (most recent call last):
+  File "/home1/09416/dty7/work/module_build_we_amber/modules/westpa/22.06_b/lib/python3.9/site-packages/westpa/cli/core/w_run.py", line 61, in run_simulation
+    sim_manager.run()
+  File "/scratch/09416/dty7/d1d2/2kod/ls6-we/tt_dist_eq_v03/manager.py", line 706, in run
+    self.propagate()
+  File "/scratch/09416/dty7/d1d2/2kod/ls6-we/tt_dist_eq_v03/manager.py", line 550, in propagate
+    incoming = future.get_result()
+  File "/home1/09416/dty7/work/module_build_we_amber/modules/westpa/22.06_b/lib/python3.9/site-packages/westpa/work_managers/core.py", line 332, in get_result
+    raise self._exception
+FileNotFoundError: [Errno 2] No such file or directory: '/home1/09416/dty7/scratch/d1d2/2kod/ls6-we/tt_dist_eq_v03/traj_segs/000986/000000'
+

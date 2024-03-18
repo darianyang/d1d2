@@ -2,7 +2,7 @@
 #SBATCH -J mmab_tt_dist_oamin_eq_v00_2kod
 #SBATCH -o job_logs/slurm_%j.out
 #SBATCH -e job_logs/slurm_%j.err
-#SBATCH -t 48:00:00
+#SBATCH -t 24:00:00
 ##SBATCH -t 00:15:00
 #SBATCH -N 4
 #SBATCH --ntasks-per-node 3

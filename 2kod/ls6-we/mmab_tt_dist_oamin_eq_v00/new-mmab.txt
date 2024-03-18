@@ -1,0 +1,26 @@
+
+      bins:
+        type: RecursiveBinMapper
+        base:
+          type: RectilinearBinMapper
+          boundaries:
+            # oa_min
+            - [0, 12, 50, 'inf']
+            # tt_dist
+            - [0, 5, 10, 18, 'inf']
+        mappers:
+          # tt_dist only until 10Å
+          - type: MABBinMapper
+            nbins: [1, 10]
+            direction: [-1, -1]
+            at: [25, 15]
+          # then oa_min until <12°
+          - type: MABBinMapper
+            nbins: [10, 1]
+            direction: [-1, -1]
+            at: [25, 8]
+          # then tt_dist only to refine
+          - type: MABBinMapper
+            nbins: [1, 10]
+            direction: [-1, -1]
+            at: [8, 4]
