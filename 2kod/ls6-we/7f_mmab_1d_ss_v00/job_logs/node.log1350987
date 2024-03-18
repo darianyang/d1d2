@@ -1,0 +1,41 @@
+Resetting modules to system default. Resetting $MODULEPATH back to system default. All extra directories will be removed from $MODULEPATH.
+BEGIN INSIDE ENV.SH
+
+Currently Loaded Modules:
+  1) cmake/3.24.2   6) impi/19.0.9          11) openmm/7.7.0_a
+  2) pmix/3.2.3     7) cuda/11.3       (g)  12) swig/4.1.1_b
+  3) xalt/2.10.32   8) conda/4.12.0_a       13) boost/1.72.0_a
+  4) TACC           9) envwestpa/1.0_b      14) amber/22_a
+  5) intel/19.1.1  10) fftw/3.3.10_a        15) westpa/22.06_b
+
+  Where:
+   g:  built for GPU
+
+ 
+
+/work/09416/dty7/ls6/module_build_we_amber/modules/envwestpa/1.0_b/bin/python
+END   INSIDE ENV.SH
+starting WEST client processes on: 
+c316-012.ls6.tacc.utexas.edu
+current directory is /home1/09416/dty7/scratch/d1d2/2kod/ls6-we/7f_mmab_1d_ss_v00
+environment is: 
+CUDA_VISIBLE_DEVICES =  0,1,2
+-- INFO     [westpa.rc] -- loading system driver 'westpa.core.systems.WESTSystem'
+-- INFO     [westpa.rc] -- Loading system options from configuration file
+Updating system with the options from the configuration file
+-- INFO     [westpa.rc] -- Overwriting system option: pcoord_ndim
+-- INFO     [westpa.rc] -- Overwriting system option: pcoord_len
+-- INFO     [westpa.rc] -- Overwriting system option: pcoord_dtype
+-- INFO     [westpa.rc] -- Overwriting system option: bin_mapper
+-- INFO     [westpa.rc] -- Overwriting system option: bin_target_counts
+-- INFO     [driver] -- Adjust counts to exactly match target_counts: True
+-- INFO     [driver] -- Split threshold: 2.0
+-- INFO     [driver] -- Merge cutoff: 1.0
+-- INFO     [westpa.work_managers.zeromq.core.ZMQWorker.6c56702c-98fc-42cb-b662-c0059348c2b4] -- This is ZMQWorker on c316-012.ls6.tacc.utexas.edu at PID 679464
+-- INFO     [westpa.work_managers.zeromq.core.ZMQWorker.e516a5ad-73ff-4785-a955-0748b99abcfd] -- This is ZMQWorker on c316-012.ls6.tacc.utexas.edu at PID 679464
+-- INFO     [westpa.work_managers.zeromq.core.ZMQExecutor.2a3bf96d-e0d0-49e1-b198-e99b3338b9fd] -- This is ZMQExecutor on c316-012.ls6.tacc.utexas.edu at PID 679466
+-- INFO     [westpa.work_managers.zeromq.core.ZMQExecutor.20182f6b-6cfa-4e54-afb4-50da7bee87c5] -- This is ZMQExecutor on c316-012.ls6.tacc.utexas.edu at PID 679469
+-- INFO     [westpa.work_managers.zeromq.core.ZMQWorker.c78a31fd-5dee-4a8e-9df2-0d332b259bcd] -- This is ZMQWorker on c316-012.ls6.tacc.utexas.edu at PID 679464
+-- INFO     [westpa.work_managers.zeromq.core.ZMQExecutor.20ddf614-a327-4d41-9134-b56f54bb92a2] -- This is ZMQExecutor on c316-012.ls6.tacc.utexas.edu at PID 679480
+-- WAR-- WARNING  [westpa.work_managers.zeromq.core] -- sending SIGKILL to worker process 1-- WARN-- WARNING  [westpa.work_managers.zeromq.core] -- sending SIGKILL to worker process -- WARNI-- WARNING  [westpa.work_managers.zeromq.core] -- sending SIGKILL to worker processShutting Shutting down.  Hopefully this was on [c316-012:679485:0:679485] Caught signal 7 (Bus error: nonexistent physical address)
+l address)

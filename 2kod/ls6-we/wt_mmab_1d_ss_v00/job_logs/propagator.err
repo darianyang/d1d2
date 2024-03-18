@@ -1,0 +1,20 @@
++ env
++ sort
++ cd /home1/09416/dty7/scratch/d1d2/2kod/ls6-we/wt_mmab_1d_ss_v00
++ mkdir -pv /home1/09416/dty7/scratch/d1d2/2kod/ls6-we/wt_mmab_1d_ss_v00/traj_segs/000269/000017
++ cd /home1/09416/dty7/scratch/d1d2/2kod/ls6-we/wt_mmab_1d_ss_v00/traj_segs/000269/000017
++ PRMTOP=m01_2kod_12A.prmtop
++ ln -sv /home1/09416/dty7/scratch/d1d2/2kod/ls6-we/wt_mmab_1d_ss_v00/common_files/m01_2kod_12A.prmtop .
++ '[' SEG_INITPOINT_CONTINUES = SEG_INITPOINT_CONTINUES ']'
++ sed s/RAND/46774/g /home1/09416/dty7/scratch/d1d2/2kod/ls6-we/wt_mmab_1d_ss_v00/common_files/md.in
++ ln -sv /home1/09416/dty7/scratch/d1d2/2kod/ls6-we/wt_mmab_1d_ss_v00/traj_segs/000268/000010/seg.rst ./parent.rst
++ CUDA_DEVICES=(`echo $CUDA_VISIBLE_DEVICES_ALLOCATED | tr , ' '`)
+++ echo 0,1,2
+++ tr , ' '
++ export CUDA_DEVICES
++ export CUDA_VISIBLE_DEVICES=0
++ CUDA_VISIBLE_DEVICES=0
++ echo 'RUNSEG.SH: CUDA_VISIBLE_DEVICES_ALLOCATED = ' 0,1,2
++ echo 'RUNSEG.SH: WM_PROCESS_INDEX = ' 0
++ echo 'RUNSEG.SH: CUDA_VISIBLE_DEVICES = ' 0
++ /work/09416/dty7/ls6/module_build_we_amber/modules/amber/22_a/bin/pmemd.cuda -O -i md.in -p m01_2kod_12A.prmtop -c parent.rst -r seg.rst -x seg.nc -o seg.log -inf seg.nfo

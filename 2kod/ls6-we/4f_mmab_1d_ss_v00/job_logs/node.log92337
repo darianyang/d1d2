@@ -1,0 +1,39 @@
+Resetting modules to system default. Resetting $MODULEPATH back to system default. All extra directories will be removed from $MODULEPATH.
+BEGIN INSIDE ENV.SH
+
+Currently Loaded Modules:
+  1) cmake/3.24.2   6) impi/19.0.9          11) openmm/7.7.0_a
+  2) pmix/3.2.3     7) cuda/11.3       (g)  12) swig/4.1.1_b
+  3) xalt/2.10.32   8) conda/4.12.0_a       13) boost/1.72.0_a
+  4) TACC           9) envwestpa/1.0_b      14) amber/22_a
+  5) intel/19.1.1  10) fftw/3.3.10_a        15) westpa/22.06_b
+
+  Where:
+   g:  built for GPU
+
+ 
+
+/work/09416/dty7/ls6/module_build_we_amber/modules/envwestpa/1.0_b/bin/python
+END   INSIDE ENV.SH
+starting WEST client processes on: 
+c315-006.ls6.tacc.utexas.edu
+current directory is /home1/09416/dty7/scratch/d1d2/2kod/ls6-we/4f_mmab_1d_ss_v00
+environment is: 
+CUDA_VISIBLE_DEVICES =  0,1,2
+-- INFO     [westpa.rc] -- loading system driver 'westpa.core.systems.WESTSystem'
+-- INFO     [westpa.rc] -- Loading system options from configuration file
+Updating system with the options from the configuration file
+-- INFO     [westpa.rc] -- Overwriting system option: pcoord_ndim
+-- INFO     [westpa.rc] -- Overwriting system option: pcoord_len
+-- INFO     [westpa.rc] -- Overwriting system option: pcoord_dtype
+-- INFO     [westpa.rc] -- Overwriting system option: bin_mapper
+-- INFO     [westpa.rc] -- Overwriting system option: bin_target_counts
+-- INFO     [driver] -- Adjust counts to exactly match target_counts: True
+-- INFO     [driver] -- Split threshold: 2.0
+-- INFO     [driver] -- Merge cutoff: 1.0
+-- INFO     [westpa.work_managers.zeromq.core.ZMQWorker.5463932a-1694-4ece-a222-920e1fb6875a] -- This is ZMQWorker on c315-006.ls6.tacc.utexas.edu at PID 3247715
+-- INFO     [westpa.work_managers.zeromq.core.ZMQWorker.fc5b14a2-1db8-4349-89ff-984ace36ac29] -- This is ZMQWorker on c315-006.ls6.tacc.utexas.edu at PID 3247715
+-- INFO     [westpa.work_managers.zeromq.core.ZMQExecutor.41a5efc4-8296-4ef5-b04a-c32fdf9a1fc7] -- This is ZMQExecutor on c315-006.ls6.tacc.utexas.edu at PID 3247717
+-- INFO     [westpa.work_managers.zeromq.core.ZMQExecutor.79276c86-77f8-42a7-a5ca-a5db8a250c04] -- This is ZMQExecutor on c315-006.ls6.tacc.utexas.edu at PID 3247724
+-- INFO     [westpa.work_managers.zeromq.core.ZMQWorker.d916aa29-74fc-44b0-83cc-5688700c926e] -- This is ZMQWorker on c315-006.ls6.tacc.utexas.edu at PID 3247715
+-- INFO     [westpa.work_managers.zeromq.core.ZMQExecutor.c506b0ae-41e7-42af-a09b-b7e2d3f145d9] -- This is ZMQExecutor on c315-006.ls6.tacc.utexas.edu at PID 3247731
