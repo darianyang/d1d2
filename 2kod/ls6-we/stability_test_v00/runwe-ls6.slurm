@@ -3,7 +3,7 @@
 #SBATCH -o job_logs/slurm_%j.out
 #SBATCH -e job_logs/slurm_%j.err
 #SBATCH -t 48:00:00
-#SBATCH -N 4
+#SBATCH -N 3
 #SBATCH --ntasks-per-node 3
 #SBATCH -p gpu-a100
 #SBATCH -A MCB23004
@@ -30,11 +30,22 @@ echo "Hostlist: ${SLURM_NODELIST}"
 # start server
   #_run --debug --work-manager=zmq \
   #w_run --verbose --work-manager=zmq \
-  w_run --work-manager=zmq \
-      --n-workers=0 \
-      --zmq-mode=master \
-      --zmq-write-host-info=$SERVER_INFO \
-      --zmq-comm-mode=tcp &> west-$SLURM_JOBID.log &
+#  w_run --work-manager=zmq \
+#      --n-workers=0 \
+#      --zmq-mode=master \
+#      --zmq-write-host-info=$SERVER_INFO \
+#      --zmq-comm-mode=ipc &> west-$SLURM_JOBID.log &
+w_run --zmq-startup-timeout 3600 \
+    --zmq-shutdown-timeout 360 \
+    --zmq-timeout-factor 240 \
+    --zmq-master-heartbeat 3 \
+    --zmq-worker-heartbeat 120 \
+    --work-manager=zmq \
+    --n-workers=0 \
+    --zmq-mode=master \
+    --zmq-write-host-info=$SERVER_INFO \
+    --zmq-comm-mode=ipc &> west-$SLURM_JOBID.log &
+#    --zmq-comm-mode=ipc > west.log
 
   echo " -> Finished launching master."
 
@@ -74,7 +85,7 @@ echo "Hostlist: ${SLURM_NODELIST}"
 	      --n-workers=$SLURM_NTASKS_PER_NODE \
           --zmq-mode=client \
           --zmq-read-host-info=$SERVER_INFO \
-          --zmq-comm-mode=tcp &> node.log$$ &
+          --zmq-comm-mode=ipc &> job_logs/node.log$$ &
   done
   echo " -> Launching Completed... ."
 
@@ -84,3 +95,4 @@ echo "Hostlist: ${SLURM_NODELIST}"
 
 echo "END `date +"%Y"-%m-%dT%T` `date +"%s"`" 
 
+exit

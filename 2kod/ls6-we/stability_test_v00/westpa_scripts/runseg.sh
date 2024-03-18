@@ -133,6 +133,9 @@ CMD="$CMD distance M1-M2-COM :6-75&!@H= :94-163&!@H= out dist_M1-M2_COM.dat \n"
 # calc inter monomer distance using bottom of the helix
 CMD="$CMD distance M1-M2-L46 :46@N :134@N out dist_M1-M2_L46.dat \n"
 
+# calc THR45-THR133 sidechain distance
+CMD="$CMD distance T45-T133 :45&!@CA,C,O,N,H :133&!@CA,C,O,N,H out tt_dist.dat \n"
+
 # dihedral angles of E175
 CMD="$CMD multidihedral phi resrange 32-32 out M1_E175_phi.dat \n"
 CMD="$CMD multidihedral psi resrange 32-32 out M1_E175_psi.dat \n"
@@ -274,6 +277,9 @@ cat dist_M1-E175_M1-T148.dat | tail -n +2 | awk {'print $2'} > $WEST_M1E175_M1T1
 cat dist_M2-E175_M2-T148.dat | tail -n +2 | awk {'print $2'} > $WEST_M2E175_M2T148_RETURN
 cat dist_M1-M2_COM.dat | tail -n +2 | awk {'print $2'} > $WEST_M1M2_COM_RETURN
 cat dist_M1-M2_L46.dat | tail -n +2 | awk {'print $2'} > $WEST_M1M2_L46_RETURN
+
+# THR45-THR133 sidechain distance
+cat tt_dist.dat | tail -n +2 | awk {'print $2'} > $WEST_TT_DIST_RETURN
 
 # M1 E175 dihedrals
 cat M1_E175_phi.dat | tail -n +2 | awk {'print $2'} > $WEST_M1_E175_PHI_RETURN

@@ -58,9 +58,10 @@ cat << EOF > run_w_crawl_${AUX_NAME}.slurm
 #SBATCH --ntasks-per-node=${CPUS}
 #SBATCH --output=wcrawl/job_logs/slurm_wcrawl_${AUX_NAME}.out
 #SBATCH --error=wcrawl/job_logs/slurm_wcrawl_${AUX_NAME}.err
-#SBATCH --time=12:00:00
-##SBATCH -p development
-#SBATCH -p normal
+##SBATCH --time=12:00:00
+#SBATCH --time=2:00:00
+#SBATCH -p development
+##SBATCH -p normal
 #SBATCH -A MCB23004
 #SBATCH --mail-user=dty7@pitt.edu
 #SBATCH --mail-type=END,FAIL
@@ -80,7 +81,8 @@ w_crawl \
   wcrawl_functions_${AUX_NAME}.calculate \
   -c wcrawl_functions_${AUX_NAME}.crawler \
   --verbose \
-  --last-iter=5000 \
+  --first-iter=9800 \
+  --last-iter=10000 \
   --work-manager=processes \
   --n-workers=${CPUS} &&
 #  --serial &&

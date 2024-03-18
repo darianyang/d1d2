@@ -12,7 +12,8 @@ export CUDA_VISIBLE_DEVICES_ALLOCATED=$1; shift
 echo "starting WEST client processes on: "; hostname
 echo "current directory is $PWD"
 echo "environment is: "
-env | sort > ENV.node.sh.out$$
+env | sort
+#env | sort > ENV.node.sh.out$$
 
 echo "CUDA_VISIBLE_DEVICES = " $CUDA_VISIBLE_DEVICES
 
@@ -22,8 +23,11 @@ echo "CUDA_VISIBLE_DEVICES = " $CUDA_VISIBLE_DEVICES
 #export LD_LIBRARY_PATH=/usr/lib64:$LD_LIBRARY_PATH
 
 echo "w_run   $@"   >    client_w_run_cmd
-      w_run  "$@"
+
 #     w_run  "$@" |& tee client_w_run_cmd.log
 #     w_run  "$@" &> west-$SLURM_NODENAME-node.log
+
+#      w_run  "$@"
+w_run "$@" &> west-$SLURM_NODENAME-node.log
 
 echo "Shutting down.  Hopefully this was on purpose?"
