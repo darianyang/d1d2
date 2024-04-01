@@ -34,6 +34,51 @@ Reading title:
 Li/Merz ion parameters of divalent to tetravalent ions for SPC/E water model (12-6 normal usage set)
 Loading PDB file: ./T188C-OX_leap.pdb
   total atoms in file: 2748
+ATOM
+             Normal      Perturbed
+Name:         SG            SG   
+Type:         S             S    
+Charge:       -0.1207        0.000
+Polarization: 0.0000        0.000
+Element: S             (not affected by pert)
+Atom flags: (decimal 131072 hex 0x20000)
+	posfxd n  posblt n  posdrwn n  selected n
+	pert n  notdisp n  touched n  posknwn Y
+	internal n  needsmin n  needsbuild n
+Atom position: 2.320000, 6.720000, 2.543000
+Atom velocity: 0.000000, 0.000000, 0.000000
+  Bonded to .R<CYX 45>.A<CB 5> by a single bond.
+  Bonded to .R<CYX 133>.A<SG 8> by a single bond.
+ATOM
+             Normal      Perturbed
+Name:         SG            SG   
+Type:         S             S    
+Charge:       -0.1207        0.000
+Polarization: 0.0000        0.000
+Element: S             (not affected by pert)
+Atom flags: (decimal 131072 hex 0x20000)
+	posfxd n  posblt n  posdrwn n  selected n
+	pert n  notdisp n  touched n  posknwn Y
+	internal n  needsmin n  needsbuild n
+Atom position: 14.219000, -0.699000, -8.090000
+Atom velocity: 0.000000, 0.000000, 0.000000
+  Bonded to .R<CYX 55>.A<CB 5> by a single bond.
+  Bonded to .R<CYX 75>.A<SG 8> by a single bond.
+ATOM
+             Normal      Perturbed
+Name:         SG            SG   
+Type:         S             S    
+Charge:       -0.1207        0.000
+Polarization: 0.0000        0.000
+Element: S             (not affected by pert)
+Atom flags: (decimal 131072 hex 0x20000)
+	posfxd n  posblt n  posdrwn n  selected n
+	pert n  notdisp n  touched n  posknwn Y
+	internal n  needsmin n  needsbuild n
+Atom position: 5.683000, 2.716000, 24.127000
+Atom velocity: 0.000000, 0.000000, 0.000000
+  Bonded to .R<CYX 163>.A<CB 5> by a single bond.
+  Bonded to .R<CYX 143>.A<SG 8> by a single bond.
 Checking 'mol'....
 
 /Users/darian/anaconda3/envs/md/bin/teLeap: Warning!
@@ -43,10 +88,6 @@ Checking for bond parameters.
 Checking for angle parameters.
 check:  Warnings: 1
 Unit is OK.
-Total unperturbed charge:   2.000000
-Total perturbed charge:     2.000000
-Total unperturbed charge:   2.000000
-Total perturbed charge:     2.000000
 2 Cl- ions required to neutralize.
 Adding 2 counter ions to "mol" using 1A grid
 Grid extends from solute vdw + 2.71  to  8.71
@@ -60,6 +101,8 @@ Done adding ions.
  0.000000 0 1 0
 0 Na+ ion required to neutralize.
 Adding 0 counter ions to "mol" using 1A grid
+Total unperturbed charge:  -0.000000
+Total perturbed charge:    -0.000000
 Scaling up box by a factor of 1.327351 to meet diagonal cut criterion
   Solute vdw bounding box:              49.857 35.369 59.062
   Total bounding box for atom centers:  90.919 90.919 90.919
@@ -90,6 +133,20 @@ Marking per-residue atom chain types.
 	WAT	10440
   )
  (no restraints)
+Writing pdb file: T188C-OX_solv.pdb
+   printing CRYST1 record to PDB file with box info
+
+/Users/darian/anaconda3/envs/md/bin/teLeap: Warning!
+ Converting N-terminal residue name to PDB format: NMET -> MET
+
+/Users/darian/anaconda3/envs/md/bin/teLeap: Warning!
+ Converting C-terminal residue name to PDB format: CLEU -> LEU
+
+/Users/darian/anaconda3/envs/md/bin/teLeap: Warning!
+ Converting N-terminal residue name to PDB format: NMET -> MET
+
+/Users/darian/anaconda3/envs/md/bin/teLeap: Warning!
+ Converting C-terminal residue name to PDB format: CLEU -> LEU
 	Quit
 
-Exiting LEaP: Errors = 0; Warnings = 1; Notes = 0.
+Exiting LEaP: Errors = 0; Warnings = 5; Notes = 0.
