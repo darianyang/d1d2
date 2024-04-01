@@ -1,0 +1,14 @@
+source leaprc.protein.ff15ipq
+source leaprc.water.spceb
+mol = loadpdb T188C-OX_leap.pdb
+check mol
+charge mol
+bond mol.45.SG mol.133.SG
+bond mol.55.SG mol.75.SG
+bond mol.163.SG mol.143.SG
+charge mol
+addions mol Cl- 0
+addions mol Na+ 0
+solvateoct mol SPCBOX 12.0
+saveamberparm mol T188C-OX_solv.prmtop T188C-OX_solv.inpcrd
+quit
