@@ -3,7 +3,7 @@
 #SBATCH -o job_logs/slurm_%j.out
 #SBATCH -e job_logs/slurm_%j.err
 #SBATCH -t 48:00:00
-#SBATCH -N 3
+#SBATCH -N 4
 #SBATCH --ntasks-per-node 3
 #SBATCH -p gpu-a100
 #SBATCH -A MCB23004

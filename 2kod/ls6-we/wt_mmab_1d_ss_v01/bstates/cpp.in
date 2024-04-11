@@ -1,0 +1,6 @@
+parm ../common_files/m01_2kod_12A.prmtop
+trajin 04.rst
+#trajin 09_prod.rst
+#strip :WAT,Cl-
+#trajout 06_prod_dry.rst restart
+go
