@@ -37,4 +37,5 @@ Updating system with the options from the configuration file
 -- INFO     [westpa.work_managers.zeromq.core.ZMQExecutor.ebec7118-7464-4bee-8bc6-37cc88302873] -- This is ZMQExecutor on c315-007.ls6.tacc.utexas.edu at PID 624549
 -- INFO     [westpa.work_managers.zeromq.core.ZMQWorker.a4064a2a-615b-4d2b-a69a-d0c1c2480974] -- This is ZMQWorker on c315-007.ls6.tacc.utexas.edu at PID 624547
 -- INFO     [westpa.work_managers.zeromq.core.ZMQExecutor.3e54b3c1-8c1c-4738-8188-908803a399d1] -- This is ZMQExecutor on c315-007.ls6.tacc.utexas.edu at PID 624563
-59675
+-- WAR-- WARNING  [westpa.work_managers.zeromq.core] -- sending SIGKILL to worker process 3-- WARN-- WARNING  [westpa.work_managers.zeromq.core] -- sending SIGKILL to worker process -- WARNI-- WARNING  [westpa.work_managers.zeromq.core] -- sending SIGKILL to worker processShutting down.  Hopefully this was on purpose?
+purpose?

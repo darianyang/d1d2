@@ -1,0 +1,25 @@
+MPI startup(): PMI server not found. Please set I_MPI_PMI_LIBRARY variable if it is not a singleton case.
+Updating system with the options from the configuration file
+Maximum wallclock time: 2 days, 0:00:00
+
+Sun Mar 24 18:45:27 2024
+Iteration 1 (1000 requested)
+exception caught; shutting down
+-- ERROR    [w_run] -- error message: coordinate value -1.0 is out of bin space in dimension 0
+-- ERROR    [w_run] -- Traceback (most recent call last):
+  File "/home1/09416/dty7/work/module_build_we_amber/modules/westpa/22.06_b/lib/python3.9/site-packages/westpa/cli/core/w_run.py", line 61, in run_simulation
+    sim_manager.run()
+  File "/scratch/09416/dty7/d1d2/2kod/ls6-we/wt_mmab_1d_ss_v01/manager.py", line 702, in run
+    self.prepare_iteration()
+  File "/scratch/09416/dty7/d1d2/2kod/ls6-we/wt_mmab_1d_ss_v01/manager.py", line 405, in prepare_iteration
+    self.we_driver.new_iteration(target_states=target_states, new_weights= new_weights)
+  File "/scratch/09416/dty7/d1d2/2kod/ls6-we/wt_mmab_1d_ss_v01/driver.py", line 232, in new_iteration
+    tstate_assignment = self.bin_mapper.assign([tstate.pcoord])[0]
+  File "/home1/09416/dty7/work/module_build_we_amber/modules/westpa/22.06_b/lib/python3.9/site-packages/westpa/core/binning/assign.py", line 427, in assign
+    self.base_mapper.assign(coords, mask, output)
+  File "/home1/09416/dty7/work/module_build_we_amber/modules/westpa/22.06_b/lib/python3.9/site-packages/westpa/core/binning/assign.py", line 175, in assign
+    rectilinear_assign(coords, mask, output, self.boundaries, self._boundlens)
+  File "src/westpa/core/binning/_assign.pyx", line 28, in westpa.core.binning._assign.rectilinear_assign
+  File "src/westpa/core/binning/_assign.pyx", line 81, in westpa.core.binning._assign.rectilinear_assign
+ValueError: coordinate value -1.0 is out of bin space in dimension 0
+

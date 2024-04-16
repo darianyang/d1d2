@@ -9,12 +9,12 @@ Updating system with the options from the configuration file
 -- INFO     [driver] -- Adjust counts to exactly match target_counts: True
 -- INFO     [driver] -- Split threshold: 2.0
 -- INFO     [driver] -- Merge cutoff: 1.0
--- INFO     [westpa.work_managers.zeromq.core.ZMQWorker.a0de709f-a1e9-40bf-84e5-b965d9620a81] -- This is ZMQWorker on c302-002.ls6.tacc.utexas.edu at PID 1657397
--- INFO     [westpa.work_managers.zeromq.core.ZMQWorker.7e461b72-f0d6-470d-849f-7bdcbd2a0f2c] -- This is ZMQWorker on c302-002.ls6.tacc.utexas.edu at PID 1657397
--- INFO     [westpa.work_managers.zeromq.core.ZMQWorker.20fe204e-7c5a-4170-8260-8925ee8e607a] -- This is ZMQWorker on c302-002.ls6.tacc.utexas.edu at PID 1657397
--- INFO     [westpa.work_managers.zeromq.core.ZMQExecutor.e292c14a-8853-4a92-b52b-1f25c17b4010] -- This is ZMQExecutor on c302-002.ls6.tacc.utexas.edu at PID 1657406
--- INFO     [westpa.work_managers.zeromq.core.ZMQExecutor.a906e10c-3694-452f-b21a-3e1d66c0092f] -- This is ZMQExecutor on c302-002.ls6.tacc.utexas.edu at PID 1657399
--- INFO     [westpa.work_managers.zeromq.core.ZMQExecutor.444c7eaa-2423-4dfa-abaa-4676cf03e734] -- This is ZMQExecutor on c302-002.ls6.tacc.utexas.edu at PID 1657413
--- WARNING  [westpa.work_managers.zeromq.core] -- sending SIGKILL to worker process 1657399
--- WARNING  [westpa.work_managers.zeromq.core] -- sending SIGKILL to worker process 1657406
--- WARNING  [westpa.work_managers.zeromq.core] -- sending SIGKILL to worker process 1657413
+-- INFO     [westpa.work_managers.zeromq.core.ZMQWorker.2a79a209-6527-4528-aae8-9992005350b6] -- This is ZMQWorker on c302-002.ls6.tacc.utexas.edu at PID 4019129
+-- INFO     [westpa.work_managers.zeromq.core.ZMQExecutor.8f6f4035-bfb8-4ad7-a365-847ae47d5715] -- This is ZMQExecutor on c302-002.ls6.tacc.utexas.edu at PID 4019131
+-- INFO     [westpa.work_managers.zeromq.core.ZMQWorker.83065ba5-dbb0-4b98-b19f-f1632f8a346c] -- This is ZMQWorker on c302-002.ls6.tacc.utexas.edu at PID 4019129
+-- INFO     [westpa.work_managers.zeromq.core.ZMQExecutor.0c57a0b8-1527-4258-a967-01439935649b] -- This is ZMQExecutor on c302-002.ls6.tacc.utexas.edu at PID 4019138
+-- INFO     [westpa.work_managers.zeromq.core.ZMQWorker.c1ccf6bb-1420-4575-bcd0-a68436509f5a] -- This is ZMQWorker on c302-002.ls6.tacc.utexas.edu at PID 4019129
+-- INFO     [westpa.work_managers.zeromq.core.ZMQExecutor.045bd53d-651a-4785-bd30-2f3fdf80ca0c] -- This is ZMQExecutor on c302-002.ls6.tacc.utexas.edu at PID 4019145
+-- WARNING  [westpa.work_managers.zeromq.core] -- sending SIGKILL to worker process 4019131
+-- WARNING  [westpa.work_managers.zeromq.core] -- sending SIGKILL to worker process 4019138
+-- WARNING  [westpa.work_managers.zeromq.core] -- sending SIGKILL to worker process 4019145
