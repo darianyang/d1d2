@@ -1,0 +1,24 @@
+Updating system with the options from the configuration file
+Traceback (most recent call last):
+  File "/ihome/lchong/dty7/Apps/anaconda3/envs/westpa/bin/w_run", line 8, in <module>
+    sys.exit(entry_point())
+  File "/ihome/lchong/dty7/Apps/westpa-mabNone/westpa/src/westpa/cli/core/w_run.py", line 29, in entry_point
+    run_simulation()
+  File "/ihome/lchong/dty7/Apps/westpa-mabNone/westpa/src/westpa/cli/core/w_run.py", line 57, in run_simulation
+    sim_manager.prepare_run()
+  File "/ihome/lchong/dty7/Apps/westpa-mabNone/westpa/src/westpa/core/sim_manager.py", line 798, in prepare_run
+    self.data_manager.prepare_run()
+  File "/ihome/lchong/dty7/Apps/westpa-mabNone/westpa/src/westpa/core/data_manager.py", line 1274, in prepare_run
+    self.open_backing()
+  File "/ihome/lchong/dty7/Apps/westpa-mabNone/westpa/src/westpa/core/data_manager.py", line 352, in open_backing
+    self.we_h5file = h5io.WESTPAH5File(self.we_h5filename, mode, driver=self.we_h5file_driver)
+  File "/ihome/lchong/dty7/Apps/westpa-mabNone/westpa/src/westpa/core/h5io.py", line 383, in __init__
+    super().__init__(*args, **kwargs)
+  File "/ihome/lchong/dty7/Apps/anaconda3/envs/westpa/lib/python3.10/site-packages/h5py/_hl/files.py", line 562, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, fcpl, swmr=swmr)
+  File "/ihome/lchong/dty7/Apps/anaconda3/envs/westpa/lib/python3.10/site-packages/h5py/_hl/files.py", line 237, in make_fid
+    fid = h5f.open(name, h5f.ACC_RDWR, fapl=fapl)
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 102, in h5py.h5f.open
+BlockingIOError: [Errno 11] Unable to synchronously open file (unable to lock file, errno = 11, error message = 'Resource temporarily unavailable')

@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/ihome/lchong/dty7/Apps/anaconda3/envs/westpa/bin/w_run", line 8, in <module>
+    sys.exit(entry_point())
+  File "/ihome/lchong/dty7/Apps/westpa-mabNone/westpa/src/westpa/cli/core/w_run.py", line 29, in entry_point
+    run_simulation()
+  File "/ihome/lchong/dty7/Apps/westpa-mabNone/westpa/src/westpa/cli/core/w_run.py", line 33, in run_simulation
+    work_manager = westpa.rc.work_manager = make_work_manager()
+  File "/ihome/lchong/dty7/Apps/westpa-mabNone/westpa/src/westpa/work_managers/environment.py", line 128, in make_work_manager
+    return _available_work_managers[work_manager_name].from_environ(self)
+  File "/ihome/lchong/dty7/Apps/westpa-mabNone/westpa/src/westpa/work_managers/zeromq/work_manager.py", line 166, in from_environ
+    upstream_info.update(cls.read_host_info(read_host_info))
+  File "/ihome/lchong/dty7/Apps/westpa-mabNone/westpa/src/westpa/work_managers/zeromq/work_manager.py", line 234, in read_host_info
+    return json.load(open(filename, 'rt'))
+FileNotFoundError: [Errno 2] No such file or directory: '/ix/lchong/dty7/d1d2/2kod/post-ls6-h2p/wt_oamax_1d_ss_v05/west_zmq_info-834867.json'

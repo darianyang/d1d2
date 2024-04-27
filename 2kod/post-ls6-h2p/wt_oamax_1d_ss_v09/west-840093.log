@@ -1,0 +1,31 @@
+-- ERROR    [westpa.rc] -- exception instantiating mapper
+Traceback (most recent call last):
+  File "/ihome/lchong/dty7/Apps/westpa-mabNone/westpa/src/westpa/core/_rc.py", line 78, in bins_from_yaml_dict
+    return mapper_type(**kwargs)
+  File "/ihome/lchong/dty7/Apps/westpa-mabNone/westpa/src/westpa/core/binning/mab.py", line 64, in __init__
+    n_total_bins = self.determine_total_bins(**kwargs)
+  File "/ihome/lchong/dty7/Apps/westpa-mabNone/westpa/src/westpa/core/binning/mab.py", line 78, in determine_total_bins
+    n_total_bins = np.prod(nbins_per_dim)
+NameError: name 'nbins_per_dim' is not defined
+Traceback (most recent call last):
+  File "/ihome/lchong/dty7/Apps/anaconda3/envs/westpa/bin/w_run", line 8, in <module>
+    sys.exit(entry_point())
+  File "/ihome/lchong/dty7/Apps/westpa-mabNone/westpa/src/westpa/cli/core/w_run.py", line 29, in entry_point
+    run_simulation()
+  File "/ihome/lchong/dty7/Apps/westpa-mabNone/westpa/src/westpa/cli/core/w_run.py", line 36, in run_simulation
+    sim_manager = westpa.rc.get_sim_manager()
+  File "/ihome/lchong/dty7/Apps/westpa-mabNone/westpa/src/westpa/core/_rc.py", line 370, in get_sim_manager
+    self._sim_manager = self.new_sim_manager()
+  File "/ihome/lchong/dty7/Apps/westpa-mabNone/westpa/src/westpa/core/_rc.py", line 347, in new_sim_manager
+    use_mab = self.detect_mab_mapper()
+  File "/ihome/lchong/dty7/Apps/westpa-mabNone/westpa/src/westpa/core/_rc.py", line 329, in detect_mab_mapper
+    mapper = bins_from_yaml_dict(bin_dict)
+  File "/ihome/lchong/dty7/Apps/westpa-mabNone/westpa/src/westpa/core/_rc.py", line 69, in bins_from_yaml_dict
+    mapper = bins_from_yaml_dict(config)
+  File "/ihome/lchong/dty7/Apps/westpa-mabNone/westpa/src/westpa/core/_rc.py", line 78, in bins_from_yaml_dict
+    return mapper_type(**kwargs)
+  File "/ihome/lchong/dty7/Apps/westpa-mabNone/westpa/src/westpa/core/binning/mab.py", line 64, in __init__
+    n_total_bins = self.determine_total_bins(**kwargs)
+  File "/ihome/lchong/dty7/Apps/westpa-mabNone/westpa/src/westpa/core/binning/mab.py", line 78, in determine_total_bins
+    n_total_bins = np.prod(nbins_per_dim)
+NameError: name 'nbins_per_dim' is not defined
