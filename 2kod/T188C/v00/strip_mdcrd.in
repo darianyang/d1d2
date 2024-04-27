@@ -1,0 +1,7 @@
+parm T188C-OX_solv.prmtop
+trajin mdcrd
+autoimage
+strip :WAT,Cl-
+trajout mdcrd_dry
+go
+quit
