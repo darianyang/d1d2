@@ -77,8 +77,8 @@ def concat_iter(trace, top, out_path=None):
     return trace_traj
 
 WE = "3d_oamax_1_2_ss_v00"
-ITER = 2500
-SEG = 0
+ITER = 1500
+SEG = 5
 os.chdir(WE)
 
 trace = trace_walker((ITER, SEG), "west.h5")

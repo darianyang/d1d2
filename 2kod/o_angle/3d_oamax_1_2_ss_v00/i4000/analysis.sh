@@ -20,6 +20,8 @@ CMD="$CMD               dihtype chi2:CA:CB:CG:CD1 "
 CMD="$CMD               resrange 129-129"
 CMD="$CMD               out M2_W184_chi123.dat \n"
 
+# calc THR45-THR133 sidechain distance
+CMD="$CMD distance T45-T133 :45&!@CA,C,O,N,H :133&!@CA,C,O,N,H out tt_dist.dat \n"
 
 # done
 CMD="$CMD go \n"

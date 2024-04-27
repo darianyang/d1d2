@@ -4,7 +4,7 @@
 # this new directory will be the new bstates for a follow-up simulation
 
 ITER=traj_segs/001500
-destination_dir=3d_oamax_1_2_ss_v00_i1500
+destination_dir=dry_3d_oamax_1_2_ss_v00_i1500
 
 # Create a counter variable
 counter=0
@@ -23,11 +23,11 @@ for sub_dir in "$ITER"/*/; do
   sub_dir_name=$(basename "$sub_dir")
   
   # Check if the seg.rst file exists in the subdirectory
-  if [ -f "$sub_dir/seg.rst" ]; then
+  if [ -f "$sub_dir/seg-nowat.ncrst" ]; then
     # Copy the seg.rst file to the destination directory 
     # with the subdirectory name as the new filename
-    #cp "$sub_dir/seg.rst" "$destination_dir/${sub_dir_name}.rst"
-    echo "Copied and renamed $sub_dir/seg.rst to $destination_dir/${sub_dir_name}.rst"
+    cp -v "$sub_dir/seg-nowat.ncrst" "$destination_dir/${sub_dir_name}.rst"
+    #echo "Copied and renamed $sub_dir/seg.rst to $destination_dir/${sub_dir_name}.rst"
 
     # Add the entry to the output file in the specified format
     echo "$counter 1 $destination_dir/${sub_dir_name}.rst" >> "$output_file"
