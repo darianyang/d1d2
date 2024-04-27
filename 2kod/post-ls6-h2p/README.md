@@ -84,6 +84,24 @@ wt_oamax_1d_ss_v07:
 wt_oamax_1d_ss_v08: 
     * trying same as v07 but going back to 86 direction again and more bins (25-->30)
     * also ended up working well (getting to low o_angle at least)
+    * because it is working well, running 2 more replicates
+wt_oamax_1d_ss_v08_r01 and wt_oamax_1d_ss_v08_r02: 
+    * replicates
+    * turning off WESS for initial phase of dynamics
 
-wt_oamax_1d_ss_v08: 
+wt_oamax_1d_ss_v09: 
     * trying same thing as v08 but with bottleneck walkers turned off, maybe these are not needed with 30 bins?
+    * didn't really work, bottlenecks needed
+
+
+TODO:
+wt_oamin_rev_1d_ss_v00: 
+    * taking the v08 run and running a reverse from the 5 bstates that recycled
+    * will need to:
+        * replace bstates
+        * update to max the oamin in runseg and get_pcoord
+        * update tstate filter to D1
+        * prob okay keeping the 30 bin setup?
+
+NEXT: 4F and 7F oamax 30 bin 86 direction runs, replicates for WT?
+
