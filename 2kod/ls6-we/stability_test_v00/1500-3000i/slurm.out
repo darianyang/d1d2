@@ -1,0 +1,129 @@
+
+CPPTRAJ: Trajectory Analysis. V6.4.4 (AmberTools)
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 04/11/24 15:06:49
+| Available memory: 192.825 GB
+
+INPUT: Reading input from 'STDIN'
+  [parm m01_2kod_dry.prmtop]
+	Reading 'm01_2kod_dry.prmtop' as Amber Topology
+	Radius Set: modified Bondi radii (mbondi)
+  [trajin 1500-3000i.nc]
+	Reading '1500-3000i.nc' as Amber NetCDF
+  [autoimage]
+    AUTOIMAGE: To box center based on center of mass, anchor is first molecule.
+  [multidihedral phi resrange 41-41 out M1_W184_phi.dat]
+    MULTIDIHEDRAL: Calculating phi dihedrals for residues in range 41-41
+	Output to M1_W184_phi.dat
+	Output range is -180 to 180 degrees.
+  [multidihedral psi resrange 41-41 out M1_W184_psi.dat]
+    MULTIDIHEDRAL: Calculating psi dihedrals for residues in range 41-41
+	Output to M1_W184_psi.dat
+	Output range is -180 to 180 degrees.
+  [multidihedral dihtype chi1:N:CA:CB:CG dihtype chi2:CA:CB:CG:CD1 resrange 41-41 out M1_W184_chi123.dat]
+    MULTIDIHEDRAL: Calculating chi1 chi2 dihedrals for residues in range 41-41
+	Output to M1_W184_chi123.dat
+	Output range is -180 to 180 degrees.
+  [multidihedral phi resrange 129-129 out M2_W184_phi.dat]
+    MULTIDIHEDRAL: Calculating phi dihedrals for residues in range 129-129
+	Output to M2_W184_phi.dat
+	Output range is -180 to 180 degrees.
+  [multidihedral psi resrange 129-129 out M2_W184_psi.dat]
+    MULTIDIHEDRAL: Calculating psi dihedrals for residues in range 129-129
+	Output to M2_W184_psi.dat
+	Output range is -180 to 180 degrees.
+  [multidihedral dihtype chi1:N:CA:CB:CG dihtype chi2:CA:CB:CG:CD1 resrange 129-129 out M2_W184_chi123.dat]
+    MULTIDIHEDRAL: Calculating chi1 chi2 dihedrals for residues in range 129-129
+	Output to M2_W184_chi123.dat
+	Output range is -180 to 180 degrees.
+  [distance T45-T133 :45&!@CA,C,O,N,H :133&!@CA,C,O,N,H out tt_dist.dat]
+    DISTANCE: :45&!@CA,C,O,N,H to :133&!@CA,C,O,N,H, center of mass.
+  [go]
+---------- RUN BEGIN -------------------------------------------------
+
+PARAMETER FILES (1 total):
+ 0: m01_2kod_dry.prmtop, 2760 atoms, 176 res, box: Truncated octahedron, 2 mol
+
+INPUT TRAJECTORIES (1 total):
+ 0: '1500-3000i.nc' is a NetCDF AMBER trajectory with coordinates, velocities, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 102068 of 102068)
+  Coordinate processing will occur on 102068 frames.
+
+BEGIN TRAJECTORY PROCESSING:
+.....................................................
+ACTION SETUP FOR PARM 'm01_2kod_dry.prmtop' (8 actions):
+  0: [autoimage]
+	Original box is truncated octahedron, turning on 'familiar'.
+	Using first molecule as anchor.
+	1 molecules are fixed to anchor: 2
+	0 molecules are mobile.
+  1: [multidihedral phi resrange 41-41 out M1_W184_phi.dat]
+	ResRange=[41-41] phi, 1 dihedrals.
+	1 [phi:41]: ASN@C TRP@N TRP@CA TRP@C
+  2: [multidihedral psi resrange 41-41 out M1_W184_psi.dat]
+	ResRange=[41-41] psi, 1 dihedrals.
+	1 [psi:41]: TRP@N TRP@CA TRP@C MET@N
+  3: [multidihedral dihtype chi1:N:CA:CB:CG dihtype chi2:CA:CB:CG:CD1 resrange 41-41 out M1_W184_chi123.dat]
+	ResRange=[41-41] chi1 chi2, 2 dihedrals.
+	1 [chi1:41]: TRP@N TRP@CA TRP@CB TRP@CG
+	2 [chi2:41]: TRP@CA TRP@CB TRP@CG TRP@CD1
+  4: [multidihedral phi resrange 129-129 out M2_W184_phi.dat]
+	ResRange=[129-129] phi, 1 dihedrals.
+	1 [phi:129]: ASN@C TRP@N TRP@CA TRP@C
+  5: [multidihedral psi resrange 129-129 out M2_W184_psi.dat]
+	ResRange=[129-129] psi, 1 dihedrals.
+	1 [psi:129]: TRP@N TRP@CA TRP@C MET@N
+  6: [multidihedral dihtype chi1:N:CA:CB:CG dihtype chi2:CA:CB:CG:CD1 resrange 129-129 out M2_W184_chi123.dat]
+	ResRange=[129-129] chi1 chi2, 2 dihedrals.
+	1 [chi1:129]: TRP@N TRP@CA TRP@CB TRP@CG
+	2 [chi2:129]: TRP@CA TRP@CB TRP@CG TRP@CD1
+  7: [distance T45-T133 :45&!@CA,C,O,N,H :133&!@CA,C,O,N,H out tt_dist.dat]
+	:45&!@CA,C,O,N,H (9 atoms) to :133&!@CA,C,O,N,H (9 atoms), imaged.
+----- 1500-3000i.nc (1-102068, 1) -----
+ 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% Complete.
+
+Read 102068 frames and processed 102068 frames.
+TIME: Avg. throughput= 7259.3392 frames / second.
+
+ACTION OUTPUT:
+TIME: Analyses took 0.0000 seconds.
+
+DATASETS (9 total):
+	T45-T133 "T45-T133" (double, distance), size is 102068 (816.544 kB)
+	MDIH_00002[phi]:41 "phi:41" (double, torsion(phi)), size is 102068 (816.544 kB)
+	MDIH_00003[psi]:41 "psi:41" (double, torsion(psi)), size is 102068 (816.544 kB)
+	MDIH_00004[chi1]:41 "chi1:41" (double, torsion), size is 102068 (816.544 kB)
+	MDIH_00004[chi2]:41 "chi2:41" (double, torsion), size is 102068 (816.544 kB)
+	MDIH_00006[phi]:129 "phi:129" (double, torsion(phi)), size is 102068 (816.544 kB)
+	MDIH_00007[psi]:129 "psi:129" (double, torsion(psi)), size is 102068 (816.544 kB)
+	MDIH_00008[chi1]:129 "chi1:129" (double, torsion), size is 102068 (816.544 kB)
+	MDIH_00008[chi2]:129 "chi2:129" (double, torsion), size is 102068 (816.544 kB)
+    Total data set memory usage is at least 7.349 MB
+
+DATAFILES (7 total):
+  M1_W184_phi.dat (Standard Data File):  phi:41
+  M1_W184_psi.dat (Standard Data File):  psi:41
+  M1_W184_chi123.dat (Standard Data File):  chi1:41 chi2:41
+  M2_W184_phi.dat (Standard Data File):  phi:129
+  M2_W184_psi.dat (Standard Data File):  psi:129
+  M2_W184_chi123.dat (Standard Data File):  chi1:129 chi2:129
+  tt_dist.dat (Standard Data File):  T45-T133
+
+RUN TIMING:
+TIME:		Init               : 0.0000 s (  0.00%)
+TIME:		Trajectory Process : 14.0602 s ( 94.26%)
+TIME:		Action Post        : 0.0000 s (  0.00%)
+TIME:		Analysis           : 0.0000 s (  0.00%)
+TIME:		Data File Write    : 0.8560 s (  5.74%)
+TIME:		Other              : 0.0000 s (  0.00%)
+TIME:	Run Total 14.9163 s
+---------- RUN END ---------------------------------------------------
+TIME: Total execution time: 14.9298 seconds.
+--------------------------------------------------------------------------------
+To cite CPPTRAJ use:
+Daniel R. Roe and Thomas E. Cheatham, III, "PTRAJ and CPPTRAJ: Software for
+  Processing and Analysis of Molecular Dynamics Trajectory Data". J. Chem.
+  Theory Comput., 2013, 9 (7), pp 3084-3095.
+
