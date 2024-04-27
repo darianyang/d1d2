@@ -93,15 +93,12 @@ wt_oamax_1d_ss_v09:
     * trying same thing as v08 but with bottleneck walkers turned off, maybe these are not needed with 30 bins?
     * didn't really work, bottlenecks needed
 
-
-TODO:
 wt_oamin_rev_1d_ss_v00: 
     * taking the v08 run and running a reverse from the 5 bstates that recycled
-    * will need to:
-        * replace bstates
-        * update to max the oamin in runseg and get_pcoord
-        * update tstate filter to D1
-        * prob okay keeping the 30 bin setup?
+    * updated to maximize the oamin in runseg and get_pcoord
+    * replaced bstates
+    * updated tstate filter to D1 state boundaries
 
-NEXT: 4F and 7F oamax 30 bin 86 direction runs, replicates for WT?
+
+NEXT: 4F and 7F oamax 30 bin 86 direction runs, replicates for WT reverse?
 
