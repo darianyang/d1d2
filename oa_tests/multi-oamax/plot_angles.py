@@ -6,8 +6,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 import wedap
 
-plt.style.use("~/github/wedap/wedap/styles/default.mplstyle")
+#plt.style.use("~/github/wedap/wedap/styles/default.mplstyle")
 #plt.style.use("~/github/wedap/styles/poster.mplstyle")
+plt.style.use("/Users/darian/github/d1d2/oa_tests/multi-oamax/default.mplstyle")
 
 def plot_angles(path, ax, color=None, label=None):
     """
@@ -33,6 +34,7 @@ plot_options = {"xlim" : (0, 75),
                 "ylabel" : "Orientation Angle 2 (°)",
                 "jointplot" : False,
                 "grid" : True,
+                #"step_iter" : 100,
                 }
 
 plot = wedap.H5_Plot(h5="wt-v00-04.h5", data_type="average", Xname="o_angle_m1", Yname="o_angle_m2", first_iter=1, p_max=30, p_units="kcal", ax=None, **plot_options)
@@ -56,8 +58,8 @@ plot_angles("/Users/darian/github/capsid_angles/Ni2021/HEXNC", ax, "k", "HEX-HEX
 plot_angles("/Users/darian/github/capsid_angles/Ni2021/PENTNC", ax, "red", "PENT-HEX")
 # plot_angles("HEXNC", ax, "k", "HEX-HEX")
 # plot_angles("PENTNC", ax, "red", "PENT-HEX")
-ax.scatter(29.5, 29.5, label="2KOD (NMR)", marker="*", color="tan", s=300, edgecolor="k")
-ax.scatter(19.9, 19.9, label="1A43 (XTAL)", marker="d", color="orange", s=125, edgecolor="k")
+ax.scatter(29.5, 29.5, label="2KOD", marker="*", color="tan", s=300, edgecolor="k")
+ax.scatter(19.9, 19.9, label="1A43", marker="d", color="orange", s=125, edgecolor="k")
 
 # BF pdist
 bf_path = "/Users/darian/Drive/MBSB/Research/Projects/hiv1_capsid/ctd_std_sim/2kod_std/hi_pH/"
@@ -87,7 +89,9 @@ def plot_bf(path, ax, d1="o_angle_m1.dat", d2="o_angle_m2.dat"):
 
     #print(np.max(z))
     # note we need to transpose default output hist of np.histogram2d
+    #contour = ax.contour(x, y, hist, levels=[0], colors="gray", linewidths=2)
     contour = ax.contour(x, y, z.T, levels=[1], colors="gray", linewidths=2)
+
     #ax.clabel(contour, inline=True, fontsize=10)
     #ax.pcolormesh(hist)
 
@@ -99,7 +103,10 @@ plot_bf(bf_path, ax)
 # ax.scatter(29.5, 55.0, label="2KOD (NMR)", marker="v", color="tab:orange", s=150)
 # ax.scatter(19.9, 37.3, label="1A43 (XTAL)", marker="v", color="tab:pink", s=150)
 
-ax.legend(loc=9, frameon=False, bbox_to_anchor=(1.45, 1.52))
-ax.legend(fontsize=12)
-#plt.show()
-plt.savefig("oa1c2_nojp_noleg_ni2021_wBF.png", dpi=300, transparent=True)
+#ax.legend(loc=9, frameon=False, bbox_to_anchor=(1.45, 1.52), fontsize=12)
+ax.legend(fontsize=11, frameon=False, loc="upper left", bbox_to_anchor=[-0.02, 1])
+#plt.savefig("oa1c2_nojp_noleg_ni2021_wBF.png", dpi=300, transparent=True)
+plot.fig.savefig("oa1c2_nojp_noleg_ni2021_wBF_updatedstyle.pdf")
+plot.fig.savefig("oa1c2_nojp_noleg_ni2021_wBF_updatedstyle.png", dpi=600, transparent=True)
+
+plt.show()
