@@ -22,7 +22,11 @@ plot_options = {'h5' : 'west-13k.h5',
                 'color' : 'k',
                 'linewidth' : 0.5,
                 'grid' : True,
-                'p_max' : 8,
+                'p_max' : 5,
+                #'step_iter' : 50,
+                'p_units' : 'kcal',
+                'contour_interval' : 0.5,
+                #'contour_interval' : 0.625,
                 # 'first_iter' : 1,
                 # 'last_iter' : 250,
                 }
@@ -46,10 +50,14 @@ for i in range(0, 4):
 ax[0].set_yticks([0, 25, 50])
 ax[0].set_yticklabels([0, 25, 50])
 
+# add cbar to last panel
+wdap.add_cbar(ax[4], fontsize=15.5)
+# add markers to last panel
+ax[3].scatter(37, 37, label="D1", marker="v", color="grey", s=80, edgecolor="k")
+ax[3].scatter(9, 9, label="D2", marker="^", color="magenta", s=80, edgecolor="k")
 
-wdap.add_cbar(ax[4])
 fig.supxlabel("Orientation Angle 1 (°)", x=0.48, y=0.08, fontsize=16, fontweight="bold")
 fig.supylabel("Orientation Angle 2 (°)", x=0.03, y=0.55, fontsize=16, fontweight="bold")
 plt.tight_layout()
 plt.show()
-fig.savefig("stability_timecourse_13k2.pdf")
+fig.savefig("stability_timecourse_13k3.pdf")
