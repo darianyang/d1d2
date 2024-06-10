@@ -1,0 +1,7 @@
+Updating system with the options from the configuration file
+-- ERROR    [westpa.work_managers.zeromq.core.ZMQWorker.51556418-e85c-494e-8c53-b83e9b2683f6] -- startup phase elapsed with no contact from master; shutting down
+-- ERROR    [westpa.work_managers.zeromq.core.ZMQWorker.9d6102c4-b540-45a7-9dfa-cee8122cbe81] -- startup phase elapsed with no contact from master; shutting down
+-- ERROR    [westpa.work_managers.zeromq.core.ZMQNode.a39f1349-9d86-4cd4-8739-d645bbb43d89] -- startup phase elapsed with no contact from peer; shutting down
+-- ERROR    [westpa.work_managers.zeromq.core.ZMQWorker.7105f78f-7847-44e3-a87e-9d14e1d288f5] -- startup phase elapsed with no contact from master; shutting down
+-- ERROR    [westpa.work_managers.zeromq.core.ZMQWorker.743915e6-db87-4b83-89b9-e5ab44b8d0e9] -- startup phase elapsed with no contact from master; shutting down
+-- WARNING  [westpa.work_managers.zeromq.core] -- sending SIGKILL to worker process 7057
