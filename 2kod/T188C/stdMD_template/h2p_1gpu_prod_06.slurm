@@ -5,7 +5,7 @@
 #SBATCH --cluster=gpu 
 #SBATCH --gres=gpu:1
 #SBATCH --partition=a100
-#SBATCH --time=48:00:00 
+#SBATCH --time=24:00:00 
 #SBATCH --mail-user=dty7@pitt.edu
 #SBATCH --mail-type=END,FAIL
 #SBATCH --output=slurm_prod_06.out 
