@@ -7,3 +7,6 @@
     * 150-end 
 * 4F = 2KOD CTD with 4F-W184
 * 7F = 2KOD CTD with 7F-W184
+
+### storage
+* stability_test_v00 : 3.63Tb

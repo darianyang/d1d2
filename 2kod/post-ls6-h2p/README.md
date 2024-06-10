@@ -80,6 +80,16 @@ wt_oamax_1d_ss_v06:
 wt_oamax_1d_ss_v07:        
     * since v06 didn't work too well, let's just try 0-40 bounds with -1 direction, 25 bins, might get low weights but whatever
     * this worked, but with lower weights which makes sense, maybe it just needed more chances with the 25 bins
+    * since it was promising, running more after 500i using 30 bins and 86 direction
+        * this ended at i666 without much progress, stuck
+        * trying to use a binning scheme that focuses on increasing c2 after low oa
+        * Let's run 24 hours with an adjusted binning scheme that focuses on < 15° oa --> binning c2
+            * I think I can do this strait in the pcoord filter… just by returning the c2 instead of the oa when less than 20° oa
+            * But need to divide the c2 / 2: this will help  because then the 0-40 binning scheme works for both
+            * Since I want to get c2 higher (from 30-->60)
+            * Overall the oa binning bounds are changed from 0-40 --> 15-40 (so 30-80 c2)
+        * stopped at i682: realized that this would cause the low oa switching to c2 to merge with oa walkers, not productive, better to just use a 2D mab scheme with oamax and c2
+            * this didn't work, threw an error, but I was able to get it working using the same code, just in a new directory (v10), not sure why this happened, could be due to switching binning schemes
 
 wt_oamax_1d_ss_v08: 
     * trying same as v07 but going back to 86 direction again and more bins (25-->30)
@@ -88,17 +98,76 @@ wt_oamax_1d_ss_v08:
 wt_oamax_1d_ss_v08_r01 and wt_oamax_1d_ss_v08_r02: 
     * replicates
     * turning off WESS for initial phase of dynamics
+    * these didn't fully work after 666 iterations
+        * trying with a direction of -1 up to 750 iterations
+wt_oamax_1d_ss_v08_r03 and wt_oamax_1d_ss_v08_r04: 
+    * maybe these will get lucky and go low within 200i?
 
 wt_oamax_1d_ss_v09: 
     * trying same thing as v08 but with bottleneck walkers turned off, maybe these are not needed with 30 bins?
     * didn't really work, bottlenecks needed
 
-wt_oamin_rev_1d_ss_v00: 
+wt_oamax_1d_ss_v10: 
+    * taking v07 as template for a 2D MAB test with oamax and c2
+    * there is potentially 2 routes for D1<-->D2, direct and indirect
+    * the indirect going through the metastable 1A43 like state
+    * this binning scheme prefers the indirect route (lower probability / slower)
+wt_oamax_1d_ss_v11: 
+    * making an updated run that is trying to prefer the direct route using oamax and c2
+wt_oamax_1d_ss_v12:
+    * same as v11 but with updated less 2d mab bins and with 86 both pcoord dims
+    * hoping to get same direct pathway but with higher weights? 
+
+wt_oamin_rev_1d_ss_v00, v01 and v02 are replicates: 
     * taking the v08 run and running a reverse from the 5 bstates that recycled
     * updated to maximize the oamin in runseg and get_pcoord
     * replaced bstates
     * updated tstate filter to D1 state boundaries
 
+### Running from eqWE endpoints
+- using the WT oamax run ending states to start a ssWE run
 
-NEXT: 4F and 7F oamax 30 bin 86 direction runs, replicates for WT reverse?
+wt_oamax_1d_ss_fromEQ_v00:
+    * using wt_oamax_1d_ss_v12 as a template
+    * updated env.sh to be able to use L40S GPUs
+    * switching back from 2D oamax and c2 to just oamax
+    * 30 mab bins
+    * grabbed the 68 start states from 3d_oamax run that I used for stability run data
+        * note that these weights are somewhat low since they got to D2 using the indirect path
+        * using bstates from the direct path instead might be more accurate rate-wise 
+        * had to set these up as start states in w_init
+        * so starting from these states and then recycling to the original bstates
 
+wt_oamax_1d_ss_fromEQ_v01:
+wt_oamax_1d_ss_fromEQ_v02:
+wt_oamax_1d_ss_fromEQ_v03:
+    * Same thing, but this time using start states from the direct path oamax eqWE run
+    * using the final states from WT 2KOD o_angle/1d_oamax_v00 end of iteration 100
+
+4F_oamax_1d_ss_fromEQ_v00:
+4F_oamax_1d_ss_fromEQ_v01:
+4F_oamax_1d_ss_fromEQ_v02:
+    * using the wt as template
+    * from /ihome/lchong/dty7/ix/d1d2/2kod/ls6-we/4f_mmab_1d_ss_v00:
+        * copied over references/
+        * copied over common_files/
+    * changed prmtop file in get_pcoord.sh
+    * updated runseg.sh with 4F prmtop and refs
+    * updated 4f reference pdb files for d2 and 1a8o manually using vim
+        * changed HE3 to FE3 and atom from H to F
+        * changed the TRP to W4F
+    * copied over 4F start states, which coincidentally work with 1d_oamax_v00 i100 of 4F
+    * copied over the 4F bstates 
+
+4F_oamin_rev_1d_ss_v00:
+    * reverse starting from end state of 4F fromEQ v02
+    * Updated:
+        * changed oamax to oamin
+            * updated get_pcoord and runseg
+            * updated pcoord_filter.py    
+        * updated bstate
+            * removed sstates from init.sh
+            * added upated single bstate from 4F D1->D2
+            * starting with 5 states from this single file
+            
+        
