@@ -1,0 +1,1243 @@
+
+CPPTRAJ: Trajectory Analysis. V6.4.4 (AmberTools)
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 05/06/24 15:52:49
+| Available memory: 4.352 GB
+
+	Reading 'common_files/m01_2kod_dry.prmtop' as Amber Topology
+	Radius Set: modified Bondi radii (mbondi)
+INPUT: Reading input from 'cpptraj.in'
+  [trajin traj_segs/000001/000001/seg.nc]
+	Reading 'traj_segs/000001/000001/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000002/000031/seg.nc]
+	Reading 'traj_segs/000002/000031/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000003/000067/seg.nc]
+	Reading 'traj_segs/000003/000067/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000004/000066/seg.nc]
+	Reading 'traj_segs/000004/000066/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000005/000044/seg.nc]
+	Reading 'traj_segs/000005/000044/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000006/000025/seg.nc]
+	Reading 'traj_segs/000006/000025/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000007/000069/seg.nc]
+	Reading 'traj_segs/000007/000069/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000008/000029/seg.nc]
+	Reading 'traj_segs/000008/000029/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000009/000072/seg.nc]
+	Reading 'traj_segs/000009/000072/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000010/000061/seg.nc]
+	Reading 'traj_segs/000010/000061/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000011/000069/seg.nc]
+	Reading 'traj_segs/000011/000069/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000012/000065/seg.nc]
+	Reading 'traj_segs/000012/000065/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000013/000065/seg.nc]
+	Reading 'traj_segs/000013/000065/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000014/000069/seg.nc]
+	Reading 'traj_segs/000014/000069/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000015/000056/seg.nc]
+	Reading 'traj_segs/000015/000056/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000016/000076/seg.nc]
+	Reading 'traj_segs/000016/000076/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000017/000052/seg.nc]
+	Reading 'traj_segs/000017/000052/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000018/000065/seg.nc]
+	Reading 'traj_segs/000018/000065/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000019/000059/seg.nc]
+	Reading 'traj_segs/000019/000059/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000020/000017/seg.nc]
+	Reading 'traj_segs/000020/000017/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000021/000087/seg.nc]
+	Reading 'traj_segs/000021/000087/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000022/000050/seg.nc]
+	Reading 'traj_segs/000022/000050/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000023/000073/seg.nc]
+	Reading 'traj_segs/000023/000073/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000024/000024/seg.nc]
+	Reading 'traj_segs/000024/000024/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000025/000039/seg.nc]
+	Reading 'traj_segs/000025/000039/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000026/000028/seg.nc]
+	Reading 'traj_segs/000026/000028/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000027/000021/seg.nc]
+	Reading 'traj_segs/000027/000021/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000028/000024/seg.nc]
+	Reading 'traj_segs/000028/000024/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000029/000035/seg.nc]
+	Reading 'traj_segs/000029/000035/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000030/000023/seg.nc]
+	Reading 'traj_segs/000030/000023/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000031/000010/seg.nc]
+	Reading 'traj_segs/000031/000010/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000032/000018/seg.nc]
+	Reading 'traj_segs/000032/000018/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000033/000008/seg.nc]
+	Reading 'traj_segs/000033/000008/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000034/000022/seg.nc]
+	Reading 'traj_segs/000034/000022/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000035/000008/seg.nc]
+	Reading 'traj_segs/000035/000008/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000036/000014/seg.nc]
+	Reading 'traj_segs/000036/000014/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000037/000007/seg.nc]
+	Reading 'traj_segs/000037/000007/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000038/000009/seg.nc]
+	Reading 'traj_segs/000038/000009/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000039/000018/seg.nc]
+	Reading 'traj_segs/000039/000018/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000040/000024/seg.nc]
+	Reading 'traj_segs/000040/000024/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000041/000023/seg.nc]
+	Reading 'traj_segs/000041/000023/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000042/000027/seg.nc]
+	Reading 'traj_segs/000042/000027/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000043/000020/seg.nc]
+	Reading 'traj_segs/000043/000020/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000044/000014/seg.nc]
+	Reading 'traj_segs/000044/000014/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000045/000046/seg.nc]
+	Reading 'traj_segs/000045/000046/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000046/000046/seg.nc]
+	Reading 'traj_segs/000046/000046/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000047/000025/seg.nc]
+	Reading 'traj_segs/000047/000025/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000048/000037/seg.nc]
+	Reading 'traj_segs/000048/000037/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000049/000049/seg.nc]
+	Reading 'traj_segs/000049/000049/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000050/000050/seg.nc]
+	Reading 'traj_segs/000050/000050/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000051/000028/seg.nc]
+	Reading 'traj_segs/000051/000028/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000052/000045/seg.nc]
+	Reading 'traj_segs/000052/000045/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000053/000037/seg.nc]
+	Reading 'traj_segs/000053/000037/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000054/000031/seg.nc]
+	Reading 'traj_segs/000054/000031/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000055/000053/seg.nc]
+	Reading 'traj_segs/000055/000053/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000056/000032/seg.nc]
+	Reading 'traj_segs/000056/000032/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000057/000028/seg.nc]
+	Reading 'traj_segs/000057/000028/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000058/000047/seg.nc]
+	Reading 'traj_segs/000058/000047/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000059/000046/seg.nc]
+	Reading 'traj_segs/000059/000046/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000060/000033/seg.nc]
+	Reading 'traj_segs/000060/000033/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000061/000051/seg.nc]
+	Reading 'traj_segs/000061/000051/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000062/000042/seg.nc]
+	Reading 'traj_segs/000062/000042/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000063/000042/seg.nc]
+	Reading 'traj_segs/000063/000042/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000064/000035/seg.nc]
+	Reading 'traj_segs/000064/000035/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000065/000051/seg.nc]
+	Reading 'traj_segs/000065/000051/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000066/000045/seg.nc]
+	Reading 'traj_segs/000066/000045/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000067/000036/seg.nc]
+	Reading 'traj_segs/000067/000036/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000068/000037/seg.nc]
+	Reading 'traj_segs/000068/000037/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000069/000045/seg.nc]
+	Reading 'traj_segs/000069/000045/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000070/000058/seg.nc]
+	Reading 'traj_segs/000070/000058/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000071/000052/seg.nc]
+	Reading 'traj_segs/000071/000052/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000072/000051/seg.nc]
+	Reading 'traj_segs/000072/000051/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000073/000058/seg.nc]
+	Reading 'traj_segs/000073/000058/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000074/000062/seg.nc]
+	Reading 'traj_segs/000074/000062/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000075/000035/seg.nc]
+	Reading 'traj_segs/000075/000035/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000076/000049/seg.nc]
+	Reading 'traj_segs/000076/000049/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000077/000053/seg.nc]
+	Reading 'traj_segs/000077/000053/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000078/000041/seg.nc]
+	Reading 'traj_segs/000078/000041/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000079/000045/seg.nc]
+	Reading 'traj_segs/000079/000045/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000080/000039/seg.nc]
+	Reading 'traj_segs/000080/000039/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000081/000042/seg.nc]
+	Reading 'traj_segs/000081/000042/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000082/000031/seg.nc]
+	Reading 'traj_segs/000082/000031/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000083/000048/seg.nc]
+	Reading 'traj_segs/000083/000048/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000084/000045/seg.nc]
+	Reading 'traj_segs/000084/000045/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000085/000055/seg.nc]
+	Reading 'traj_segs/000085/000055/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000086/000042/seg.nc]
+	Reading 'traj_segs/000086/000042/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000087/000047/seg.nc]
+	Reading 'traj_segs/000087/000047/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000088/000037/seg.nc]
+	Reading 'traj_segs/000088/000037/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000089/000036/seg.nc]
+	Reading 'traj_segs/000089/000036/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000090/000038/seg.nc]
+	Reading 'traj_segs/000090/000038/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000091/000051/seg.nc]
+	Reading 'traj_segs/000091/000051/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000092/000057/seg.nc]
+	Reading 'traj_segs/000092/000057/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000093/000066/seg.nc]
+	Reading 'traj_segs/000093/000066/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000094/000052/seg.nc]
+	Reading 'traj_segs/000094/000052/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000095/000055/seg.nc]
+	Reading 'traj_segs/000095/000055/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000096/000040/seg.nc]
+	Reading 'traj_segs/000096/000040/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000097/000044/seg.nc]
+	Reading 'traj_segs/000097/000044/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000098/000063/seg.nc]
+	Reading 'traj_segs/000098/000063/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000099/000051/seg.nc]
+	Reading 'traj_segs/000099/000051/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000100/000066/seg.nc]
+	Reading 'traj_segs/000100/000066/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000101/000053/seg.nc]
+	Reading 'traj_segs/000101/000053/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000102/000064/seg.nc]
+	Reading 'traj_segs/000102/000064/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000103/000068/seg.nc]
+	Reading 'traj_segs/000103/000068/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000104/000071/seg.nc]
+	Reading 'traj_segs/000104/000071/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000105/000062/seg.nc]
+	Reading 'traj_segs/000105/000062/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000106/000047/seg.nc]
+	Reading 'traj_segs/000106/000047/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000107/000047/seg.nc]
+	Reading 'traj_segs/000107/000047/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000108/000056/seg.nc]
+	Reading 'traj_segs/000108/000056/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000109/000043/seg.nc]
+	Reading 'traj_segs/000109/000043/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000110/000120/seg.nc]
+	Reading 'traj_segs/000110/000120/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000111/000034/seg.nc]
+	Reading 'traj_segs/000111/000034/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000112/000117/seg.nc]
+	Reading 'traj_segs/000112/000117/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000113/000034/seg.nc]
+	Reading 'traj_segs/000113/000034/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000114/000038/seg.nc]
+	Reading 'traj_segs/000114/000038/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000115/000026/seg.nc]
+	Reading 'traj_segs/000115/000026/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000116/000020/seg.nc]
+	Reading 'traj_segs/000116/000020/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000117/000017/seg.nc]
+	Reading 'traj_segs/000117/000017/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000118/000030/seg.nc]
+	Reading 'traj_segs/000118/000030/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000119/000011/seg.nc]
+	Reading 'traj_segs/000119/000011/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000120/000019/seg.nc]
+	Reading 'traj_segs/000120/000019/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000121/000009/seg.nc]
+	Reading 'traj_segs/000121/000009/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000122/000028/seg.nc]
+	Reading 'traj_segs/000122/000028/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000123/000013/seg.nc]
+	Reading 'traj_segs/000123/000013/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000124/000018/seg.nc]
+	Reading 'traj_segs/000124/000018/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000125/000009/seg.nc]
+	Reading 'traj_segs/000125/000009/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000126/000005/seg.nc]
+	Reading 'traj_segs/000126/000005/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000127/000011/seg.nc]
+	Reading 'traj_segs/000127/000011/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000128/000013/seg.nc]
+	Reading 'traj_segs/000128/000013/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000129/000004/seg.nc]
+	Reading 'traj_segs/000129/000004/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000130/000026/seg.nc]
+	Reading 'traj_segs/000130/000026/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000131/000012/seg.nc]
+	Reading 'traj_segs/000131/000012/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000132/000017/seg.nc]
+	Reading 'traj_segs/000132/000017/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000133/000030/seg.nc]
+	Reading 'traj_segs/000133/000030/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000134/000016/seg.nc]
+	Reading 'traj_segs/000134/000016/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000135/000025/seg.nc]
+	Reading 'traj_segs/000135/000025/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000136/000028/seg.nc]
+	Reading 'traj_segs/000136/000028/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000137/000026/seg.nc]
+	Reading 'traj_segs/000137/000026/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000138/000030/seg.nc]
+	Reading 'traj_segs/000138/000030/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000139/000004/seg.nc]
+	Reading 'traj_segs/000139/000004/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000140/000004/seg.nc]
+	Reading 'traj_segs/000140/000004/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000141/000020/seg.nc]
+	Reading 'traj_segs/000141/000020/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000142/000013/seg.nc]
+	Reading 'traj_segs/000142/000013/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000143/000020/seg.nc]
+	Reading 'traj_segs/000143/000020/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000144/000012/seg.nc]
+	Reading 'traj_segs/000144/000012/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000145/000006/seg.nc]
+	Reading 'traj_segs/000145/000006/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000146/000024/seg.nc]
+	Reading 'traj_segs/000146/000024/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000147/000010/seg.nc]
+	Reading 'traj_segs/000147/000010/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000148/000013/seg.nc]
+	Reading 'traj_segs/000148/000013/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000149/000021/seg.nc]
+	Reading 'traj_segs/000149/000021/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000150/000010/seg.nc]
+	Reading 'traj_segs/000150/000010/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000151/000023/seg.nc]
+	Reading 'traj_segs/000151/000023/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000152/000009/seg.nc]
+	Reading 'traj_segs/000152/000009/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000153/000008/seg.nc]
+	Reading 'traj_segs/000153/000008/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000154/000011/seg.nc]
+	Reading 'traj_segs/000154/000011/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000155/000013/seg.nc]
+	Reading 'traj_segs/000155/000013/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000156/000020/seg.nc]
+	Reading 'traj_segs/000156/000020/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000157/000036/seg.nc]
+	Reading 'traj_segs/000157/000036/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000158/000013/seg.nc]
+	Reading 'traj_segs/000158/000013/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000159/000011/seg.nc]
+	Reading 'traj_segs/000159/000011/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000160/000008/seg.nc]
+	Reading 'traj_segs/000160/000008/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000161/000017/seg.nc]
+	Reading 'traj_segs/000161/000017/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000162/000022/seg.nc]
+	Reading 'traj_segs/000162/000022/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000163/000011/seg.nc]
+	Reading 'traj_segs/000163/000011/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000164/000012/seg.nc]
+	Reading 'traj_segs/000164/000012/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000165/000007/seg.nc]
+	Reading 'traj_segs/000165/000007/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000166/000017/seg.nc]
+	Reading 'traj_segs/000166/000017/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000167/000020/seg.nc]
+	Reading 'traj_segs/000167/000020/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000168/000015/seg.nc]
+	Reading 'traj_segs/000168/000015/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000169/000007/seg.nc]
+	Reading 'traj_segs/000169/000007/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000170/000008/seg.nc]
+	Reading 'traj_segs/000170/000008/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000171/000019/seg.nc]
+	Reading 'traj_segs/000171/000019/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000172/000008/seg.nc]
+	Reading 'traj_segs/000172/000008/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000173/000014/seg.nc]
+	Reading 'traj_segs/000173/000014/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000174/000026/seg.nc]
+	Reading 'traj_segs/000174/000026/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000175/000013/seg.nc]
+	Reading 'traj_segs/000175/000013/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000176/000010/seg.nc]
+	Reading 'traj_segs/000176/000010/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000177/000011/seg.nc]
+	Reading 'traj_segs/000177/000011/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000178/000005/seg.nc]
+	Reading 'traj_segs/000178/000005/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000179/000014/seg.nc]
+	Reading 'traj_segs/000179/000014/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000180/000017/seg.nc]
+	Reading 'traj_segs/000180/000017/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000181/000014/seg.nc]
+	Reading 'traj_segs/000181/000014/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000182/000017/seg.nc]
+	Reading 'traj_segs/000182/000017/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000183/000021/seg.nc]
+	Reading 'traj_segs/000183/000021/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000184/000020/seg.nc]
+	Reading 'traj_segs/000184/000020/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000185/000029/seg.nc]
+	Reading 'traj_segs/000185/000029/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000186/000017/seg.nc]
+	Reading 'traj_segs/000186/000017/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000187/000018/seg.nc]
+	Reading 'traj_segs/000187/000018/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000188/000005/seg.nc]
+	Reading 'traj_segs/000188/000005/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000189/000009/seg.nc]
+	Reading 'traj_segs/000189/000009/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000190/000023/seg.nc]
+	Reading 'traj_segs/000190/000023/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000191/000021/seg.nc]
+	Reading 'traj_segs/000191/000021/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000192/000036/seg.nc]
+	Reading 'traj_segs/000192/000036/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000193/000016/seg.nc]
+	Reading 'traj_segs/000193/000016/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000194/000021/seg.nc]
+	Reading 'traj_segs/000194/000021/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000195/000013/seg.nc]
+	Reading 'traj_segs/000195/000013/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000196/000023/seg.nc]
+	Reading 'traj_segs/000196/000023/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000197/000029/seg.nc]
+	Reading 'traj_segs/000197/000029/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000198/000030/seg.nc]
+	Reading 'traj_segs/000198/000030/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000199/000024/seg.nc]
+	Reading 'traj_segs/000199/000024/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000200/000017/seg.nc]
+	Reading 'traj_segs/000200/000017/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000201/000004/seg.nc]
+	Reading 'traj_segs/000201/000004/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000202/000008/seg.nc]
+	Reading 'traj_segs/000202/000008/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000203/000020/seg.nc]
+	Reading 'traj_segs/000203/000020/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000204/000028/seg.nc]
+	Reading 'traj_segs/000204/000028/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000205/000012/seg.nc]
+	Reading 'traj_segs/000205/000012/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000206/000016/seg.nc]
+	Reading 'traj_segs/000206/000016/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000207/000022/seg.nc]
+	Reading 'traj_segs/000207/000022/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000208/000021/seg.nc]
+	Reading 'traj_segs/000208/000021/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000209/000014/seg.nc]
+	Reading 'traj_segs/000209/000014/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000210/000007/seg.nc]
+	Reading 'traj_segs/000210/000007/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000211/000011/seg.nc]
+	Reading 'traj_segs/000211/000011/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000212/000020/seg.nc]
+	Reading 'traj_segs/000212/000020/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000213/000006/seg.nc]
+	Reading 'traj_segs/000213/000006/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000214/000004/seg.nc]
+	Reading 'traj_segs/000214/000004/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000215/000007/seg.nc]
+	Reading 'traj_segs/000215/000007/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000216/000004/seg.nc]
+	Reading 'traj_segs/000216/000004/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000217/000004/seg.nc]
+	Reading 'traj_segs/000217/000004/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000218/000005/seg.nc]
+	Reading 'traj_segs/000218/000005/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000219/000004/seg.nc]
+	Reading 'traj_segs/000219/000004/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000220/000004/seg.nc]
+	Reading 'traj_segs/000220/000004/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000221/000009/seg.nc]
+	Reading 'traj_segs/000221/000009/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000222/000005/seg.nc]
+	Reading 'traj_segs/000222/000005/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000223/000006/seg.nc]
+	Reading 'traj_segs/000223/000006/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000224/000007/seg.nc]
+	Reading 'traj_segs/000224/000007/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000225/000010/seg.nc]
+	Reading 'traj_segs/000225/000010/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000226/000005/seg.nc]
+	Reading 'traj_segs/000226/000005/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000227/000014/seg.nc]
+	Reading 'traj_segs/000227/000014/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000228/000008/seg.nc]
+	Reading 'traj_segs/000228/000008/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000229/000009/seg.nc]
+	Reading 'traj_segs/000229/000009/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000230/000015/seg.nc]
+	Reading 'traj_segs/000230/000015/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000231/000004/seg.nc]
+	Reading 'traj_segs/000231/000004/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000232/000007/seg.nc]
+	Reading 'traj_segs/000232/000007/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000233/000006/seg.nc]
+	Reading 'traj_segs/000233/000006/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000234/000006/seg.nc]
+	Reading 'traj_segs/000234/000006/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000235/000005/seg.nc]
+	Reading 'traj_segs/000235/000005/seg.nc' as Amber NetCDF
+  [trajin traj_segs/000236/000008/seg.nc]
+	Reading 'traj_segs/000236/000008/seg.nc' as Amber NetCDF
+  [autoimage]
+    AUTOIMAGE: To box center based on center of mass, anchor is first molecule.
+  [trajout TRAJ_it236_seg8_trace.dcd]
+	Writing 'TRAJ_it236_seg8_trace.dcd' as Charmm DCD
+---------- RUN BEGIN -------------------------------------------------
+
+PARAMETER FILES (1 total):
+ 0: m01_2kod_dry.prmtop, 2760 atoms, 176 res, box: Truncated octahedron, 2 mol
+
+INPUT TRAJECTORIES (236 total):
+ 0: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 1: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 2: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 3: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 4: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 5: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 6: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 7: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 8: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 9: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 10: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 11: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 12: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 13: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 14: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 15: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 16: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 17: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 18: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 19: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 20: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 21: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 22: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 23: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 24: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 25: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 26: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 27: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 28: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 29: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 30: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 31: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 32: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 33: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 34: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 35: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 36: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 37: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 38: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 39: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 40: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 41: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 42: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 43: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 44: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 45: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 46: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 47: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 48: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 49: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 50: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 51: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 52: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 53: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 54: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 55: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 56: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 57: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 58: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 59: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 60: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 61: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 62: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 63: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 64: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 65: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 66: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 67: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 68: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 69: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 70: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 71: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 72: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 73: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 74: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 75: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 76: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 77: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 78: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 79: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 80: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 81: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 82: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 83: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 84: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 85: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 86: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 87: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 88: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 89: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 90: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 91: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 92: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 93: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 94: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 95: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 96: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 97: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 98: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 99: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 100: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 101: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 102: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 103: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 104: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 105: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 106: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 107: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 108: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 109: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 110: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 111: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 112: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 113: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 114: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 115: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 116: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 117: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 118: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 119: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 120: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 121: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 122: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 123: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 124: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 125: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 126: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 127: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 128: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 129: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 130: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 131: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 132: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 133: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 134: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 135: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 136: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 137: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 138: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 139: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 140: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 141: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 142: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 143: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 144: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 145: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 146: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 147: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 148: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 149: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 150: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 151: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 152: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 153: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 154: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 155: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 156: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 157: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 158: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 159: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 160: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 161: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 162: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 163: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 164: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 165: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 166: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 167: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 168: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 169: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 170: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 171: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 172: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 173: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 174: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 175: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 176: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 177: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 178: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 179: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 180: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 181: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 182: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 183: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 184: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 185: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 186: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 187: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 188: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 189: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 190: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 191: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 192: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 193: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 194: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 195: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 196: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 197: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 198: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 199: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 200: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 201: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 202: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 203: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 204: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 205: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 206: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 207: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 208: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 209: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 210: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 211: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 212: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 213: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 214: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 215: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 216: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 217: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 218: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 219: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 220: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 221: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 222: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 223: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 224: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 225: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 226: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 227: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 228: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 229: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 230: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 231: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 232: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 233: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 234: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+ 235: 'seg.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 10 of 10)
+  Coordinate processing will occur on 2360 frames.
+
+OUTPUT TRAJECTORIES (1 total):
+  'TRAJ_it236_seg8_trace.dcd' (2360 frames) is a CHARMM DCD file (coords) Little Endian 32 bit
+
+BEGIN TRAJECTORY PROCESSING:
+.....................................................
+ACTION SETUP FOR PARM 'm01_2kod_dry.prmtop' (1 actions):
+  0: [autoimage]
+	Original box is truncated octahedron, turning on 'familiar'.
+	Using first molecule as anchor.
+	1 molecules are fixed to anchor: 2
+	0 molecules are mobile.
+Warning: Unit cell matrix is not symmetric.
+Warning: Storing 3xlengths and 3x angles instead of shape matrix.
+.....................................................
+ACTIVE OUTPUT TRAJECTORIES (1):
+  TRAJ_it236_seg8_trace.dcd (coordinates, time, box)
+----- seg.nc (1-10, 1) -----
+ 0% 
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+10% 
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+20% 
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+30% 
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+40% 
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+50% 
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+60% 
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+70% 
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+80% 
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+90% 
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+
+----- seg.nc (1-10, 1) -----
+100% Complete.
+
+Read 2360 frames and processed 2360 frames.
+TIME: Avg. throughput= 5720.6297 frames / second.
+
+ACTION OUTPUT:
+TIME: Analyses took 0.0000 seconds.
+
+RUN TIMING:
+TIME:		Init               : 0.0004 s (  0.09%)
+TIME:		Trajectory Process : 0.4125 s ( 83.53%)
+TIME:		Action Post        : 0.0000 s (  0.00%)
+TIME:		Analysis           : 0.0000 s (  0.00%)
+TIME:		Data File Write    : 0.0000 s (  0.00%)
+TIME:		Other              : 0.0809 s (  0.16%)
+TIME:	Run Total 0.4939 s
+---------- RUN END ---------------------------------------------------
+TIME: Total execution time: 15.8170 seconds.
+--------------------------------------------------------------------------------
+To cite CPPTRAJ use:
+Daniel R. Roe and Thomas E. Cheatham, III, "PTRAJ and CPPTRAJ: Software for
+  Processing and Analysis of Molecular Dynamics Trajectory Data". J. Chem.
+  Theory Comput., 2013, 9 (7), pp 3084-3095.
+

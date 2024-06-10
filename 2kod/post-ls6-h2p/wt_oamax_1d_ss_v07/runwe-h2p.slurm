@@ -8,7 +8,7 @@
 #SBATCH --partition=a100_multi
 #SBATCH --gres=gpu:4
 #SBATCH --mem=16g
-#SBATCH --time=72:00:00
+#SBATCH --time=12:00:00
 #SBATCH --mail-user=dty7@pitt.edu
 #SBATCH --mail-type=END,FAIL,BEGIN
 

@@ -218,7 +218,8 @@ echo -e "$CMD" | $CPPTRAJ
 # returns a text file named oamax_pcoord.txt
 # note that this file already selects for oamax
 python $WEST_SIM_ROOT/common_files/pcoord_filter.py
-paste <(cat oamax_pcoord.txt)> $WEST_PCOORD_RETURN
+#paste <(cat oamax_pcoord.txt)> $WEST_PCOORD_RETURN
+paste <(cat oamax_pcoord.txt) <(cat c2_angle.dat | tail -n +2 | awk '{print $2}')> $WEST_PCOORD_RETURN
 
 ## based on the final frame value
 #m1_rms=$(cat o_angle.dat | tail -1 | awk '{print $2}')

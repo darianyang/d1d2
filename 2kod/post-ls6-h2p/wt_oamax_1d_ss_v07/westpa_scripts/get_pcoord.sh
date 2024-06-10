@@ -32,10 +32,11 @@ CMD="$CMD vectormath vec1 O3 vec2 O4 out $TMP name o_angle_m2 dotangle \n"
 #CMD="$CMD vectormath vec1 O1 vec2 O2 out pcoord.dat name o_angle_m1 dotangle \n"
 #CMD="$CMD vectormath vec1 O3 vec2 O4 out pcoord.dat name o_angle_m2 dotangle \n"
 
-## dimer angle calc, vector based
-##CMD="$CMD vector D1 :1-75@CA,C,O,N :39@CA,C,O,N  \n"
-##CMD="$CMD vector D2 :89-163@CA,C,O,N :127@CA,C,O,N  \n"
-##CMD="$CMD vectormath vec1 D1 vec2 D2 out pcoord.dat name c2_angle dotangle \n"
+# dimer angle calc, vector based
+CMD="$CMD vector D1 :1-75@CA,C,O,N :39@CA,C,O,N  \n"
+CMD="$CMD vector D2 :89-163@CA,C,O,N :127@CA,C,O,N  \n"
+#CMD="$CMD vectormath vec1 D1 vec2 D2 out pcoord.dat name c2_angle dotangle \n"
+CMD="$CMD vectormath vec1 D1 vec2 D2 out $TMP name c2_angle dotangle \n"
 ## dihedral angles of W184
 #CMD="$CMD multidihedral dihtype chi1:N:CA:CB:CG "
 #CMD="$CMD               resrange 41-41"
@@ -78,11 +79,11 @@ echo M1: $m1_rms and M2: $m2_rms
 # oamax 1D
 if [[ $(echo "if (${m1_rms} > ${m2_rms}) 1 else 0" | bc) -eq 1 ]]; then
     echo "${m1_rms} > ${m2_rms}"
-    paste <(cat $TMP | tail -n +2 | awk '{print $2}') > $WEST_PCOORD_RETURN
+    paste <(cat $TMP | tail -n +2 | awk '{print $2}')<(cat $TMP | tail -n +2 | awk '{print $4}') > $WEST_PCOORD_RETURN
     #paste <(cat pcoord.dat | tail -n +2 | awk '{print $2}') > $WEST_PCOORD_RETURN
 else
     echo "${m1_rms} <= ${m2_rms}"
-    paste <(cat $TMP | tail -n +2 | awk '{print $3}') > $WEST_PCOORD_RETURN
+    paste <(cat $TMP | tail -n +2 | awk '{print $3}') <(cat $TMP | tail -n +2 | awk '{print $4}')> $WEST_PCOORD_RETURN
     #paste <(cat pcoord.dat | tail -n +2 | awk '{print $3}') > $WEST_PCOORD_RETURN
 fi
 
