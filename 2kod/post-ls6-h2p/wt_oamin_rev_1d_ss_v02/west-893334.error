@@ -1,0 +1,274 @@
+Updating system with the options from the configuration file
+Maximum wallclock time: 1 day, 0:00:00
+
+Tue May 14 17:33:17 2024
+Iteration 1 (500 requested)
+Beginning iteration 1
+20 segments remain in iteration 1 (20 total)
+5 of 33 (15.151515%) active bins are populated
+per-bin minimum non-zero probability:       0.00532949
+per-bin maximum probability:                0.599675
+per-bin probability dynamic range (kT):     4.72313
+per-segment minimum non-zero probability:   0.00133237
+per-segment maximum non-zero probability:   0.149919
+per-segment probability dynamic range (kT): 4.72313
+norm = 1, error in norm = 2.22045e-16 (1*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+################ MAB stats ################
+minima in each dimension:      [1.3074]
+maxima in each dimension:      [15.9376]
+direction in each dimension:   [86]
+skip in each dimension:        [0]
+###########################################
+Iteration completed successfully
+Iteration wallclock: 0:03:05.863823, cputime: 0:04:42.099797
+
+
+Tue May 14 17:36:23 2024
+Iteration 2 (500 requested)
+Beginning iteration 2
+60 segments remain in iteration 2 (60 total)
+15 of 33 (45.454545%) active bins are populated
+per-bin minimum non-zero probability:       0.00133237
+per-bin maximum probability:                0.30117
+per-bin probability dynamic range (kT):     5.42071
+per-segment minimum non-zero probability:   0.000333093
+per-segment maximum non-zero probability:   0.149919
+per-segment probability dynamic range (kT): 6.10943
+norm = 1, error in norm = 0 (0*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+################ MAB stats ################
+minima in each dimension:      [2.4876]
+maxima in each dimension:      [27.4099]
+direction in each dimension:   [86]
+skip in each dimension:        [0]
+###########################################
+Iteration completed successfully
+Iteration wallclock: 0:03:17.732426, cputime: 0:13:48.983348
+
+
+Tue May 14 17:39:41 2024
+Iteration 3 (500 requested)
+Beginning iteration 3
+112 segments remain in iteration 3 (112 total)
+28 of 33 (84.848485%) active bins are populated
+per-bin minimum non-zero probability:       0.000333093
+per-bin maximum probability:                0.170525
+per-bin probability dynamic range (kT):     6.23821
+per-segment minimum non-zero probability:   8.32733e-05
+per-segment maximum non-zero probability:   0.0749594
+per-segment probability dynamic range (kT): 6.80257
+norm = 1, error in norm = 0 (0*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+################ MAB stats ################
+minima in each dimension:      [1.0133]
+maxima in each dimension:      [39.6334]
+direction in each dimension:   [86]
+skip in each dimension:        [0]
+###########################################
+Recycled 0.0392793 probability (7 walkers) from target state 'D2'
+Iteration completed successfully
+Iteration wallclock: 0:08:11.761751, cputime: 0:37:06.015595
+
+
+Tue May 14 17:47:52 2024
+Iteration 4 (500 requested)
+Beginning iteration 4
+112 segments remain in iteration 4 (112 total)
+27 of 33 (81.818182%) active bins are populated
+per-bin minimum non-zero probability:       0.00232763
+per-bin maximum probability:                0.177025
+per-bin probability dynamic range (kT):     4.33144
+per-segment minimum non-zero probability:   2.08183e-05
+per-segment maximum non-zero probability:   0.0580855
+per-segment probability dynamic range (kT): 7.93384
+norm = 1, error in norm = 2.22045e-16 (1*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+################ MAB stats ################
+minima in each dimension:      [2.8332]
+maxima in each dimension:      [39.74]
+direction in each dimension:   [86]
+skip in each dimension:        [0]
+###########################################
+Recycled 0.0741596 probability (12 walkers) from target state 'D2'
+Iteration completed successfully
+Iteration wallclock: 0:18:18.418139, cputime: 1:24:29.293423
+
+
+Tue May 14 18:06:11 2024
+Iteration 5 (500 requested)
+Beginning iteration 5
+120 segments remain in iteration 5 (120 total)
+31 of 33 (93.939394%) active bins are populated
+per-bin minimum non-zero probability:       0.00124622
+per-bin maximum probability:                0.131417
+per-bin probability dynamic range (kT):     4.65826
+per-segment minimum non-zero probability:   0.000311556
+per-segment maximum non-zero probability:   0.0374797
+per-segment probability dynamic range (kT): 4.78997
+norm = 1, error in norm = 0 (0*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+################ MAB stats ################
+minima in each dimension:      [2.645]
+maxima in each dimension:      [39.7155]
+direction in each dimension:   [86]
+skip in each dimension:        [0]
+###########################################
+Recycled 0.0217051 probability (12 walkers) from target state 'D2'
+Iteration completed successfully
+Iteration wallclock: 0:55:27.152444, cputime: 4:16:13.455069
+
+
+Tue May 14 19:01:38 2024
+Iteration 6 (500 requested)
+Beginning iteration 6
+124 segments remain in iteration 6 (124 total)
+28 of 33 (84.848485%) active bins are populated
+per-bin minimum non-zero probability:       0.0099698
+per-bin maximum probability:                0.0748266
+per-bin probability dynamic range (kT):     2.01561
+per-segment minimum non-zero probability:   0.00117124
+per-segment maximum non-zero probability:   0.0234603
+per-segment probability dynamic range (kT): 2.99725
+norm = 1, error in norm = 2.22045e-16 (1*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+################ MAB stats ################
+minima in each dimension:      [0.0]
+maxima in each dimension:      [19.6438]
+direction in each dimension:   [86]
+skip in each dimension:        [0]
+###########################################
+-- ERROR    [westpa.core.sim_manager] -- propagation failed for 110 segment(s):
+7  
+12  
+13  
+14  
+15  
+17  
+18  
+19  
+20  
+21  
+22  
+23  
+24  
+25  
+26  
+27  
+28  
+29  
+30  
+31  
+32  
+33  
+34  
+35  
+36  
+37  
+38  
+39  
+40  
+41  
+42  
+43  
+44  
+45  
+46  
+47  
+48  
+49  
+50  
+51  
+52  
+53  
+54  
+55  
+56  
+57  
+58  
+59  
+60  
+61  
+62  
+63  
+64  
+65  
+66  
+67  
+68  
+69  
+70  
+71  
+72  
+73  
+74  
+75  
+76  
+77  
+78  
+79  
+80  
+81  
+82  
+83  
+84  
+85  
+86  
+87  
+88  
+89  
+90  
+91  
+92  
+93  
+94  
+95  
+96  
+97  
+98  
+99  
+100  
+101  
+102  
+103  
+104  
+105  
+106  
+107  
+108  
+109  
+110  
+111  
+112  
+113  
+114  
+115  
+116  
+117  
+120  
+121  
+122  
+123
+exception caught; shutting down
+-- ERROR    [w_run] -- error message: propagation failed for 110 segments
+-- ERROR    [w_run] -- Traceback (most recent call last):
+  File "/ihome/lchong/dty7/Apps/westpa-mabNone/westpa/src/westpa/cli/core/w_run.py", line 61, in run_simulation
+    sim_manager.run()
+  File "/ihome/lchong/dty7/Apps/westpa-mabNone/westpa/src/westpa/core/sim_manager.py", line 752, in run
+    self.check_propagation()
+  File "/ihome/lchong/dty7/Apps/westpa-mabNone/westpa/src/westpa/core/sim_manager.py", line 650, in check_propagation
+    raise PropagationError('propagation failed for {:d} segments'.format(len(failed_segments)))
+westpa.core.sim_manager.PropagationError: propagation failed for 110 segments
+

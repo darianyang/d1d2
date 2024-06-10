@@ -5,6 +5,7 @@
 #SBATCH --nodes=2
 #SBATCH --ntasks-per-node=4
 #SBATCH --cluster=gpu
+##SBATCH --partition=preempt
 #SBATCH --partition=a100_multi
 #SBATCH --gres=gpu:4
 #SBATCH --mem=16g

@@ -1,0 +1,13 @@
+START 2024-04-27T15:01:07 1714244467
+JobID:    846866
+User:     dty7
+Hostlist: gpu-n[49-50]
+simulation wt_oamin_rev_1d_ss_v00 root is /ihome/lchong/dty7/ix/d1d2/2kod/post-ls6-h2p/wt_oamin_rev_1d_ss_v00
+ -> Finished launching master.
+== server info file /ihome/lchong/dty7/ix/d1d2/2kod/post-ls6-h2p/wt_oamin_rev_1d_ss_v00/west_zmq_info-846866.json ==
+{"rr_endpoint": "tcp://gpu-n49.crc.pitt.edu:45933", "ann_endpoint": "tcp://gpu-n49.crc.pitt.edu:60198"} -> Found SERVER_INFO file, launching clients.
+ -> Found SERVER_INFO file, launching clients.
+ -> Launching client on gpu-n49.
+ -> Launching client on gpu-n50.
+ -> Launching Completed... .
+END 2024-04-28T15:00:01 1714330801

@@ -1,0 +1,8 @@
+Updating system with the options from the configuration file
+-- ERROR    [westpa.work_managers.zeromq.core.ZMQWorker.fe2be19f-ea10-4cf5-aea2-99e862c3f529] -- no contact from master; shutting down
+-- ERROR    [westpa.work_managers.zeromq.core.ZMQWorker.0f6001ba-dbb5-4e0b-8960-36256d101b3f] -- no contact from master; shutting down
+-- WARNING  [westpa.work_managers.zeromq.core.ZMQWorker.0f6001ba-dbb5-4e0b-8960-36256d101b3f] -- sending SIGKILL to worker process 4194
+-- ERROR    [westpa.work_managers.zeromq.core.ZMQWorker.d658be90-2573-457b-9147-f86d2dc622e1] -- no contact from master; shutting down
+-- WARNING  [westpa.work_managers.zeromq.core.ZMQWorker.d658be90-2573-457b-9147-f86d2dc622e1] -- sending SIGKILL to worker process 4199
+-- ERROR    [westpa.work_managers.zeromq.core.ZMQWorker.a521906f-879e-4834-996d-1453706089db] -- timeout communicating with peer; shutting down
+-- WARNING  [westpa.work_managers.zeromq.core.ZMQWorker.a521906f-879e-4834-996d-1453706089db] -- sending SIGKILL to worker process 4219
