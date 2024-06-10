@@ -1,0 +1,17 @@
+parm TOP
+trajin PARENT
+trajin TRAJ
+autoimage
+#reference  name <st0>
+#rms NMR_REF_RMS_HEAVY :6-75,94-163&!@H= ref <st0> out AUX_NAME.dat mass time 1
+#rms fitting :6-75&!@H= ref <st0>
+#rms RMS_M2 :94-163&!@H= nofit ref <st0> out AUX_NAME.dat mass time 1
+#radgyr RoG :1-176 out AUX_NAME.dat mass nomax
+#distance M1_M2 :32@OE1,OE2 :129@HE1 out AUX_NAME.dat
+#distance M2_M1 :120@OE1,OE2 :41@HE1 out AUX_NAME.dat
+#vector D1 :1-75@CA,C,O,N :39@CA,C,O,N 
+#vector D2 :89-163@CA,C,O,N :127@CA,C,O,N 
+#vectormath vec1 D1 vec2 D2 out AUX_NAME.dat name C2_Angle dotangle
+distance T45-T133 :45&!@CA,C,O,N,H :133&!@CA,C,O,N,H out AUX_NAME.dat
+go
+quit

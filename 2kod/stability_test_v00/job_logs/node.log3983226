@@ -1,0 +1,44 @@
+Resetting modules to system default. Resetting $MODULEPATH back to system default. All extra directories will be removed from $MODULEPATH.
+BEGIN INSIDE ENV.SH
+
+Currently Loaded Modules:
+  1) cmake/3.24.2   6) impi/19.0.9          11) openmm/7.7.0_a
+  2) pmix/3.2.3     7) cuda/11.3       (g)  12) swig/4.1.1_b
+  3) xalt/2.10.32   8) conda/4.12.0_a       13) boost/1.72.0_a
+  4) TACC           9) envwestpa/1.0_b      14) amber/22_a
+  5) intel/19.1.1  10) fftw/3.3.10_a        15) westpa/22.06_b
+
+  Where:
+   g:  built for GPU
+
+ 
+
+/work/09416/dty7/ls6/module_build_we_amber/modules/envwestpa/1.0_b/bin/python
+END   INSIDE ENV.SH
+starting WEST client processes on: 
+c303-002.ls6.tacc.utexas.edu
+current directory is /home1/09416/dty7/scratch/d1d2/2kod/ls6-we/stability_test_v00
+environment is: 
+CUDA_VISIBLE_DEVICES =  0,1,2
+-- INFO     [westpa.rc] -- loading system driver 'westpa.core.systems.WESTSystem'
+-- INFO     [westpa.rc] -- Loading system options from configuration file
+Updating system with the options from the configuration file
+-- INFO     [westpa.rc] -- Overwriting system option: pcoord_ndim
+-- INFO     [westpa.rc] -- Overwriting system option: pcoord_len
+-- INFO     [westpa.rc] -- Overwriting system option: pcoord_dtype
+-- INFO     [westpa.rc] -- Overwriting system option: bin_mapper
+-- INFO     [westpa.rc] -- Overwriting system option: bin_target_counts
+-- INFO     [driver] -- Adjust counts to exactly match target_counts: True
+-- INFO     [driver] -- Split threshold: 2.0
+-- INFO     [driver] -- Merge cutoff: 1.0
+-- INFO     [westpa.work_managers.zeromq.core.ZMQWorker.16f47a7b-bd99-4516-83a1-8403064abf02] -- This is ZMQWorker on c303-002.ls6.tacc.utexas.edu at PID 3710808
+-- INFO     [westpa.work_managers.zeromq.core.ZMQWorker.048aab3a-3bef-4f68-a3b4-38ff07204486] -- This is ZMQWorker on c303-002.ls6.tacc.utexas.edu at PID 3710808
+-- INFO     [westpa.work_managers.zeromq.core.ZMQExecutor.cd754b74-b526-45f5-a447-b77009a0dd7b] -- This is ZMQExecutor on c303-002.ls6.tacc.utexas.edu at PID 3710810
+-- INFO     [westpa.work_managers.zeromq.core.ZMQExecutor.465cf500-e4e7-47ec-95a0-814e580c1021] -- This is ZMQExecutor on c303-002.ls6.tacc.utexas.edu at PID 3710813
+-- INFO     [westpa.work_managers.zeromq.core.ZMQWorker.cc4f1597-702b-41d5-9e4c-3b0519cb4dfc] -- This is ZMQWorker on c303-002.ls6.tacc.utexas.edu at PID 3710808
+-- INFO     [westpa.work_managers.zeromq.core.ZMQExecutor.66f9242e-4df5-43d7-8f83-b3a3f9f99034] -- This is ZMQExecutor on c303-002.ls6.tacc.utexas.edu at PID 3710824
+-- ERROR    [westpa.core.propagators.executable] -- could not read intra_nc-- ERROR    [westpa.core.propagators.executable] -- could not read pcoord fro-- ERROR    [westpa.core.propagators.executable] -- could not read pcoord from '/tmp/-- ERROR    [westpa.core.propagators.executable] -- could not read pcoord fro-- ERROR    [westpa.core.propagators.executable] -- could not read pcoord from '/tmp/-- ERROR    [westpa.core.propagators.executable] -- could not read pcoord fro-- ERROR    [westpa.core.propagators.executable] -- could not read pcoord from '/tmp/-- ERROR    [westpa.core.propagators.executable] -- could not read pcoord fro-- ERROR    [westpa.core.propagators.executable] -- could not read pcoord from '/tmp/tmpg_7ddpfo': ValueError('cannot reshape array of size 0 into shape (11,2)')
+-- ERROR    [westpa.core.propagators.executable] -- could not read pcoord from '/tmp/-- WARNING  [westpa.work_managers.zeromq.core] -- sending SIGKILL to worker p-- WARNING  [we-- WARNING  [westpa.work_managers.zeromq.core] -- sending SIGKILL to worker p-- WARNING  [we-- WARNING  [westpa.work_managers.zeromq.core] -- sending SIGKILL to worker p-- WARNING  [weShutting down.  Hopefully this was on purpose?
+ILL to worker process 3710824
+Shutting down.  Hopefully this was on purpose?
+Connection to c303-002 closed by remote host.

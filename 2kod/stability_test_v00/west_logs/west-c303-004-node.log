@@ -1,0 +1,42 @@
+-- INFO     [westpa.rc] -- loading system driver 'westpa.core.systems.WESTSystem'
+-- INFO     [westpa.rc] -- Loading system options from configuration file
+Updating system with the options from the configuration file
+-- INFO     [westpa.rc] -- Overwriting system option: pcoord_ndim
+-- INFO     [westpa.rc] -- Overwriting system option: pcoord_len
+-- INFO     [westpa.rc] -- Overwriting system option: pcoord_dtype
+-- INFO     [westpa.rc] -- Overwriting system option: bin_mapper
+-- INFO     [westpa.rc] -- Overwriting system option: bin_target_counts
+-- INFO     [driver] -- Adjust counts to exactly match target_counts: True
+-- INFO     [driver] -- Split threshold: 2.0
+-- INFO     [driver] -- Merge cutoff: 1.0
+-- INFO     [westpa.work_managers.zeromq.core.ZMQWorker.0f1c97c8-a157-4d84-b040-ad8be2ce71f2] -- This is ZMQWorker on c303-004.ls6.tacc.utexas.edu at PID 2250307
+-- INFO     [westpa.work_managers.zeromq.core.ZMQExecutor.d736676a-751e-41c0-8140-01ae92096e8f] -- This is ZMQExecutor on c303-004.ls6.tacc.utexas.edu at PID 2250309
+-- INFO     [westpa.work_managers.zeromq.core.ZMQWorker.abbfc2d3-ce8f-4498-ae50-96300a1030aa] -- This is ZMQWorker on c303-004.ls6.tacc.utexas.edu at PID 2250307
+-- INFO     [westpa.work_managers.zeromq.core.ZMQExecutor.c1aeabb3-c145-4e33-9e9a-3b7cb04a7134] -- This is ZMQExecutor on c303-004.ls6.tacc.utexas.edu at PID 2250316
+-- INFO     [westpa.work_managers.zeromq.core.ZMQWorker.c14158bf-4b39-4ad1-bfc1-e00e81c43ce7] -- This is ZMQWorker on c303-004.ls6.tacc.utexas.edu at PID 2250307
+-- INFO     [westpa.work_managers.zeromq.core.ZMQExecutor.584c1d5a-31be-45c0-822d-c34423eee18b] -- This is ZMQExecutor on c303-004.ls6.tacc.utexas.edu at PID 2250323
+-- ERROR    [westpa.core.propagators.executable] -- could not read pcoord from '/tmp/tmpzlmqaodf': ValueError('progress coordinate data has incorrect shape (1001, 2) [expected (11, 2)] Check pcoord.err or seg_logs for more information.')
+-- ERROR    [westpa.core.propagators.executable] -- could not read pcoord from '/tmp/tmp1zq2amoi': ValueError('progress coordinate data has incorrect shape (1001, 2) [expected (11, 2)] Check pcoord.err or seg_logs for more information.')
+-- ERROR    [westpa.core.propagators.executable] -- could not read pcoord from '/tmp/tmp0q23ojc9': ValueError('progress coordinate data has incorrect shape (1001, 2) [expected (11, 2)] Check pcoord.err or seg_logs for more information.')
+-- ERROR    [westpa.core.propagators.executable] -- could not read pcoord from '/tmp/tmpi7wuzc0e': ValueError('progress coordinate data has incorrect shape (1001, 2) [expected (11, 2)] Check pcoord.err or seg_logs for more information.')
+-- ERROR    [westpa.core.propagators.executable] -- could not read pcoord from '/tmp/tmpnks7odkx': ValueError('progress coordinate data has incorrect shape (1001, 2) [expected (11, 2)] Check pcoord.err or seg_logs for more information.')
+-- ERROR    [westpa.core.propagators.executable] -- could not read pcoord from '/tmp/tmp2xahz5cv': ValueError('progress coordinate data has incorrect shape (1001, 2) [expected (11, 2)] Check pcoord.err or seg_logs for more information.')
+-- ERROR    [westpa.core.propagators.executable] -- could not read pcoord from '/tmp/tmpiuxy_hvn': ValueError('progress coordinate data has incorrect shape (1001, 2) [expected (11, 2)] Check pcoord.err or seg_logs for more information.')
+-- ERROR    [westpa.core.propagators.executable] -- could not read pcoord from '/tmp/tmpsutasm2k': ValueError('progress coordinate data has incorrect shape (1001, 2) [expected (11, 2)] Check pcoord.err or seg_logs for more information.')
+-- ERROR    [westpa.core.propagators.executable] -- could not read pcoord from '/tmp/tmp9mrfowww': ValueError('progress coordinate data has incorrect shape (1001, 2) [expected (11, 2)] Check pcoord.err or seg_logs for more information.')
+-- ERROR    [westpa.core.propagators.executable] -- could not read pcoord from '/tmp/tmpnczb0q_k': ValueError('progress coordinate data has incorrect shape (1001, 2) [expected (11, 2)] Check pcoord.err or seg_logs for more information.')
+-- ERROR    [westpa.core.propagators.executable] -- could not read pcoord from '/tmp/tmplin0xp6u': ValueError('progress coordinate data has incorrect shape (1001, 2) [expected (11, 2)] Check pcoord.err or seg_logs for more information.')
+-- ERROR    [westpa.core.propagators.executable] -- could not read pcoord from '/tmp/tmpx5s6m1we': ValueError('progress coordinate data has incorrect shape (1001, 2) [expected (11, 2)] Check pcoord.err or seg_logs for more information.')
+-- ERROR    [westpa.core.propagators.executable] -- could not read pcoord from '/tmp/tmpcq4wpr91': ValueError('progress coordinate data has incorrect shape (1001, 2) [expected (11, 2)] Check pcoord.err or seg_logs for more information.')
+-- ERROR    [westpa.core.propagators.executable] -- could not read pcoord from '/tmp/tmpe18u__sj': ValueError('progress coordinate data has incorrect shape (1001, 2) [expected (11, 2)] Check pcoord.err or seg_logs for more information.')
+-- ERROR    [westpa.core.propagators.executable] -- could not read pcoord from '/tmp/tmpw3v7e6wi': ValueError('progress coordinate data has incorrect shape (1001, 2) [expected (11, 2)] Check pcoord.err or seg_logs for more information.')
+-- ERROR    [westpa.core.propagators.executable] -- could not read pcoord from '/tmp/tmpdheud0y7': ValueError('progress coordinate data has incorrect shape (1001, 2) [expected (11, 2)] Check pcoord.err or seg_logs for more information.')
+-- ERROR    [westpa.core.propagators.executable] -- could not read pcoord from '/tmp/tmp4bekaa7e': ValueError('progress coordinate data has incorrect shape (1001, 2) [expected (11, 2)] Check pcoord.err or seg_logs for more information.')
+-- ERROR    [westpa.core.propagators.executable] -- could not read pcoord from '/tmp/tmpu2qsrxxb': ValueError('progress coordinate data has incorrect shape (1001, 2) [expected (11, 2)] Check pcoord.err or seg_logs for more information.')
+-- ERROR    [westpa.core.propagators.executable] -- could not read pcoord from '/tmp/tmpi2gouit6': ValueError('progress coordinate data has incorrect shape (1001, 2) [expected (11, 2)] Check pcoord.err or seg_logs for more information.')
+-- ERROR    [westpa.core.propagators.executable] -- could not read pcoord from '/tmp/tmp4ncvturx': ValueError('progress coordinate data has incorrect shape (1001, 2) [expected (11, 2)] Check pcoord.err or seg_logs for more information.')
+-- ERROR    [westpa.core.propagators.executable] -- could not read pcoord from '/tmp/tmpctl765w8': ValueError('progress coordinate data has incorrect shape (1001, 2) [expected (11, 2)] Check pcoord.err or seg_logs for more information.')
+-- ERROR    [westpa.core.propagators.executable] -- could not read pcoord from '/tmp/tmpkpj1m6rq': ValueError('progress coordinate data has incorrect shape (1001, 2) [expected (11, 2)] Check pcoord.err or seg_logs for more information.')
+-- WARNING  [westpa.work_managers.zeromq.core] -- sending SIGKILL to worker process 2250309
+-- WARNING  [westpa.work_managers.zeromq.core] -- sending SIGKILL to worker process 2250316
+-- WARNING  [westpa.work_managers.zeromq.core] -- sending SIGKILL to worker process 2250323
