@@ -3,7 +3,7 @@
 #SBATCH --output=jup_slurm.out
 #SBATCH --error=jup_slurm.err
 #SBATCH --nodes=1
-#SBATCH --ntasks-per-node=4
+#SBATCH --ntasks-per-node=8
 #SBATCH --cluster=smp
 #SBATCH --partition=high-mem
 #SBATCH --mem=256g
