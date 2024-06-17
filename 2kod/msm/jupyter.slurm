@@ -7,7 +7,7 @@
 #SBATCH --cluster=smp
 #SBATCH --partition=high-mem
 #SBATCH --mem=256g
-#SBATCH --time=72:00:00
+#SBATCH --time=24:00:00
 #SBATCH --mail-user=dty7@pitt.edu
 #SBATCH --mail-type=END,FAIL
 

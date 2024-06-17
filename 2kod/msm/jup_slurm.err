@@ -1,102 +1,21 @@
-[I 14:31:59.453 NotebookApp] Serving notebooks from local directory: /ix/lchong/dty7/d1d2/2kod/msm
-[I 14:31:59.453 NotebookApp] Jupyter Notebook 6.5.4 is running at:
-[I 14:31:59.453 NotebookApp] http://smp-1024-n1.crc.pitt.edu:8888/
-[I 14:31:59.453 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
-[W 14:51:54.839 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
-[I 14:52:03.492 NotebookApp] Kernel started: a27b9d17-5ce8-4fee-b3b9-3b78609990ea, name: hamsm
-[I 14:54:03.539 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
-[W 14:54:03.544 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
+[I 15:39:06.397 NotebookApp] Serving notebooks from local directory: /ix/lchong/dty7/d1d2/2kod/msm
+[I 15:39:06.398 NotebookApp] Jupyter Notebook 6.5.4 is running at:
+[I 15:39:06.398 NotebookApp] http://smp-1024-n1.crc.pitt.edu:8888/
+[I 15:39:06.398 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[W 15:39:24.504 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
+[I 15:39:34.168 NotebookApp] Kernel started: 317894a4-22a4-41ac-8518-02bfe63e05e2, name: hamsm
+[I 15:41:34.207 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
+[W 15:41:34.211 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
 /ihome/lchong/dty7/Apps/anaconda3/envs/hamsm/lib/python3.10/site-packages/nbformat/__init__.py:129: MissingIDFieldWarning: Code cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.
   validate(nb)
 /ihome/lchong/dty7/Apps/anaconda3/envs/hamsm/lib/python3.10/site-packages/notebook/services/contents/manager.py:353: MissingIDFieldWarning: Code cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.
   validate_nb(model['content'])
-[I 14:56:03.527 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
-[W 14:56:03.531 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
-[I 15:04:51.916 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
-[W 15:04:51.923 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
-[I 16:31:38.481 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
-[W 16:31:38.484 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
-[I 18:48:03.573 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
-[W 18:48:03.577 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
-[I 18:49:16.550 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
-[W 18:49:16.553 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
-[I 18:50:03.545 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
-[W 18:50:03.549 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
-[I 18:52:03.505 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
-[W 18:52:03.509 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
-[I 18:54:03.520 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
-[W 18:54:03.524 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
-[I 18:56:04.159 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
-[W 18:56:04.162 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
-[I 18:58:04.049 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
-[W 18:58:04.052 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
-[I 19:00:03.527 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
-[W 19:00:03.561 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
-[I 19:02:03.529 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
-[W 19:02:03.532 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
-[I 19:04:03.512 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
-[W 19:04:03.516 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
-[I 19:06:03.530 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
-[W 19:06:03.534 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
-[I 19:08:03.546 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
-[W 19:08:03.550 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
-[I 19:10:03.521 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
-[W 19:10:03.524 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
-[I 19:12:03.509 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
-[W 19:12:03.512 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
-[I 19:14:03.585 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
-[W 19:14:03.589 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
-[I 19:16:03.531 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
-[W 19:16:03.534 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
-[I 19:18:04.097 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
-[W 19:18:04.100 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
-[I 19:20:04.051 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
-[W 19:20:04.054 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
-[I 19:22:03.573 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
-[W 19:22:03.577 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
-[I 19:24:03.522 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
-[W 19:24:03.525 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
-[I 19:26:03.582 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
-[W 19:26:03.585 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
-[I 19:30:03.534 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
-[W 19:30:03.537 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
-[I 19:32:03.533 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
-[W 19:32:03.537 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
-[I 19:34:04.053 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
-[W 19:34:04.056 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
-[I 19:36:03.528 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
-[W 19:36:03.531 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
-[I 19:38:03.544 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
-[W 19:38:03.548 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
-[I 19:40:04.242 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
-[W 19:40:04.246 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
-[I 19:42:03.504 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
-[W 19:42:03.507 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
-[I 19:44:03.684 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
-[W 19:44:03.687 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
-[I 19:44:18.602 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
-[W 19:44:18.606 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
-[I 19:46:03.733 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
-[W 19:46:03.736 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
-[I 19:46:04.510 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
-[W 19:46:04.513 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
-[I 19:50:03.628 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
-[W 19:50:03.631 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
-[I 19:52:03.612 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
-[W 19:52:03.647 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
-[I 19:54:03.670 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
-[W 19:54:03.674 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
-[I 19:56:03.536 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
-[W 19:56:03.540 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
-[I 19:58:04.273 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
-[W 19:58:04.276 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
-[I 20:00:03.524 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
-[W 20:00:03.528 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
-[I 20:04:04.158 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
-[W 20:04:04.162 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
-[I 20:06:03.503 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
-[W 20:06:03.506 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
-[I 20:08:03.501 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
-[W 20:08:03.505 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
-[I 20:09:36.509 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
-[W 20:09:36.513 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
+[I 15:43:35.042 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
+[W 15:43:35.045 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
+[I 15:45:35.052 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
+[W 15:45:35.056 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
+[I 15:47:34.215 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
+[W 15:47:34.219 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
+[I 15:48:29.541 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
+[W 15:48:29.545 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
+[I 15:49:01.550 NotebookApp] Starting buffering for 317894a4-22a4-41ac-8518-02bfe63e05e2:3b306901a48249eea9256d9073a2fe24
