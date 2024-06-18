@@ -4,11 +4,12 @@
 ITER=$1
 SEG=$2
 #FRAME=$3
+FRAME=10
 
 cat << EOF > seg_to_pdb.cpp
 parm common_files/m01_2kod_dry.prmtop
-#trajin traj_segs/$ITER/$SEG/seg.nc $FRAME $FRAME
-trajin traj_segs/$ITER/$SEG/seg-nowat.ncrst
+trajin traj_segs/$ITER/$SEG/seg.nc $FRAME $FRAME
+#trajin traj_segs/$ITER/$SEG/seg-nowat.ncrst
 autoimage
 #trajout i${ITER}_s${SEG}_f${FRAME}.pdb pdb
 trajout i${ITER}_s${SEG}.pdb pdb
