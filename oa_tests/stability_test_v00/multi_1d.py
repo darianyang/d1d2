@@ -13,9 +13,9 @@ plt.style.use('/Users/darian/github/wedap/styles/default.mplstyle')
 # titles = ['500ns', '650ns', '800ns', '950ns', '1100ns', '1300ns']
 # iter_ranges = [(1, 5000), (5000, 6500), (6500, 8000), (8000, 9500), (9500, 11000), (11000, 13000)]
 #titles = ['500ns', '650ns', '800ns', '950ns', '1100ns', '1300ns']
-#iter_ranges = [(1, 5000), (5000, 7000), (7000, 9000), (9000, 11000), (11000, 12000), (12000, 13000)]
-titles = ['500ns', '650ns', '800ns', '950ns', '1100ns', '1300ns']
-iter_ranges = [(1, 5000), (1, 6500), (1, 8000), (1, 9500), (1, 11000), (1, 13000)]
+iter_ranges = [(1, 5000), (5000, 7000), (7000, 9000), (9000, 11000), (11000, 12000), (12000, 13000)]
+titles = ['500 ns', '650 ns', '800 ns', '950 ns', '1100 ns', '1300 ns']
+#iter_ranges = [(1, 5000), (1, 6500), (1, 8000), (1, 9500), (1, 11000), (1, 13000)]
 colors = ["lightsteelblue", "skyblue", "cornflowerblue", "royalblue", "mediumblue", "navy"]
 
 fig, ax = plt.subplots(figsize=(8,5))
@@ -39,8 +39,10 @@ y_pos = 8.5
 # pdb labeling
 # pdb_dists = [8.0117, 12.1706, 4.1528, 14.9997, 15.7131, 6.6606, 8.0910, 13.3419]
 # pdb_labels = ['1A43', '2KOD', '1A8O', '4IPY', '2M8L', '1AUM', '1BAJ', '4XFX']
-pdb_dists = [8.0117, 12.1706, 4.1528, 14.9997, 15.7131,]
-pdb_labels = ['1A43', '2KOD', '1A8O', '4IPY', '2M8L']
+#pdb_dists = [8.0117, 12.1706, 4.1528, 14.9997, 15.7131,]
+#pdb_labels = ['1A43', '2KOD', '1A8O', '4IPY', '2M8L']
+pdb_dists = [8.0117, 12.1706, 4.1528, 14.997]
+pdb_labels = ['1A43', '2KOD', '1A8O', '4IPY']
 for i in range(len(pdb_dists)):
     ax.axvline(pdb_dists[i], linestyle="--", color="k", linewidth=2)
     # #, label=pdb_labels[i])
@@ -72,4 +74,5 @@ plt.tight_layout()
 plt.show()
 #fig.savefig("multi_tt_dist_exps_full-half2.pdf")
 #fig.savefig("multi_tt_dist_bins.pdf")
-fig.savefig("multi_tt_dist_exps_full13k-cumsum.pdf")
+#fig.savefig("multi_tt_dist_exps_full13k-cumsum2.pdf")
+fig.savefig("multi_tt_dist_exps_full13k2.pdf")
