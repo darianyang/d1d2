@@ -54,7 +54,8 @@ for i in range(len(pdb_dists)):
     #     ax.text(pdb_dists[i]-0.2, y_pos, pdb_labels[i], fontsize=14, rotation=45)
     ax.text(pdb_dists[i]-0.2, y_pos, pdb_labels[i], fontsize=14, rotation=45)
 
-ax.set_xlabel("THR-THR Distance ($\AA$)")
+#ax.set_xlabel("THR-THR Distance ($\AA$)")
+ax.set_xlabel("T188-T188 Distance ($\AA$)")
 plt.legend(fontsize=14, loc='upper left', frameon=False, bbox_to_anchor=[1, 1])
     
 # bins = [0, 4.5, 5, 5.25, 5.5, 6.0, 6.4, 6.6, 6.8, 7, 7.2, 7.4, 7.6, 7.8,
@@ -75,4 +76,4 @@ plt.show()
 #fig.savefig("multi_tt_dist_exps_full-half2.pdf")
 #fig.savefig("multi_tt_dist_bins.pdf")
 #fig.savefig("multi_tt_dist_exps_full13k-cumsum2.pdf")
-fig.savefig("multi_tt_dist_exps_full13k2.pdf")
+fig.savefig("multi_tt_dist_exps_full13k3.pdf")
