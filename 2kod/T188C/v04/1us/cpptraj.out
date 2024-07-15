@@ -1,0 +1,389 @@
+
+CPPTRAJ: Trajectory Analysis. V6.4.4 (AmberTools)
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 07/14/24 20:38:25
+| Available memory: 9.872 GB
+
+INPUT: Reading input from 'cpptraj.in'
+  [parm ../T188C-OX_dry.prmtop]
+	Reading '../T188C-OX_dry.prmtop' as Amber Topology
+	Radius Set: modified Bondi radii (mbondi)
+  [trajin ../06_prod.nc 1 last 100]
+	Reading '../06_prod.nc' as Amber NetCDF
+  [trajin ../07_prod.nc 1 last 100]
+	Reading '../07_prod.nc' as Amber NetCDF
+  [trajin ../08_prod.nc 1 last 100]
+	Reading '../08_prod.nc' as Amber NetCDF
+  [trajin ../09_prod.nc 1 last 100]
+	Reading '../09_prod.nc' as Amber NetCDF
+  [trajin ../10_prod.nc 1 last 100]
+	Reading '../10_prod.nc' as Amber NetCDF
+  [autoimage]
+    AUTOIMAGE: To box center based on center of mass, anchor is first molecule.
+  [reference ../../T188C-OX_leap.pdb :* name [d2]]
+	Reading '../../T188C-OX_leap.pdb' as PDB
+	Read CRYST1 info from PDB: a=40.141 b=43.578 c=55.189 alpha=74.02 beta=74.21 gamma=69.77
+Warning: In PDB file T188C-OX_leap.pdb: 42 name mismatches with parm T188C-OX_dry.prmtop.
+	Stripped ref parm: 2748 atoms, 176 res, box: Truncated octahedron, 1 mol
+	Setting active reference for distance-based masks: 'T188C-OX_leap.pdb'
+  [rms Fit_M2_D2 :94-163&!@H= ref [d2]]
+    RMSD: (:94-163&!@H*), reference is "[d2]:1" (:94-163&!@H*).
+	Best-fit RMSD will be calculated, coords will be rotated and translated.
+  [rms RMS_M1_D2 :6-75&!@H= ref [d2] nofit mass time 1 out rms_m1_d2.dat]
+    RMSD: (:6-75&!@H*), reference is "[d2]:1" (:6-75&!@H*), mass-weighted.
+	No fitting will be performed.
+  [rms RMS_H9M1_D2 :36-49&!@H= nofit ref [d2] out rms_h9m1_d2.dat mass time 1]
+    RMSD: (:36-49&!@H*), reference is "[d2]:1" (:36-49&!@H*), mass-weighted.
+	No fitting will be performed.
+  [rms Fit_M1_D2 :6-75&!@H= ref [d2]]
+    RMSD: (:6-75&!@H*), reference is "[d2]:1" (:6-75&!@H*).
+	Best-fit RMSD will be calculated, coords will be rotated and translated.
+  [rms RMS_M2_D2 :94-163&!@H= ref [d2] nofit mass time 1 out rms_m2_d2.dat]
+    RMSD: (:94-163&!@H*), reference is "[d2]:1" (:94-163&!@H*), mass-weighted.
+	No fitting will be performed.
+  [rms RMS_H9M2_D2 :124-137&!@H= nofit ref [d2] out rms_h9m2_d2.dat mass time 1]
+    RMSD: (:124-137&!@H*), reference is "[d2]:1" (:124-137&!@H*), mass-weighted.
+	No fitting will be performed.
+  [rms RMS_Heavy_D2 :6-75,94-163&!@H= ref [d2] mass time 1 out rms_heavy_d2.dat]
+    RMSD: (:6-75,94-163&!@H*), reference is "[d2]:1" (:6-75,94-163&!@H*), mass-weighted.
+	Best-fit RMSD will be calculated, coords will be rotated and translated.
+  [rms RMS_Backbone_D2 :6-75,94-163@CA,C,O,N ref [d2] mass time 1 out rms_bb_d2.dat]
+    RMSD: (:6-75,94-163@CA,C,O,N), reference is "[d2]:1" (:6-75,94-163@CA,C,O,N), mass-weighted.
+	Best-fit RMSD will be calculated, coords will be rotated and translated.
+  [rms RMS_Dimer_Int_D2 :7,8,34,35,37,38,41,42,45,46,49,95,96,122,123,125,126,129,130,133,134,137&!@H= ref [d2] mass time 1 out rms_dimer_int_d2.dat]
+    RMSD: (:7,8,34,35,37,38,41,42,45,46,49,95,96,122,123,125,126,129,130,133,134,137&!@H*), reference is "[d2]:1" (:7,8,34,35,37,38,41,42,45,46,49,95,96,122,123,125,126,129,130,133,134,137&!@H*), mass-weighted.
+	Best-fit RMSD will be calculated, coords will be rotated and translated.
+  [rms RMS_Key_Int_D2 :38,41,42,126,129,130&!@H= ref [d2] mass time 1 out rms_key_int_d2.dat]
+    RMSD: (:38,41,42,126,129,130&!@H*), reference is "[d2]:1" (:38,41,42,126,129,130&!@H*), mass-weighted.
+	Best-fit RMSD will be calculated, coords will be rotated and translated.
+  [vector D1 :1-75@CA,C,O,N :39@CA,C,O,N]
+    VECTOR: Type Mask, mask [:1-75@CA,C,O,N], second mask [:39@CA,C,O,N]
+  [vector D2 :89-163@CA,C,O,N :127@CA,C,O,N]
+    VECTOR: Type Mask, mask [:89-163@CA,C,O,N], second mask [:127@CA,C,O,N]
+  [vectormath vec1 D1 vec2 D2 out c2_angle.dat name c2_angle dotangle]
+    VECTORMATH: Calculating Angle from dot product of vectors D1 and D2
+	Vectors will be normalized.
+	Results are written to c2_angle.dat
+  [angle helix_angle :43@N :38,126@N :131@N out angle_3pt.dat mass]
+    ANGLE: [:43@N]-[:38,126@N]-[:131@N]
+	Using center of mass of atoms in masks.
+  [vector O1 :18-22@CA,C,O,N :46-49@CA,C,O,N]
+    VECTOR: Type Mask, mask [:18-22@CA,C,O,N], second mask [:46-49@CA,C,O,N]
+  [vector O2 :18-22@CA,C,O,N :134-137@CA,C,O,N]
+    VECTOR: Type Mask, mask [:18-22@CA,C,O,N], second mask [:134-137@CA,C,O,N]
+  [vector O3 :106-110@CA,C,O,N :46-49@CA,C,O,N]
+    VECTOR: Type Mask, mask [:106-110@CA,C,O,N], second mask [:46-49@CA,C,O,N]
+  [vector O4 :106-110@CA,C,O,N :134-137@CA,C,O,N]
+    VECTOR: Type Mask, mask [:106-110@CA,C,O,N], second mask [:134-137@CA,C,O,N]
+  [vectormath vec1 O1 vec2 O2 out o_angle.dat name o_angle_m1 dotangle]
+    VECTORMATH: Calculating Angle from dot product of vectors O1 and O2
+	Vectors will be normalized.
+	Results are written to o_angle.dat
+  [vectormath vec1 O3 vec2 O4 out o_angle.dat name o_angle_m2 dotangle]
+    VECTORMATH: Calculating Angle from dot product of vectors O3 and O4
+	Vectors will be normalized.
+	Results are written to o_angle.dat
+  [distance M1-E175-Oe_M2-W184-He1 :32@OE1,OE2 :129@HE1 out dist_M1-E175_M2-W184.dat]
+    DISTANCE: :32@OE1,OE2 to :129@HE1, center of mass.
+  [distance M2-E175-Oe_M1-W184-He1 :120@OE1,OE2 :41@HE1 out dist_M2-E175_M1-W184.dat]
+    DISTANCE: :120@OE1,OE2 to :41@HE1, center of mass.
+  [distance M1-E175-Oe_M1-T148-HG1 :32@OE1,OE2 :5@HG1 out dist_M1-E175_M1-T148.dat]
+    DISTANCE: :32@OE1,OE2 to :5@HG1, center of mass.
+  [distance M2-E175-Oe_M2-T148-HG1 :120@OE1,OE2 :93@HG1 out dist_M2-E175_M2-T148.dat]
+    DISTANCE: :120@OE1,OE2 to :93@HG1, center of mass.
+  [distance M1-M2-COM :6-75&!@H= :94-163&!@H= out dist_M1-M2_COM.dat]
+    DISTANCE: :6-75&!@H* to :94-163&!@H*, center of mass.
+  [distance M1-M2-L46 :46@N :134@N out dist_M1-M2_L46.dat]
+    DISTANCE: :46@N to :134@N, center of mass.
+  [multidihedral phi resrange 32-32 out M1_E175_phi.dat]
+    MULTIDIHEDRAL: Calculating phi dihedrals for residues in range 32-32
+	Output to M1_E175_phi.dat
+	Output range is -180 to 180 degrees.
+  [multidihedral psi resrange 32-32 out M1_E175_psi.dat]
+    MULTIDIHEDRAL: Calculating psi dihedrals for residues in range 32-32
+	Output to M1_E175_psi.dat
+	Output range is -180 to 180 degrees.
+  [multidihedral dihtype chi1:N:CA:CB:CG dihtype chi2:CA:CB:CG:CD dihtype chi3:CB:CG:CD:OE1 resrange 32-32 out M1_E175_chi123.dat]
+    MULTIDIHEDRAL: Calculating chi1 chi2 chi3 dihedrals for residues in range 32-32
+	Output to M1_E175_chi123.dat
+	Output range is -180 to 180 degrees.
+  [multidihedral phi resrange 120-120 out M2_E175_phi.dat]
+    MULTIDIHEDRAL: Calculating phi dihedrals for residues in range 120-120
+	Output to M2_E175_phi.dat
+	Output range is -180 to 180 degrees.
+  [multidihedral psi resrange 120-120 out M2_E175_psi.dat]
+    MULTIDIHEDRAL: Calculating psi dihedrals for residues in range 120-120
+	Output to M2_E175_psi.dat
+	Output range is -180 to 180 degrees.
+  [multidihedral dihtype chi1:N:CA:CB:CG dihtype chi2:CA:CB:CG:CD dihtype chi3:CB:CG:CD:OE1 resrange 120-120 out M2_E175_chi123.dat]
+    MULTIDIHEDRAL: Calculating chi1 chi2 chi3 dihedrals for residues in range 120-120
+	Output to M2_E175_chi123.dat
+	Output range is -180 to 180 degrees.
+  [multidihedral dihtype chi1:N:CA:CB:CG dihtype chi2:CA:CB:CG:CD1 resrange 41-41 out M1_W184_chi12.dat]
+    MULTIDIHEDRAL: Calculating chi1 chi2 dihedrals for residues in range 41-41
+	Output to M1_W184_chi12.dat
+	Output range is -180 to 180 degrees.
+  [multidihedral dihtype chi1:N:CA:CB:CG dihtype chi2:CA:CB:CG:CD1 resrange 129-129 out M2_W184_chi12.dat]
+    MULTIDIHEDRAL: Calculating chi1 chi2 dihedrals for residues in range 129-129
+	Output to M2_W184_chi12.dat
+	Output range is -180 to 180 degrees.
+  [distance T45-T133 :45&!@CA,C,O,N,H :133&!@CA,C,O,N,H out tt_sc_dist.dat]
+    DISTANCE: :45&!@CA,C,O,N,H to :133&!@CA,C,O,N,H, center of mass.
+  [distance C45-C133 :45@SG :133@SG out cc_sg_dist.dat]
+    DISTANCE: :45@SG to :133@SG, center of mass.
+  [distance C45N-C133N :45@CA :133@CA out cc_ca_dist.dat]
+    DISTANCE: :45@CA to :133@CA, center of mass.
+  [go]
+---------- RUN BEGIN -------------------------------------------------
+
+PARAMETER FILES (1 total):
+ 0: T188C-OX_dry.prmtop, 2748 atoms, 176 res, box: Truncated octahedron, 1 mol
+
+INPUT TRAJECTORIES (5 total):
+ 0: '06_prod.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm T188C-OX_dry.prmtop (Truncated octahedron box) (reading 200 of 20000)
+ 1: '07_prod.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm T188C-OX_dry.prmtop (Truncated octahedron box) (reading 200 of 20000)
+ 2: '08_prod.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm T188C-OX_dry.prmtop (Truncated octahedron box) (reading 200 of 20000)
+ 3: '09_prod.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm T188C-OX_dry.prmtop (Truncated octahedron box) (reading 200 of 20000)
+ 4: '10_prod.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm T188C-OX_dry.prmtop (Truncated octahedron box) (reading 200 of 20000)
+  Coordinate processing will occur on 1000 frames.
+
+REFERENCE FRAMES (1 total):
+    0: [d2]:1
+	Active reference frame for distance-based masks is '[d2]:1'
+
+BEGIN TRAJECTORY PROCESSING:
+.....................................................
+ACTION SETUP FOR PARM 'T188C-OX_dry.prmtop' (35 actions):
+  0: [autoimage]
+	Original box is truncated octahedron, turning on 'familiar'.
+	Using first molecule as anchor.
+	0 molecules are mobile.
+  1: [rms Fit_M2_D2 :94-163&!@H= ref [d2]]
+	Target mask: [:94-163&!@H*](556)
+	Reference topology: T188C-OX_dry.prmtop
+	Reference mask: [:94-163&!@H*](556)
+  2: [rms RMS_M1_D2 :6-75&!@H= ref [d2] nofit mass time 1 out rms_m1_d2.dat]
+	Target mask: [:6-75&!@H*](556)
+	Reference topology: T188C-OX_dry.prmtop
+	Reference mask: [:6-75&!@H*](556)
+  3: [rms RMS_H9M1_D2 :36-49&!@H= nofit ref [d2] out rms_h9m1_d2.dat mass time 1]
+	Target mask: [:36-49&!@H*](118)
+	Reference topology: T188C-OX_dry.prmtop
+	Reference mask: [:36-49&!@H*](118)
+  4: [rms Fit_M1_D2 :6-75&!@H= ref [d2]]
+	Target mask: [:6-75&!@H*](556)
+	Reference topology: T188C-OX_dry.prmtop
+	Reference mask: [:6-75&!@H*](556)
+  5: [rms RMS_M2_D2 :94-163&!@H= ref [d2] nofit mass time 1 out rms_m2_d2.dat]
+	Target mask: [:94-163&!@H*](556)
+	Reference topology: T188C-OX_dry.prmtop
+	Reference mask: [:94-163&!@H*](556)
+  6: [rms RMS_H9M2_D2 :124-137&!@H= nofit ref [d2] out rms_h9m2_d2.dat mass time 1]
+	Target mask: [:124-137&!@H*](118)
+	Reference topology: T188C-OX_dry.prmtop
+	Reference mask: [:124-137&!@H*](118)
+  7: [rms RMS_Heavy_D2 :6-75,94-163&!@H= ref [d2] mass time 1 out rms_heavy_d2.dat]
+	Target mask: [:6-75,94-163&!@H*](1112)
+	Reference topology: T188C-OX_dry.prmtop
+	Reference mask: [:6-75,94-163&!@H*](1112)
+  8: [rms RMS_Backbone_D2 :6-75,94-163@CA,C,O,N ref [d2] mass time 1 out rms_bb_d2.dat]
+	Target mask: [:6-75,94-163@CA,C,O,N](560)
+	Reference topology: T188C-OX_dry.prmtop
+	Reference mask: [:6-75,94-163@CA,C,O,N](560)
+  9: [rms RMS_Dimer_Int_D2 :7,8,34,35,37,38,41,42,45,46,49,95,96,122,123,125,126,129,130,133,134,137&!@H= ref [d2] mass time 1 out rms_dimer_int_d2.dat]
+	Target mask: [:7,8,34,35,37,38,41,42,45,46,49,95,96,122,123,125,126,129,130,133,134,137&!@H*](176)
+	Reference topology: T188C-OX_dry.prmtop
+	Reference mask: [:7,8,34,35,37,38,41,42,45,46,49,95,96,122,123,125,126,129,130,133,134,137&!@H*](176)
+  10: [rms RMS_Key_Int_D2 :38,41,42,126,129,130&!@H= ref [d2] mass time 1 out rms_key_int_d2.dat]
+	Target mask: [:38,41,42,126,129,130&!@H*](58)
+	Reference topology: T188C-OX_dry.prmtop
+	Reference mask: [:38,41,42,126,129,130&!@H*](58)
+  11: [vector D1 :1-75@CA,C,O,N :39@CA,C,O,N]
+	Mask [:1-75@CA,C,O,N] corresponds to 300 atoms.
+	Mask [:39@CA,C,O,N] corresponds to 4 atoms.
+  12: [vector D2 :89-163@CA,C,O,N :127@CA,C,O,N]
+	Mask [:89-163@CA,C,O,N] corresponds to 300 atoms.
+	Mask [:127@CA,C,O,N] corresponds to 4 atoms.
+  13: [angle helix_angle :43@N :38,126@N :131@N out angle_3pt.dat mass]
+	 [:43@N](1) [:38,126@N](2) [:131@N](1)
+  14: [vector O1 :18-22@CA,C,O,N :46-49@CA,C,O,N]
+	Mask [:18-22@CA,C,O,N] corresponds to 20 atoms.
+	Mask [:46-49@CA,C,O,N] corresponds to 16 atoms.
+  15: [vector O2 :18-22@CA,C,O,N :134-137@CA,C,O,N]
+	Mask [:18-22@CA,C,O,N] corresponds to 20 atoms.
+	Mask [:134-137@CA,C,O,N] corresponds to 16 atoms.
+  16: [vector O3 :106-110@CA,C,O,N :46-49@CA,C,O,N]
+	Mask [:106-110@CA,C,O,N] corresponds to 20 atoms.
+	Mask [:46-49@CA,C,O,N] corresponds to 16 atoms.
+  17: [vector O4 :106-110@CA,C,O,N :134-137@CA,C,O,N]
+	Mask [:106-110@CA,C,O,N] corresponds to 20 atoms.
+	Mask [:134-137@CA,C,O,N] corresponds to 16 atoms.
+  18: [distance M1-E175-Oe_M2-W184-He1 :32@OE1,OE2 :129@HE1 out dist_M1-E175_M2-W184.dat]
+	:32@OE1,OE2 (2 atoms) to :129@HE1 (1 atoms), imaged.
+  19: [distance M2-E175-Oe_M1-W184-He1 :120@OE1,OE2 :41@HE1 out dist_M2-E175_M1-W184.dat]
+	:120@OE1,OE2 (2 atoms) to :41@HE1 (1 atoms), imaged.
+  20: [distance M1-E175-Oe_M1-T148-HG1 :32@OE1,OE2 :5@HG1 out dist_M1-E175_M1-T148.dat]
+	:32@OE1,OE2 (2 atoms) to :5@HG1 (1 atoms), imaged.
+  21: [distance M2-E175-Oe_M2-T148-HG1 :120@OE1,OE2 :93@HG1 out dist_M2-E175_M2-T148.dat]
+	:120@OE1,OE2 (2 atoms) to :93@HG1 (1 atoms), imaged.
+  22: [distance M1-M2-COM :6-75&!@H= :94-163&!@H= out dist_M1-M2_COM.dat]
+	:6-75&!@H* (556 atoms) to :94-163&!@H* (556 atoms), imaged.
+  23: [distance M1-M2-L46 :46@N :134@N out dist_M1-M2_L46.dat]
+	:46@N (1 atoms) to :134@N (1 atoms), imaged.
+  24: [multidihedral phi resrange 32-32 out M1_E175_phi.dat]
+	ResRange=[32-32] phi, 1 dihedrals.
+	1 [phi:32]: ALA@C GLU@N GLU@CA GLU@C
+  25: [multidihedral psi resrange 32-32 out M1_E175_psi.dat]
+	ResRange=[32-32] psi, 1 dihedrals.
+	1 [psi:32]: GLU@N GLU@CA GLU@C GLN@N
+  26: [multidihedral dihtype chi1:N:CA:CB:CG dihtype chi2:CA:CB:CG:CD dihtype chi3:CB:CG:CD:OE1 resrange 32-32 out M1_E175_chi123.dat]
+	ResRange=[32-32] chi1 chi2 chi3, 3 dihedrals.
+	1 [chi1:32]: GLU@N GLU@CA GLU@CB GLU@CG
+	2 [chi2:32]: GLU@CA GLU@CB GLU@CG GLU@CD
+	3 [chi3:32]: GLU@CB GLU@CG GLU@CD GLU@OE1
+  27: [multidihedral phi resrange 120-120 out M2_E175_phi.dat]
+	ResRange=[120-120] phi, 1 dihedrals.
+	1 [phi:120]: ALA@C GLU@N GLU@CA GLU@C
+  28: [multidihedral psi resrange 120-120 out M2_E175_psi.dat]
+	ResRange=[120-120] psi, 1 dihedrals.
+	1 [psi:120]: GLU@N GLU@CA GLU@C GLN@N
+  29: [multidihedral dihtype chi1:N:CA:CB:CG dihtype chi2:CA:CB:CG:CD dihtype chi3:CB:CG:CD:OE1 resrange 120-120 out M2_E175_chi123.dat]
+	ResRange=[120-120] chi1 chi2 chi3, 3 dihedrals.
+	1 [chi1:120]: GLU@N GLU@CA GLU@CB GLU@CG
+	2 [chi2:120]: GLU@CA GLU@CB GLU@CG GLU@CD
+	3 [chi3:120]: GLU@CB GLU@CG GLU@CD GLU@OE1
+  30: [multidihedral dihtype chi1:N:CA:CB:CG dihtype chi2:CA:CB:CG:CD1 resrange 41-41 out M1_W184_chi12.dat]
+	ResRange=[41-41] chi1 chi2, 2 dihedrals.
+	1 [chi1:41]: TRP@N TRP@CA TRP@CB TRP@CG
+	2 [chi2:41]: TRP@CA TRP@CB TRP@CG TRP@CD1
+  31: [multidihedral dihtype chi1:N:CA:CB:CG dihtype chi2:CA:CB:CG:CD1 resrange 129-129 out M2_W184_chi12.dat]
+	ResRange=[129-129] chi1 chi2, 2 dihedrals.
+	1 [chi1:129]: TRP@N TRP@CA TRP@CB TRP@CG
+	2 [chi2:129]: TRP@CA TRP@CB TRP@CG TRP@CD1
+  32: [distance T45-T133 :45&!@CA,C,O,N,H :133&!@CA,C,O,N,H out tt_sc_dist.dat]
+	:45&!@CA,C,O,N,H (5 atoms) to :133&!@CA,C,O,N,H (5 atoms), imaged.
+  33: [distance C45-C133 :45@SG :133@SG out cc_sg_dist.dat]
+	:45@SG (1 atoms) to :133@SG (1 atoms), imaged.
+  34: [distance C45N-C133N :45@CA :133@CA out cc_ca_dist.dat]
+	:45@CA (1 atoms) to :133@CA (1 atoms), imaged.
+----- 06_prod.nc (1-20000, 100) -----
+ 0% 10% 
+----- 07_prod.nc (1-20000, 100) -----
+20% 30% 
+----- 08_prod.nc (1-20000, 100) -----
+40% 50% 
+----- 09_prod.nc (1-20000, 100) -----
+60% 70% 
+----- 10_prod.nc (1-20000, 100) -----
+80% 90% 100% Complete.
+
+Read 1000 frames and processed 1000 frames.
+TIME: Avg. throughput= 73.6505 frames / second.
+
+ACTION OUTPUT:
+
+ANALYSIS: Performing 3 analyses:
+  0: [vectormath vec1 D1 vec2 D2 out c2_angle.dat name c2_angle dotangle]
+	'D1' size 1000, 'D2' size 1000, output size 1000
+  1: [vectormath vec1 O1 vec2 O2 out o_angle.dat name o_angle_m1 dotangle]
+	'O1' size 1000, 'O2' size 1000, output size 1000
+  2: [vectormath vec1 O3 vec2 O4 out o_angle.dat name o_angle_m2 dotangle]
+	'O3' size 1000, 'O4' size 1000, output size 1000
+
+TIME: Analyses took 0.0002 seconds.
+
+DATASETS (43 total):
+	Fit_M2_D2 "Fit_M2_D2" (double, rms), size is 1000 (8.000 kB)
+	RMS_M1_D2 "RMS_M1_D2" (double, rms), size is 1000 (8.000 kB)
+	RMS_H9M1_D2 "RMS_H9M1_D2" (double, rms), size is 1000 (8.000 kB)
+	Fit_M1_D2 "Fit_M1_D2" (double, rms), size is 1000 (8.000 kB)
+	RMS_M2_D2 "RMS_M2_D2" (double, rms), size is 1000 (8.000 kB)
+	RMS_H9M2_D2 "RMS_H9M2_D2" (double, rms), size is 1000 (8.000 kB)
+	RMS_Heavy_D2 "RMS_Heavy_D2" (double, rms), size is 1000 (8.000 kB)
+	RMS_Backbone_D2 "RMS_Backbone_D2" (double, rms), size is 1000 (8.000 kB)
+	RMS_Dimer_Int_D2 "RMS_Dimer_Int_D2" (double, rms), size is 1000 (8.000 kB)
+	RMS_Key_Int_D2 "RMS_Key_Int_D2" (double, rms), size is 1000 (8.000 kB)
+	D1 "D1" (vector, vector), size is 1000 (48.004 kB)
+	D2 "D2" (vector, vector), size is 1000 (48.004 kB)
+	c2_angle "c2_angle" (double), size is 1000 (8.000 kB)
+	helix_angle "helix_angle" (double, angle), size is 1000 (8.000 kB)
+	O1 "O1" (vector, vector), size is 1000 (48.004 kB)
+	O2 "O2" (vector, vector), size is 1000 (48.004 kB)
+	O3 "O3" (vector, vector), size is 1000 (48.004 kB)
+	O4 "O4" (vector, vector), size is 1000 (48.004 kB)
+	o_angle_m1 "o_angle_m1" (double), size is 1000 (8.000 kB)
+	o_angle_m2 "o_angle_m2" (double), size is 1000 (8.000 kB)
+	M1-E175-Oe_M2-W184-He1 "M1-E175-Oe_M2-W184-He1" (double, distance), size is 1000 (8.000 kB)
+	M2-E175-Oe_M1-W184-He1 "M2-E175-Oe_M1-W184-He1" (double, distance), size is 1000 (8.000 kB)
+	M1-E175-Oe_M1-T148-HG1 "M1-E175-Oe_M1-T148-HG1" (double, distance), size is 1000 (8.000 kB)
+	M2-E175-Oe_M2-T148-HG1 "M2-E175-Oe_M2-T148-HG1" (double, distance), size is 1000 (8.000 kB)
+	M1-M2-COM "M1-M2-COM" (double, distance), size is 1000 (8.000 kB)
+	M1-M2-L46 "M1-M2-L46" (double, distance), size is 1000 (8.000 kB)
+	T45-T133 "T45-T133" (double, distance), size is 1000 (8.000 kB)
+	C45-C133 "C45-C133" (double, distance), size is 1000 (8.000 kB)
+	C45N-C133N "C45N-C133N" (double, distance), size is 1000 (8.000 kB)
+	MDIH_00031[phi]:32 "phi:32" (double, torsion(phi)), size is 1000 (8.000 kB)
+	MDIH_00032[psi]:32 "psi:32" (double, torsion(psi)), size is 1000 (8.000 kB)
+	MDIH_00033[chi1]:32 "chi1:32" (double, torsion), size is 1000 (8.000 kB)
+	MDIH_00033[chi2]:32 "chi2:32" (double, torsion), size is 1000 (8.000 kB)
+	MDIH_00033[chi3]:32 "chi3:32" (double, torsion), size is 1000 (8.000 kB)
+	MDIH_00036[phi]:120 "phi:120" (double, torsion(phi)), size is 1000 (8.000 kB)
+	MDIH_00037[psi]:120 "psi:120" (double, torsion(psi)), size is 1000 (8.000 kB)
+	MDIH_00038[chi1]:120 "chi1:120" (double, torsion), size is 1000 (8.000 kB)
+	MDIH_00038[chi2]:120 "chi2:120" (double, torsion), size is 1000 (8.000 kB)
+	MDIH_00038[chi3]:120 "chi3:120" (double, torsion), size is 1000 (8.000 kB)
+	MDIH_00041[chi1]:41 "chi1:41" (double, torsion), size is 1000 (8.000 kB)
+	MDIH_00041[chi2]:41 "chi2:41" (double, torsion), size is 1000 (8.000 kB)
+	MDIH_00043[chi1]:129 "chi1:129" (double, torsion), size is 1000 (8.000 kB)
+	MDIH_00043[chi2]:129 "chi2:129" (double, torsion), size is 1000 (8.000 kB)
+    Total data set memory usage is at least 584.024 kB
+
+DATAFILES (28 total):
+  rms_m1_d2.dat (Standard Data File):  RMS_M1_D2
+  rms_h9m1_d2.dat (Standard Data File):  RMS_H9M1_D2
+  rms_m2_d2.dat (Standard Data File):  RMS_M2_D2
+  rms_h9m2_d2.dat (Standard Data File):  RMS_H9M2_D2
+  rms_heavy_d2.dat (Standard Data File):  RMS_Heavy_D2
+  rms_bb_d2.dat (Standard Data File):  RMS_Backbone_D2
+  rms_dimer_int_d2.dat (Standard Data File):  RMS_Dimer_Int_D2
+  rms_key_int_d2.dat (Standard Data File):  RMS_Key_Int_D2
+  c2_angle.dat (Standard Data File):  c2_angle
+  angle_3pt.dat (Standard Data File):  helix_angle
+  o_angle.dat (Standard Data File):  o_angle_m1 o_angle_m2
+  dist_M1-E175_M2-W184.dat (Standard Data File):  M1-E175-Oe_M2-W184-He1
+  dist_M2-E175_M1-W184.dat (Standard Data File):  M2-E175-Oe_M1-W184-He1
+  dist_M1-E175_M1-T148.dat (Standard Data File):  M1-E175-Oe_M1-T148-HG1
+  dist_M2-E175_M2-T148.dat (Standard Data File):  M2-E175-Oe_M2-T148-HG1
+  dist_M1-M2_COM.dat (Standard Data File):  M1-M2-COM
+  dist_M1-M2_L46.dat (Standard Data File):  M1-M2-L46
+  M1_E175_phi.dat (Standard Data File):  phi:32
+  M1_E175_psi.dat (Standard Data File):  psi:32
+  M1_E175_chi123.dat (Standard Data File):  chi1:32 chi2:32 chi3:32
+  M2_E175_phi.dat (Standard Data File):  phi:120
+  M2_E175_psi.dat (Standard Data File):  psi:120
+  M2_E175_chi123.dat (Standard Data File):  chi1:120 chi2:120 chi3:120
+  M1_W184_chi12.dat (Standard Data File):  chi1:41 chi2:41
+  M2_W184_chi12.dat (Standard Data File):  chi1:129 chi2:129
+  tt_sc_dist.dat (Standard Data File):  T45-T133
+  cc_sg_dist.dat (Standard Data File):  C45-C133
+  cc_ca_dist.dat (Standard Data File):  C45N-C133N
+
+RUN TIMING:
+TIME:		Init               : 0.0001 s (  0.00%)
+TIME:		Trajectory Process : 13.5776 s ( 99.60%)
+TIME:		Action Post        : 0.0000 s (  0.00%)
+TIME:		Analysis           : 0.0002 s (  0.00%)
+TIME:		Data File Write    : 0.0538 s (  0.39%)
+TIME:		Other              : 0.0000 s (  0.00%)
+TIME:	Run Total 13.6319 s
+---------- RUN END ---------------------------------------------------
+TIME: Total execution time: 14.1556 seconds.
+--------------------------------------------------------------------------------
+To cite CPPTRAJ use:
+Daniel R. Roe and Thomas E. Cheatham, III, "PTRAJ and CPPTRAJ: Software for
+  Processing and Analysis of Molecular Dynamics Trajectory Data". J. Chem.
+  Theory Comput., 2013, 9 (7), pp 3084-3095.
+
