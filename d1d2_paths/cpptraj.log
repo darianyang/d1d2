@@ -1,0 +1,34 @@
+# 07/19/24 01:05:08
+parm m01_2kod_dry.prmtop
+trajin TRAJ_it236_seg8_trace.dcd 1 last 100
+trajout TRAJ_it236_seg8_100i.dcd
+# 07/19/24 01:05:48
+parm m01_2kod_dry.prmtop
+trajin TRAJ_it236_seg8_trace.dcd 1 last 100
+trajout TRAJ_it236_seg8_100i.dcd
+run
+# 07/19/24 01:06:55
+parm m01_2kod_dry.prmtop
+trajin 1236_49_10i.dcd 1 last 10
+trajout 1236_49_100i.dcd
+run
+quit
+# 07/19/24 01:08:33
+parm m01_2kod_dry.prmtop
+trajin TRAJ_it236_seg8_trace.dcd 1 last 10
+trajout TRAJ_it236_seg8_10i.dcd
+run
+quit
+# 07/19/24 01:12:22
+parm m01_2kod_dry.prmtop
+trajin TRAJ_it236_seg8_trace.dcd 1 last 10
+rms first :1-76@CA
+trajout TRAJ_it236_seg8_10i-fit.dcd
+run
+# 07/19/24 01:13:46
+parm m01_2kod_dry.prmtop
+trajin 1236_49_10i.dcd
+rms first :1-76@CA
+trajout 1236_49_10i-fit.dcd
+run
+quit
