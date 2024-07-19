@@ -1,152 +1,39 @@
-[I 16:06:17.115 NotebookApp] Serving notebooks from local directory: /ix/lchong/dty7/d1d2/2kod/msm
-[I 16:06:17.115 NotebookApp] Jupyter Notebook 6.5.4 is running at:
-[I 16:06:17.115 NotebookApp] http://smp-1024-n1.crc.pitt.edu:8888/
-[I 16:06:17.115 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
-[I 16:07:51.589 NotebookApp] 302 GET / (10.201.0.82) 0.380000ms
-[I 16:07:51.613 NotebookApp] 302 GET /tree? (10.201.0.82) 0.410000ms
-[W 16:07:58.831 NotebookApp] Not allowing login redirect to '/tree?'
-[I 16:07:58.832 NotebookApp] 302 POST /login?next=%2Ftree%3F (10.201.0.82) 349.740000ms
-[I 16:07:58.863 NotebookApp] 302 GET / (10.201.0.82) 0.270000ms
-[W 16:10:19.854 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
-[I 16:10:25.019 NotebookApp] Kernel started: 5017e30e-d119-4754-b3b4-0f0a38ba7787, name: hamsm
-[E 16:12:20.166 NotebookApp] Uncaught exception, closing connection.
-    Traceback (most recent call last):
-      File "/ihome/lchong/dty7/Apps/anaconda3/envs/hamsm/lib/python3.10/site-packages/tornado/iostream.py", line 695, in _handle_events
-        self._handle_write()
-      File "/ihome/lchong/dty7/Apps/anaconda3/envs/hamsm/lib/python3.10/site-packages/tornado/iostream.py", line 965, in _handle_write
-        self._write_buffer.advance(num_bytes)
-      File "/ihome/lchong/dty7/Apps/anaconda3/envs/hamsm/lib/python3.10/site-packages/tornado/iostream.py", line 182, in advance
-        assert 0 < size <= self._size
-    AssertionError
-Exception in callback None()
-handle: <Handle cancelled>
-Traceback (most recent call last):
-  File "/ihome/lchong/dty7/Apps/anaconda3/envs/hamsm/lib/python3.10/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-  File "/ihome/lchong/dty7/Apps/anaconda3/envs/hamsm/lib/python3.10/site-packages/tornado/platform/asyncio.py", line 192, in _handle_events
-    handler_func(fileobj, events)
-  File "/ihome/lchong/dty7/Apps/anaconda3/envs/hamsm/lib/python3.10/site-packages/tornado/iostream.py", line 695, in _handle_events
-    self._handle_write()
-  File "/ihome/lchong/dty7/Apps/anaconda3/envs/hamsm/lib/python3.10/site-packages/tornado/iostream.py", line 965, in _handle_write
-    self._write_buffer.advance(num_bytes)
-  File "/ihome/lchong/dty7/Apps/anaconda3/envs/hamsm/lib/python3.10/site-packages/tornado/iostream.py", line 182, in advance
-    assert 0 < size <= self._size
-AssertionError
-[I 16:12:20.200 NotebookApp] Starting buffering for 5017e30e-d119-4754-b3b4-0f0a38ba7787:1dd9a782a5314521b67f7f2ce58bc074
-[I 16:12:21.399 NotebookApp] Restoring connection for 5017e30e-d119-4754-b3b4-0f0a38ba7787:1dd9a782a5314521b67f7f2ce58bc074
-[I 16:12:26.746 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
-[W 16:12:26.749 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
-[I 16:14:26.686 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
-[W 16:14:26.736 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
-[E 16:18:42.131 NotebookApp] Uncaught exception, closing connection.
-    Traceback (most recent call last):
-      File "/ihome/lchong/dty7/Apps/anaconda3/envs/hamsm/lib/python3.10/site-packages/tornado/iostream.py", line 695, in _handle_events
-        self._handle_write()
-      File "/ihome/lchong/dty7/Apps/anaconda3/envs/hamsm/lib/python3.10/site-packages/tornado/iostream.py", line 965, in _handle_write
-        self._write_buffer.advance(num_bytes)
-      File "/ihome/lchong/dty7/Apps/anaconda3/envs/hamsm/lib/python3.10/site-packages/tornado/iostream.py", line 182, in advance
-        assert 0 < size <= self._size
-    AssertionError
-Exception in callback None()
-handle: <Handle cancelled>
-Traceback (most recent call last):
-  File "/ihome/lchong/dty7/Apps/anaconda3/envs/hamsm/lib/python3.10/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-  File "/ihome/lchong/dty7/Apps/anaconda3/envs/hamsm/lib/python3.10/site-packages/tornado/platform/asyncio.py", line 192, in _handle_events
-    handler_func(fileobj, events)
-  File "/ihome/lchong/dty7/Apps/anaconda3/envs/hamsm/lib/python3.10/site-packages/tornado/iostream.py", line 695, in _handle_events
-    self._handle_write()
-  File "/ihome/lchong/dty7/Apps/anaconda3/envs/hamsm/lib/python3.10/site-packages/tornado/iostream.py", line 965, in _handle_write
-    self._write_buffer.advance(num_bytes)
-  File "/ihome/lchong/dty7/Apps/anaconda3/envs/hamsm/lib/python3.10/site-packages/tornado/iostream.py", line 182, in advance
-    assert 0 < size <= self._size
-AssertionError
-[I 16:18:42.133 NotebookApp] Starting buffering for 5017e30e-d119-4754-b3b4-0f0a38ba7787:1dd9a782a5314521b67f7f2ce58bc074
-[I 16:18:43.811 NotebookApp] Restoring connection for 5017e30e-d119-4754-b3b4-0f0a38ba7787:1dd9a782a5314521b67f7f2ce58bc074
-[E 16:19:16.232 NotebookApp] Uncaught exception in ZMQStream callback
-    Traceback (most recent call last):
-      File "/ihome/lchong/dty7/Apps/anaconda3/envs/hamsm/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 584, in _run_callback
-        f = callback(*args, **kwargs)
-      File "/ihome/lchong/dty7/Apps/anaconda3/envs/hamsm/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 308, in stream_callback
-        return callback(self, msg)
-      File "/ihome/lchong/dty7/Apps/anaconda3/envs/hamsm/lib/python3.10/site-packages/notebook/services/kernels/handlers.py", line 572, in _on_zmq_reply
-        super()._on_zmq_reply(stream, msg)
-      File "/ihome/lchong/dty7/Apps/anaconda3/envs/hamsm/lib/python3.10/site-packages/notebook/base/zmqhandlers.py", line 256, in _on_zmq_reply
-        self.write_message(msg, binary=isinstance(msg, bytes))
-      File "/ihome/lchong/dty7/Apps/anaconda3/envs/hamsm/lib/python3.10/site-packages/tornado/websocket.py", line 334, in write_message
-        return self.ws_connection.write_message(message, binary=binary)
-      File "/ihome/lchong/dty7/Apps/anaconda3/envs/hamsm/lib/python3.10/site-packages/tornado/websocket.py", line 1081, in write_message
-        fut = self._write_frame(True, opcode, message, flags=flags)
-      File "/ihome/lchong/dty7/Apps/anaconda3/envs/hamsm/lib/python3.10/site-packages/tornado/websocket.py", line 1056, in _write_frame
-        return self.stream.write(frame)
-      File "/ihome/lchong/dty7/Apps/anaconda3/envs/hamsm/lib/python3.10/site-packages/tornado/iostream.py", line 539, in write
-        self._handle_write()
-      File "/ihome/lchong/dty7/Apps/anaconda3/envs/hamsm/lib/python3.10/site-packages/tornado/iostream.py", line 965, in _handle_write
-        self._write_buffer.advance(num_bytes)
-      File "/ihome/lchong/dty7/Apps/anaconda3/envs/hamsm/lib/python3.10/site-packages/tornado/iostream.py", line 182, in advance
-        assert 0 < size <= self._size
-    AssertionError
-[E 16:19:16.291 NotebookApp] Uncaught exception in zmqstream callback
-    Traceback (most recent call last):
-      File "/ihome/lchong/dty7/Apps/anaconda3/envs/hamsm/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 634, in _handle_events
-        self._handle_recv()
-      File "/ihome/lchong/dty7/Apps/anaconda3/envs/hamsm/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 663, in _handle_recv
-        self._run_callback(callback, msg)
-      File "/ihome/lchong/dty7/Apps/anaconda3/envs/hamsm/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 584, in _run_callback
-        f = callback(*args, **kwargs)
-      File "/ihome/lchong/dty7/Apps/anaconda3/envs/hamsm/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 308, in stream_callback
-        return callback(self, msg)
-      File "/ihome/lchong/dty7/Apps/anaconda3/envs/hamsm/lib/python3.10/site-packages/notebook/services/kernels/handlers.py", line 572, in _on_zmq_reply
-        super()._on_zmq_reply(stream, msg)
-      File "/ihome/lchong/dty7/Apps/anaconda3/envs/hamsm/lib/python3.10/site-packages/notebook/base/zmqhandlers.py", line 256, in _on_zmq_reply
-        self.write_message(msg, binary=isinstance(msg, bytes))
-      File "/ihome/lchong/dty7/Apps/anaconda3/envs/hamsm/lib/python3.10/site-packages/tornado/websocket.py", line 334, in write_message
-        return self.ws_connection.write_message(message, binary=binary)
-      File "/ihome/lchong/dty7/Apps/anaconda3/envs/hamsm/lib/python3.10/site-packages/tornado/websocket.py", line 1081, in write_message
-        fut = self._write_frame(True, opcode, message, flags=flags)
-      File "/ihome/lchong/dty7/Apps/anaconda3/envs/hamsm/lib/python3.10/site-packages/tornado/websocket.py", line 1056, in _write_frame
-        return self.stream.write(frame)
-      File "/ihome/lchong/dty7/Apps/anaconda3/envs/hamsm/lib/python3.10/site-packages/tornado/iostream.py", line 539, in write
-        self._handle_write()
-      File "/ihome/lchong/dty7/Apps/anaconda3/envs/hamsm/lib/python3.10/site-packages/tornado/iostream.py", line 965, in _handle_write
-        self._write_buffer.advance(num_bytes)
-      File "/ihome/lchong/dty7/Apps/anaconda3/envs/hamsm/lib/python3.10/site-packages/tornado/iostream.py", line 182, in advance
-        assert 0 < size <= self._size
-    AssertionError
-[E 16:19:16.292 NotebookApp] Exception in callback functools.partial(<function ZMQStream._update_handler.<locals>.<lambda> at 0x7ff91b219b40>)
-    Traceback (most recent call last):
-      File "/ihome/lchong/dty7/Apps/anaconda3/envs/hamsm/lib/python3.10/site-packages/tornado/ioloop.py", line 738, in _run_callback
-        ret = callback()
-      File "/ihome/lchong/dty7/Apps/anaconda3/envs/hamsm/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 718, in <lambda>
-        self.io_loop.add_callback(lambda: self._handle_events(self.socket, 0))
-      File "/ihome/lchong/dty7/Apps/anaconda3/envs/hamsm/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 634, in _handle_events
-        self._handle_recv()
-      File "/ihome/lchong/dty7/Apps/anaconda3/envs/hamsm/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 663, in _handle_recv
-        self._run_callback(callback, msg)
-      File "/ihome/lchong/dty7/Apps/anaconda3/envs/hamsm/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 584, in _run_callback
-        f = callback(*args, **kwargs)
-      File "/ihome/lchong/dty7/Apps/anaconda3/envs/hamsm/lib/python3.10/site-packages/zmq/eventloop/zmqstream.py", line 308, in stream_callback
-        return callback(self, msg)
-      File "/ihome/lchong/dty7/Apps/anaconda3/envs/hamsm/lib/python3.10/site-packages/notebook/services/kernels/handlers.py", line 572, in _on_zmq_reply
-        super()._on_zmq_reply(stream, msg)
-      File "/ihome/lchong/dty7/Apps/anaconda3/envs/hamsm/lib/python3.10/site-packages/notebook/base/zmqhandlers.py", line 256, in _on_zmq_reply
-        self.write_message(msg, binary=isinstance(msg, bytes))
-      File "/ihome/lchong/dty7/Apps/anaconda3/envs/hamsm/lib/python3.10/site-packages/tornado/websocket.py", line 334, in write_message
-        return self.ws_connection.write_message(message, binary=binary)
-      File "/ihome/lchong/dty7/Apps/anaconda3/envs/hamsm/lib/python3.10/site-packages/tornado/websocket.py", line 1081, in write_message
-        fut = self._write_frame(True, opcode, message, flags=flags)
-      File "/ihome/lchong/dty7/Apps/anaconda3/envs/hamsm/lib/python3.10/site-packages/tornado/websocket.py", line 1056, in _write_frame
-        return self.stream.write(frame)
-      File "/ihome/lchong/dty7/Apps/anaconda3/envs/hamsm/lib/python3.10/site-packages/tornado/iostream.py", line 539, in write
-        self._handle_write()
-      File "/ihome/lchong/dty7/Apps/anaconda3/envs/hamsm/lib/python3.10/site-packages/tornado/iostream.py", line 965, in _handle_write
-        self._write_buffer.advance(num_bytes)
-      File "/ihome/lchong/dty7/Apps/anaconda3/envs/hamsm/lib/python3.10/site-packages/tornado/iostream.py", line 182, in advance
-        assert 0 < size <= self._size
-    AssertionError
-[I 16:19:16.412 NotebookApp] Starting buffering for 5017e30e-d119-4754-b3b4-0f0a38ba7787:1dd9a782a5314521b67f7f2ce58bc074
-[I 16:19:17.474 NotebookApp] Restoring connection for 5017e30e-d119-4754-b3b4-0f0a38ba7787:1dd9a782a5314521b67f7f2ce58bc074
-[I 16:19:36.539 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
-[W 16:19:36.542 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
-[I 16:20:10.308 NotebookApp] Starting buffering for 5017e30e-d119-4754-b3b4-0f0a38ba7787:1dd9a782a5314521b67f7f2ce58bc074
-[I 16:20:20.127 NotebookApp] Kernel shutdown: 5017e30e-d119-4754-b3b4-0f0a38ba7787
+[I 19:27:11.297 NotebookApp] Serving notebooks from local directory: /ix/lchong/dty7/d1d2/2kod/msm
+[I 19:27:11.298 NotebookApp] Jupyter Notebook 6.5.4 is running at:
+[I 19:27:11.298 NotebookApp] http://smp-1024-n0.crc.pitt.edu:8888/
+[I 19:27:11.298 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 19:28:20.664 NotebookApp] 302 GET / (10.201.0.82) 0.400000ms
+[W 19:28:37.901 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
+[I 19:28:41.516 NotebookApp] Kernel started: 6f06e9f9-3daa-4d7b-80e7-1d2ec5c59ba6, name: hamsm
+[I 19:30:44.068 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
+[W 19:30:44.073 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
+/ihome/lchong/dty7/Apps/anaconda3/envs/hamsm/lib/python3.10/site-packages/nbformat/__init__.py:129: MissingIDFieldWarning: Code cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.
+  validate(nb)
+/ihome/lchong/dty7/Apps/anaconda3/envs/hamsm/lib/python3.10/site-packages/notebook/services/contents/manager.py:353: MissingIDFieldWarning: Code cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.
+  validate_nb(model['content'])
+[I 19:32:44.016 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
+[W 19:32:44.021 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
+[I 19:34:44.230 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
+[W 19:34:44.245 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
+[I 19:36:44.344 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
+[W 19:36:44.349 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
+[I 19:38:44.254 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
+[W 19:38:44.280 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
+[I 19:40:44.255 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
+[W 19:40:44.275 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
+[I 19:42:44.212 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
+[W 19:42:44.240 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
+[I 19:44:44.314 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
+[W 19:44:44.320 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
+[I 19:46:44.271 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
+[W 19:46:44.277 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
+[I 19:48:44.205 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
+[W 19:48:44.219 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
+[I 19:50:44.234 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
+[W 19:50:44.288 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
+[I 19:52:44.179 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
+[W 19:52:44.200 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
+[I 19:54:44.355 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
+[W 19:54:44.359 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
+[I 19:56:24.920 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
+[W 19:56:24.953 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
