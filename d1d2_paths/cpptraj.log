@@ -32,3 +32,13 @@ rms first :1-76@CA
 trajout 1236_49_10i-fit.dcd
 run
 quit
+# 07/19/24 13:23:59
+parm m01_2kod_dry.prmtop
+trajin TRAJ_it236_seg8_10i-fit.dcd 1 1
+trajout direct-f1.pdb
+run
+# 07/19/24 13:24:57
+parm m01_2kod_dry.prmtop
+trajin 1236_49_10i-fit.dcd 1 1
+trajout indirect-f1.pdb
+run
