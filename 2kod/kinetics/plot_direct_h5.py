@@ -17,13 +17,14 @@ fig, ax = plt.subplots(ncols=2, figsize=(10,4))
 wt_d1d2_h5s = [f"ANALYSIS/WT-D1D2-R0{i}/direct.h5" for i in range(0, 3)]
 wt_d2d1_h5s = [f"ANALYSIS/WT-D2D1-R0{i}/direct.h5" for i in range(0, 3)]
 f_d1d2_h5s = [f"ANALYSIS/4F-D1D2-R0{i}/direct.h5" for i in range(0, 3)]
-f_d2d1_h5s = [f"ANALYSIS/4F-D2D1-R0{i}/direct.h5" for i in range(0, 2)]
+f_d2d1_h5s = [f"ANALYSIS/4F-D2D1-R0{i}/direct.h5" for i in range(0, 3)]
 
-def grab_kin_from_files(file_list, ax):
-    k = wekap.Kinetics(direct=file_list[0], x_units="moltime", ax=ax)
-    _, multi_k_avg, multi_k_CRs = k.plot_multi_rates(file_list, plot=False)
+def grab_kin_from_files(file_list, ax, tau=100e-12):
+    k = wekap.Kinetics(direct=file_list[0], x_units="moltime", ax=ax, tau=tau)
+    _, _, multi_k_avg, multi_k_CRs = k.plot_multi_rates(file_list, plotting=False)
     return multi_k_avg[-1], multi_k_CRs[-1]
 
+#TODO: grab the end points for scatter plot
 
 ###########################
 wt_d1d2_avg, wt_d1d2_crs = grab_kin_from_files(wt_d1d2_h5s, ax[0])
@@ -38,7 +39,8 @@ print(errors)
 #fig, ax = plt.subplots(figsize=(8,5))
 ax[0].bar(["WT-WE", "MSM", "4F-WE", "4F-NMR"], 
        [wt_d1d2_avg, 0.004, f_d1d2_avg, 60], 
-       color=["tab:blue", "tab:grey", "tab:orange", "tab:pink"],
+       #color=["tab:blue", "tab:grey", "tab:orange", "tab:pink"],
+       color=["tab:blue", "tab:orange", "tab:pink", "tab:grey"],
        yerr=errors, capsize=10)
 ax[0].set_ylabel("Rate Constant (s$^{-1}$)")
 ax[0].set_title("CA-CTD $k_{12}$", fontweight="normal")
@@ -59,7 +61,8 @@ print(errors)
 #fig, ax = plt.subplots(figsize=(8,5))
 ax[1].bar(["WT-WE", "MSM", "4F-WE", "4F-NMR"], 
        [wt_d2d1_avg, 0.012, f_d2d1_avg, 134.4], 
-       color=["tab:blue", "tab:grey", "tab:orange", "tab:pink"],
+       #color=["tab:blue", "tab:grey", "tab:orange", "tab:pink"],
+       color=["tab:blue", "tab:orange", "tab:pink", "tab:grey"],
        yerr=errors, capsize=10)
 #ax[1].set_ylabel("Rate Constant (s$^{-1}$)")
 ax[1].set_title("CA-CTD $k_{21}$", fontweight="normal")
@@ -71,7 +74,7 @@ ax[1].set_xlabel("")
 # def plot_mk_scatter(mk, ax, label="WT-WE"):
 #     mk = [i[-1] for i in mk]
 #     print(mk)
-#     ax.scatter([label for _ in range(5)], mk, color="k")
+#     ax.scatter([label for _ in range(3)], mk, color="k")
 # plot_mk_scatter(mk1, ax, "WT-WE")
 # plot_mk_scatter(mk2, ax, "4F-WE")
 # #plot_mk_scatter(mk3, ax, "7F-WE")
@@ -86,7 +89,8 @@ ax[1].set_ylim(lowerlim, 5000)
 #plt.xticks(rotation=30, ha='right')
 plt.tight_layout()
 #plt.savefig("figs/.png", dpi=300, transparent=True)
-plt.savefig("figs/kinetics.pdf")
+plt.savefig("figs/kinetics3.pdf")
 plt.show()
 
+# K_ex (TODO: error propagation)
 print(np.divide([wt_d1d2_avg, 0.004, f_d1d2_avg, 60], [wt_d2d1_avg, 0.012, f_d2d1_avg, 134.4]))
