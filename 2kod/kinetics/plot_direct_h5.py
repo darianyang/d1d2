@@ -33,6 +33,7 @@ ax[0].set_xlabel("")
 
 errors = np.flip(np.rot90(np.vstack((wt_d1d2_crs, [0.00012,0.00012], f_d1d2_crs, [3.34, 3.34])), k=-1), axis=1)
 #print(np.rot90(errors))
+print([wt_d1d2_avg, 0.004, f_d1d2_avg, 60])
 print(errors)
 
 #fig, ax = plt.subplots(figsize=(10,5))
@@ -55,6 +56,7 @@ ax[1].set_ylabel("")
 
 errors = np.flip(np.rot90(np.vstack((wt_d2d1_crs, [0.00048,0.00048], f_d2d1_crs, [8.26, 8.26])), k=-1), axis=1)
 #print(np.rot90(errors))
+print([wt_d2d1_avg, 0.012, f_d2d1_avg, 134.4])
 print(errors)
 
 #fig, ax = plt.subplots(figsize=(10,5))
