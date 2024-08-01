@@ -18,12 +18,12 @@ def plot_flux(direct, ax):
 
 plot_flux("ctd_tt_dist/tt_dist_ss_v00/ANALYSIS/TEST2/direct.h5", ax[0])
 ax[0].axvline(105.3, linestyle="--", color="gray") # WESS
-ax[0].set_title("Fixed Bins")
+ax[0].set_title("WT CA-CTD $k_{12}$: Fixed Bins")
 
 plot_flux("ctd_tt_dist/wt_mmab_1d_ss_v00/ANALYSIS/TEST/direct.h5", ax[1])
 ax[1].set_ylabel("")
-ax[1].set_title("Multi-MAB Binning")
+ax[1].set_title("WT CA-CTD $k_{12}$: Multi-Adaptive Bins")
 
 plt.tight_layout()
-plt.savefig("figs/alt_schemes.pdf")
+plt.savefig("figs/alt_schemes2.pdf")
 plt.show()
