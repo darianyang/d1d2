@@ -1,45 +1,26 @@
-[I 19:27:11.297 NotebookApp] Serving notebooks from local directory: /ix/lchong/dty7/d1d2/2kod/msm
-[I 19:27:11.298 NotebookApp] Jupyter Notebook 6.5.4 is running at:
-[I 19:27:11.298 NotebookApp] http://smp-1024-n0.crc.pitt.edu:8888/
-[I 19:27:11.298 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
-[I 19:28:20.664 NotebookApp] 302 GET / (10.201.0.82) 0.400000ms
-[W 19:28:37.901 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
-[I 19:28:41.516 NotebookApp] Kernel started: 6f06e9f9-3daa-4d7b-80e7-1d2ec5c59ba6, name: hamsm
-[I 19:30:44.068 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
-[W 19:30:44.073 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
+[I 13:22:43.162 NotebookApp] Serving notebooks from local directory: /ix/lchong/dty7/d1d2/2kod/msm
+[I 13:22:43.162 NotebookApp] Jupyter Notebook 6.5.4 is running at:
+[I 13:22:43.162 NotebookApp] http://smp-1024-n3.crc.pitt.edu:8888/
+[I 13:22:43.162 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 13:23:03.756 NotebookApp] 302 GET / (10.201.0.82) 0.340000ms
+[I 13:23:04.271 NotebookApp] 302 GET /tree? (10.201.0.82) 0.370000ms
+[W 13:23:12.667 NotebookApp] Not allowing login redirect to '/tree?'
+[I 13:23:12.667 NotebookApp] 302 POST /login?next=%2Ftree%3F (10.201.0.82) 320.490000ms
+[I 13:23:12.680 NotebookApp] 302 GET / (10.201.0.82) 0.330000ms
+[W 13:24:03.354 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
+[I 13:24:22.801 NotebookApp] Kernel started: 7454aa0f-11c6-4e06-9000-98f90f6cc776, name: hamsm
+[I 13:26:22.949 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
+[W 13:26:22.953 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
+[I 13:28:22.923 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
+[W 13:28:22.926 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
 /ihome/lchong/dty7/Apps/anaconda3/envs/hamsm/lib/python3.10/site-packages/nbformat/__init__.py:129: MissingIDFieldWarning: Code cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.
   validate(nb)
 /ihome/lchong/dty7/Apps/anaconda3/envs/hamsm/lib/python3.10/site-packages/notebook/services/contents/manager.py:353: MissingIDFieldWarning: Code cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.
   validate_nb(model['content'])
-[I 19:32:44.016 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
-[W 19:32:44.021 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
-[I 19:34:44.230 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
-[W 19:34:44.245 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
-[I 19:36:44.344 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
-[W 19:36:44.349 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
-[I 19:38:44.254 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
-[W 19:38:44.280 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
-[I 19:40:44.255 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
-[W 19:40:44.275 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
-[I 19:42:44.212 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
-[W 19:42:44.240 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
-[I 19:44:44.314 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
-[W 19:44:44.320 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
-[I 19:46:44.271 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
-[W 19:46:44.277 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
-[I 19:48:44.205 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
-[W 19:48:44.219 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
-[I 19:50:44.234 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
-[W 19:50:44.288 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
-[I 19:52:44.179 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
-[W 19:52:44.200 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
-[I 19:54:44.355 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
-[W 19:54:44.359 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
-[I 19:56:24.920 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
-[W 19:56:24.953 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
-[I 20:02:44.180 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
-[W 20:02:44.185 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
-[I 20:03:35.376 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
-[W 20:03:35.380 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
-[I 20:05:40.862 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
-[W 20:05:40.866 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
+[I 13:30:22.983 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
+[W 13:30:22.987 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
+[I 13:32:22.893 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
+[W 13:32:22.896 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
+[I 13:33:03.274 NotebookApp] Starting buffering for 7454aa0f-11c6-4e06-9000-98f90f6cc776:109931c01c524fabb3ed3c059ae3552b
+[I 13:33:05.969 NotebookApp] Kernel shutdown: 7454aa0f-11c6-4e06-9000-98f90f6cc776
+slurmstepd: error: *** JOB 16419498 ON smp-1024-n3 CANCELLED AT 2024-08-05T13:33:35 ***
