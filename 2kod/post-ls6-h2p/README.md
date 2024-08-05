@@ -160,14 +160,21 @@ wt_oamax_1d_ss_fromEQ_v03:
     * copied over the 4F bstates 
 
 4F_oamin_rev_1d_ss_v00:
+4F_oamin_rev_1d_ss_v01:
+4F_oamin_rev_1d_ss_v02:
     * reverse starting from end state of 4F fromEQ v02
     * Updated:
         * changed oamax to oamin
             * updated get_pcoord and runseg
             * updated pcoord_filter.py    
+                * initially ran and forgot to actually run the filtering conditions
+                * fixed this and also updated to use a >1000 tstate for easier kinetics calcs
+                    * this didn't recycle well, not certain why, reverting back to -1 tstate
         * updated bstate
             * removed sstates from init.sh
             * added upated single bstate from 4F D1->D2
             * starting with 5 states from this single file
+4F_oamin_rev_1d_ss_v03 and v04:
+    * same except testing from diff bstate
             
         
