@@ -1,3 +1,3 @@
-# d1d2
+# CA-CTD D1D2 Conformational Sampling
 
-Data for 1a43 and 2kod/150-end moved to bgfs, small files remain
+Simulation and analysis files.
