@@ -22,6 +22,10 @@ env | sort
 cd $WEST_SIM_ROOT
 SERVER_INFO=$WEST_SIM_ROOT/west_zmq_info-$SLURM_JOBID.json
 
+if [ ! -f west.h5 ]; then
+    bash init.sh
+fi
+
 # start server
 w_run --work-manager=zmq --n-workers=0 --zmq-mode=master --zmq-write-host-info=$SERVER_INFO --zmq-comm-mode=tcp &> west-$SLURM_JOBID.log &
 
