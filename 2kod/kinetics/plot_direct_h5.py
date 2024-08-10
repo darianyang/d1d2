@@ -91,7 +91,7 @@ ax[1].set_ylim(lowerlim, 5000)
 #plt.xticks(rotation=30, ha='right')
 plt.tight_layout()
 #plt.savefig("figs/.png", dpi=300, transparent=True)
-plt.savefig("figs/kinetics3.pdf")
+#plt.savefig("figs/kinetics3.pdf")
 plt.show()
 
 # K_ex (TODO: error propagation)
