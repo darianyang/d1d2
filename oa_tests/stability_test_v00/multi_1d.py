@@ -14,7 +14,8 @@ plt.style.use('/Users/darian/github/wedap/styles/default.mplstyle')
 # iter_ranges = [(1, 5000), (5000, 6500), (6500, 8000), (8000, 9500), (9500, 11000), (11000, 13000)]
 #titles = ['500ns', '650ns', '800ns', '950ns', '1100ns', '1300ns']
 iter_ranges = [(1, 5000), (5000, 7000), (7000, 9000), (9000, 11000), (11000, 12000), (12000, 13000)]
-titles = ['500 ns', '650 ns', '800 ns', '950 ns', '1100 ns', '1300 ns']
+#titles = ['500 ns', '650 ns', '800 ns', '950 ns', '1100 ns', '1300 ns']
+titles = ['0.50 $\mu$s', '0.65 $\mu$s', '0.80 $\mu$s', '0.95 $\mu$s', '1.1 $\mu$s', '1.3 $\mu$s']
 #iter_ranges = [(1, 5000), (1, 6500), (1, 8000), (1, 9500), (1, 11000), (1, 13000)]
 colors = ["lightsteelblue", "skyblue", "cornflowerblue", "royalblue", "mediumblue", "navy"]
 
@@ -76,4 +77,4 @@ plt.show()
 #fig.savefig("multi_tt_dist_exps_full-half2.pdf")
 #fig.savefig("multi_tt_dist_bins.pdf")
 #fig.savefig("multi_tt_dist_exps_full13k-cumsum2.pdf")
-fig.savefig("multi_tt_dist_exps_full13k3.pdf")
+fig.savefig("multi_tt_dist_exps_full13k4.pdf")
