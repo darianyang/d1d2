@@ -11,7 +11,8 @@ import wekap
 import numpy as np
 import matplotlib.pyplot as plt
 
-plt.style.use("/Users/darian/github/wedap/wekap/styles/default.mplstyle")
+#plt.style.use("/Users/darian/github/wedap/wekap/styles/default.mplstyle")
+plt.style.use("default.mplstyle")
 fig, ax = plt.subplots(ncols=2, figsize=(10,4))
 
 wt_d1d2_h5s = [f"ANALYSIS/WT-D1D2-R0{i}/direct.h5" for i in range(0, 3)]
@@ -31,17 +32,18 @@ wt_d1d2_avg, wt_d1d2_crs = grab_kin_from_files(wt_d1d2_h5s, ax[0])
 f_d1d2_avg, f_d1d2_crs = grab_kin_from_files(f_d1d2_h5s, ax[0])
 ax[0].set_xlabel("")
 
-errors = np.flip(np.rot90(np.vstack((wt_d1d2_crs, [0.00012,0.00012], f_d1d2_crs, [3.34, 3.34])), k=-1), axis=1)
+errors = np.flip(np.rot90(np.vstack((wt_d1d2_crs, [20.63,20.63], f_d1d2_crs, [3.34, 3.34])), k=-1), axis=1)
 #print(np.rot90(errors))
-print([wt_d1d2_avg, 0.004, f_d1d2_avg, 60])
+print([wt_d1d2_avg, 872.4, f_d1d2_avg, 60])
 print(errors)
 
 #fig, ax = plt.subplots(figsize=(10,5))
 #fig, ax = plt.subplots(figsize=(8,5))
-ax[0].bar(["WT-WE", "MSM", "4F-WE", "4F-NMR"], 
-       [wt_d1d2_avg, 0.004, f_d1d2_avg, 60], 
+ax[0].bar(["WT-WE", "WT-MSM", "4F-WE", "4F-NMR"], 
+       [wt_d1d2_avg, 872.4, f_d1d2_avg, 60], width=0.6, error_kw={"elinewidth":1.6, "capthick":1.6},
        #color=["tab:blue", "tab:grey", "tab:orange", "tab:pink"],
-       color=["tab:blue", "tab:orange", "tab:pink", "tab:grey"],
+       #color=["tab:blue", "tab:orange", "tab:pink", "tab:grey"],
+       color=["cornflowerblue", "mediumpurple", "plum", "tab:grey"],
        yerr=errors, capsize=10)
 ax[0].set_ylabel("Rate Constant (s$^{-1}$)")
 ax[0].set_title("CA-CTD $k_{12}$", fontweight="normal")
@@ -54,17 +56,19 @@ f_d2d1_avg, f_d2d1_crs = grab_kin_from_files(f_d2d1_h5s, ax[1])
 ax[1].set_xlabel("")
 ax[1].set_ylabel("")
 
-errors = np.flip(np.rot90(np.vstack((wt_d2d1_crs, [0.00048,0.00048], f_d2d1_crs, [8.26, 8.26])), k=-1), axis=1)
+errors = np.flip(np.rot90(np.vstack((wt_d2d1_crs, [92.78,92.78], f_d2d1_crs, [8.26, 8.26])), k=-1), axis=1)
 #print(np.rot90(errors))
-print([wt_d2d1_avg, 0.012, f_d2d1_avg, 134.4])
+print([wt_d2d1_avg, 2659, f_d2d1_avg, 134.4])
 print(errors)
 
 #fig, ax = plt.subplots(figsize=(10,5))
 #fig, ax = plt.subplots(figsize=(8,5))
-ax[1].bar(["WT-WE", "MSM", "4F-WE", "4F-NMR"], 
-       [wt_d2d1_avg, 0.012, f_d2d1_avg, 134.4], 
+ax[1].bar(["WT-WE", "WT-MSM", "4F-WE", "4F-NMR"], 
+       [wt_d2d1_avg, 2659, f_d2d1_avg, 134.4], width=0.6, error_kw={"elinewidth":1.6, "capthick":1.6},
        #color=["tab:blue", "tab:grey", "tab:orange", "tab:pink"],
-       color=["tab:blue", "tab:orange", "tab:pink", "tab:grey"],
+       #color=["tab:blue", "tab:orange", "tab:pink", "tab:grey"],
+       #color=["tab:purple", "tab:purple", "tab:pink", "tab:grey"],
+       color=["cornflowerblue", "mediumpurple", "plum", "tab:grey"],
        yerr=errors, capsize=10)
 #ax[1].set_ylabel("Rate Constant (s$^{-1}$)")
 ax[1].set_title("CA-CTD $k_{21}$", fontweight="normal")
@@ -82,16 +86,18 @@ ax[1].set_xlabel("")
 # #plot_mk_scatter(mk3, ax, "7F-WE")
 ##########################################
 
-lowerlim = 1e-5
+lowerlim = 1e-3
+upperlim = 15000
 ax[0].set_yscale("log")
-ax[0].set_ylim(lowerlim, 5000)
+ax[0].set_ylim(lowerlim, upperlim)
 ax[1].set_yscale("log")
-ax[1].set_ylim(lowerlim, 5000)
+ax[1].set_ylim(lowerlim, upperlim)
 #plt.xticks(fontweight="bold")
 #plt.xticks(rotation=30, ha='right')
 plt.tight_layout()
 #plt.savefig("figs/.png", dpi=300, transparent=True)
 #plt.savefig("figs/kinetics3.pdf")
+plt.savefig("figs/kinetics4.pdf")
 plt.show()
 
 # K_ex (TODO: error propagation)
