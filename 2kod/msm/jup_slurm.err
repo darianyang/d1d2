@@ -1,170 +1,29 @@
-[I 01:10:31.425 NotebookApp] Serving notebooks from local directory: /ix/lchong/dty7/d1d2/2kod/msm
-[I 01:10:31.425 NotebookApp] Jupyter Notebook 6.5.4 is running at:
-[I 01:10:31.425 NotebookApp] http://smp-1024-n0.crc.pitt.edu:8888/
-[I 01:10:31.425 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
-[I 01:11:00.611 NotebookApp] 302 GET / (10.201.0.24) 0.390000ms
-[W 01:11:00.633 NotebookApp] Clearing invalid/expired login cookie username-localhost-8888
-[W 01:11:00.633 NotebookApp] Clearing invalid/expired login cookie username-localhost-8888
-[I 01:11:00.634 NotebookApp] 302 GET /tree? (10.201.0.24) 0.960000ms
-[W 01:11:04.031 NotebookApp] Not allowing login redirect to '/tree?'
-[I 01:11:04.031 NotebookApp] 302 POST /login?next=%2Ftree%3F (10.201.0.24) 199.770000ms
-[I 01:11:04.052 NotebookApp] 302 GET / (10.201.0.24) 0.300000ms
-[W 01:11:21.264 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
-[I 01:11:25.001 NotebookApp] Kernel started: 87967bf8-91af-4fcf-85b8-01e2781b32d7, name: hamsm
-[I 01:13:27.496 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
-[W 01:13:27.500 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
-[I 01:15:26.706 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
-[W 01:15:26.761 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
+[I 13:03:08.891 NotebookApp] Serving notebooks from local directory: /ix/lchong/dty7/d1d2/2kod/msm
+[I 13:03:08.892 NotebookApp] Jupyter Notebook 6.5.4 is running at:
+[I 13:03:08.892 NotebookApp] http://smp-1024-n3.crc.pitt.edu:8888/
+[I 13:03:08.892 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 13:05:57.244 NotebookApp] 302 GET / (10.201.0.22) 0.380000ms
+[W 13:06:20.583 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
+[I 13:06:29.918 NotebookApp] Kernel started: 824a80af-b48e-473f-b22c-6da1f06950ff, name: hamsm
+[I 13:08:29.984 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
+[W 13:08:29.989 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
 /ihome/lchong/dty7/Apps/anaconda3/envs/hamsm/lib/python3.10/site-packages/nbformat/__init__.py:129: MissingIDFieldWarning: Code cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.
   validate(nb)
 /ihome/lchong/dty7/Apps/anaconda3/envs/hamsm/lib/python3.10/site-packages/notebook/services/contents/manager.py:353: MissingIDFieldWarning: Code cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.
   validate_nb(model['content'])
-[I 01:17:26.701 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
-[W 01:17:26.706 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
-[I 01:18:09.308 NotebookApp] Copying make_synD.ipynb to 
-[W 01:18:09.341 NotebookApp] Notebook make_synD.ipynb is not trusted
-[W 01:18:09.345 NotebookApp] Notebook make_synD-Copy1.ipynb is not trusted
-[W 01:18:25.850 NotebookApp] Notebook make_synD-bmsm.ipynb is not trusted
-[I 01:19:27.474 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
-[W 01:19:27.479 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
-[I 01:22:20.144 NotebookApp] Kernel started: 418206e3-9d4d-48f8-8cf9-a1eacc7f159f, name: hamsm
-[I 01:22:26.505 NotebookApp] Saving file at /make_synD-bmsm.ipynb
-[W 01:22:26.506 NotebookApp] Notebook make_synD-bmsm.ipynb is not trusted
-[I 01:23:27.436 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
-[W 01:23:27.441 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
-[I 01:24:26.494 NotebookApp] Saving file at /make_synD-bmsm.ipynb
-[W 01:24:26.494 NotebookApp] Notebook make_synD-bmsm.ipynb is not trusted
-[E 01:25:54.711 NotebookApp] Uncaught exception, closing connection.
-    Traceback (most recent call last):
-      File "/ihome/lchong/dty7/Apps/anaconda3/envs/hamsm/lib/python3.10/site-packages/tornado/iostream.py", line 695, in _handle_events
-        self._handle_write()
-      File "/ihome/lchong/dty7/Apps/anaconda3/envs/hamsm/lib/python3.10/site-packages/tornado/iostream.py", line 965, in _handle_write
-        self._write_buffer.advance(num_bytes)
-      File "/ihome/lchong/dty7/Apps/anaconda3/envs/hamsm/lib/python3.10/site-packages/tornado/iostream.py", line 182, in advance
-        assert 0 < size <= self._size
-    AssertionError
-Exception in callback None()
-handle: <Handle cancelled>
-Traceback (most recent call last):
-  File "/ihome/lchong/dty7/Apps/anaconda3/envs/hamsm/lib/python3.10/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-  File "/ihome/lchong/dty7/Apps/anaconda3/envs/hamsm/lib/python3.10/site-packages/tornado/platform/asyncio.py", line 192, in _handle_events
-    handler_func(fileobj, events)
-  File "/ihome/lchong/dty7/Apps/anaconda3/envs/hamsm/lib/python3.10/site-packages/tornado/iostream.py", line 695, in _handle_events
-    self._handle_write()
-  File "/ihome/lchong/dty7/Apps/anaconda3/envs/hamsm/lib/python3.10/site-packages/tornado/iostream.py", line 965, in _handle_write
-    self._write_buffer.advance(num_bytes)
-  File "/ihome/lchong/dty7/Apps/anaconda3/envs/hamsm/lib/python3.10/site-packages/tornado/iostream.py", line 182, in advance
-    assert 0 < size <= self._size
-AssertionError
-[I 01:25:54.716 NotebookApp] Starting buffering for 418206e3-9d4d-48f8-8cf9-a1eacc7f159f:627b5b98a2af4d6e8bdfe3949239b0f3
-[I 01:25:55.787 NotebookApp] Restoring connection for 418206e3-9d4d-48f8-8cf9-a1eacc7f159f:627b5b98a2af4d6e8bdfe3949239b0f3
-[I 01:26:26.513 NotebookApp] Saving file at /make_synD-bmsm.ipynb
-[W 01:26:26.514 NotebookApp] Notebook make_synD-bmsm.ipynb is not trusted
-[I 01:28:26.508 NotebookApp] Saving file at /make_synD-bmsm.ipynb
-[W 01:28:26.509 NotebookApp] Notebook make_synD-bmsm.ipynb is not trusted
-[I 01:30:26.673 NotebookApp] Saving file at /make_synD-bmsm.ipynb
-[W 01:30:26.673 NotebookApp] Notebook make_synD-bmsm.ipynb is not trusted
-[I 01:32:26.518 NotebookApp] Saving file at /make_synD-bmsm.ipynb
-[W 01:32:26.518 NotebookApp] Notebook make_synD-bmsm.ipynb is not trusted
-[I 01:34:26.481 NotebookApp] Saving file at /make_synD-bmsm.ipynb
-[W 01:34:26.482 NotebookApp] Notebook make_synD-bmsm.ipynb is not trusted
-[I 01:36:26.494 NotebookApp] Saving file at /make_synD-bmsm.ipynb
-[W 01:36:26.495 NotebookApp] Notebook make_synD-bmsm.ipynb is not trusted
-[I 01:38:26.505 NotebookApp] Saving file at /make_synD-bmsm.ipynb
-[W 01:38:26.506 NotebookApp] Notebook make_synD-bmsm.ipynb is not trusted
-[I 01:40:26.483 NotebookApp] Saving file at /make_synD-bmsm.ipynb
-[W 01:40:26.484 NotebookApp] Notebook make_synD-bmsm.ipynb is not trusted
-[I 01:42:26.651 NotebookApp] Saving file at /make_synD-bmsm.ipynb
-[W 01:42:26.652 NotebookApp] Notebook make_synD-bmsm.ipynb is not trusted
-[I 01:43:27.389 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
-[W 01:43:27.394 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
-[I 01:44:26.494 NotebookApp] Saving file at /make_synD-bmsm.ipynb
-[W 01:44:26.495 NotebookApp] Notebook make_synD-bmsm.ipynb is not trusted
-[I 01:46:26.478 NotebookApp] Saving file at /make_synD-bmsm.ipynb
-[W 01:46:26.479 NotebookApp] Notebook make_synD-bmsm.ipynb is not trusted
-[I 01:48:26.478 NotebookApp] Saving file at /make_synD-bmsm.ipynb
-[W 01:48:26.479 NotebookApp] Notebook make_synD-bmsm.ipynb is not trusted
-[I 01:50:26.474 NotebookApp] Saving file at /make_synD-bmsm.ipynb
-[W 01:50:26.475 NotebookApp] Notebook make_synD-bmsm.ipynb is not trusted
-[I 01:52:26.474 NotebookApp] Saving file at /make_synD-bmsm.ipynb
-[W 01:52:26.475 NotebookApp] Notebook make_synD-bmsm.ipynb is not trusted
-[I 01:58:26.472 NotebookApp] Saving file at /make_synD-bmsm.ipynb
-[W 01:58:26.473 NotebookApp] Notebook make_synD-bmsm.ipynb is not trusted
-[I 02:00:26.461 NotebookApp] Saving file at /make_synD-bmsm.ipynb
-[W 02:00:26.462 NotebookApp] Notebook make_synD-bmsm.ipynb is not trusted
-[I 02:02:26.460 NotebookApp] Saving file at /make_synD-bmsm.ipynb
-[W 02:02:26.461 NotebookApp] Notebook make_synD-bmsm.ipynb is not trusted
-[I 02:04:26.446 NotebookApp] Saving file at /make_synD-bmsm.ipynb
-[W 02:04:26.447 NotebookApp] Notebook make_synD-bmsm.ipynb is not trusted
-[I 02:06:26.449 NotebookApp] Saving file at /make_synD-bmsm.ipynb
-[W 02:06:26.450 NotebookApp] Notebook make_synD-bmsm.ipynb is not trusted
-[I 02:08:26.465 NotebookApp] Saving file at /make_synD-bmsm.ipynb
-[W 02:08:26.466 NotebookApp] Notebook make_synD-bmsm.ipynb is not trusted
-[I 02:08:38.759 NotebookApp] Saving file at /make_synD-bmsm.ipynb
-[W 02:08:38.760 NotebookApp] Notebook make_synD-bmsm.ipynb is not trusted
-[I 02:10:26.453 NotebookApp] Saving file at /make_synD-bmsm.ipynb
-[W 02:10:26.454 NotebookApp] Notebook make_synD-bmsm.ipynb is not trusted
-[I 02:18:26.588 NotebookApp] Saving file at /make_synD-bmsm.ipynb
-[W 02:18:26.589 NotebookApp] Notebook make_synD-bmsm.ipynb is not trusted
-[E 02:18:35.112 NotebookApp] Uncaught exception, closing connection.
-    Traceback (most recent call last):
-      File "/ihome/lchong/dty7/Apps/anaconda3/envs/hamsm/lib/python3.10/site-packages/tornado/iostream.py", line 695, in _handle_events
-        self._handle_write()
-      File "/ihome/lchong/dty7/Apps/anaconda3/envs/hamsm/lib/python3.10/site-packages/tornado/iostream.py", line 965, in _handle_write
-        self._write_buffer.advance(num_bytes)
-      File "/ihome/lchong/dty7/Apps/anaconda3/envs/hamsm/lib/python3.10/site-packages/tornado/iostream.py", line 182, in advance
-        assert 0 < size <= self._size
-    AssertionError
-Exception in callback None()
-handle: <Handle cancelled>
-Traceback (most recent call last):
-  File "/ihome/lchong/dty7/Apps/anaconda3/envs/hamsm/lib/python3.10/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-  File "/ihome/lchong/dty7/Apps/anaconda3/envs/hamsm/lib/python3.10/site-packages/tornado/platform/asyncio.py", line 192, in _handle_events
-    handler_func(fileobj, events)
-  File "/ihome/lchong/dty7/Apps/anaconda3/envs/hamsm/lib/python3.10/site-packages/tornado/iostream.py", line 695, in _handle_events
-    self._handle_write()
-  File "/ihome/lchong/dty7/Apps/anaconda3/envs/hamsm/lib/python3.10/site-packages/tornado/iostream.py", line 965, in _handle_write
-    self._write_buffer.advance(num_bytes)
-  File "/ihome/lchong/dty7/Apps/anaconda3/envs/hamsm/lib/python3.10/site-packages/tornado/iostream.py", line 182, in advance
-    assert 0 < size <= self._size
-AssertionError
-[I 02:18:35.114 NotebookApp] Starting buffering for 418206e3-9d4d-48f8-8cf9-a1eacc7f159f:627b5b98a2af4d6e8bdfe3949239b0f3
-[I 02:18:37.496 NotebookApp] Restoring connection for 418206e3-9d4d-48f8-8cf9-a1eacc7f159f:627b5b98a2af4d6e8bdfe3949239b0f3
-[I 02:19:29.239 NotebookApp] Kernel interrupted: 418206e3-9d4d-48f8-8cf9-a1eacc7f159f
-[I 02:20:14.960 NotebookApp] Kernel interrupted: 418206e3-9d4d-48f8-8cf9-a1eacc7f159f
-[I 02:20:15.060 NotebookApp] Kernel interrupted: 418206e3-9d4d-48f8-8cf9-a1eacc7f159f
-[I 02:20:15.188 NotebookApp] Kernel interrupted: 418206e3-9d4d-48f8-8cf9-a1eacc7f159f
-[I 02:20:26.452 NotebookApp] Saving file at /make_synD-bmsm.ipynb
-[W 02:20:26.453 NotebookApp] Notebook make_synD-bmsm.ipynb is not trusted
-[I 02:22:26.585 NotebookApp] Saving file at /make_synD-bmsm.ipynb
-[W 02:22:26.586 NotebookApp] Notebook make_synD-bmsm.ipynb is not trusted
-[I 02:24:26.569 NotebookApp] Saving file at /make_synD-bmsm.ipynb
-[W 02:24:26.570 NotebookApp] Notebook make_synD-bmsm.ipynb is not trusted
-[I 02:26:26.409 NotebookApp] Saving file at /make_synD-bmsm.ipynb
-[W 02:26:26.410 NotebookApp] Notebook make_synD-bmsm.ipynb is not trusted
-[I 02:28:26.410 NotebookApp] Saving file at /make_synD-bmsm.ipynb
-[W 02:28:26.411 NotebookApp] Notebook make_synD-bmsm.ipynb is not trusted
-[I 02:30:26.565 NotebookApp] Saving file at /make_synD-bmsm.ipynb
-[W 02:30:26.566 NotebookApp] Notebook make_synD-bmsm.ipynb is not trusted
-[I 02:36:26.413 NotebookApp] Saving file at /make_synD-bmsm.ipynb
-[W 02:36:26.414 NotebookApp] Notebook make_synD-bmsm.ipynb is not trusted
-[I 02:38:26.410 NotebookApp] Saving file at /make_synD-bmsm.ipynb
-[W 02:38:26.411 NotebookApp] Notebook make_synD-bmsm.ipynb is not trusted
-[I 02:38:57.161 NotebookApp] Saving file at /make_synD-bmsm.ipynb
-[W 02:38:57.162 NotebookApp] Notebook make_synD-bmsm.ipynb is not trusted
-[I 02:40:26.412 NotebookApp] Saving file at /make_synD-bmsm.ipynb
-[W 02:40:26.413 NotebookApp] Notebook make_synD-bmsm.ipynb is not trusted
-[I 02:42:26.400 NotebookApp] Saving file at /make_synD-bmsm.ipynb
-[W 02:42:26.402 NotebookApp] Notebook make_synD-bmsm.ipynb is not trusted
-[I 02:43:34.573 NotebookApp] Saving file at /make_synD-bmsm.ipynb
-[W 02:43:34.574 NotebookApp] Notebook make_synD-bmsm.ipynb is not trusted
-[I 02:44:26.393 NotebookApp] Saving file at /make_synD-bmsm.ipynb
-[W 02:44:26.394 NotebookApp] Notebook make_synD-bmsm.ipynb is not trusted
-[I 02:44:51.366 NotebookApp] Saving file at /make_synD-bmsm.ipynb
-[W 02:44:51.367 NotebookApp] Notebook make_synD-bmsm.ipynb is not trusted
-[I 02:47:20.563 NotebookApp] Starting buffering for 87967bf8-91af-4fcf-85b8-01e2781b32d7:4215e21ec772462da2e3ee0fdad41b63
-[I 02:47:25.501 NotebookApp] Kernel shutdown: 87967bf8-91af-4fcf-85b8-01e2781b32d7
-[I 02:50:53.055 NotebookApp] Starting buffering for 418206e3-9d4d-48f8-8cf9-a1eacc7f159f:627b5b98a2af4d6e8bdfe3949239b0f3
-[I 02:50:55.080 NotebookApp] Kernel shutdown: 418206e3-9d4d-48f8-8cf9-a1eacc7f159f
+[I 13:10:29.971 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
+[W 13:10:29.975 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
+[I 13:12:29.956 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
+[W 13:12:29.960 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
+[I 13:14:30.047 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
+[W 13:14:30.052 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
+[I 13:16:30.061 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
+[W 13:16:30.065 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
+[I 13:18:29.980 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
+[W 13:18:29.985 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
+[I 13:20:29.975 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
+[W 13:20:29.979 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
+[I 13:22:29.992 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
+[W 13:22:29.996 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
+[I 13:33:44.794 NotebookApp] Saving file at /deeptime-cfeat-final.ipynb
+[W 13:33:44.798 NotebookApp] Notebook deeptime-cfeat-final.ipynb is not trusted
