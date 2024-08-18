@@ -97,7 +97,7 @@ ax[1].set_ylim(lowerlim, upperlim)
 plt.tight_layout()
 #plt.savefig("figs/.png", dpi=300, transparent=True)
 #plt.savefig("figs/kinetics3.pdf")
-plt.savefig("figs/kinetics4.pdf")
+plt.savefig("figs/kinetics5.pdf")
 plt.show()
 
 # K_ex (TODO: error propagation)
