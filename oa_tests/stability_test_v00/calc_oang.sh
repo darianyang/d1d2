@@ -13,7 +13,8 @@
 #PDBS=(1A80)
 #PDBS=(381_098)
 #PDBS=(1a43_leap m01_2kod_leap 5L93_LEAP 1A80)
-PDBS=(i002000_s000058_f1 i002000_s000026_f1)
+#PDBS=(i002000_s000058_f1 i002000_s000026_f1)
+PDBS=(d2-imposed)
 
 for PDB in ${PDBS[@]} ; do
 
