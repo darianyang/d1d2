@@ -58,11 +58,15 @@ plot_angles("/Users/darian/github/capsid_angles/Ni2021/HEXNC", ax, "k", "HEX-HEX
 plot_angles("/Users/darian/github/capsid_angles/Ni2021/PENTNC", ax, "red", "PENT-HEX")
 # plot_angles("HEXNC", ax, "k", "HEX-HEX")
 # plot_angles("PENTNC", ax, "red", "PENT-HEX")
-ax.scatter(29.5, 29.5, label="2KOD", marker="*", color="tan", s=300, edgecolor="k")
-ax.scatter(19.9, 19.9, label="1A43", marker="d", color="orange", s=125, edgecolor="k")
+# ax.scatter(29.5, 29.5, label="2KOD\n(NMR)", marker="*", color="tan", s=300, edgecolor="k")
+# ax.scatter(19.9, 19.9, label="1A43\n(XTAL)", marker="d", color="orange", s=125, edgecolor="k")
+# updated sizes and colors
+ax.scatter(29.5, 29.5, label="2KOD\n(NMR)", marker="*", color="deepskyblue", s=200, edgecolor="k")
+ax.scatter(19.9, 19.9, label="1A43\n(XTAL)", marker="d", color="darkorange", s=70, edgecolor="k")
 
 # BF pdist
-bf_path = "/Users/darian/Drive/MBSB/Research/Projects/hiv1_capsid/ctd_std_sim/2kod_std/hi_pH/"
+#bf_path = "/Users/darian/Drive/MBSB/Research/Projects/hiv1_capsid/ctd_std_sim/2kod_std/hi_pH/"
+bf_path = "/Users/darian/Library/CloudStorage/OneDrive-UniversityofPittsburgh/MBSB/Research/Projects/hiv1_capsid/ctd_std_sim/2kod_std/hi_pH/"
 def plot_bf(path, ax, d1="o_angle_m1.dat", d2="o_angle_m2.dat"):
     """
     Plot a bf dist of o_angle and c2_angle.
@@ -106,7 +110,7 @@ plot_bf(bf_path, ax)
 #ax.legend(loc=9, frameon=False, bbox_to_anchor=(1.45, 1.52), fontsize=12)
 ax.legend(fontsize=11, frameon=False, loc="upper left", bbox_to_anchor=[-0.02, 1])
 #plt.savefig("oa1c2_nojp_noleg_ni2021_wBF.png", dpi=300, transparent=True)
-plot.fig.savefig("oa1c2_nojp_noleg_ni2021_wBF_updatedstyle.pdf")
-plot.fig.savefig("oa1c2_nojp_noleg_ni2021_wBF_updatedstyle.png", dpi=600, transparent=True)
+plot.fig.savefig("oa1c2_nojp_noleg_ni2021_wBF_updatedstyle2.pdf")
+plot.fig.savefig("oa1c2_nojp_noleg_ni2021_wBF_updatedstyle2.png", dpi=600, transparent=True)
 
 plt.show()
