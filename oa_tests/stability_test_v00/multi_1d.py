@@ -43,7 +43,8 @@ y_pos = 8.5
 #pdb_dists = [8.0117, 12.1706, 4.1528, 14.9997, 15.7131,]
 #pdb_labels = ['1A43', '2KOD', '1A8O', '4IPY', '2M8L']
 pdb_dists = [8.0117, 12.1706, 4.1528, 14.997]
-pdb_labels = ['1A43', '2KOD', '1A8O', '4IPY']
+#pdb_labels = ['1A43', '2KOD\n(NMR)', '1A8O', '4IPY']
+pdb_labels = ['1A43\n(XTAL)', '2KOD\n(NMR)', '1A8O\n(XTAL)', '4IPY\n(XTAL)']
 for i in range(len(pdb_dists)):
     ax.axvline(pdb_dists[i], linestyle="--", color="k", linewidth=2)
     # #, label=pdb_labels[i])
@@ -53,7 +54,13 @@ for i in range(len(pdb_dists)):
     #     ax.text(pdb_dists[i]-0.6, y_pos, pdb_labels[i], fontsize=14, rotation=45)
     # else:
     #     ax.text(pdb_dists[i]-0.2, y_pos, pdb_labels[i], fontsize=14, rotation=45)
-    ax.text(pdb_dists[i]-0.2, y_pos, pdb_labels[i], fontsize=14, rotation=45)
+    # # special case for 2KOD
+    # if pdb_labels[i] == "2KOD\n(NMR)":
+    #     ax.text(pdb_dists[i]-0.475, y_pos, pdb_labels[i], fontsize=14, rotation=45)
+    # else:
+    #     ax.text(pdb_dists[i]-0.2, y_pos, pdb_labels[i], fontsize=14, rotation=45)
+    
+    ax.text(pdb_dists[i]-0.5, y_pos, pdb_labels[i], fontsize=14, rotation=45)
 
 #ax.set_xlabel("THR-THR Distance ($\AA$)")
 ax.set_xlabel("T188-T188 Distance ($\AA$)")
@@ -77,4 +84,5 @@ plt.show()
 #fig.savefig("multi_tt_dist_exps_full-half2.pdf")
 #fig.savefig("multi_tt_dist_bins.pdf")
 #fig.savefig("multi_tt_dist_exps_full13k-cumsum2.pdf")
-fig.savefig("multi_tt_dist_exps_full13k4.pdf")
+#fig.savefig("multi_tt_dist_exps_full13k4.pdf")
+fig.savefig("multi_tt_dist_exps_full13k6.pdf")
