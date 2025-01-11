@@ -1,0 +1,17 @@
+# Log started on 06/23/2023 [mm/dd/yyyy] at 15:29:03
+help
+
+help parm
+parm 1d_oamax_v01/common_files/2kod_7f_solv.prmtop
+help strip
+strip :WAT,Cl-,Na+
+help parmout
+parmout 2kod_7f_dry.prmtop
+# Log started on 06/23/2023 [mm/dd/yyyy] at 15:31:25
+parm 1d_oamax_v01/common_files/2kod_7f_solv.prmtop
+strip :WAT,Cl-,Na+
+parmout 2kod_7f_dry.prmtop
+# Log started on 06/23/2023 [mm/dd/yyyy] at 15:38:35
+parm 1d_oamax_v01/common_files/2kod_7f_solv.prmtop
+strip :WAT
+parmout 2kod_7f_ion.prmtop

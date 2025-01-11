@@ -1,0 +1,32 @@
+     parm T188C-OX_leap.pdb 
+ trajin T188C-OX_leap.pdb 
+ autoimage 
+ vector D1 :1-75@CA,C,O,N :39@CA,C,O,N  
+ vector D2 :89-163@CA,C,O,N :127@CA,C,O,N  
+ vectormath vec1 D1 vec2 D2 out c2_angle.dat name c2_angle dotangle 
+ angle helix_angle :43@N :38,126@N :131@N out angle_3pt.dat mass 
+ vector O1 :18-22@CA,C,O,N :46-49@CA,C,O,N 
+ vector O2 :18-22@CA,C,O,N :134-137@CA,C,O,N 
+ vector O3 :106-110@CA,C,O,N :46-49@CA,C,O,N 
+ vector O4 :106-110@CA,C,O,N :134-137@CA,C,O,N 
+ vectormath vec1 O1 vec2 O2 out o_angle.dat name o_angle_m1 dotangle 
+ vectormath vec1 O3 vec2 O4 out o_angle.dat name o_angle_m2 dotangle 
+ distance M1-E175-Oe_M2-W184-He1 :32@OE1,OE2 :129@HE1 out dist_M1-E175_M2-W184.dat 
+ distance M2-E175-Oe_M1-W184-He1 :120@OE1,OE2 :41@HE1 out dist_M2-E175_M1-W184.dat 
+ distance M1-E175-Oe_M1-T148-HG1 :32@OE1,OE2 :5@HG1 out dist_M1-E175_M1-T148.dat 
+ distance M2-E175-Oe_M2-T148-HG1 :120@OE1,OE2 :93@HG1 out dist_M2-E175_M2-T148.dat 
+ distance M1-M2-COM :6-75&!@H= :94-163&!@H= out dist_M1-M2_COM.dat 
+ distance M1-M2-L46 :46@N :134@N out dist_M1-M2_L46.dat 
+ multidihedral phi resrange 32-32 out M1_E175_phi.dat 
+ multidihedral psi resrange 32-32 out M1_E175_psi.dat 
+ multidihedral dihtype chi1:N:CA:CB:CG                dihtype chi2:CA:CB:CG:CD                dihtype chi3:CB:CG:CD:OE1                resrange 32-32               out M1_E175_chi123.dat 
+ multidihedral phi resrange 120-120 out M2_E175_phi.dat 
+ multidihedral psi resrange 120-120 out M2_E175_psi.dat 
+ multidihedral dihtype chi1:N:CA:CB:CG                dihtype chi2:CA:CB:CG:CD                dihtype chi3:CB:CG:CD:OE1                resrange 120-120               out M2_E175_chi123.dat 
+ multidihedral dihtype chi1:N:CA:CB:CG                dihtype chi2:CA:CB:CG:CD1                resrange 41-41               out M1_W184_chi12.dat 
+ multidihedral dihtype chi1:N:CA:CB:CG                dihtype chi2:CA:CB:CG:CD1                resrange 129-129               out M2_W184_chi12.dat 
+ distance T45-T133 :45&!@CA,C,O,N,H :133&!@CA,C,O,N,H out tt_sc_dist.dat 
+ distance C45-C133 :45@SG :133@SG out cc_sg_dist.dat 
+ distance C45N-C133N :45@CA :133@CA out cc_ca_dist.dat 
+ go 
+

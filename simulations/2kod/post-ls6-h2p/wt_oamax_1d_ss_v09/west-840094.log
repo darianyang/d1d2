@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/ihome/lchong/dty7/Apps/anaconda3/envs/westpa/bin/w_run", line 5, in <module>
+    from westpa.cli.core.w_run import entry_point
+  File "/ihome/lchong/dty7/Apps/westpa-mabNone/westpa/src/westpa/__init__.py", line 4, in <module>
+    from .core.systems import WESTSystem
+  File "/ihome/lchong/dty7/Apps/westpa-mabNone/westpa/src/westpa/core/systems.py", line 6, in <module>
+    from westpa.core.binning import NopMapper
+  File "/ihome/lchong/dty7/Apps/westpa-mabNone/westpa/src/westpa/core/binning/__init__.py", line 14, in <module>
+    from .mab import map_mab, MABBinMapper
+  File "/ihome/lchong/dty7/Apps/westpa-mabNone/westpa/src/westpa/core/binning/mab.py", line 68
+    def determine_total_bins(self, nbins_per_dim, direction, skip, bottleneck, skip, **kwargs):
+                                                                               ^^^^
+SyntaxError: duplicate argument 'skip' in function definition

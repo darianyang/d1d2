@@ -1,0 +1,13 @@
+     parm /ihome/lchong/dty7/ix/d1d2/2kod/o_angle/4d_min_oa12w184chi1m1m2_ss_v00/common_files/m01_2kod_12A.prmtop 
+ trajin /ihome/lchong/dty7/ix/d1d2/2kod/o_angle/4d_min_oa12w184chi1m1m2_ss_v00/bstates/09_prod.rst 
+ autoimage 
+ vector O1 :18-22@CA,C,O,N :46-49@CA,C,O,N 
+ vector O2 :18-22@CA,C,O,N :134-137@CA,C,O,N 
+ vector O3 :106-110@CA,C,O,N :46-49@CA,C,O,N 
+ vector O4 :106-110@CA,C,O,N :134-137@CA,C,O,N 
+ vectormath vec1 O1 vec2 O2 out pcoord.dat name o_angle_m1 dotangle 
+ vectormath vec1 O3 vec2 O4 out pcoord.dat name o_angle_m2 dotangle 
+ multidihedral dihtype chi1:N:CA:CB:CG                resrange 41-41               out pcoord.dat 
+ multidihedral dihtype chi1:N:CA:CB:CG                resrange 129-129               out pcoord.dat 
+ go 
+

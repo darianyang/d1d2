@@ -1,0 +1,30 @@
+MPI startup(): PMI server not found. Please set I_MPI_PMI_LIBRARY variable if it is not a singleton case.
+Updating system with the options from the configuration file
+Maximum wallclock time: 1 day, 0:00:00
+
+Wed Feb 21 06:49:54 2024
+Iteration 1077 (5000 requested)
+Beginning iteration 1077
+186 segments remain in iteration 1077 (186 total)
+28 of 33 (84.848485%) active bins are populated
+per-bin minimum non-zero probability:       1.2292e-22
+per-bin maximum probability:                0.751177
+per-bin probability dynamic range (kT):     50.1644
+per-segment minimum non-zero probability:   2.03807e-23
+per-segment maximum non-zero probability:   0.159665
+per-segment probability dynamic range (kT): 50.4128
+norm = 1, error in norm = -1.11022e-16 (-0.5*epsilon)
+-- ERROR    [westpa.work_managers.zeromq.core.ZMQWorkManager.28deeb66-b601-41bf-9abc-40189c9a5e01] -- startup phase elapsed with no contact from workers; shutting down
+exception caught; shutting down
+-- ERROR    [w_run] -- error message: no workers available
+-- ERROR    [w_run] -- Traceback (most recent call last):
+  File "/home1/09416/dty7/work/module_build_we_amber/modules/westpa/22.06_b/lib/python3.9/site-packages/westpa/cli/core/w_run.py", line 61, in run_simulation
+    sim_manager.run()
+  File "/scratch/09416/dty7/d1d2/2kod/ls6-we/tt_dist_eq_v03/manager.py", line 702, in run
+    self.prepare_iteration()
+  File "/scratch/09416/dty7/d1d2/2kod/ls6-we/tt_dist_eq_v03/manager.py", line 468, in prepare_iteration
+    self.work_manager.submit(wm_ops.prep_iter, args=(self.n_iter, segments)).get_result()
+  File "/home1/09416/dty7/work/module_build_we_amber/modules/westpa/22.06_b/lib/python3.9/site-packages/westpa/work_managers/core.py", line 343, in get_result
+    raise self._exception.with_traceback(self._traceback)
+westpa.work_managers.zeromq.core.ZMQWorkerMissing: no workers available
+

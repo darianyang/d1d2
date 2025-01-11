@@ -1,0 +1,7 @@
+parm 2kod_4f_solv.prmtop
+trajin _prod.nc
+autoimage
+strip :WAT,Cl-,Na+ parmout 2kod_4f_dry.prmtop
+trajout _prod_dry.nc
+go
+quit

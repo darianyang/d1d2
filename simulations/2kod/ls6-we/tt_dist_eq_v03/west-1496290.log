@@ -1,0 +1,32 @@
+MPI startup(): PMI server not found. Please set I_MPI_PMI_LIBRARY variable if it is not a singleton case.
+Updating system with the options from the configuration file
+Traceback (most recent call last):
+  File "/home1/09416/dty7/work/module_build_we_amber/modules/westpa/22.06_b/bin/w_run", line 8, in <module>
+    sys.exit(entry_point())
+  File "/home1/09416/dty7/work/module_build_we_amber/modules/westpa/22.06_b/lib/python3.9/site-packages/westpa/cli/core/w_run.py", line 29, in entry_point
+    run_simulation()
+  File "/home1/09416/dty7/work/module_build_we_amber/modules/westpa/22.06_b/lib/python3.9/site-packages/westpa/cli/core/w_run.py", line 36, in run_simulation
+    sim_manager = westpa.rc.get_sim_manager()
+  File "/home1/09416/dty7/work/module_build_we_amber/modules/westpa/22.06_b/lib/python3.9/site-packages/westpa/core/_rc.py", line 370, in get_sim_manager
+    self._sim_manager = self.new_sim_manager()
+  File "/home1/09416/dty7/work/module_build_we_amber/modules/westpa/22.06_b/lib/python3.9/site-packages/westpa/core/_rc.py", line 363, in new_sim_manager
+    sim_manager = extloader.get_object(drivername)(rc=self)
+  File "/scratch/09416/dty7/d1d2/2kod/ls6-we/tt_dist_eq_v03/manager.py", line 49, in __init__
+    self.we_driver = self.rc.get_we_driver()
+  File "/home1/09416/dty7/work/module_build_we_amber/modules/westpa/22.06_b/lib/python3.9/site-packages/westpa/core/_rc.py", line 434, in get_we_driver
+    self._we_driver = self.new_we_driver()
+  File "/home1/09416/dty7/work/module_build_we_amber/modules/westpa/22.06_b/lib/python3.9/site-packages/westpa/core/_rc.py", line 410, in new_we_driver
+    we_driver = extloader.get_object(drivername)(rc=self)
+  File "/scratch/09416/dty7/d1d2/2kod/ls6-we/tt_dist_eq_v03/driver.py", line 63, in __init__
+    self.system = system or self.rc.get_system_driver()
+  File "/home1/09416/dty7/work/module_build_we_amber/modules/westpa/22.06_b/lib/python3.9/site-packages/westpa/core/_rc.py", line 640, in get_system_driver
+    self._system = self.new_system_driver()
+  File "/home1/09416/dty7/work/module_build_we_amber/modules/westpa/22.06_b/lib/python3.9/site-packages/westpa/core/_rc.py", line 509, in new_system_driver
+    system = self.update_from_yaml(system, yamloptions)
+  File "/home1/09416/dty7/work/module_build_we_amber/modules/westpa/22.06_b/lib/python3.9/site-packages/westpa/core/_rc.py", line 612, in update_from_yaml
+    self.overwrite_option(init_system, 'bin_mapper', bins_from_yaml_dict(value))
+  File "/home1/09416/dty7/work/module_build_we_amber/modules/westpa/22.06_b/lib/python3.9/site-packages/westpa/core/_rc.py", line 49, in bins_from_yaml_dict
+    parsed_lists[iboundary] = list(map((lambda x: float(x) if isinstance(x, str) else x), boundary))
+  File "/home1/09416/dty7/work/module_build_we_amber/modules/westpa/22.06_b/lib/python3.9/site-packages/westpa/core/_rc.py", line 49, in <lambda>
+    parsed_lists[iboundary] = list(map((lambda x: float(x) if isinstance(x, str) else x), boundary))
+ValueError: could not convert string to float: '7.8 8'

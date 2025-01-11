@@ -1,0 +1,7 @@
+parm T188C-OX_solv.prmtop
+trajin 10_prod.nc
+autoimage
+strip :WAT,Cl-
+trajout 10_prod_dry.nc
+go
+quit

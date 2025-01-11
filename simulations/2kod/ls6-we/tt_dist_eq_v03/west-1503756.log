@@ -1,0 +1,68 @@
+MPI startup(): PMI server not found. Please set I_MPI_PMI_LIBRARY variable if it is not a singleton case.
+Updating system with the options from the configuration file
+Maximum wallclock time: 1 day, 0:00:00
+
+Thu Feb  8 14:45:14 2024
+Iteration 978 (5000 requested)
+Continuing iteration 978
+50 segments remain in iteration 978 (186 total)
+31 of 35 (88.571429%) active bins are populated
+per-bin minimum non-zero probability:       2.77758e-22
+per-bin maximum probability:                0.813964
+per-bin probability dynamic range (kT):     49.4295
+per-segment minimum non-zero probability:   4.44836e-23
+per-segment maximum non-zero probability:   0.192576
+per-segment probability dynamic range (kT): 49.8197
+norm = 1, error in norm = 0 (0*epsilon)
+-- ERROR    [manager] -- propagation failed for 40 segment(s):
+124  
+131  
+136  
+137  
+138  
+140  
+141  
+142  
+143  
+144  
+145  
+146  
+147  
+148  
+149  
+150  
+151  
+152  
+153  
+154  
+155  
+156  
+157  
+158  
+160  
+162  
+167  
+171  
+173  
+174  
+175  
+176  
+177  
+178  
+179  
+181  
+182  
+183  
+184  
+185
+exception caught; shutting down
+-- ERROR    [w_run] -- error message: propagation failed for 40 segments
+-- ERROR    [w_run] -- Traceback (most recent call last):
+  File "/home1/09416/dty7/work/module_build_we_amber/modules/westpa/22.06_b/lib/python3.9/site-packages/westpa/cli/core/w_run.py", line 61, in run_simulation
+    sim_manager.run()
+  File "/scratch/09416/dty7/d1d2/2kod/ls6-we/tt_dist_eq_v03/manager.py", line 708, in run
+    self.check_propagation()
+  File "/scratch/09416/dty7/d1d2/2kod/ls6-we/tt_dist_eq_v03/manager.py", line 607, in check_propagation
+    raise PropagationError('propagation failed for {:d} segments'.format(len(failed_segments)))
+manager.PropagationError: propagation failed for 40 segments
+

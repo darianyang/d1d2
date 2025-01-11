@@ -1,0 +1,18 @@
+Updating system with the options from the configuration file
+Maximum wallclock time: 1 day, 0:00:00
+
+Mon May  6 00:08:30 2024
+Iteration 682 (1000 requested)
+Continuing iteration 682
+16 segments remain in iteration 682 (128 total)
+exception caught; shutting down
+-- ERROR    [w_run] -- error message: could not broadcast input array from shape (3,) into shape (4,)
+-- ERROR    [w_run] -- Traceback (most recent call last):
+  File "/ihome/lchong/dty7/Apps/westpa-mabNone/westpa/src/westpa/cli/core/w_run.py", line 61, in run_simulation
+    sim_manager.run()
+  File "/ihome/lchong/dty7/Apps/westpa-mabNone/westpa/src/westpa/core/sim_manager.py", line 746, in run
+    self.prepare_iteration()
+  File "/ihome/lchong/dty7/Apps/westpa-mabNone/westpa/src/westpa/core/binning/mab_manager.py", line 156, in prepare_iteration
+    pcoords_with_weights[iseg] = np.append(segment.pcoord[0, :], [segment.weight, 1.0])
+ValueError: could not broadcast input array from shape (3,) into shape (4,)
+

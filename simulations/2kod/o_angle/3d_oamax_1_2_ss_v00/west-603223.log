@@ -1,0 +1,20 @@
+Updating system with the options from the configuration file
+Maximum wallclock time: 3 days, 0:00:00
+
+Tue Aug 22 02:04:57 2023
+Iteration 4001 (5000 requested)
+Beginning iteration 4001
+16 segments remain in iteration 4001 (16 total)
+exception caught; shutting down
+-- ERROR    [w_run] -- error message: division by zero
+-- ERROR    [w_run] -- Traceback (most recent call last):
+  File "/ihome/lchong/dty7/Apps/westpa/src/westpa/cli/core/w_run.py", line 62, in run_simulation
+    sim_manager.run()
+  File "/ix/lchong/dty7/d1d2/2kod/o_angle/3d_oamax_1_2_ss_v00/manager.py", line 702, in run
+    self.prepare_iteration()
+  File "/ix/lchong/dty7/d1d2/2kod/o_angle/3d_oamax_1_2_ss_v00/manager.py", line 448, in prepare_iteration
+    self.report_bin_statistics(initial_binning, save_summary=True)
+  File "/ix/lchong/dty7/d1d2/2kod/o_angle/3d_oamax_1_2_ss_v00/manager.py", line 170, in report_bin_statistics
+    self.rc.pstatus('{:d} of {:d} ({:%}) active bins are populated'.format(n_pop, n_active_bins,n_pop/n_active_bins))
+ZeroDivisionError: division by zero
+

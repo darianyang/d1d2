@@ -1,0 +1,22 @@
+Resetting modules to system default. Resetting $MODULEPATH back to system default. All extra directories will be removed from $MODULEPATH.
+Lmod has detected the following error: The following module(s) are unknown:
+"cuda/11.3"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore_cache load "cuda/11.3"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+
+
+
+Currently Loaded Modules:
+  1) cmake/3.24.2   5) intel/19.1.1      9) fftw/3.3.10_a   13) amber/22_a
+  2) pmix/3.2.3     6) impi/19.0.9      10) openmm/7.7.0_a  14) westpa/22.06_b
+  3) xalt/2.10.32   7) conda/4.12.0_a   11) swig/4.1.1_b
+  4) TACC           8) envwestpa/1.0_b  12) boost/1.72.0_a
+
+ 
+

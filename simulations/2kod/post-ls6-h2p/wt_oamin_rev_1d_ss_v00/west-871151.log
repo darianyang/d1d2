@@ -1,0 +1,156 @@
+Updating system with the options from the configuration file
+Maximum wallclock time: 1 day, 0:00:00
+
+Wed May  1 12:15:27 2024
+Iteration 501 (700 requested)
+Beginning iteration 501
+120 segments remain in iteration 501 (120 total)
+31 of 33 (93.939394%) active bins are populated
+per-bin minimum non-zero probability:       3.71795e-07
+per-bin maximum probability:                0.324951
+per-bin probability dynamic range (kT):     13.6808
+per-segment minimum non-zero probability:   7.56365e-08
+per-segment maximum non-zero probability:   0.104889
+per-segment probability dynamic range (kT): 14.1425
+norm = 1, error in norm = 0 (0*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+################ MAB stats ################
+minima in each dimension:      [0.0]
+maxima in each dimension:      [0.0]
+direction in each dimension:   [86]
+skip in each dimension:        [0]
+###########################################
+-- ERROR    [westpa.core.sim_manager] -- propagation failed for 120 segment(s):
+0  
+1  
+2  
+3  
+4  
+5  
+6  
+7  
+8  
+9  
+10  
+11  
+12  
+13  
+14  
+15  
+16  
+17  
+18  
+19  
+20  
+21  
+22  
+23  
+24  
+25  
+26  
+27  
+28  
+29  
+30  
+31  
+32  
+33  
+34  
+35  
+36  
+37  
+38  
+39  
+40  
+41  
+42  
+43  
+44  
+45  
+46  
+47  
+48  
+49  
+50  
+51  
+52  
+53  
+54  
+55  
+56  
+57  
+58  
+59  
+60  
+61  
+62  
+63  
+64  
+65  
+66  
+67  
+68  
+69  
+70  
+71  
+72  
+73  
+74  
+75  
+76  
+77  
+78  
+79  
+80  
+81  
+82  
+83  
+84  
+85  
+86  
+87  
+88  
+89  
+90  
+91  
+92  
+93  
+94  
+95  
+96  
+97  
+98  
+99  
+100  
+101  
+102  
+103  
+104  
+105  
+106  
+107  
+108  
+109  
+110  
+111  
+112  
+113  
+114  
+115  
+116  
+117  
+118  
+119
+exception caught; shutting down
+-- ERROR    [w_run] -- error message: propagation failed for 120 segments
+-- ERROR    [w_run] -- Traceback (most recent call last):
+  File "/ihome/lchong/dty7/Apps/westpa-mabNone/westpa/src/westpa/cli/core/w_run.py", line 61, in run_simulation
+    sim_manager.run()
+  File "/ihome/lchong/dty7/Apps/westpa-mabNone/westpa/src/westpa/core/sim_manager.py", line 752, in run
+    self.check_propagation()
+  File "/ihome/lchong/dty7/Apps/westpa-mabNone/westpa/src/westpa/core/sim_manager.py", line 650, in check_propagation
+    raise PropagationError('propagation failed for {:d} segments'.format(len(failed_segments)))
+westpa.core.sim_manager.PropagationError: propagation failed for 120 segments
+

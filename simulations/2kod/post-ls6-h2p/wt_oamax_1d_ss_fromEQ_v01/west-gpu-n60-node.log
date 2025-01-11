@@ -1,0 +1,7 @@
+Updating system with the options from the configuration file
+-- ERROR    [westpa.work_managers.zeromq.core.ZMQWorker.495bfc70-8a55-49c7-8896-5c470d91fa90] -- timeout communicating with peer; shutting down
+-- ERROR    [westpa.work_managers.zeromq.core.ZMQWorker.dfa489a9-740c-42fc-b9c0-955facf8a9d2] -- timeout communicating with peer; shutting down
+-- ERROR    [westpa.work_managers.zeromq.core.ZMQWorker.6d90e3c6-5a0b-47a0-986c-34e5f1efbccc] -- timeout communicating with peer; shutting down
+-- WARNING  [westpa.work_managers.zeromq.core.ZMQWorker.6d90e3c6-5a0b-47a0-986c-34e5f1efbccc] -- sending SIGKILL to worker process 15429
+-- ERROR    [westpa.work_managers.zeromq.core.ZMQWorker.4fd6eaf1-4e2c-4e08-98cb-92929a1b449d] -- timeout communicating with peer; shutting down
+-- WARNING  [westpa.work_managers.zeromq.core.ZMQWorker.4fd6eaf1-4e2c-4e08-98cb-92929a1b449d] -- sending SIGKILL to worker process 15404

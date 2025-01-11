@@ -1,0 +1,25 @@
+Updating system with the options from the configuration file
+Exception in thread Thread-3 (run):
+Traceback (most recent call last):
+  File "/ihome/lchong/dty7/Apps/anaconda3/envs/westpa/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/ihome/lchong/dty7/Apps/anaconda3/envs/westpa/lib/python3.10/threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+  File "/ihome/lchong/dty7/Apps/anaconda3/envs/westpa/lib/python3.10/site-packages/zmq/devices/basedevice.py", line 247, in run
+    self.run_device()
+  File "/ihome/lchong/dty7/Apps/anaconda3/envs/westpa/lib/python3.10/site-packages/zmq/devices/proxydevice.py", line 74, in run_device
+    ins, outs, mons = self._setup_sockets()
+  File "/ihome/lchong/dty7/Apps/anaconda3/envs/westpa/lib/python3.10/site-packages/zmq/devices/proxydevice.py", line 56, in _setup_sockets
+    ins, outs = Device._setup_sockets(self)
+  File "/ihome/lchong/dty7/Apps/anaconda3/envs/westpa/lib/python3.10/site-packages/zmq/devices/basedevice.py", line 221, in _setup_sockets
+    outs.bind(iface)
+  File "/ihome/lchong/dty7/Apps/anaconda3/envs/westpa/lib/python3.10/site-packages/zmq/sugar/socket.py", line 302, in bind
+    super().bind(addr)
+  File "zmq/backend/cython/socket.pyx", line 564, in zmq.backend.cython.socket.Socket.bind
+  File "zmq/backend/cython/checkrc.pxd", line 28, in zmq.backend.cython.checkrc._check_rc
+zmq.error.ZMQError: Address already in use (addr='tcp://*:41964')
+-- ERROR    [westpa.work_managers.zeromq.core.ZMQWorker.2a66fba8-2ad1-47e0-9bf3-25eab60709aa] -- startup phase elapsed with no contact from master; shutting down
+-- ERROR    [westpa.work_managers.zeromq.core.ZMQNode.8a8dea3b-e0bd-4783-b7ce-ec40b8ac2562] -- startup phase elapsed with no contact from peer; shutting down
+-- ERROR    [westpa.work_managers.zeromq.core.ZMQWorker.971dab81-4cb4-47e0-b9b0-0913e70ea2ed] -- startup phase elapsed with no contact from master; shutting down
+-- ERROR    [westpa.work_managers.zeromq.core.ZMQWorker.e76977b5-0fae-4a95-a507-20ccc09c4e40] -- startup phase elapsed with no contact from master; shutting down
+-- ERROR    [westpa.work_managers.zeromq.core.ZMQWorker.6b5c22c8-35f5-4dea-b071-07567d80d649] -- startup phase elapsed with no contact from master; shutting down

@@ -1,0 +1,12 @@
+     parm /home1/09416/dty7/scratch/d1d2/2kod/ls6-we/4f_fixed_1d_ss_v00/common_files/m01_2kod_12A.prmtop 
+ trajin /home1/09416/dty7/scratch/d1d2/2kod/ls6-we/4f_fixed_1d_ss_v00/bstates/v03.rst 
+ autoimage 
+ vector O1 :18-22@CA,C,O,N :46-49@CA,C,O,N 
+ vector O2 :18-22@CA,C,O,N :134-137@CA,C,O,N 
+ vector O3 :106-110@CA,C,O,N :46-49@CA,C,O,N 
+ vector O4 :106-110@CA,C,O,N :134-137@CA,C,O,N 
+ vectormath vec1 O1 vec2 O2 out pcoord.dat name o_angle_m1 dotangle 
+ vectormath vec1 O3 vec2 O4 out pcoord.dat name o_angle_m2 dotangle 
+ distance T45-T133 :45&!@CA,C,O,N,H :133&!@CA,C,O,N,H out pcoord.dat 
+ go 
+

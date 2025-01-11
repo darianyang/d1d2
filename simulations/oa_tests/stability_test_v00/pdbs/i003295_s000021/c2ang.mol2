@@ -1,0 +1,18 @@
+@<TRIPOS>MOLECULE
+Cpptraj Generated mol2 file.
+    4     2     2     0     0
+SMALL
+NO_CHARGES
+
+
+@<TRIPOS>ATOM
+      1 OXYZ       44.0968   45.2526   42.6940 OXYZ       1 VEC      0.000000
+      2 VXYZ       47.4748   48.9727   33.9009 VXYZ       1 VEC      0.000000
+      3 OXYZ       38.5134   65.2420   36.0706 OXYZ       2 VEC      0.000000
+      4 VXYZ       48.0095   61.5556   32.8469 VXYZ       2 VEC      0.000000
+@<TRIPOS>BOND
+    1     1     2 1
+    2     3     4 1
+@<TRIPOS>SUBSTRUCTURE
+      1 VEC               1 ****               0 ****  **** 
+      2 VEC               3 ****               0 ****  **** 

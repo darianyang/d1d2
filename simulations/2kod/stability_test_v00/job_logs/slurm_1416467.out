@@ -1,0 +1,24 @@
+START 2023-12-22T17:02:41 1703286161
+JobID:    1416467
+User:     dty7
+Hostlist: v320-011
+BEGIN INSIDE ENV.SH
+/work/09416/dty7/ls6/module_build_we_amber/modules/envwestpa/1.0_b/bin/python
+END   INSIDE ENV.SH
+
+CPPTRAJ: Trajectory Analysis. V6.4.4 (AmberTools)
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 12/22/23 17:33:03
+| Available memory: 28.708 GB
+
+INPUT: Reading input from 'grab_segs.cpp'
+  [parm common_files/m01_2kod_dry.prmtop]
+	Reading 'common_files/m01_2kod_dry.prmtop' as Amber Topology
+	Radius Set: modified Bondi radii (mbondi)
+  [trajin traj_segs/001500/000000/seg.rst restart]
+	Reading 'traj_segs/001500/000000/seg.rst' as Amber NC Restart
+TIME: Total execution time: 0.2110 seconds.
+

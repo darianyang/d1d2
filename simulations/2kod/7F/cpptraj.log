@@ -1,0 +1,7 @@
+# 06/23/23 15:36:21
+parm 1d_oamax_v00/common_files/2kod_7f_solv.prmtop
+trajin 1d_oamax_v00/common_files/2kod_7f_solv.inpcrd
+strip :WAT,Na+,Cl- parmout 2kod.prmtop
+quit
+run
+quit

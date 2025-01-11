@@ -1,0 +1,147 @@
+MPI startup(): PMI server not found. Please set I_MPI_PMI_LIBRARY variable if it is not a singleton case.
+Updating system with the options from the configuration file
+Maximum wallclock time: 2:00:00
+
+Wed Mar 13 18:18:30 2024
+Iteration 1053 (1500 requested)
+Beginning iteration 1053
+198 segments remain in iteration 1053 (198 total)
+33 of 34 (97.058824%) active bins are populated
+per-bin minimum non-zero probability:       1.97611e-59
+per-bin maximum probability:                0.500747
+per-bin probability dynamic range (kT):     134.48
+per-segment minimum non-zero probability:   2.3955e-60
+per-segment maximum non-zero probability:   0.114892
+per-segment probability dynamic range (kT): 135.118
+norm = 1, error in norm = 2.22045e-16 (1*epsilon)
+Recycled 9.78257e-60 probability (3 walkers) from target state 'D2'
+
+Reweighting using the simulation bin mapper:
+<RectilinearBinMapper at 0x14a44c157340 with 35 bins>
+Averaging rates
+Calculating reweighting using window size of 789
+
+Bin probabilities prior to reweighting:
+[0.00000000e+00 7.87961510e-60 5.09990237e-59 3.28092617e-59
+ 1.56521749e-59 7.62430217e-59 3.98237338e-59 1.50393217e-58
+ 1.72513000e-58 7.43762808e-59 2.93707265e-42 3.52182628e-40
+ 1.74689547e-39 1.19906140e-39 1.58927543e-39 2.45330661e-39
+ 1.57759338e-39 5.43065373e-40 7.28875020e-40 7.73020998e-40
+ 1.62432771e-25 2.96927106e-25 1.21499713e-25 9.61367940e-24
+ 3.75613998e-23 8.62193149e-25 4.81756692e-23 2.32287277e-23
+ 1.19411648e-22 4.08845337e-03 3.63287937e-04 1.15328813e-01
+ 8.21562488e-02 2.70224544e-01 5.27838652e-01]
+WESS: M*p = [[ 1.00000000e+00]
+ [ 1.45067098e-17]
+ [-5.43064586e-18]
+ [ 7.92404616e-17]
+ [ 3.16393487e-16]
+ [-2.48337355e-17]
+ [-4.73499888e-17]
+ [ 1.60090921e-16]
+ [ 1.12485975e-17]
+ [ 5.63954536e-17]
+ [-2.38998816e-17]
+ [ 6.98361724e-17]
+ [ 1.37558151e-17]
+ [ 4.30428262e-17]
+ [-9.48676901e-19]
+ [-1.98951099e-17]
+ [ 3.76760255e-17]
+ [ 5.38035328e-17]
+ [ 1.99493200e-17]
+ [-2.88939879e-17]
+ [-8.07730619e-18]
+ [ 1.00288701e-17]
+ [ 3.68628739e-18]
+ [ 6.72205347e-18]
+ [ 2.05998413e-18]
+ [ 1.82145965e-17]
+ [ 1.17093835e-17]
+ [-5.38712954e-18]
+ [ 3.57786717e-18]
+ [-2.60208521e-18]
+ [-2.34187669e-17]
+ [ 1.38777878e-17]
+ [ 6.93889390e-18]
+ [ 0.00000000e+00]]
+WESS: max = 0.9999999999999999
+WESS NNLS norm: 0.0
+
+Bin populations after reweighting:
+[0.00000000e+00 1.05096432e-23 5.73278592e-29 4.61381821e-23
+ 1.38231007e-06 1.72619263e-06 2.49521096e-06 5.89701766e-06
+ 1.46577321e-05 1.94208991e-05 3.44750504e-05 7.14573712e-05
+ 1.26039736e-04 1.95084471e-04 2.59814031e-04 2.92665986e-04
+ 2.79109042e-04 2.92929601e-04 2.49094247e-04 3.82906850e-04
+ 6.08040214e-04 7.16922132e-04 7.60466438e-04 1.02760016e-03
+ 1.44853079e-03 1.79369212e-03 2.23850996e-03 2.64676003e-03
+ 3.82665470e-03 4.99491232e-03 7.05905271e-03 1.47301981e-02
+ 6.72422708e-02 2.46906501e-01 6.41770733e-01]
+Iteration wallclock: 0:20:17.621239, cputime: 1:38:54.617809
+
+
+Wed Mar 13 18:38:47 2024
+Iteration 1054 (1500 requested)
+Beginning iteration 1054
+204 segments remain in iteration 1054 (204 total)
+34 of 34 (100.000000%) active bins are populated
+per-bin minimum non-zero probability:       5.73279e-29
+per-bin maximum probability:                0.641771
+per-bin probability dynamic range (kT):     64.5852
+per-segment minimum non-zero probability:   3.33898e-30
+per-segment maximum non-zero probability:   0.139691
+per-segment probability dynamic range (kT): 65.9036
+norm = 1, error in norm = -2.22045e-16 (-1*epsilon)
+Recycled 1.10084e-06 probability (9 walkers) from target state 'D2'
+Iteration wallclock: 0:20:41.324995, cputime: 1:42:59.087034
+
+
+Wed Mar 13 18:59:29 2024
+Iteration 1055 (1500 requested)
+Beginning iteration 1055
+198 segments remain in iteration 1055 (198 total)
+33 of 34 (97.058824%) active bins are populated
+per-bin minimum non-zero probability:       2.30385e-07
+per-bin maximum probability:                0.641772
+per-bin probability dynamic range (kT):     14.84
+per-segment minimum non-zero probability:   3.83975e-08
+per-segment maximum non-zero probability:   0.139691
+per-segment probability dynamic range (kT): 15.1069
+norm = 1, error in norm = -2.22045e-16 (-1*epsilon)
+Recycled 2.53623e-06 probability (4 walkers) from target state 'D2'
+Iteration wallclock: 0:19:58.261106, cputime: 1:40:17.748506
+
+
+Wed Mar 13 19:19:27 2024
+Iteration 1056 (1500 requested)
+Beginning iteration 1056
+198 segments remain in iteration 1056 (198 total)
+33 of 34 (97.058824%) active bins are populated
+per-bin minimum non-zero probability:       8.12703e-07
+per-bin maximum probability:                0.608834
+per-bin probability dynamic range (kT):     13.5267
+per-segment minimum non-zero probability:   9.28727e-08
+per-segment maximum non-zero probability:   0.139691
+per-segment probability dynamic range (kT): 14.2237
+norm = 1, error in norm = -1.11022e-16 (-0.5*epsilon)
+Recycled 2.17415e-06 probability (4 walkers) from target state 'D2'
+Iteration wallclock: 0:20:00.931313, cputime: 1:40:40.019090
+
+
+Wed Mar 13 19:39:28 2024
+Iteration 1057 (1500 requested)
+Beginning iteration 1057
+204 segments remain in iteration 1057 (204 total)
+34 of 34 (100.000000%) active bins are populated
+per-bin minimum non-zero probability:       1.72842e-07
+per-bin maximum probability:                0.608836
+per-bin probability dynamic range (kT):     15.0747
+per-segment minimum non-zero probability:   2.8807e-08
+per-segment maximum non-zero probability:   0.139691
+per-segment probability dynamic range (kT): 15.3943
+norm = 1, error in norm = -2.22045e-16 (-1*epsilon)
+Recycled 1.65872e-06 probability (3 walkers) from target state 'D2'
+Iteration wallclock: 0:20:22.928202, cputime: 1:43:25.260704
+
+Iteration 1058 would require more than the allotted time. Ending run.

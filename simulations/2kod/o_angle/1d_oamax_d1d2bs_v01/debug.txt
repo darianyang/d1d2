@@ -1,0 +1,530 @@
+simulation 1d_oamax_d1d2bs_v01 root is /ihome/lchong/dty7/ix/d1d2/2kod/o_angle/1d_oamax_d1d2bs_v01
+-- DEBUG     2023-04-06 14:51:05,979 PID 29936        TID 140092210345792     
+   from logger "westpa.rc"
+   at location /ihome/lchong/dty7/Apps/westpa/src/westpa/core/_rc.py:234 [process_config()]
+   ::
+   config: {'west': {'system': {'driver': 'westpa.core.systems.WESTSystem', 'system_options': {'pcoord_ndim': 1, 'pcoord_len': 11, 'pcoord_dtype': <class 'numpy.float32'>, 'bins': {'type': 'RectilinearBinMapper', 'boundaries': [['-inf', 10, 15, 20, 25, 30, 35, 40, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 55, 60, 65, 70, 'inf']]}, 'bin_target_counts': 4}}, 'drivers': {'sim_manager': 'manager.WESimManager', 'module_path': '$WEST_SIM_ROOT', 'we_driver': 'driver.WEDriver'}, 'propagation': {'max_total_iterations': 50, 'max_run_wallclock': 86400, 'propagator': 'executable', 'gen_istates': False}, 'data': {'west_data_file': 'west.h5', 'datasets': [{'name': 'pcoord', 'dtype': 'float32', 'scaleoffset': 4}, {'name': 'rms_m1_nmr', 'dtype': 'float32', 'scaleoffset': 4}, {'name': 'rms_h9m1_nmr', 'dtype': 'float32', 'scaleoffset': 4}, {'name': 'rms_m2_nmr', 'dtype': 'float32', 'scaleoffset': 4}, {'name': 'rms_h9m2_nmr', 'dtype': 'float32', 'scaleoffset': 4}, {'name': 'rms_heavy_nmr', 'dtype': 'float32', 'scaleoffset': 4}, {'name': 'rms_bb_nmr', 'dtype': 'float32', 'scaleoffset': 4}, {'name': 'rms_dimer_int_nmr', 'dtype': 'float32', 'scaleoffset': 4}, {'name': 'rms_key_int_nmr', 'dtype': 'float32', 'scaleoffset': 4}, {'name': 'rms_m1_xtal', 'dtype': 'float32', 'scaleoffset': 4}, {'name': 'rms_h9m1_xtal', 'dtype': 'float32', 'scaleoffset': 4}, {'name': 'rms_m2_xtal', 'dtype': 'float32', 'scaleoffset': 4}, {'name': 'rms_h9m2_xtal', 'dtype': 'float32', 'scaleoffset': 4}, {'name': 'rms_heavy_xtal', 'dtype': 'float32', 'scaleoffset': 4}, {'name': 'rms_bb_xtal', 'dtype': 'float32', 'scaleoffset': 4}, {'name': 'rms_dimer_int_xtal', 'dtype': 'float32', 'scaleoffset': 4}, {'name': 'rms_key_int_xtal', 'dtype': 'float32', 'scaleoffset': 4}, {'name': 'rms_m1_hex', 'dtype': 'float32', 'scaleoffset': 4}, {'name': 'rms_h9m1_hex', 'dtype': 'float32', 'scaleoffset': 4}, {'name': 'rms_m2_hex', 'dtype': 'float32', 'scaleoffset': 4}, {'name': 'rms_h9m2_hex', 'dtype': 'float32', 'scaleoffset': 4}, {'name': 'rms_heavy_hex', 'dtype': 'float32', 'scaleoffset': 4}, {'name': 'rms_bb_hex', 'dtype': 'float32', 'scaleoffset': 4}, {'name': 'rms_dimer_int_hex', 'dtype': 'float32', 'scaleoffset': 4}, {'name': 'rms_key_int_hex', 'dtype': 'float32', 'scaleoffset': 4}, {'name': 'rms_m1_pent', 'dtype': 'float32', 'scaleoffset': 4}, {'name': 'rms_h9m1_pent', 'dtype': 'float32', 'scaleoffset': 4}, {'name': 'rms_m2_pent', 'dtype': 'float32', 'scaleoffset': 4}, {'name': 'rms_h9m2_pent', 'dtype': 'float32', 'scaleoffset': 4}, {'name': 'rms_heavy_pent', 'dtype': 'float32', 'scaleoffset': 4}, {'name': 'rms_bb_pent', 'dtype': 'float32', 'scaleoffset': 4}, {'name': 'rms_dimer_int_pent', 'dtype': 'float32', 'scaleoffset': 4}, {'name': 'rms_key_int_pent', 'dtype': 'float32', 'scaleoffset': 4}, {'name': 'c2_angle', 'dtype': 'float32', 'scaleoffset': 4}, {'name': 'angle_3pt', 'dtype': 'float32', 'scaleoffset': 4}, {'name': 'o_angle_m1', 'dtype': 'float32', 'scaleoffset': 4}, {'name': 'o_angle_m2', 'dtype': 'float32', 'scaleoffset': 4}, {'name': 'rog', 'dtype': 'float32', 'scaleoffset': 4}, {'name': 'rog_cut', 'dtype': 'float32', 'scaleoffset': 4}, {'name': 'total_sasa', 'dtype': 'float32', 'scaleoffset': 4}, {'name': 'secondary_struct', 'dtype': 'float32', 'scaleoffset': 4}, {'name': 'inter_nc', 'dtype': 'float32', 'scaleoffset': 4}, {'name': 'inter_nnc', 'dtype': 'float32', 'scaleoffset': 4}, {'name': 'intra_nc', 'dtype': 'float32', 'scaleoffset': 4}, {'name': 'intra_nnc', 'dtype': 'float32', 'scaleoffset': 4}, {'name': 'M1E175_M2W184', 'dtype': 'float32', 'scaleoffset': 4}, {'name': 'M2E175_M1W184', 'dtype': 'float32', 'scaleoffset': 4}, {'name': 'M1E175_M1T148', 'dtype': 'float32', 'scaleoffset': 4}, {'name': 'M2E175_M2T148', 'dtype': 'float32', 'scaleoffset': 4}, {'name': 'M1M2_COM', 'dtype': 'float32', 'scaleoffset': 4}, {'name': 'M1M2_L46', 'dtype': 'float32', 'scaleoffset': 4}, {'name': 'M1_E175_phi', 'dtype': 'float32', 'scaleoffset': 4}, {'name': 'M1_E175_psi', 'dtype': 'float32', 'scaleoffset': 4}, {'name': 'M1_E175_chi1', 'dtype': 'float32', 'scaleoffset': 4}, {'name': 'M1_E175_chi2', 'dtype': 'float32', 'scaleoffset': 4}, {'name': 'M1_E175_chi3', 'dtype': 'float32', 'scaleoffset': 4}, {'name': 'M2_E175_phi', 'dtype': 'float32', 'scaleoffset': 4}, {'name': 'M2_E175_psi', 'dtype': 'float32', 'scaleoffset': 4}, {'name': 'M2_E175_chi1', 'dtype': 'float32', 'scaleoffset': 4}, {'name': 'M2_E175_chi2', 'dtype': 'float32', 'scaleoffset': 4}, {'name': 'M2_E175_chi3', 'dtype': 'float32', 'scaleoffset': 4}, {'name': 'rand', 'dtype': 'float16'}], 'data_refs': {'segment': '$WEST_SIM_ROOT/traj_segs/{segment.n_iter:06d}/{segment.seg_id:06d}', 'basis_state': '$WEST_SIM_ROOT/bstates/{basis_state.auxref}', 'initial_state': '$WEST_SIM_ROOT/istates/{initial_state.iter_created}/{initial_state.state_id}.rst'}}, 'plugins': None, 'executable': {'environ': {'PROPAGATION_DEBUG': 1}, 'datasets': [{'name': 'rand', 'enabled': False}, {'name': 'rms_m1_nmr', 'enabled': True}, {'name': 'rms_h9m1_nmr', 'enabled': True}, {'name': 'rms_m2_nmr', 'enabled': True}, {'name': 'rms_h9m2_nmr', 'enabled': True}, {'name': 'rms_heavy_nmr', 'enabled': True}, {'name': 'rms_bb_nmr', 'enabled': True}, {'name': 'rms_dimer_int_nmr', 'enabled': True}, {'name': 'rms_key_int_nmr', 'enabled': True}, {'name': 'rms_m1_xtal', 'enabled': True}, {'name': 'rms_h9m1_xtal', 'enabled': True}, {'name': 'rms_m2_xtal', 'enabled': True}, {'name': 'rms_h9m2_xtal', 'enabled': True}, {'name': 'rms_heavy_xtal', 'enabled': True}, {'name': 'rms_bb_xtal', 'enabled': True}, {'name': 'rms_dimer_int_xtal', 'enabled': True}, {'name': 'rms_key_int_xtal', 'enabled': True}, {'name': 'rms_m1_hex', 'enabled': True}, {'name': 'rms_h9m1_hex', 'enabled': True}, {'name': 'rms_m2_hex', 'enabled': True}, {'name': 'rms_h9m2_hex', 'enabled': True}, {'name': 'rms_heavy_hex', 'enabled': True}, {'name': 'rms_bb_hex', 'enabled': True}, {'name': 'rms_dimer_int_hex', 'enabled': True}, {'name': 'rms_key_int_hex', 'enabled': True}, {'name': 'rms_m1_pent', 'enabled': True}, {'name': 'rms_h9m1_pent', 'enabled': True}, {'name': 'rms_m2_pent', 'enabled': True}, {'name': 'rms_h9m2_pent', 'enabled': True}, {'name': 'rms_heavy_pent', 'enabled': True}, {'name': 'rms_bb_pent', 'enabled': True}, {'name': 'rms_dimer_int_pent', 'enabled': True}, {'name': 'rms_key_int_pent', 'enabled': True}, {'name': 'c2_angle', 'enabled': True}, {'name': 'angle_3pt', 'enabled': True}, {'name': 'o_angle_m1', 'enabled': True}, {'name': 'o_angle_m2', 'enabled': True}, {'name': 'rog', 'enabled': True}, {'name': 'rog_cut', 'enabled': True}, {'name': 'total_sasa', 'enabled': True}, {'name': 'secondary_struct', 'enabled': True}, {'name': 'inter_nc', 'enabled': True}, {'name': 'inter_nnc', 'enabled': True}, {'name': 'intra_nc', 'enabled': True}, {'name': 'intra_nnc', 'enabled': True}, {'name': 'M1E175_M2W184', 'enabled': True}, {'name': 'M2E175_M1W184', 'enabled': True}, {'name': 'M1E175_M1T148', 'enabled': True}, {'name': 'M2E175_M2T148', 'enabled': True}, {'name': 'M1M2_COM', 'enabled': True}, {'name': 'M1M2_L46', 'enabled': True}, {'name': 'M1_E175_phi', 'enabled': True}, {'name': 'M1_E175_psi', 'enabled': True}, {'name': 'M1_E175_chi1', 'enabled': True}, {'name': 'M1_E175_chi2', 'enabled': True}, {'name': 'M1_E175_chi3', 'enabled': True}, {'name': 'M2_E175_phi', 'enabled': True}, {'name': 'M2_E175_psi', 'enabled': True}, {'name': 'M2_E175_chi1', 'enabled': True}, {'name': 'M2_E175_chi2', 'enabled': True}, {'name': 'M2_E175_chi3', 'enabled': True}], 'propagator': {'executable': '$WEST_SIM_ROOT/westpa_scripts/runseg.sh', 'stdout': '$WEST_SIM_ROOT/seg_logs/{segment.n_iter:06d}-{segment.seg_id:06d}.log', 'stderr': '$WEST_SIM_ROOT/job_logs/propagator.err', 'stdin': None, 'cwd': None, 'environ': {'SEG_DEBUG': 1}}, 'get_pcoord': {'executable': '$WEST_SIM_ROOT/westpa_scripts/get_pcoord.sh', 'stdout': '$WEST_SIM_ROOT/job_logs/pcoord.log', 'stderr': '$WEST_SIM_ROOT/job_logs/pcoord.err'}, 'gen_istate': {'executable': '$WEST_SIM_ROOT/westpa_scripts/gen_istate.sh', 'stdout': '$WEST_SIM_ROOT/job_logs/istate.log', 'stderr': '$WEST_SIM_ROOT/job_logs/istate.err'}, 'post_iteration': {'enabled': True, 'executable': '$WEST_SIM_ROOT/westpa_scripts/post_iter.sh', 'stdout': '$WEST_SIM_ROOT/job_logs/post_iter.log', 'stderr': '$WEST_SIM_ROOT/job_logs/post_iter.err'}, 'pre_iteration': {'enabled': False, 'executable': '$WEST_SIM_ROOT/westpa_scripts/pre_iter.sh', 'stdout': '$WEST_SIM_ROOT/job_logs/pre_iter.log', 'stderr': '$WEST_SIM_ROOT/job_logs/pre_iter.err'}}, 'analysis': {'directory': 'ANALYSIS', 'kinetics': {'step_iter': 1, 'evolution': 'cumulative', 'extra': ['disable-correl']}, 'analysis_schemes': {'TEST': {'enabled': True, 'bins': [{'type': 'RectilinearBinMapper', 'boundaries': [[0.0, 3.0, 6.0, 9.0, 'inf']]}], 'states': [{'label': 'starting', 'coords': [[1.99]]}, {'label': 'final', 'coords': [[8.0]]}]}}}}, 'args': {'rcfile': 'west.cfg', 'verbosity': 'debug', 'force': False, 'bstate_file': 'bstates/bstates.txt', 'bstates': None, 'tstate_file': None, 'tstates': None, 'sstate_file': None, 'sstates': None, 'segs_per_state': 4, 'shotgun': False, 'work_manager': 'threads', 'n_workers': None, 'zmq_mode': None, 'zmq_comm_mode': None, 'zmq_write_host_info': None, 'zmq_read_host_info': None, 'zmq_upstream_rr_endpoint': None, 'zmq_upstream_ann_endpoint': None, 'zmq_downstream_rr_endpoint': None, 'zmq_downstream_ann_endpoint': None, 'zmq_master_heartbeat': None, 'zmq_worker_heartbeat': None, 'zmq_timeout_factor': None, 'zmq_startup_timeout': None, 'zmq_shutdown_timeout': None}}
+
+-- INFO      2023-04-06 14:51:06,008 PID 29936        TID 140092210345792     
+   from logger "westpa.rc"
+   at location /ihome/lchong/dty7/Apps/westpa/src/westpa/core/_rc.py:491 [new_system_driver()]
+   ::
+   loading system driver 'westpa.core.systems.WESTSystem'
+
+-- DEBUG     2023-04-06 14:51:06,008 PID 29936        TID 140092210345792     
+   from logger "westpa.core.extloader"
+   at location /ihome/lchong/dty7/Apps/westpa/src/westpa/core/extloader.py:70 [get_object()]
+   ::
+   attempting to load 'WESTSystem' from 'westpa.core.systems'
+
+-- DEBUG     2023-04-06 14:51:06,008 PID 29936        TID 140092210345792     
+   from logger "westpa.core.extloader"
+   at location /ihome/lchong/dty7/Apps/westpa/src/westpa/core/extloader.py:11 [load_module()]
+   ::
+   module 'westpa.core.systems' already loaded
+
+-- DEBUG     2023-04-06 14:51:06,008 PID 29936        TID 140092210345792     
+   from logger "westpa.rc"
+   at location /ihome/lchong/dty7/Apps/westpa/src/westpa/core/_rc.py:493 [new_system_driver()]
+   ::
+   loaded system driver <westpa.core.systems.WESTSystem object at 0x7f69baee9e20>
+
+-- INFO      2023-04-06 14:51:06,008 PID 29936        TID 140092210345792     
+   from logger "westpa.rc"
+   at location /ihome/lchong/dty7/Apps/westpa/src/westpa/core/_rc.py:501 [new_system_driver()]
+   ::
+   Loading system options from configuration file
+
+Updating system with the options from the configuration file
+-- INFO      2023-04-06 14:51:06,008 PID 29936        TID 140092210345792     
+   from logger "westpa.rc"
+   at location /ihome/lchong/dty7/Apps/westpa/src/westpa/core/_rc.py:629 [overwrite_option()]
+   ::
+   Overwriting system option: pcoord_ndim
+
+-- INFO      2023-04-06 14:51:06,008 PID 29936        TID 140092210345792     
+   from logger "westpa.rc"
+   at location /ihome/lchong/dty7/Apps/westpa/src/westpa/core/_rc.py:629 [overwrite_option()]
+   ::
+   Overwriting system option: pcoord_len
+
+-- INFO      2023-04-06 14:51:06,008 PID 29936        TID 140092210345792     
+   from logger "westpa.rc"
+   at location /ihome/lchong/dty7/Apps/westpa/src/westpa/core/_rc.py:629 [overwrite_option()]
+   ::
+   Overwriting system option: pcoord_dtype
+
+-- INFO      2023-04-06 14:51:06,008 PID 29936        TID 140092210345792     
+   from logger "westpa.rc"
+   at location /ihome/lchong/dty7/Apps/westpa/src/westpa/core/_rc.py:629 [overwrite_option()]
+   ::
+   Overwriting system option: bin_mapper
+
+-- INFO      2023-04-06 14:51:06,009 PID 29936        TID 140092210345792     
+   from logger "westpa.rc"
+   at location /ihome/lchong/dty7/Apps/westpa/src/westpa/core/_rc.py:629 [overwrite_option()]
+   ::
+   Overwriting system option: bin_target_counts
+
+-- DEBUG     2023-04-06 14:51:06,009 PID 29936        TID 140092210345792     
+   from logger "westpa.core.extloader"
+   at location /ihome/lchong/dty7/Apps/westpa/src/westpa/core/extloader.py:70 [get_object()]
+   ::
+   attempting to load 'WESimManager' from 'manager'
+
+-- DEBUG     2023-04-06 14:51:06,208 PID 29936        TID 140092210345792     
+   from logger "westpa.rc"
+   at location /ihome/lchong/dty7/Apps/westpa/src/westpa/core/_rc.py:377 [new_data_manager()]
+   ::
+   loaded data manager: <westpa.core.data_manager.WESTDataManager object at 0x7f69ab4f24f0>
+
+-- DEBUG     2023-04-06 14:51:06,208 PID 29936        TID 140092210345792     
+   from logger "westpa.core.extloader"
+   at location /ihome/lchong/dty7/Apps/westpa/src/westpa/core/extloader.py:70 [get_object()]
+   ::
+   attempting to load 'WEDriver' from 'driver'
+
+-- INFO      2023-04-06 14:51:06,292 PID 29936        TID 140092210345792     
+   from logger "driver"
+   at location /ix/lchong/dty7/d1d2/2kod/o_angle/1d_oamax_d1d2bs_v01/driver.py:105 [process_config()]
+   ::
+   Adjust counts to exactly match target_counts: True
+
+-- INFO      2023-04-06 14:51:06,292 PID 29936        TID 140092210345792     
+   from logger "driver"
+   at location /ix/lchong/dty7/d1d2/2kod/o_angle/1d_oamax_d1d2bs_v01/driver.py:108 [process_config()]
+   ::
+   Split threshold: 2.0
+
+-- INFO      2023-04-06 14:51:06,292 PID 29936        TID 140092210345792     
+   from logger "driver"
+   at location /ix/lchong/dty7/d1d2/2kod/o_angle/1d_oamax_d1d2bs_v01/driver.py:111 [process_config()]
+   ::
+   Merge cutoff: 1.0
+
+-- DEBUG     2023-04-06 14:51:06,292 PID 29936        TID 140092210345792     
+   from logger "westpa.rc"
+   at location /ihome/lchong/dty7/Apps/westpa/src/westpa/core/_rc.py:406 [new_we_driver()]
+   ::
+   loaded WE algorithm driver: <driver.WEDriver object at 0x7f69ab4f2fd0>
+
+-- DEBUG     2023-04-06 14:51:06,292 PID 29936        TID 140092210345792     
+   from logger "westpa.rc"
+   at location /ihome/lchong/dty7/Apps/westpa/src/westpa/core/_rc.py:421 [new_we_driver()]
+   ::
+   loaded WE algorithm driver subgrouping function 'westpa.core.we_driver._group_walkers_identity'
+
+-- DEBUG     2023-04-06 14:51:06,292 PID 29936        TID 140092210345792     
+   from logger "westpa.rc"
+   at location /ihome/lchong/dty7/Apps/westpa/src/westpa/core/_rc.py:422 [new_we_driver()]
+   ::
+   WE algorithm driver subgrouping function kwargs: {}
+
+-- DEBUG     2023-04-06 14:51:06,293 PID 29936        TID 140092210345792     
+   from logger "westpa.rc"
+   at location /ihome/lchong/dty7/Apps/westpa/src/westpa/core/_rc.py:361 [new_sim_manager()]
+   ::
+   loaded simulation manager <manager.WESimManager object at 0x7f69ab4f2670>
+
+-- DEBUG     2023-04-06 14:51:06,293 PID 29936        TID 140092210345792     
+   from logger "westpa.work_managers.threads"
+   at location /ihome/lchong/dty7/Apps/westpa/src/westpa/work_managers/threads.py:69 [startup()]
+   ::
+   starting thread <Thread(worker-0, initial)>
+
+-- DEBUG     2023-04-06 14:51:06,293 PID 29936        TID 140092210345792     
+   from logger "westpa.work_managers.threads"
+   at location /ihome/lchong/dty7/Apps/westpa/src/westpa/work_managers/threads.py:69 [startup()]
+   ::
+   starting thread <Thread(worker-1, initial)>
+
+-- DEBUG     2023-04-06 14:51:06,293 PID 29936        TID 140092210345792     
+   from logger "westpa.work_managers.threads"
+   at location /ihome/lchong/dty7/Apps/westpa/src/westpa/work_managers/threads.py:69 [startup()]
+   ::
+   starting thread <Thread(worker-2, initial)>
+
+-- DEBUG     2023-04-06 14:51:06,293 PID 29936        TID 140092210345792     
+   from logger "westpa.work_managers.threads"
+   at location /ihome/lchong/dty7/Apps/westpa/src/westpa/work_managers/threads.py:69 [startup()]
+   ::
+   starting thread <Thread(worker-3, initial)>
+
+-- DEBUG     2023-04-06 14:51:06,293 PID 29936        TID 140092210345792     
+   from logger "westpa.work_managers.threads"
+   at location /ihome/lchong/dty7/Apps/westpa/src/westpa/work_managers/threads.py:69 [startup()]
+   ::
+   starting thread <Thread(worker-4, initial)>
+
+-- DEBUG     2023-04-06 14:51:06,294 PID 29936        TID 140092210345792     
+   from logger "westpa.work_managers.threads"
+   at location /ihome/lchong/dty7/Apps/westpa/src/westpa/work_managers/threads.py:69 [startup()]
+   ::
+   starting thread <Thread(worker-5, initial)>
+
+-- DEBUG     2023-04-06 14:51:06,294 PID 29936        TID 140092210345792     
+   from logger "westpa.work_managers.threads"
+   at location /ihome/lchong/dty7/Apps/westpa/src/westpa/work_managers/threads.py:69 [startup()]
+   ::
+   starting thread <Thread(worker-6, initial)>
+
+-- DEBUG     2023-04-06 14:51:06,294 PID 29936        TID 140092210345792     
+   from logger "westpa.work_managers.threads"
+   at location /ihome/lchong/dty7/Apps/westpa/src/westpa/work_managers/threads.py:69 [startup()]
+   ::
+   starting thread <Thread(worker-7, initial)>
+
+-- DEBUG     2023-04-06 14:51:06,294 PID 29936        TID 140092210345792     
+   from logger "westpa.work_managers.threads"
+   at location /ihome/lchong/dty7/Apps/westpa/src/westpa/work_managers/threads.py:69 [startup()]
+   ::
+   starting thread <Thread(worker-8, initial)>
+
+-- DEBUG     2023-04-06 14:51:06,294 PID 29936        TID 140092210345792     
+   from logger "westpa.work_managers.threads"
+   at location /ihome/lchong/dty7/Apps/westpa/src/westpa/work_managers/threads.py:69 [startup()]
+   ::
+   starting thread <Thread(worker-9, initial)>
+
+-- DEBUG     2023-04-06 14:51:06,294 PID 29936        TID 140092210345792     
+   from logger "westpa.work_managers.threads"
+   at location /ihome/lchong/dty7/Apps/westpa/src/westpa/work_managers/threads.py:69 [startup()]
+   ::
+   starting thread <Thread(worker-10, initial)>
+
+-- DEBUG     2023-04-06 14:51:06,294 PID 29936        TID 140092210345792     
+   from logger "westpa.work_managers.threads"
+   at location /ihome/lchong/dty7/Apps/westpa/src/westpa/work_managers/threads.py:69 [startup()]
+   ::
+   starting thread <Thread(worker-11, initial)>
+
+-- WARNING   2023-04-06 14:51:06,583 PID 29936        TID 140092210345792     
+   from logger "py.warnings"
+   at location /ihome/lchong/dty7/Apps/anaconda3/lib/python3.8/warnings.py:109 [_showwarnmsg()]
+   ::
+   /ihome/lchong/dty7/Apps/westpa/src/westpa/core/states.py:83: ResourceWarning: unclosed file <_io.TextIOWrapper name='bstates/bstates.txt' mode='rt' encoding='UTF-8'>
+  for line in open(filename, 'rt'):
+
+
+Creating HDF5 file '/ix/lchong/dty7/d1d2/2kod/o_angle/1d_oamax_d1d2bs_v01/west.h5'
+0 target state(s) present
+Calculating progress coordinate values for basis states.
+-- DEBUG     2023-04-06 14:51:06,859 PID 29936        TID 140091822040832     
+   from logger "westpa.core.wm_ops"
+   at location /ihome/lchong/dty7/Apps/westpa/src/westpa/core/wm_ops.py:9 [get_pcoord()]
+   ::
+   getting progress coordinate for <westpa.core.states.BasisState object at 0x7f69ab4ce7f0 state_id=None label='0' prob=0.5 pcoord=array([None], dtype=object)>
+
+-- DEBUG     2023-04-06 14:51:06,859 PID 29936        TID 140091822040832     
+   from logger "westpa.core.propagators.executable"
+   at location /ihome/lchong/dty7/Apps/westpa/src/westpa/core/propagators/executable.py:259 [__init__()]
+   ::
+   exe_info: {'propagator': {'executable': '$WEST_SIM_ROOT/westpa_scripts/runseg.sh', 'stdin': None, 'stdout': '$WEST_SIM_ROOT/seg_logs/{segment.n_iter:06d}-{segment.seg_id:06d}.log', 'stderr': '$WEST_SIM_ROOT/job_logs/propagator.err', 'cwd': None, 'enabled': True, 'environ': {'SEG_DEBUG': '1'}}, 'pre_iteration': {'executable': '$WEST_SIM_ROOT/westpa_scripts/pre_iter.sh', 'stdin': '/dev/null', 'stdout': '$WEST_SIM_ROOT/job_logs/pre_iter.log', 'stderr': '$WEST_SIM_ROOT/job_logs/pre_iter.err', 'cwd': None, 'enabled': False, 'environ': {}}, 'post_iteration': {'executable': '$WEST_SIM_ROOT/westpa_scripts/post_iter.sh', 'stdin': '/dev/null', 'stdout': '$WEST_SIM_ROOT/job_logs/post_iter.log', 'stderr': '$WEST_SIM_ROOT/job_logs/post_iter.err', 'cwd': None, 'enabled': True, 'environ': {}}, 'get_pcoord': {'executable': '$WEST_SIM_ROOT/westpa_scripts/get_pcoord.sh', 'stdin': '/dev/null', 'stdout': '$WEST_SIM_ROOT/job_logs/pcoord.log', 'stderr': '$WEST_SIM_ROOT/job_logs/pcoord.err', 'cwd': None, 'enabled': True, 'environ': {}}, 'gen_istate': {'executable': '$WEST_SIM_ROOT/westpa_scripts/gen_istate.sh', 'stdin': '/dev/null', 'stdout': '$WEST_SIM_ROOT/job_logs/istate.log', 'stderr': '$WEST_SIM_ROOT/job_logs/istate.err', 'cwd': None, 'enabled': True, 'environ': {}}}
+
+-- DEBUG     2023-04-06 14:51:06,859 PID 29936        TID 140091822040832     
+   from logger "westpa.core.propagators.executable"
+   at location /ihome/lchong/dty7/Apps/westpa/src/westpa/core/propagators/executable.py:306 [__init__()]
+   ::
+   data_info: {'pcoord': {'name': 'pcoord', 'loader': <function pcoord_loader at 0x7f69ab8f5160>, 'enabled': True, 'filename': None, 'dir': False}, 'trajectory': {'name': 'trajectory', 'loader': <function trajectory_loader at 0x7f69ab874940>, 'enabled': False, 'filename': None, 'dir': True}, 'restart': {'name': 'restart', 'loader': <function restart_loader at 0x7f69ab8749d0>, 'enabled': False, 'filename': None, 'dir': True}, 'log': {'name': 'seglog', 'loader': <function seglog_loader at 0x7f69ab874af0>, 'enabled': False, 'filename': None, 'dir': False}, 'rand': {'name': 'rand', 'enabled': False, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'rms_m1_nmr': {'name': 'rms_m1_nmr', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'rms_h9m1_nmr': {'name': 'rms_h9m1_nmr', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'rms_m2_nmr': {'name': 'rms_m2_nmr', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'rms_h9m2_nmr': {'name': 'rms_h9m2_nmr', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'rms_heavy_nmr': {'name': 'rms_heavy_nmr', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'rms_bb_nmr': {'name': 'rms_bb_nmr', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'rms_dimer_int_nmr': {'name': 'rms_dimer_int_nmr', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'rms_key_int_nmr': {'name': 'rms_key_int_nmr', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'rms_m1_xtal': {'name': 'rms_m1_xtal', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'rms_h9m1_xtal': {'name': 'rms_h9m1_xtal', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'rms_m2_xtal': {'name': 'rms_m2_xtal', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'rms_h9m2_xtal': {'name': 'rms_h9m2_xtal', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'rms_heavy_xtal': {'name': 'rms_heavy_xtal', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'rms_bb_xtal': {'name': 'rms_bb_xtal', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'rms_dimer_int_xtal': {'name': 'rms_dimer_int_xtal', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'rms_key_int_xtal': {'name': 'rms_key_int_xtal', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'rms_m1_hex': {'name': 'rms_m1_hex', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'rms_h9m1_hex': {'name': 'rms_h9m1_hex', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'rms_m2_hex': {'name': 'rms_m2_hex', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'rms_h9m2_hex': {'name': 'rms_h9m2_hex', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'rms_heavy_hex': {'name': 'rms_heavy_hex', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'rms_bb_hex': {'name': 'rms_bb_hex', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'rms_dimer_int_hex': {'name': 'rms_dimer_int_hex', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'rms_key_int_hex': {'name': 'rms_key_int_hex', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'rms_m1_pent': {'name': 'rms_m1_pent', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'rms_h9m1_pent': {'name': 'rms_h9m1_pent', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'rms_m2_pent': {'name': 'rms_m2_pent', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'rms_h9m2_pent': {'name': 'rms_h9m2_pent', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'rms_heavy_pent': {'name': 'rms_heavy_pent', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'rms_bb_pent': {'name': 'rms_bb_pent', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'rms_dimer_int_pent': {'name': 'rms_dimer_int_pent', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'rms_key_int_pent': {'name': 'rms_key_int_pent', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'c2_angle': {'name': 'c2_angle', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'angle_3pt': {'name': 'angle_3pt', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'o_angle_m1': {'name': 'o_angle_m1', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'o_angle_m2': {'name': 'o_angle_m2', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'rog': {'name': 'rog', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'rog_cut': {'name': 'rog_cut', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'total_sasa': {'name': 'total_sasa', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'secondary_struct': {'name': 'secondary_struct', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'inter_nc': {'name': 'inter_nc', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'inter_nnc': {'name': 'inter_nnc', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'intra_nc': {'name': 'intra_nc', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'intra_nnc': {'name': 'intra_nnc', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'M1E175_M2W184': {'name': 'M1E175_M2W184', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'M2E175_M1W184': {'name': 'M2E175_M1W184', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'M1E175_M1T148': {'name': 'M1E175_M1T148', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'M2E175_M2T148': {'name': 'M2E175_M2T148', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'M1M2_COM': {'name': 'M1M2_COM', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'M1M2_L46': {'name': 'M1M2_L46', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'M1_E175_phi': {'name': 'M1_E175_phi', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'M1_E175_psi': {'name': 'M1_E175_psi', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'M1_E175_chi1': {'name': 'M1_E175_chi1', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'M1_E175_chi2': {'name': 'M1_E175_chi2', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'M1_E175_chi3': {'name': 'M1_E175_chi3', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'M2_E175_phi': {'name': 'M2_E175_phi', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'M2_E175_psi': {'name': 'M2_E175_psi', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'M2_E175_chi1': {'name': 'M2_E175_chi1', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'M2_E175_chi2': {'name': 'M2_E175_chi2', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'M2_E175_chi3': {'name': 'M2_E175_chi3', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}}
+
+-- DEBUG     2023-04-06 14:51:06,860 PID 29936        TID 140091813648128     
+   from logger "westpa.core.wm_ops"
+   at location /ihome/lchong/dty7/Apps/westpa/src/westpa/core/wm_ops.py:9 [get_pcoord()]
+   ::
+   getting progress coordinate for <westpa.core.states.BasisState object at 0x7f69ab4ce820 state_id=None label='1' prob=0.5 pcoord=array([None], dtype=object)>
+
+-- DEBUG     2023-04-06 14:51:06,860 PID 29936        TID 140091822040832     
+   from logger "westpa.rc"
+   at location /ihome/lchong/dty7/Apps/westpa/src/westpa/core/_rc.py:439 [new_propagator()]
+   ::
+   loaded propagator <westpa.core.propagators.executable.ExecutablePropagator object at 0x7f69ab4cef70>
+
+-- DEBUG     2023-04-06 14:51:06,860 PID 29936        TID 140091813648128     
+   from logger "westpa.core.propagators.executable"
+   at location /ihome/lchong/dty7/Apps/westpa/src/westpa/core/propagators/executable.py:259 [__init__()]
+   ::
+   exe_info: {'propagator': {'executable': '$WEST_SIM_ROOT/westpa_scripts/runseg.sh', 'stdin': None, 'stdout': '$WEST_SIM_ROOT/seg_logs/{segment.n_iter:06d}-{segment.seg_id:06d}.log', 'stderr': '$WEST_SIM_ROOT/job_logs/propagator.err', 'cwd': None, 'enabled': True, 'environ': {'SEG_DEBUG': '1'}}, 'pre_iteration': {'executable': '$WEST_SIM_ROOT/westpa_scripts/pre_iter.sh', 'stdin': '/dev/null', 'stdout': '$WEST_SIM_ROOT/job_logs/pre_iter.log', 'stderr': '$WEST_SIM_ROOT/job_logs/pre_iter.err', 'cwd': None, 'enabled': False, 'environ': {}}, 'post_iteration': {'executable': '$WEST_SIM_ROOT/westpa_scripts/post_iter.sh', 'stdin': '/dev/null', 'stdout': '$WEST_SIM_ROOT/job_logs/post_iter.log', 'stderr': '$WEST_SIM_ROOT/job_logs/post_iter.err', 'cwd': None, 'enabled': True, 'environ': {}}, 'get_pcoord': {'executable': '$WEST_SIM_ROOT/westpa_scripts/get_pcoord.sh', 'stdin': '/dev/null', 'stdout': '$WEST_SIM_ROOT/job_logs/pcoord.log', 'stderr': '$WEST_SIM_ROOT/job_logs/pcoord.err', 'cwd': None, 'enabled': True, 'environ': {}}, 'gen_istate': {'executable': '$WEST_SIM_ROOT/westpa_scripts/gen_istate.sh', 'stdin': '/dev/null', 'stdout': '$WEST_SIM_ROOT/job_logs/istate.log', 'stderr': '$WEST_SIM_ROOT/job_logs/istate.err', 'cwd': None, 'enabled': True, 'environ': {}}}
+
+-- DEBUG     2023-04-06 14:51:06,860 PID 29936        TID 140091813648128     
+   from logger "westpa.core.propagators.executable"
+   at location /ihome/lchong/dty7/Apps/westpa/src/westpa/core/propagators/executable.py:306 [__init__()]
+   ::
+   data_info: {'pcoord': {'name': 'pcoord', 'loader': <function pcoord_loader at 0x7f69ab8f5160>, 'enabled': True, 'filename': None, 'dir': False}, 'trajectory': {'name': 'trajectory', 'loader': <function trajectory_loader at 0x7f69ab874940>, 'enabled': False, 'filename': None, 'dir': True}, 'restart': {'name': 'restart', 'loader': <function restart_loader at 0x7f69ab8749d0>, 'enabled': False, 'filename': None, 'dir': True}, 'log': {'name': 'seglog', 'loader': <function seglog_loader at 0x7f69ab874af0>, 'enabled': False, 'filename': None, 'dir': False}, 'rand': {'name': 'rand', 'enabled': False, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'rms_m1_nmr': {'name': 'rms_m1_nmr', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'rms_h9m1_nmr': {'name': 'rms_h9m1_nmr', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'rms_m2_nmr': {'name': 'rms_m2_nmr', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'rms_h9m2_nmr': {'name': 'rms_h9m2_nmr', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'rms_heavy_nmr': {'name': 'rms_heavy_nmr', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'rms_bb_nmr': {'name': 'rms_bb_nmr', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'rms_dimer_int_nmr': {'name': 'rms_dimer_int_nmr', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'rms_key_int_nmr': {'name': 'rms_key_int_nmr', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'rms_m1_xtal': {'name': 'rms_m1_xtal', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'rms_h9m1_xtal': {'name': 'rms_h9m1_xtal', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'rms_m2_xtal': {'name': 'rms_m2_xtal', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'rms_h9m2_xtal': {'name': 'rms_h9m2_xtal', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'rms_heavy_xtal': {'name': 'rms_heavy_xtal', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'rms_bb_xtal': {'name': 'rms_bb_xtal', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'rms_dimer_int_xtal': {'name': 'rms_dimer_int_xtal', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'rms_key_int_xtal': {'name': 'rms_key_int_xtal', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'rms_m1_hex': {'name': 'rms_m1_hex', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'rms_h9m1_hex': {'name': 'rms_h9m1_hex', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'rms_m2_hex': {'name': 'rms_m2_hex', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'rms_h9m2_hex': {'name': 'rms_h9m2_hex', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'rms_heavy_hex': {'name': 'rms_heavy_hex', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'rms_bb_hex': {'name': 'rms_bb_hex', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'rms_dimer_int_hex': {'name': 'rms_dimer_int_hex', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'rms_key_int_hex': {'name': 'rms_key_int_hex', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'rms_m1_pent': {'name': 'rms_m1_pent', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'rms_h9m1_pent': {'name': 'rms_h9m1_pent', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'rms_m2_pent': {'name': 'rms_m2_pent', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'rms_h9m2_pent': {'name': 'rms_h9m2_pent', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'rms_heavy_pent': {'name': 'rms_heavy_pent', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'rms_bb_pent': {'name': 'rms_bb_pent', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'rms_dimer_int_pent': {'name': 'rms_dimer_int_pent', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'rms_key_int_pent': {'name': 'rms_key_int_pent', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'c2_angle': {'name': 'c2_angle', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'angle_3pt': {'name': 'angle_3pt', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'o_angle_m1': {'name': 'o_angle_m1', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'o_angle_m2': {'name': 'o_angle_m2', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'rog': {'name': 'rog', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'rog_cut': {'name': 'rog_cut', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'total_sasa': {'name': 'total_sasa', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'secondary_struct': {'name': 'secondary_struct', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'inter_nc': {'name': 'inter_nc', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'inter_nnc': {'name': 'inter_nnc', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'intra_nc': {'name': 'intra_nc', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'intra_nnc': {'name': 'intra_nnc', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'M1E175_M2W184': {'name': 'M1E175_M2W184', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'M2E175_M1W184': {'name': 'M2E175_M1W184', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'M1E175_M1T148': {'name': 'M1E175_M1T148', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'M2E175_M2T148': {'name': 'M2E175_M2T148', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'M1M2_COM': {'name': 'M1M2_COM', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'M1M2_L46': {'name': 'M1M2_L46', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'M1_E175_phi': {'name': 'M1_E175_phi', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'M1_E175_psi': {'name': 'M1_E175_psi', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'M1_E175_chi1': {'name': 'M1_E175_chi1', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'M1_E175_chi2': {'name': 'M1_E175_chi2', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'M1_E175_chi3': {'name': 'M1_E175_chi3', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'M2_E175_phi': {'name': 'M2_E175_phi', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'M2_E175_psi': {'name': 'M2_E175_psi', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'M2_E175_chi1': {'name': 'M2_E175_chi1', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'M2_E175_chi2': {'name': 'M2_E175_chi2', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}, 'M2_E175_chi3': {'name': 'M2_E175_chi3', 'enabled': True, 'loader': <function aux_data_loader at 0x7f69ab873700>}}
+
+-- DEBUG     2023-04-06 14:51:06,860 PID 29936        TID 140091813648128     
+   from logger "westpa.rc"
+   at location /ihome/lchong/dty7/Apps/westpa/src/westpa/core/_rc.py:439 [new_propagator()]
+   ::
+   loaded propagator <westpa.core.propagators.executable.ExecutablePropagator object at 0x7f69ab4ce0a0>
+
+-- WARNING   2023-04-06 14:51:10,463 PID 29936        TID 140091813648128     
+   from logger "py.warnings"
+   at location /ihome/lchong/dty7/Apps/anaconda3/lib/python3.8/warnings.py:109 [_showwarnmsg()]
+   ::
+   /ihome/lchong/dty7/Apps/westpa/src/westpa/core/propagators/executable.py:377: ResourceWarning: unclosed file <_io.BufferedReader name='/dev/null'>
+  return self.exec_child(
+
+
+-- WARNING   2023-04-06 14:51:10,463 PID 29936        TID 140091813648128     
+   from logger "py.warnings"
+   at location /ihome/lchong/dty7/Apps/anaconda3/lib/python3.8/warnings.py:109 [_showwarnmsg()]
+   ::
+   /ihome/lchong/dty7/Apps/westpa/src/westpa/core/propagators/executable.py:377: ResourceWarning: unclosed file <_io.BufferedWriter name='/ihome/lchong/dty7/ix/d1d2/2kod/o_angle/1d_oamax_d1d2bs_v01/job_logs/pcoord.log'>
+  return self.exec_child(
+
+
+-- WARNING   2023-04-06 14:51:10,463 PID 29936        TID 140091813648128     
+   from logger "py.warnings"
+   at location /ihome/lchong/dty7/Apps/anaconda3/lib/python3.8/warnings.py:109 [_showwarnmsg()]
+   ::
+   /ihome/lchong/dty7/Apps/westpa/src/westpa/core/propagators/executable.py:377: ResourceWarning: unclosed file <_io.BufferedWriter name='/ihome/lchong/dty7/ix/d1d2/2kod/o_angle/1d_oamax_d1d2bs_v01/job_logs/pcoord.err'>
+  return self.exec_child(
+
+
+-- DEBUG     2023-04-06 14:51:10,464 PID 29936        TID 140091813648128     
+   from logger "westpa.core.propagators.executable"
+   at location /ihome/lchong/dty7/Apps/westpa/src/westpa/core/propagators/executable.py:602 [retrieve_dataset_return()]
+   ::
+   deleted pcoord file '/tmp/tmpcgvgea4n'
+
+-- DEBUG     2023-04-06 14:51:10,547 PID 29936        TID 140091822040832     
+   from logger "westpa.core.propagators.executable"
+   at location /ihome/lchong/dty7/Apps/westpa/src/westpa/core/propagators/executable.py:602 [retrieve_dataset_return()]
+   ::
+   deleted pcoord file '/tmp/tmpqzfp88_e'
+
+2 basis state(s) present:
+ID        Label           Probability             Aux Reference           Progress Coordinate
+0         0               0.5                     05_eq3.rst              29.3871
+1         1               0.5                     381_098.rst             29.3871
+
+Calculating progress coordinate values for start states.
+0 start state(s) present:
+ID        Label           Probability             Aux Reference           Progress Coordinate
+
+Preparing initial states
+-- DEBUG     2023-04-06 14:51:10,631 PID 29936        TID 140092210345792     
+   from logger "westpa.core.data_manager"
+   at location /ihome/lchong/dty7/Apps/westpa/src/westpa/core/data_manager.py:467 [_find_multi_iter_group()]
+   ::
+   reference array([<HDF5 object reference>], dtype=object) points to group <HDF5 group "/ibstates/0" (2 members)>
+
+-- DEBUG     2023-04-06 14:51:10,633 PID 29936        TID 140092210345792     
+   from logger "westpa.core.data_manager"
+   at location /ihome/lchong/dty7/Apps/westpa/src/westpa/core/data_manager.py:467 [_find_multi_iter_group()]
+   ::
+   reference array([<HDF5 object reference>], dtype=object) points to group <HDF5 group "/ibstates/0" (4 members)>
+
+-- DEBUG     2023-04-06 14:51:10,635 PID 29936        TID 140092210345792     
+   from logger "westpa.core.data_manager"
+   at location /ihome/lchong/dty7/Apps/westpa/src/westpa/core/data_manager.py:467 [_find_multi_iter_group()]
+   ::
+   reference array([<HDF5 object reference>], dtype=object) points to group <HDF5 group "/ibstates/0" (4 members)>
+
+-- DEBUG     2023-04-06 14:51:10,636 PID 29936        TID 140092210345792     
+   from logger "westpa.core.data_manager"
+   at location /ihome/lchong/dty7/Apps/westpa/src/westpa/core/data_manager.py:467 [_find_multi_iter_group()]
+   ::
+   reference array([<HDF5 object reference>], dtype=object) points to group <HDF5 group "/ibstates/0" (4 members)>
+
+-- DEBUG     2023-04-06 14:51:10,638 PID 29936        TID 140092210345792     
+   from logger "westpa.core.data_manager"
+   at location /ihome/lchong/dty7/Apps/westpa/src/westpa/core/data_manager.py:467 [_find_multi_iter_group()]
+   ::
+   reference array([<HDF5 object reference>], dtype=object) points to group <HDF5 group "/ibstates/0" (4 members)>
+
+-- DEBUG     2023-04-06 14:51:10,640 PID 29936        TID 140092210345792     
+   from logger "westpa.core.data_manager"
+   at location /ihome/lchong/dty7/Apps/westpa/src/westpa/core/data_manager.py:467 [_find_multi_iter_group()]
+   ::
+   reference array([<HDF5 object reference>], dtype=object) points to group <HDF5 group "/ibstates/0" (4 members)>
+
+-- DEBUG     2023-04-06 14:51:10,641 PID 29936        TID 140092210345792     
+   from logger "westpa.core.data_manager"
+   at location /ihome/lchong/dty7/Apps/westpa/src/westpa/core/data_manager.py:467 [_find_multi_iter_group()]
+   ::
+   reference array([<HDF5 object reference>], dtype=object) points to group <HDF5 group "/ibstates/0" (4 members)>
+
+-- DEBUG     2023-04-06 14:51:10,643 PID 29936        TID 140092210345792     
+   from logger "westpa.core.data_manager"
+   at location /ihome/lchong/dty7/Apps/westpa/src/westpa/core/data_manager.py:467 [_find_multi_iter_group()]
+   ::
+   reference array([<HDF5 object reference>], dtype=object) points to group <HDF5 group "/ibstates/0" (4 members)>
+
+-- DEBUG     2023-04-06 14:51:10,644 PID 29936        TID 140092210345792     
+   from logger "manager"
+   at location /ix/lchong/dty7/d1d2/2kod/o_angle/1d_oamax_d1d2bs_v01/manager.py:327 [initialize_simulation()]
+   ::
+   initial state created: <westpa.core.states.InitialState object at 0x7f69a8463a00 state_id=0 istate_type=1 basis_state_id=0 iter_created=1 pcoord=array([29.3871], dtype=float32)>
+
+-- DEBUG     2023-04-06 14:51:10,645 PID 29936        TID 140092210345792     
+   from logger "manager"
+   at location /ix/lchong/dty7/d1d2/2kod/o_angle/1d_oamax_d1d2bs_v01/manager.py:327 [initialize_simulation()]
+   ::
+   initial state created: <westpa.core.states.InitialState object at 0x7f69a84635e0 state_id=1 istate_type=1 basis_state_id=0 iter_created=1 pcoord=array([29.3871], dtype=float32)>
+
+-- DEBUG     2023-04-06 14:51:10,645 PID 29936        TID 140092210345792     
+   from logger "manager"
+   at location /ix/lchong/dty7/d1d2/2kod/o_angle/1d_oamax_d1d2bs_v01/manager.py:327 [initialize_simulation()]
+   ::
+   initial state created: <westpa.core.states.InitialState object at 0x7f69a84636d0 state_id=2 istate_type=1 basis_state_id=0 iter_created=1 pcoord=array([29.3871], dtype=float32)>
+
+-- DEBUG     2023-04-06 14:51:10,645 PID 29936        TID 140092210345792     
+   from logger "manager"
+   at location /ix/lchong/dty7/d1d2/2kod/o_angle/1d_oamax_d1d2bs_v01/manager.py:327 [initialize_simulation()]
+   ::
+   initial state created: <westpa.core.states.InitialState object at 0x7f69a84638b0 state_id=3 istate_type=1 basis_state_id=0 iter_created=1 pcoord=array([29.3871], dtype=float32)>
+
+-- DEBUG     2023-04-06 14:51:10,645 PID 29936        TID 140092210345792     
+   from logger "manager"
+   at location /ix/lchong/dty7/d1d2/2kod/o_angle/1d_oamax_d1d2bs_v01/manager.py:327 [initialize_simulation()]
+   ::
+   initial state created: <westpa.core.states.InitialState object at 0x7f69a8463940 state_id=4 istate_type=1 basis_state_id=1 iter_created=1 pcoord=array([29.3871], dtype=float32)>
+
+-- DEBUG     2023-04-06 14:51:10,645 PID 29936        TID 140092210345792     
+   from logger "manager"
+   at location /ix/lchong/dty7/d1d2/2kod/o_angle/1d_oamax_d1d2bs_v01/manager.py:327 [initialize_simulation()]
+   ::
+   initial state created: <westpa.core.states.InitialState object at 0x7f69a84639a0 state_id=5 istate_type=1 basis_state_id=1 iter_created=1 pcoord=array([29.3871], dtype=float32)>
+
+-- DEBUG     2023-04-06 14:51:10,645 PID 29936        TID 140092210345792     
+   from logger "manager"
+   at location /ix/lchong/dty7/d1d2/2kod/o_angle/1d_oamax_d1d2bs_v01/manager.py:327 [initialize_simulation()]
+   ::
+   initial state created: <westpa.core.states.InitialState object at 0x7f69a84632b0 state_id=6 istate_type=1 basis_state_id=1 iter_created=1 pcoord=array([29.3871], dtype=float32)>
+
+-- DEBUG     2023-04-06 14:51:10,646 PID 29936        TID 140092210345792     
+   from logger "manager"
+   at location /ix/lchong/dty7/d1d2/2kod/o_angle/1d_oamax_d1d2bs_v01/manager.py:327 [initialize_simulation()]
+   ::
+   initial state created: <westpa.core.states.InitialState object at 0x7f69a8463430 state_id=7 istate_type=1 basis_state_id=1 iter_created=1 pcoord=array([29.3871], dtype=float32)>
+
+-- DEBUG     2023-04-06 14:51:10,646 PID 29936        TID 140092210345792     
+   from logger "westpa.core.data_manager"
+   at location /ihome/lchong/dty7/Apps/westpa/src/westpa/core/data_manager.py:467 [_find_multi_iter_group()]
+   ::
+   reference array([<HDF5 object reference>], dtype=object) points to group <HDF5 group "/ibstates/0" (4 members)>
+
+-- DEBUG     2023-04-06 14:51:10,648 PID 29936        TID 140092210345792     
+   from logger "driver"
+   at location /ix/lchong/dty7/d1d2/2kod/o_angle/1d_oamax_d1d2bs_v01/driver.py:219 [new_iteration()]
+   ::
+   mapper is <RectilinearBinMapper at 0x7f69baee9dc0 with 24 bins>, handling 24 bins
+
+-- DEBUG     2023-04-06 14:51:10,649 PID 29936        TID 140092210345792     
+   from logger "driver"
+   at location /ix/lchong/dty7/d1d2/2kod/o_angle/1d_oamax_d1d2bs_v01/driver.py:308 [assign()]
+   ::
+   0 walkers scheduled for recycling, 0 initial states available
+
+-- DEBUG     2023-04-06 14:51:10,650 PID 29936        TID 140092210345792     
+   from logger "driver"
+   at location /ix/lchong/dty7/d1d2/2kod/o_angle/1d_oamax_d1d2bs_v01/driver.py:457 [_merge_walkers()]
+   ::
+   merging (2) array([<Segment(0x7f69a8491040) n_iter=1 seg_id=None weight=0.125 parent_id=7 wtg_parent_ids=(7,) pcoord[0]=array([29.3871], dtype=float32) pcoord[-1]=array([0.], dtype=float32)>,
+       <Segment(0x7f69a8491070) n_iter=1 seg_id=None weight=0.125 parent_id=0 wtg_parent_ids=(0,) pcoord[0]=array([29.3871], dtype=float32) pcoord[-1]=array([0.], dtype=float32)>],
+      dtype=object) into 1:
+    <Segment(0x7f69a8491130) n_iter=1 seg_id=None weight=0.25 parent_id=7 wtg_parent_ids=(0, 7) pcoord[0]=array([29.3871], dtype=float32) pcoord[-1]=array([0.], dtype=float32)>
+
+-- DEBUG     2023-04-06 14:51:10,651 PID 29936        TID 140092210345792     
+   from logger "driver"
+   at location /ix/lchong/dty7/d1d2/2kod/o_angle/1d_oamax_d1d2bs_v01/driver.py:457 [_merge_walkers()]
+   ::
+   merging (2) array([<Segment(0x7f69a84910a0) n_iter=1 seg_id=None weight=0.125 parent_id=1 wtg_parent_ids=(1,) pcoord[0]=array([29.3871], dtype=float32) pcoord[-1]=array([0.], dtype=float32)>,
+       <Segment(0x7f69a84910d0) n_iter=1 seg_id=None weight=0.125 parent_id=2 wtg_parent_ids=(2,) pcoord[0]=array([29.3871], dtype=float32) pcoord[-1]=array([0.], dtype=float32)>],
+      dtype=object) into 1:
+    <Segment(0x7f69a8491070) n_iter=1 seg_id=None weight=0.25 parent_id=2 wtg_parent_ids=(1, 2) pcoord[0]=array([29.3871], dtype=float32) pcoord[-1]=array([0.], dtype=float32)>
+
+-- DEBUG     2023-04-06 14:51:10,651 PID 29936        TID 140092210345792     
+   from logger "driver"
+   at location /ix/lchong/dty7/d1d2/2kod/o_angle/1d_oamax_d1d2bs_v01/driver.py:457 [_merge_walkers()]
+   ::
+   merging (2) array([<Segment(0x7f69a848aaf0) n_iter=1 seg_id=None weight=0.125 parent_id=3 wtg_parent_ids=(3,) pcoord[0]=array([29.3871], dtype=float32) pcoord[-1]=array([0.], dtype=float32)>,
+       <Segment(0x7f69a848af70) n_iter=1 seg_id=None weight=0.125 parent_id=4 wtg_parent_ids=(4,) pcoord[0]=array([29.3871], dtype=float32) pcoord[-1]=array([0.], dtype=float32)>],
+      dtype=object) into 1:
+    <Segment(0x7f69a84910a0) n_iter=1 seg_id=None weight=0.25 parent_id=4 wtg_parent_ids=(3, 4) pcoord[0]=array([29.3871], dtype=float32) pcoord[-1]=array([0.], dtype=float32)>
+
+-- DEBUG     2023-04-06 14:51:10,652 PID 29936        TID 140092210345792     
+   from logger "driver"
+   at location /ix/lchong/dty7/d1d2/2kod/o_angle/1d_oamax_d1d2bs_v01/driver.py:457 [_merge_walkers()]
+   ::
+   merging (2) array([<Segment(0x7f69a848afa0) n_iter=1 seg_id=None weight=0.125 parent_id=5 wtg_parent_ids=(5,) pcoord[0]=array([29.3871], dtype=float32) pcoord[-1]=array([0.], dtype=float32)>,
+       <Segment(0x7f69a848afd0) n_iter=1 seg_id=None weight=0.125 parent_id=6 wtg_parent_ids=(6,) pcoord[0]=array([29.3871], dtype=float32) pcoord[-1]=array([0.], dtype=float32)>],
+      dtype=object) into 1:
+    <Segment(0x7f69a848af70) n_iter=1 seg_id=None weight=0.25 parent_id=6 wtg_parent_ids=(5, 6) pcoord[0]=array([29.3871], dtype=float32) pcoord[-1]=array([0.], dtype=float32)>
+
+-- DEBUG     2023-04-06 14:51:10,652 PID 29936        TID 140092210345792     
+   from logger "driver"
+   at location /ix/lchong/dty7/d1d2/2kod/o_angle/1d_oamax_d1d2bs_v01/driver.py:558 [_run_we()]
+   ::
+   used initial states: {}
+
+-- DEBUG     2023-04-06 14:51:10,652 PID 29936        TID 140092210345792     
+   from logger "driver"
+   at location /ix/lchong/dty7/d1d2/2kod/o_angle/1d_oamax_d1d2bs_v01/driver.py:559 [_run_we()]
+   ::
+   available initial states: {}
+
+-- DEBUG     2023-04-06 14:51:10,652 PID 29936        TID 140092210345792     
+   from logger "driver"
+   at location /ix/lchong/dty7/d1d2/2kod/o_angle/1d_oamax_d1d2bs_v01/driver.py:711 [construct_next()]
+   ::
+   used initial states: {}
+
+-- DEBUG     2023-04-06 14:51:10,652 PID 29936        TID 140092210345792     
+   from logger "driver"
+   at location /ix/lchong/dty7/d1d2/2kod/o_angle/1d_oamax_d1d2bs_v01/driver.py:712 [construct_next()]
+   ::
+   available initial states: {}
+
+-- DEBUG     2023-04-06 14:51:10,652 PID 29936        TID 140092210345792     
+   from logger "westpa.core.data_manager"
+   at location /ihome/lchong/dty7/Apps/westpa/src/westpa/core/data_manager.py:811 [prepare_iteration()]
+   ::
+   preparing HDF5 group for iteration 1 (4 segments)
+
+-- DEBUG     2023-04-06 14:51:10,655 PID 29936        TID 140092210345792     
+   from logger "westpa.core.data_manager"
+   at location /ihome/lchong/dty7/Apps/westpa/src/westpa/core/data_manager.py:1685 [calc_chunksize()]
+   ::
+   selected chunk shape (4, 11, 1) for data set of type float32 shaped (4, 11, 1) (chunk size = 176 bytes)
+
+-- DEBUG     2023-04-06 14:51:10,656 PID 29936        TID 140092210345792     
+   from logger "westpa.core.data_manager"
+   at location /ihome/lchong/dty7/Apps/westpa/src/westpa/core/data_manager.py:1641 [create_dataset_from_dsopts()]
+   ::
+   requiring aux dataset 'pcoord', shape=(4, 11, 1), opts={'shape': (4, 11, 1), 'dtype': dtype('float32'), 'compression': None, 'shuffle': False, 'chunks': (4, 11, 1), 'scaleoffset': 4}
+
+-- DEBUG     2023-04-06 14:51:10,657 PID 29936        TID 140092210345792     
+   from logger "westpa.core.data_manager"
+   at location /ihome/lchong/dty7/Apps/westpa/src/westpa/core/data_manager.py:467 [_find_multi_iter_group()]
+   ::
+   reference array([<HDF5 object reference>], dtype=object) points to group <HDF5 group "/ibstates/0" (4 members)>
+
+-- DEBUG     2023-04-06 14:51:10,659 PID 29936        TID 140092210345792     
+   from logger "westpa.core.data_manager"
+   at location /ihome/lchong/dty7/Apps/westpa/src/westpa/core/data_manager.py:467 [_find_multi_iter_group()]
+   ::
+   reference array([<HDF5 object reference>], dtype=object) points to group <HDF5 group "/ibstates/0" (4 members)>
+
+
+Segments generated:
+<Segment(0x7f69a8491070) n_iter=1 seg_id=0 weight=0.25 parent_id=-3 wtg_parent_ids=(-3,) pcoord[0]=array([29.3871], dtype=float32) pcoord[-1]=array([0.], dtype=float32)>
+<Segment(0x7f69a84910a0) n_iter=1 seg_id=1 weight=0.25 parent_id=-5 wtg_parent_ids=(-5,) pcoord[0]=array([29.3871], dtype=float32) pcoord[-1]=array([0.], dtype=float32)>
+<Segment(0x7f69a8491130) n_iter=1 seg_id=2 weight=0.25 parent_id=-8 wtg_parent_ids=(-8,) pcoord[0]=array([29.3871], dtype=float32) pcoord[-1]=array([0.], dtype=float32)>
+<Segment(0x7f69a848af70) n_iter=1 seg_id=3 weight=0.25 parent_id=-7 wtg_parent_ids=(-7,) pcoord[0]=array([29.3871], dtype=float32) pcoord[-1]=array([0.], dtype=float32)>
+
+        Total bins:            24
+        Initial replicas:      4 in 1 bins, total weight = 1
+        Total target replicas: 96
+        
+1-prob: 0.0000e+00
+Simulation prepared.
+1 of 24 (4.166667%) active bins are populated
+per-bin minimum non-zero probability:       1
+per-bin maximum probability:                1
+per-bin probability dynamic range (kT):     0
+per-segment minimum non-zero probability:   0.25
+per-segment maximum non-zero probability:   0.25
+per-segment probability dynamic range (kT): 0
+norm = 1, error in norm = 0 (0*epsilon)

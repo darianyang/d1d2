@@ -1,0 +1,5 @@
+Updating system with the options from the configuration file
+-- ERROR    [westpa.core.propagators.executable] -- could not read rms_m1_hex for Segment 87 from '/tmp/tmpv_eiyph4': ValueError('could not read any data for rms_m1_hex')
+-- ERROR    [westpa.core.propagators.executable] -- could not read pcoord for Segment 92 from '/tmp/tmp13u67imm': ValueError('cannot reshape array of size 0 into shape (11,1)')
+-- ERROR    [westpa.core.propagators.executable] -- could not read pcoord for Segment 93 from '/tmp/tmp5noo2c6q': ValueError('cannot reshape array of size 0 into shape (11,1)')
+-- ERROR    [westpa.core.propagators.executable] -- could not read rms_bb_hex for Segment 85 from '/tmp/tmpn5pfxc48': ValueError('could not read any data for rms_bb_hex')

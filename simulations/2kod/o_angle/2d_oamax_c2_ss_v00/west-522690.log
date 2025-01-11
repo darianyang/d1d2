@@ -1,0 +1,55 @@
+Updating system with the options from the configuration file
+Maximum wallclock time: 1 day, 0:00:00
+
+Mon Apr 24 14:47:01 2023
+Iteration 701 (1000 requested)
+0 segments remain in iteration 701 (100 total)
+26 of 30 (86.666667%) active bins are populated
+per-bin minimum non-zero probability:       9.45798e-23
+per-bin maximum probability:                0.298411
+per-bin probability dynamic range (kT):     49.5033
+per-segment minimum non-zero probability:   2.3645e-23
+per-segment maximum non-zero probability:   0.107253
+per-segment probability dynamic range (kT): 49.8663
+norm = 1, error in norm = 0 (0*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+
+Reweighting using a different bin mapper than simulation:
+<RectilinearBinMapper at 0x7f6b2f975a00 with 12 bins>
+Averaging rates
+Calculating reweighting using window size of 525
+
+Bin probabilities prior to reweighting:
+[6.19017593e-09 2.36658697e-09 6.04345393e-01 2.02714459e-01
+ 4.42339383e-02 4.52117628e-02 8.69754416e-02 1.53636748e-02
+ 0.00000000e+00 3.78593499e-06 7.58687482e-04 3.92848703e-04]
+WESS: M*p = [[-4.75151602e-17]
+ [-2.77555756e-17]
+ [ 1.38777878e-17]
+ [-8.32667268e-17]
+ [-4.85722573e-17]
+ [ 0.00000000e+00]
+ [ 1.38777878e-17]
+ [ 0.00000000e+00]
+ [-2.76471554e-18]
+ [-4.33680869e-19]
+ [ 1.00000000e+00]]
+WESS: max = 1.0
+WESS NNLS norm: 0.0
+exception caught; shutting down
+-- ERROR    [w_run] -- error message: populated bin reweighted to zero probability
+-- ERROR    [w_run] -- Traceback (most recent call last):
+  File "/ihome/lchong/dty7/Apps/westpa/src/westpa/cli/core/w_run.py", line 62, in run_simulation
+    sim_manager.run()
+  File "/ihome/lchong/dty7/Apps/westpa/src/westpa/core/sim_manager.py", line 765, in run
+    self.prepare_new_iteration()
+  File "/ihome/lchong/dty7/Apps/westpa/src/westpa/core/sim_manager.py", line 712, in prepare_new_iteration
+    self.invoke_callbacks(self.prepare_new_iteration)
+  File "/ihome/lchong/dty7/Apps/westpa/src/westpa/core/sim_manager.py", line 141, in invoke_callbacks
+    fn(*args, **kwargs)
+  File "/ihome/lchong/dty7/Apps/westpa/src/westpa/westext/wess/wess_driver.py", line 187, in prepare_new_iteration
+    assert (~((orig_binprobs > 0) & (binprobs == 0))).all(), 'populated bin reweighted to zero probability'
+AssertionError: populated bin reweighted to zero probability
+

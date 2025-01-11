@@ -1,0 +1,85 @@
+Updating system with the options from the configuration file
+Maximum wallclock time: 1 day, 0:00:00
+
+Mon Jul  8 17:28:48 2024
+Iteration 404 (500 requested)
+Continuing iteration 404
+1 segments remain in iteration 404 (112 total)
+29 of 33 (87.878788%) active bins are populated
+per-bin minimum non-zero probability:       1.75687e-31
+per-bin maximum probability:                1
+per-bin probability dynamic range (kT):     70.8166
+per-segment minimum non-zero probability:   1.10632e-31
+per-segment maximum non-zero probability:   0.270125
+per-segment probability dynamic range (kT): 69.9702
+norm = 1, error in norm = 2.22045e-16 (1*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+################ MAB stats ################
+minima in each dimension:      [2.5102]
+maxima in each dimension:      [39.4483]
+direction in each dimension:   [86]
+skip in each dimension:        [0]
+###########################################
+Iteration completed successfully
+Iteration wallclock: 0:02:14.824715, cputime: 0:31:10.009606
+
+
+Mon Jul  8 17:31:03 2024
+Iteration 405 (500 requested)
+Beginning iteration 405
+116 segments remain in iteration 405 (116 total)
+28 of 33 (84.848485%) active bins are populated
+per-bin minimum non-zero probability:       1.17442e-31
+per-bin maximum probability:                1
+per-bin probability dynamic range (kT):     71.2194
+per-segment minimum non-zero probability:   2.93605e-32
+per-segment maximum non-zero probability:   0.270125
+per-segment probability dynamic range (kT): 71.2968
+norm = 1, error in norm = 0 (0*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+################ MAB stats ################
+minima in each dimension:      [0.0]
+maxima in each dimension:      [39.7396]
+direction in each dimension:   [86]
+skip in each dimension:        [0]
+###########################################
+-- ERROR    [westpa.core.sim_manager] -- propagation failed for 24 segment(s):
+7  
+12  
+17  
+18  
+20  
+27  
+36  
+37  
+42  
+45  
+51  
+56  
+61  
+62  
+65  
+71  
+80  
+81  
+83  
+87  
+92  
+100  
+104  
+106
+exception caught; shutting down
+-- ERROR    [w_run] -- error message: propagation failed for 24 segments
+-- ERROR    [w_run] -- Traceback (most recent call last):
+  File "/ihome/lchong/dty7/Apps/westpa-mabNone/westpa/src/westpa/cli/core/w_run.py", line 61, in run_simulation
+    sim_manager.run()
+  File "/ihome/lchong/dty7/Apps/westpa-mabNone/westpa/src/westpa/core/sim_manager.py", line 752, in run
+    self.check_propagation()
+  File "/ihome/lchong/dty7/Apps/westpa-mabNone/westpa/src/westpa/core/sim_manager.py", line 650, in check_propagation
+    raise PropagationError('propagation failed for {:d} segments'.format(len(failed_segments)))
+westpa.core.sim_manager.PropagationError: propagation failed for 24 segments
+

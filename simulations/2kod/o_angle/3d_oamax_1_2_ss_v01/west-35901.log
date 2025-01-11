@@ -1,0 +1,30 @@
+Traceback (most recent call last):
+  File "/ihome/lchong/dty7/Apps/anaconda3/bin/w_run", line 33, in <module>
+    sys.exit(load_entry_point('westpa', 'console_scripts', 'w_run')())
+  File "/ihome/lchong/dty7/Apps/westpa/src/westpa/cli/core/w_run.py", line 26, in entry_point
+    westpa.rc.process_args(args)
+  File "/ihome/lchong/dty7/Apps/westpa/src/westpa/core/_rc.py", line 223, in process_args
+    self.read_config()
+  File "/ihome/lchong/dty7/Apps/westpa/src/westpa/core/_rc.py", line 249, in read_config
+    self.config.update_from_file(self.rcfile)
+  File "/ihome/lchong/dty7/Apps/westpa/src/westpa/core/yamlcfg.py", line 107, in update_from_file
+    self._data.update(yaml.load(file, Loader=YLoader))
+  File "/ihome/lchong/dty7/Apps/anaconda3/lib/python3.8/site-packages/yaml/__init__.py", line 114, in load
+    return loader.get_single_data()
+  File "/ihome/lchong/dty7/Apps/anaconda3/lib/python3.8/site-packages/yaml/constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "ext/_yaml.pyx", line 707, in _yaml.CParser.get_single_node
+  File "ext/_yaml.pyx", line 725, in _yaml.CParser._compose_document
+  File "ext/_yaml.pyx", line 776, in _yaml.CParser._compose_node
+  File "ext/_yaml.pyx", line 890, in _yaml.CParser._compose_mapping_node
+  File "ext/_yaml.pyx", line 776, in _yaml.CParser._compose_node
+  File "ext/_yaml.pyx", line 890, in _yaml.CParser._compose_mapping_node
+  File "ext/_yaml.pyx", line 776, in _yaml.CParser._compose_node
+  File "ext/_yaml.pyx", line 890, in _yaml.CParser._compose_mapping_node
+  File "ext/_yaml.pyx", line 776, in _yaml.CParser._compose_node
+  File "ext/_yaml.pyx", line 892, in _yaml.CParser._compose_mapping_node
+  File "ext/_yaml.pyx", line 905, in _yaml.CParser._parse_next_event
+yaml.parser.ParserError: while parsing a block mapping
+  in "west.cfg", line 15, column 7
+did not find expected key
+  in "west.cfg", line 42, column 8

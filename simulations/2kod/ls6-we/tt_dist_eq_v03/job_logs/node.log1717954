@@ -1,0 +1,41 @@
+Resetting modules to system default. Resetting $MODULEPATH back to system default. All extra directories will be removed from $MODULEPATH.
+BEGIN INSIDE ENV.SH
+
+Currently Loaded Modules:
+  1) cmake/3.24.2   6) impi/19.0.9          11) openmm/7.7.0_a
+  2) pmix/3.2.3     7) cuda/11.3       (g)  12) swig/4.1.1_b
+  3) xalt/2.10.32   8) conda/4.12.0_a       13) boost/1.72.0_a
+  4) TACC           9) envwestpa/1.0_b      14) amber/22_a
+  5) intel/19.1.1  10) fftw/3.3.10_a        15) westpa/22.06_b
+
+  Where:
+   g:  built for GPU
+
+ 
+
+/work/09416/dty7/ls6/module_build_we_amber/modules/envwestpa/1.0_b/bin/python
+END   INSIDE ENV.SH
+starting WEST client processes on: 
+c315-016.ls6.tacc.utexas.edu
+current directory is /home1/09416/dty7/scratch/d1d2/2kod/ls6-we/tt_dist_eq_v03
+environment is: 
+CUDA_VISIBLE_DEVICES =  0,1,2
+-- INFO     [westpa.rc] -- loading system driver 'westpa.core.systems.WESTSystem'
+-- INFO     [westpa.rc] -- Loading system options from configuration file
+Updating system with the options from the configuration file
+-- INFO     [westpa.rc] -- Overwriting system option: pcoord_ndim
+-- INFO     [westpa.rc] -- Overwriting system option: pcoord_len
+-- INFO     [westpa.rc] -- Overwriting system option: pcoord_dtype
+-- INFO     [westpa.rc] -- Overwriting system option: bin_mapper
+-- INFO     [westpa.rc] -- Overwriting system option: bin_target_counts
+-- INFO     [driver] -- Adjust counts to exactly match target_counts: True
+-- INFO     [driver] -- Split threshold: 2.0
+-- INFO     [driver] -- Merge cutoff: 1.0
+-- INFO     [westpa.work_managers.zeromq.core.ZMQWorker.8a25d9ab-2668-4c63-95e0-bf1b4718c955] -- This is ZMQWorker on c315-016.ls6.tacc.utexas.edu at PID 3205384
+-- INFO     [westpa.work_managers.zeromq.core.ZMQWorker.b86d5473-9613-49ef-baba-c09567b9b989] -- This is ZMQWorker on c315-016.ls6.tacc.utexas.edu at PID 320538---- INFO     [westpa.work_managers.zeromq.core.ZMQExecutor.510ee914-3e50-4762-bddd-3958e57c13da] -- This is ZMQExecutor on c315-016.ls6.tacc.utexas.edu at PID 3205389
+-- INFO     [westpa.work_managers.zeromq.core.ZMQExecutor.17a3857a-e516-4860-b624-ea065f2e613c] -- This is ZMQExecutor on c315-016.ls6.tacc.utexas.edu at PID 3205-- I-- INFO     [westpa.work_managers.zeromq.core.ZMQWorker.ecace6ad-d223-4e1b-9761-b87c5b221577] -- This is ZMQWorker on c315-016.ls6.tacc.utexas.edu at PID 3205384
+-- INFO     [westpa.work_managers.zeromq.core.ZMQExecutor.f3a0848b-a0d2-40dd-a5b8-b25ed9ee4fee] -- This is ZMQExecutor on c315-016.ls6.tacc.utexas.edu at PID 32-- WARNING  [westpa.work_managers.zeromq.core] -- sending SIGKILL to worker process 709698
+-- WARNING  [westpa.work_managers.zeromq.core] -- sending SIGKILL to worker process 709700
+-- WARNING  [westpa.work_managers.zeromq.core] -- sending SIGKILL to worker process 709712
+Shutting down.  Hopefully this was on purpose?
+ConnectioConnection to c309-001 closed by remote host.

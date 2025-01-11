@@ -1,0 +1,123 @@
+
+CPPTRAJ: Trajectory Analysis. V6.4.4 (AmberTools)
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 10/04/23 16:27:07
+| Available memory: 195.952 GB
+
+INPUT: Reading input from 'STDIN'
+  [parm ../common_files/m01_2kod_dry.prmtop]
+	Reading '../common_files/m01_2kod_dry.prmtop' as Amber Topology
+	Radius Set: modified Bondi radii (mbondi)
+  [trajin 1229_11_auto.nc]
+	Reading '1229_11_auto.nc' as Amber NetCDF
+  [autoimage]
+    AUTOIMAGE: To box center based on center of mass, anchor is first molecule.
+  [multidihedral phi resrange 41-41 out M1_W184_phi.dat]
+    MULTIDIHEDRAL: Calculating phi dihedrals for residues in range 41-41
+	Output to M1_W184_phi.dat
+	Output range is -180 to 180 degrees.
+  [multidihedral psi resrange 41-41 out M1_W184_psi.dat]
+    MULTIDIHEDRAL: Calculating psi dihedrals for residues in range 41-41
+	Output to M1_W184_psi.dat
+	Output range is -180 to 180 degrees.
+  [multidihedral dihtype chi1:N:CA:CB:CG dihtype chi2:CA:CB:CG:CD1 resrange 41-41 out M1_W184_chi12.dat]
+    MULTIDIHEDRAL: Calculating chi1 chi2 dihedrals for residues in range 41-41
+	Output to M1_W184_chi12.dat
+	Output range is -180 to 180 degrees.
+  [multidihedral phi resrange 129-129 out M2_W184_phi.dat]
+    MULTIDIHEDRAL: Calculating phi dihedrals for residues in range 129-129
+	Output to M2_W184_phi.dat
+	Output range is -180 to 180 degrees.
+  [multidihedral psi resrange 129-129 out M2_W184_psi.dat]
+    MULTIDIHEDRAL: Calculating psi dihedrals for residues in range 129-129
+	Output to M2_W184_psi.dat
+	Output range is -180 to 180 degrees.
+  [multidihedral dihtype chi1:N:CA:CB:CG dihtype chi2:CA:CB:CG:CD1 resrange 129-129 out M2_W184_chi12.dat]
+    MULTIDIHEDRAL: Calculating chi1 chi2 dihedrals for residues in range 129-129
+	Output to M2_W184_chi12.dat
+	Output range is -180 to 180 degrees.
+  [go]
+---------- RUN BEGIN -------------------------------------------------
+
+PARAMETER FILES (1 total):
+ 0: m01_2kod_dry.prmtop, 2760 atoms, 176 res, box: Truncated octahedron, 2 mol
+
+INPUT TRAJECTORIES (1 total):
+ 0: '1229_11_auto.nc' is a NetCDF AMBER trajectory with coordinates, time, box, Parm m01_2kod_dry.prmtop (Truncated octahedron box) (reading 1229 of 1229)
+  Coordinate processing will occur on 1229 frames.
+
+BEGIN TRAJECTORY PROCESSING:
+.....................................................
+ACTION SETUP FOR PARM 'm01_2kod_dry.prmtop' (7 actions):
+  0: [autoimage]
+	Original box is truncated octahedron, turning on 'familiar'.
+	Using first molecule as anchor.
+	1 molecules are fixed to anchor: 2
+	0 molecules are mobile.
+  1: [multidihedral phi resrange 41-41 out M1_W184_phi.dat]
+	ResRange=[41-41] phi, 1 dihedrals.
+	1 [phi:41]: ASN@C TRP@N TRP@CA TRP@C
+  2: [multidihedral psi resrange 41-41 out M1_W184_psi.dat]
+	ResRange=[41-41] psi, 1 dihedrals.
+	1 [psi:41]: TRP@N TRP@CA TRP@C MET@N
+  3: [multidihedral dihtype chi1:N:CA:CB:CG dihtype chi2:CA:CB:CG:CD1 resrange 41-41 out M1_W184_chi12.dat]
+	ResRange=[41-41] chi1 chi2, 2 dihedrals.
+	1 [chi1:41]: TRP@N TRP@CA TRP@CB TRP@CG
+	2 [chi2:41]: TRP@CA TRP@CB TRP@CG TRP@CD1
+  4: [multidihedral phi resrange 129-129 out M2_W184_phi.dat]
+	ResRange=[129-129] phi, 1 dihedrals.
+	1 [phi:129]: ASN@C TRP@N TRP@CA TRP@C
+  5: [multidihedral psi resrange 129-129 out M2_W184_psi.dat]
+	ResRange=[129-129] psi, 1 dihedrals.
+	1 [psi:129]: TRP@N TRP@CA TRP@C MET@N
+  6: [multidihedral dihtype chi1:N:CA:CB:CG dihtype chi2:CA:CB:CG:CD1 resrange 129-129 out M2_W184_chi12.dat]
+	ResRange=[129-129] chi1 chi2, 2 dihedrals.
+	1 [chi1:129]: TRP@N TRP@CA TRP@CB TRP@CG
+	2 [chi2:129]: TRP@CA TRP@CB TRP@CG TRP@CD1
+----- 1229_11_auto.nc (1-1229, 1) -----
+ 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% Complete.
+
+Read 1229 frames and processed 1229 frames.
+TIME: Avg. throughput= 2977.2575 frames / second.
+
+ACTION OUTPUT:
+TIME: Analyses took 0.0000 seconds.
+
+DATASETS (8 total):
+	MDIH_00001[phi]:41 "phi:41" (double, torsion(phi)), size is 1229 (9.832 kB)
+	MDIH_00002[psi]:41 "psi:41" (double, torsion(psi)), size is 1229 (9.832 kB)
+	MDIH_00003[chi1]:41 "chi1:41" (double, torsion), size is 1229 (9.832 kB)
+	MDIH_00003[chi2]:41 "chi2:41" (double, torsion), size is 1229 (9.832 kB)
+	MDIH_00005[phi]:129 "phi:129" (double, torsion(phi)), size is 1229 (9.832 kB)
+	MDIH_00006[psi]:129 "psi:129" (double, torsion(psi)), size is 1229 (9.832 kB)
+	MDIH_00007[chi1]:129 "chi1:129" (double, torsion), size is 1229 (9.832 kB)
+	MDIH_00007[chi2]:129 "chi2:129" (double, torsion), size is 1229 (9.832 kB)
+    Total data set memory usage is at least 78.656 kB
+
+DATAFILES (6 total):
+  M1_W184_phi.dat (Standard Data File):  phi:41
+  M1_W184_psi.dat (Standard Data File):  psi:41
+  M1_W184_chi12.dat (Standard Data File):  chi1:41 chi2:41
+  M2_W184_phi.dat (Standard Data File):  phi:129
+  M2_W184_psi.dat (Standard Data File):  psi:129
+  M2_W184_chi12.dat (Standard Data File):  chi1:129 chi2:129
+
+RUN TIMING:
+TIME:		Init               : 0.0000 s (  0.00%)
+TIME:		Trajectory Process : 0.4128 s ( 69.42%)
+TIME:		Action Post        : 0.0000 s (  0.00%)
+TIME:		Analysis           : 0.0000 s (  0.00%)
+TIME:		Data File Write    : 0.1818 s ( 30.57%)
+TIME:		Other              : 0.0000 s (  0.00%)
+TIME:	Run Total 0.5946 s
+---------- RUN END ---------------------------------------------------
+TIME: Total execution time: 1.0489 seconds.
+--------------------------------------------------------------------------------
+To cite CPPTRAJ use:
+Daniel R. Roe and Thomas E. Cheatham, III, "PTRAJ and CPPTRAJ: Software for
+  Processing and Analysis of Molecular Dynamics Trajectory Data". J. Chem.
+  Theory Comput., 2013, 9 (7), pp 3084-3095.
+

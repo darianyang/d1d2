@@ -1,0 +1,2833 @@
+Updating system with the options from the configuration file
+Maximum wallclock time: 3 days, 0:00:00
+
+Fri Jun  9 13:36:54 2023
+Iteration 1 (500 requested)
+Beginning iteration 1
+4 segments remain in iteration 1 (4 total)
+1 of 40 (2.500000%) active bins are populated
+per-bin minimum non-zero probability:       1
+per-bin maximum probability:                1
+per-bin probability dynamic range (kT):     0
+per-segment minimum non-zero probability:   0.25
+per-segment maximum non-zero probability:   0.25
+per-segment probability dynamic range (kT): 0
+norm = 1, error in norm = 0 (0*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+
+Reweighting using a different bin mapper than simulation:
+<RectilinearBinMapper at 0x7f6cad81e730 with 8 bins>
+Averaging rates
+Calculating reweighting using window size of 0
+
+Bin probabilities prior to reweighting:
+[0. 0. 1. 0. 0. 0. 0. 0.]
+
+Bin populations after reweighting:
+[0. 0. 1. 0. 0. 0. 0. 0.]
+Iteration completed successfully
+Iteration wallclock: 0:02:11.695623, cputime: 0:01:21.611307
+
+
+Fri Jun  9 13:39:05 2023
+Iteration 2 (500 requested)
+Beginning iteration 2
+12 segments remain in iteration 2 (12 total)
+3 of 40 (7.500000%) active bins are populated
+per-bin minimum non-zero probability:       0.25
+per-bin maximum probability:                0.5
+per-bin probability dynamic range (kT):     0.693147
+per-segment minimum non-zero probability:   0.0625
+per-segment maximum non-zero probability:   0.125
+per-segment probability dynamic range (kT): 0.693147
+norm = 1, error in norm = 0 (0*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+
+Reweighting using a different bin mapper than simulation:
+<RectilinearBinMapper at 0x7f6cad81e730 with 8 bins>
+Averaging rates
+Calculating reweighting using window size of 1
+
+Bin probabilities prior to reweighting:
+[0. 0. 1. 0. 0. 0. 0. 0.]
+
+Bin populations after reweighting:
+[0. 0. 1. 0. 0. 0. 0. 0.]
+Iteration completed successfully
+Iteration wallclock: 0:01:04.496428, cputime: 0:04:05.846701
+
+
+Fri Jun  9 13:40:10 2023
+Iteration 3 (500 requested)
+Beginning iteration 3
+36 segments remain in iteration 3 (36 total)
+8 of 40 (20.000000%) active bins are populated
+per-bin minimum non-zero probability:       0.0625
+per-bin maximum probability:                0.25
+per-bin probability dynamic range (kT):     1.38629
+per-segment minimum non-zero probability:   0.015625
+per-segment maximum non-zero probability:   0.0625
+per-segment probability dynamic range (kT): 1.38629
+norm = 1, error in norm = 0 (0*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+
+Reweighting using a different bin mapper than simulation:
+<RectilinearBinMapper at 0x7f6cad81e730 with 8 bins>
+Averaging rates
+Calculating reweighting using window size of 2
+
+Bin probabilities prior to reweighting:
+[0.0625  0.09375 0.6875  0.125   0.03125 0.      0.      0.     ]
+
+Bin populations after reweighting:
+[0.0625  0.09375 0.6875  0.125   0.03125 0.      0.      0.     ]
+Iteration completed successfully
+Iteration wallclock: 0:02:39.000164, cputime: 0:12:19.827280
+
+
+Fri Jun  9 13:42:49 2023
+Iteration 4 (500 requested)
+Beginning iteration 4
+40 segments remain in iteration 4 (40 total)
+10 of 40 (25.000000%) active bins are populated
+per-bin minimum non-zero probability:       0.015625
+per-bin maximum probability:                0.3125
+per-bin probability dynamic range (kT):     2.99573
+per-segment minimum non-zero probability:   0.00390625
+per-segment maximum non-zero probability:   0.151042
+per-segment probability dynamic range (kT): 3.65498
+norm = 1, error in norm = 0 (0*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+
+Reweighting using a different bin mapper than simulation:
+<RectilinearBinMapper at 0x7f6cad81e730 with 8 bins>
+Averaging rates
+Calculating reweighting using window size of 3
+
+Bin probabilities prior to reweighting:
+[0.01041667 0.09375    0.47526042 0.2734375  0.05338542 0.09375
+ 0.         0.        ]
+
+Bin populations after reweighting:
+[0.01041667 0.09375    0.47526042 0.2734375  0.05338542 0.09375
+ 0.         0.        ]
+Iteration completed successfully
+Iteration wallclock: 0:02:40.117238, cputime: 0:13:43.173752
+
+
+Fri Jun  9 13:45:29 2023
+Iteration 5 (500 requested)
+Beginning iteration 5
+44 segments remain in iteration 5 (44 total)
+12 of 40 (30.000000%) active bins are populated
+per-bin minimum non-zero probability:       0.0078125
+per-bin maximum probability:                0.352865
+per-bin probability dynamic range (kT):     3.81036
+per-segment minimum non-zero probability:   0.00195312
+per-segment maximum non-zero probability:   0.09375
+per-segment probability dynamic range (kT): 3.8712
+norm = 1, error in norm = 0 (0*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+
+Reweighting using a different bin mapper than simulation:
+<RectilinearBinMapper at 0x7f6cad81e730 with 8 bins>
+Averaging rates
+Calculating reweighting using window size of 3
+
+Bin probabilities prior to reweighting:
+[0.         0.05598958 0.42925347 0.48220486 0.03255208 0.
+ 0.         0.        ]
+WESS: M*p = [[ 1.96023753e-16]
+ [-2.05564732e-16]
+ [ 8.32667268e-17]
+ [ 1.00000000e+00]
+ [ 3.46944695e-18]
+ [-3.46944695e-17]]
+WESS: max = 1.0
+WESS NNLS norm: 0.0
+
+Bin populations after reweighting:
+[0.         0.01906512 0.59216437 0.35860522 0.0301653  0.
+ 0.         0.        ]
+Iteration completed successfully
+Iteration wallclock: 0:03:16.949413, cputime: 0:15:08.948997
+
+
+Fri Jun  9 13:48:46 2023
+Iteration 6 (500 requested)
+Beginning iteration 6
+56 segments remain in iteration 6 (56 total)
+14 of 40 (35.000000%) active bins are populated
+per-bin minimum non-zero probability:       0.00088675
+per-bin maximum probability:                0.326319
+per-bin probability dynamic range (kT):     5.90807
+per-segment minimum non-zero probability:   0.000221687
+per-segment maximum non-zero probability:   0.126935
+per-segment probability dynamic range (kT): 6.35016
+norm = 1, error in norm = 0 (0*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+
+Reweighting using a different bin mapper than simulation:
+<RectilinearBinMapper at 0x7f6cad81e730 with 8 bins>
+Averaging rates
+Calculating reweighting using window size of 4
+
+Bin probabilities prior to reweighting:
+[0.         0.16602057 0.42389712 0.28144396 0.12863835 0.
+ 0.         0.        ]
+WESS: M*p = [[ 9.28077060e-17]
+ [ 6.24500451e-17]
+ [ 5.55111512e-17]
+ [ 1.00000000e+00]
+ [-5.55111512e-17]
+ [ 2.42861287e-17]]
+WESS: max = 0.9999999999999999
+WESS NNLS norm: 0.0
+
+Bin populations after reweighting:
+[0.         0.04663915 0.55639687 0.33406534 0.06289864 0.
+ 0.         0.        ]
+Iteration completed successfully
+Iteration wallclock: 0:03:46.750305, cputime: 0:19:19.823421
+
+
+Fri Jun  9 13:52:33 2023
+Iteration 7 (500 requested)
+Beginning iteration 7
+56 segments remain in iteration 7 (56 total)
+13 of 40 (32.500000%) active bins are populated
+per-bin minimum non-zero probability:       6.22773e-05
+per-bin maximum probability:                0.310577
+per-bin probability dynamic range (kT):     8.51459
+per-segment minimum non-zero probability:   1.55693e-05
+per-segment maximum non-zero probability:   0.11317
+per-segment probability dynamic range (kT): 8.89135
+norm = 1, error in norm = 0 (0*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+
+Reweighting using a different bin mapper than simulation:
+<RectilinearBinMapper at 0x7f6cad81e730 with 8 bins>
+Averaging rates
+Calculating reweighting using window size of 5
+
+Bin probabilities prior to reweighting:
+[1.55693233e-05 3.31465543e-02 2.40157390e-01 6.37094656e-01
+ 8.94752087e-02 1.10621540e-04 0.00000000e+00 0.00000000e+00]
+WESS: M*p = [[-7.80625564e-18]
+ [-1.38777878e-17]
+ [-5.55111512e-17]
+ [ 1.00000000e+00]
+ [ 8.67361738e-19]
+ [ 3.46944695e-17]]
+WESS: max = 1.0
+WESS NNLS norm: 0.0
+
+Bin populations after reweighting:
+[0.00675775 0.03200927 0.45488304 0.41712831 0.07987446 0.00934716
+ 0.         0.        ]
+Iteration completed successfully
+Iteration wallclock: 0:03:46.525038, cputime: 0:19:19.739238
+
+
+Fri Jun  9 13:56:19 2023
+Iteration 8 (500 requested)
+Beginning iteration 8
+52 segments remain in iteration 8 (52 total)
+13 of 40 (32.500000%) active bins are populated
+per-bin minimum non-zero probability:       2.00468e-05
+per-bin maximum probability:                0.360811
+per-bin probability dynamic range (kT):     9.79804
+per-segment minimum non-zero probability:   5.01171e-06
+per-segment maximum non-zero probability:   0.133973
+per-segment probability dynamic range (kT): 10.1936
+norm = 1, error in norm = -1.11022e-16 (-0.5*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+
+Reweighting using a different bin mapper than simulation:
+<RectilinearBinMapper at 0x7f6cad81e730 with 8 bins>
+Averaging rates
+Calculating reweighting using window size of 6
+
+Bin probabilities prior to reweighting:
+[0.00168944 0.04745801 0.66501394 0.26225348 0.02358513 0.
+ 0.         0.        ]
+WESS: M*p = [[ 1.50053581e-16]
+ [ 1.73472348e-17]
+ [ 0.00000000e+00]
+ [-8.32667268e-17]
+ [ 1.00000000e+00]
+ [ 5.20417043e-18]]
+WESS: max = 1.0
+WESS NNLS norm: 0.0
+
+Bin populations after reweighting:
+[0.00670521 0.03768919 0.50886831 0.37875156 0.06798572 0.
+ 0.         0.        ]
+Iteration completed successfully
+Iteration wallclock: 0:03:46.015785, cputime: 0:18:00.966611
+
+
+Fri Jun  9 14:00:05 2023
+Iteration 9 (500 requested)
+Beginning iteration 9
+48 segments remain in iteration 9 (48 total)
+12 of 40 (30.000000%) active bins are populated
+per-bin minimum non-zero probability:       0.00319273
+per-bin maximum probability:                0.225379
+per-bin probability dynamic range (kT):     4.25691
+per-segment minimum non-zero probability:   0.000509365
+per-segment maximum non-zero probability:   0.17016
+per-segment probability dynamic range (kT): 5.81133
+norm = 1, error in norm = 0 (0*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+
+Reweighting using a different bin mapper than simulation:
+<RectilinearBinMapper at 0x7f6cad81e730 with 8 bins>
+Averaging rates
+Calculating reweighting using window size of 6
+
+Bin probabilities prior to reweighting:
+[0.00737605 0.14282767 0.73361935 0.0162573  0.09654479 0.00337484
+ 0.         0.        ]
+WESS: M*p = [[ 1.00000000e+00]
+ [ 6.93889390e-17]
+ [ 1.11022302e-16]
+ [-2.77555756e-17]
+ [-1.99493200e-17]
+ [ 0.00000000e+00]]
+WESS: max = 1.0
+WESS NNLS norm: 0.0
+
+Bin populations after reweighting:
+[0.00818614 0.05527438 0.48062062 0.3588173  0.08767993 0.00942164
+ 0.         0.        ]
+Iteration completed successfully
+Iteration wallclock: 0:03:18.528876, cputime: 0:16:35.950744
+
+
+Fri Jun  9 14:03:24 2023
+Iteration 10 (500 requested)
+Beginning iteration 10
+56 segments remain in iteration 10 (56 total)
+12 of 40 (30.000000%) active bins are populated
+per-bin minimum non-zero probability:       0.0018604
+per-bin maximum probability:                0.358817
+per-bin probability dynamic range (kT):     5.26202
+per-segment minimum non-zero probability:   0.000465101
+per-segment maximum non-zero probability:   0.0897043
+per-segment probability dynamic range (kT): 5.26202
+norm = 1, error in norm = 0 (0*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+
+Reweighting using a different bin mapper than simulation:
+<RectilinearBinMapper at 0x7f6cad81e730 with 8 bins>
+Averaging rates
+Calculating reweighting using window size of 7
+
+Bin probabilities prior to reweighting:
+[0.00229485 0.01229496 0.82060186 0.09027092 0.07453741 0.
+ 0.         0.        ]
+WESS: M*p = [[ 6.67868538e-17]
+ [ 1.38777878e-17]
+ [-5.55111512e-17]
+ [-5.55111512e-17]
+ [ 1.21430643e-17]
+ [ 1.00000000e+00]]
+WESS: max = 0.9999999999999999
+WESS NNLS norm: 0.0
+
+Bin populations after reweighting:
+[0.0074952  0.049689   0.52076099 0.33771872 0.08433609 0.
+ 0.         0.        ]
+Iteration completed successfully
+Iteration wallclock: 0:03:46.590386, cputime: 0:19:21.621228
+
+
+Fri Jun  9 14:07:10 2023
+Iteration 11 (500 requested)
+Beginning iteration 11
+52 segments remain in iteration 11 (52 total)
+14 of 40 (35.000000%) active bins are populated
+per-bin minimum non-zero probability:       0.00209843
+per-bin maximum probability:                0.335599
+per-bin probability dynamic range (kT):     5.07473
+per-segment minimum non-zero probability:   0.000524607
+per-segment maximum non-zero probability:   0.0929391
+per-segment probability dynamic range (kT): 5.17705
+norm = 1, error in norm = 2.22045e-16 (1*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+
+Reweighting using a different bin mapper than simulation:
+<RectilinearBinMapper at 0x7f6cad81e730 with 8 bins>
+Averaging rates
+Calculating reweighting using window size of 8
+
+Bin probabilities prior to reweighting:
+[0.00762452 0.07269558 0.4121403  0.46880193 0.0164236  0.02231407
+ 0.         0.        ]
+WESS: M*p = [[-4.25007252e-17]
+ [-2.42861287e-17]
+ [ 5.55111512e-17]
+ [ 2.77555756e-17]
+ [ 2.34187669e-17]
+ [ 1.00000000e+00]]
+WESS: max = 1.0
+WESS NNLS norm: 0.0
+
+Bin populations after reweighting:
+[0.00708587 0.05030876 0.50391062 0.34761974 0.08103574 0.01003926
+ 0.         0.        ]
+Iteration completed successfully
+Iteration wallclock: 0:03:54.604348, cputime: 0:17:59.088089
+
+
+Fri Jun  9 14:11:05 2023
+Iteration 12 (500 requested)
+Beginning iteration 12
+56 segments remain in iteration 12 (56 total)
+14 of 40 (35.000000%) active bins are populated
+per-bin minimum non-zero probability:       0.000392944
+per-bin maximum probability:                0.369933
+per-bin probability dynamic range (kT):     6.84741
+per-segment minimum non-zero probability:   9.82361e-05
+per-segment maximum non-zero probability:   0.113634
+per-segment probability dynamic range (kT): 7.05336
+norm = 1, error in norm = 0 (0*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+
+Reweighting using a different bin mapper than simulation:
+<RectilinearBinMapper at 0x7f6cad81e730 with 8 bins>
+Averaging rates
+Calculating reweighting using window size of 9
+
+Bin probabilities prior to reweighting:
+[0.00482213 0.02887055 0.48022675 0.46928242 0.01679814 0.
+ 0.         0.        ]
+WESS: M*p = [[ 2.34187669e-17]
+ [ 7.28583860e-17]
+ [ 5.55111512e-17]
+ [-2.77555756e-17]
+ [-1.99493200e-17]
+ [ 1.00000000e+00]]
+WESS: max = 0.9999999999999999
+WESS NNLS norm: 0.0
+
+Bin populations after reweighting:
+[0.00692236 0.04934636 0.51994012 0.35177976 0.07201141 0.
+ 0.         0.        ]
+Iteration completed successfully
+Iteration wallclock: 0:03:49.466641, cputime: 0:19:21.761912
+
+
+Fri Jun  9 14:14:54 2023
+Iteration 13 (500 requested)
+Beginning iteration 13
+56 segments remain in iteration 13 (56 total)
+13 of 40 (32.500000%) active bins are populated
+per-bin minimum non-zero probability:       0.000668481
+per-bin maximum probability:                0.53288
+per-bin probability dynamic range (kT):     6.68104
+per-segment minimum non-zero probability:   0.000161827
+per-segment maximum non-zero probability:   0.198271
+per-segment probability dynamic range (kT): 7.11086
+norm = 1, error in norm = 0 (0*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+
+Reweighting using a different bin mapper than simulation:
+<RectilinearBinMapper at 0x7f6cad81e730 with 8 bins>
+Averaging rates
+Calculating reweighting using window size of 9
+
+Bin probabilities prior to reweighting:
+[0.00259997 0.06268576 0.62861204 0.09809182 0.20801041 0.
+ 0.         0.        ]
+WESS: M*p = [[-3.49113100e-17]
+ [-9.71445147e-17]
+ [-1.38777878e-16]
+ [ 8.32667268e-17]
+ [-2.86229374e-17]
+ [ 1.00000000e+00]]
+WESS: max = 1.0
+WESS NNLS norm: 0.0
+
+Bin populations after reweighting:
+[0.00154366 0.0433887  0.50345604 0.3476757  0.1039359  0.
+ 0.         0.        ]
+Iteration completed successfully
+Iteration wallclock: 0:03:46.796907, cputime: 0:19:18.478901
+
+
+Fri Jun  9 14:18:41 2023
+Iteration 14 (500 requested)
+Beginning iteration 14
+52 segments remain in iteration 14 (52 total)
+15 of 40 (37.500000%) active bins are populated
+per-bin minimum non-zero probability:       0.00010027
+per-bin maximum probability:                0.238739
+per-bin probability dynamic range (kT):     7.77526
+per-segment minimum non-zero probability:   2.50676e-05
+per-segment maximum non-zero probability:   0.108936
+per-segment probability dynamic range (kT): 8.37694
+norm = 1, error in norm = 0 (0*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+
+Reweighting using a different bin mapper than simulation:
+<RectilinearBinMapper at 0x7f6cad81e730 with 8 bins>
+Averaging rates
+Calculating reweighting using window size of 10
+
+Bin probabilities prior to reweighting:
+[0.003747   0.01657123 0.45716789 0.39709334 0.11502588 0.01039467
+ 0.         0.        ]
+WESS: M*p = [[-1.91470104e-16]
+ [ 1.49186219e-16]
+ [ 8.32667268e-17]
+ [-2.77555756e-17]
+ [-5.20417043e-18]
+ [ 1.00000000e+00]]
+WESS: max = 1.0
+WESS NNLS norm: 0.0
+
+Bin populations after reweighting:
+[0.0014493  0.03767888 0.48771316 0.35653927 0.10705731 0.00956208
+ 0.         0.        ]
+Iteration completed successfully
+Iteration wallclock: 0:03:44.702628, cputime: 0:17:53.017875
+
+
+Fri Jun  9 14:22:26 2023
+Iteration 15 (500 requested)
+Beginning iteration 15
+56 segments remain in iteration 15 (56 total)
+14 of 40 (35.000000%) active bins are populated
+per-bin minimum non-zero probability:       5.17116e-05
+per-bin maximum probability:                0.243357
+per-bin probability dynamic range (kT):     8.4566
+per-segment minimum non-zero probability:   1.29279e-05
+per-segment maximum non-zero probability:   0.127345
+per-segment probability dynamic range (kT): 9.19527
+norm = 1, error in norm = 2.22045e-16 (1*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+
+Reweighting using a different bin mapper than simulation:
+<RectilinearBinMapper at 0x7f6cad81e730 with 8 bins>
+Averaging rates
+Calculating reweighting using window size of 11
+
+Bin probabilities prior to reweighting:
+[0.         0.05061718 0.41376999 0.4541173  0.08149553 0.
+ 0.         0.        ]
+WESS: M*p = [[-7.69783542e-17]
+ [ 6.93889390e-17]
+ [ 8.32667268e-17]
+ [ 5.55111512e-17]
+ [-2.77555756e-17]
+ [ 1.00000000e+00]]
+WESS: max = 0.9999999999999999
+WESS NNLS norm: 0.0
+
+Bin populations after reweighting:
+[0.         0.03886294 0.49102923 0.36247954 0.10762829 0.
+ 0.         0.        ]
+Iteration completed successfully
+Iteration wallclock: 0:03:44.749059, cputime: 0:19:15.897258
+
+
+Fri Jun  9 14:26:11 2023
+Iteration 16 (500 requested)
+Beginning iteration 16
+60 segments remain in iteration 16 (60 total)
+15 of 40 (37.500000%) active bins are populated
+per-bin minimum non-zero probability:       9.92581e-06
+per-bin maximum probability:                0.44959
+per-bin probability dynamic range (kT):     10.721
+per-segment minimum non-zero probability:   2.48145e-06
+per-segment maximum non-zero probability:   0.170448
+per-segment probability dynamic range (kT): 11.1373
+norm = 1, error in norm = 2.22045e-16 (1*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+
+Reweighting using a different bin mapper than simulation:
+<RectilinearBinMapper at 0x7f6cad81e730 with 8 bins>
+Averaging rates
+Calculating reweighting using window size of 12
+
+Bin probabilities prior to reweighting:
+[0.00226222 0.0474744  0.48462845 0.34397635 0.1039252  0.01773338
+ 0.         0.        ]
+WESS: M*p = [[ 5.65953534e-17]
+ [-1.17961196e-16]
+ [ 0.00000000e+00]
+ [-8.32667268e-17]
+ [ 2.16840434e-17]
+ [ 1.00000000e+00]]
+WESS: max = 1.0
+WESS NNLS norm: 0.0
+
+Bin populations after reweighting:
+[0.00153602 0.04073901 0.48438853 0.35629841 0.1076728  0.00936523
+ 0.         0.        ]
+Iteration completed successfully
+Iteration wallclock: 0:04:24.099284, cputime: 0:20:38.389416
+
+
+Fri Jun  9 14:30:35 2023
+Iteration 17 (500 requested)
+Beginning iteration 17
+56 segments remain in iteration 17 (56 total)
+14 of 40 (35.000000%) active bins are populated
+per-bin minimum non-zero probability:       2.1294e-06
+per-bin maximum probability:                0.450312
+per-bin probability dynamic range (kT):     12.2619
+per-segment minimum non-zero probability:   5.32349e-07
+per-segment maximum non-zero probability:   0.170363
+per-segment probability dynamic range (kT): 12.6761
+norm = 1, error in norm = -1.11022e-16 (-0.5*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+
+Reweighting using a different bin mapper than simulation:
+<RectilinearBinMapper at 0x7f6cad81e730 with 8 bins>
+Averaging rates
+Calculating reweighting using window size of 12
+
+Bin probabilities prior to reweighting:
+[0.         0.06638966 0.43849697 0.4725587  0.02255467 0.
+ 0.         0.        ]
+WESS: M*p = [[ 3.61039323e-17]
+ [ 1.56125113e-16]
+ [-5.55111512e-17]
+ [ 0.00000000e+00]
+ [-1.38777878e-17]
+ [ 1.00000000e+00]]
+WESS: max = 0.9999999999999999
+WESS NNLS norm: 0.0
+
+Bin populations after reweighting:
+[0.         0.04110471 0.48262738 0.37552599 0.10074192 0.
+ 0.         0.        ]
+Iteration completed successfully
+Iteration wallclock: 0:03:47.602585, cputime: 0:19:14.440248
+
+
+Fri Jun  9 14:34:22 2023
+Iteration 18 (500 requested)
+Beginning iteration 18
+52 segments remain in iteration 18 (52 total)
+13 of 40 (32.500000%) active bins are populated
+per-bin minimum non-zero probability:       0.000237755
+per-bin maximum probability:                0.34436
+per-bin probability dynamic range (kT):     7.2782
+per-segment minimum non-zero probability:   5.94387e-05
+per-segment maximum non-zero probability:   0.125006
+per-segment probability dynamic range (kT): 7.65117
+norm = 1, error in norm = 0 (0*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+
+Reweighting using a different bin mapper than simulation:
+<RectilinearBinMapper at 0x7f6cad81e730 with 8 bins>
+Averaging rates
+Calculating reweighting using window size of 13
+
+Bin probabilities prior to reweighting:
+[0.         0.03665041 0.4159351  0.43879768 0.10172656 0.00689025
+ 0.         0.        ]
+WESS: M*p = [[-6.57026517e-17]
+ [ 1.83880688e-16]
+ [ 2.77555756e-16]
+ [-8.32667268e-17]
+ [-1.08420217e-17]
+ [ 1.00000000e+00]]
+WESS: max = 1.0
+WESS NNLS norm: 0.0
+
+Bin populations after reweighting:
+[0.         0.03991963 0.47652719 0.3723894  0.10597146 0.00519231
+ 0.         0.        ]
+Iteration completed successfully
+Iteration wallclock: 0:03:46.937803, cputime: 0:17:53.669382
+
+
+Fri Jun  9 14:38:09 2023
+Iteration 19 (500 requested)
+Beginning iteration 19
+56 segments remain in iteration 19 (56 total)
+13 of 40 (32.500000%) active bins are populated
+per-bin minimum non-zero probability:       0.00177699
+per-bin maximum probability:                0.435629
+per-bin probability dynamic range (kT):     5.50187
+per-segment minimum non-zero probability:   0.000880526
+per-segment maximum non-zero probability:   0.094752
+per-segment probability dynamic range (kT): 4.6785
+norm = 1, error in norm = 0 (0*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+
+Reweighting using a different bin mapper than simulation:
+<RectilinearBinMapper at 0x7f6cad81e730 with 8 bins>
+Averaging rates
+Calculating reweighting using window size of 14
+
+Bin probabilities prior to reweighting:
+[0.         0.04971638 0.24451343 0.61816102 0.08451666 0.00309252
+ 0.         0.        ]
+WESS: M*p = [[-1.96132173e-16]
+ [ 2.42861287e-17]
+ [ 2.22044605e-16]
+ [ 1.11022302e-16]
+ [-6.76542156e-17]
+ [ 1.00000000e+00]]
+WESS: max = 1.0
+WESS NNLS norm: 0.0
+
+Bin populations after reweighting:
+[0.         0.03751589 0.46866172 0.37927575 0.10924048 0.00530616
+ 0.         0.        ]
+Iteration completed successfully
+Iteration wallclock: 0:03:51.080723, cputime: 0:19:17.276085
+
+
+Fri Jun  9 14:42:00 2023
+Iteration 20 (500 requested)
+Beginning iteration 20
+52 segments remain in iteration 20 (52 total)
+13 of 40 (32.500000%) active bins are populated
+per-bin minimum non-zero probability:       0.00222725
+per-bin maximum probability:                0.290235
+per-bin probability dynamic range (kT):     4.86993
+per-segment minimum non-zero probability:   0.000396868
+per-segment maximum non-zero probability:   0.135842
+per-segment probability dynamic range (kT): 5.83565
+norm = 1, error in norm = 0 (0*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+
+Reweighting using a different bin mapper than simulation:
+<RectilinearBinMapper at 0x7f6cad81e730 with 8 bins>
+Averaging rates
+Calculating reweighting using window size of 15
+
+Bin probabilities prior to reweighting:
+[0.         0.1361872  0.2699249  0.52239968 0.07148823 0.
+ 0.         0.        ]
+WESS: M*p = [[-2.01661604e-17]
+ [ 2.18575158e-16]
+ [ 0.00000000e+00]
+ [-1.38777878e-16]
+ [-1.64798730e-17]
+ [ 1.00000000e+00]]
+WESS: max = 1.0
+WESS NNLS norm: 0.0
+
+Bin populations after reweighting:
+[0.         0.0460161  0.46023624 0.38646732 0.10728033 0.
+ 0.         0.        ]
+Iteration completed successfully
+Iteration wallclock: 0:03:45.669624, cputime: 0:17:55.227641
+
+
+Fri Jun  9 14:45:46 2023
+Iteration 21 (500 requested)
+Beginning iteration 21
+52 segments remain in iteration 21 (52 total)
+13 of 40 (32.500000%) active bins are populated
+per-bin minimum non-zero probability:       0.00120688
+per-bin maximum probability:                0.3678
+per-bin probability dynamic range (kT):     5.71951
+per-segment minimum non-zero probability:   0.000301719
+per-segment maximum non-zero probability:   0.111391
+per-segment probability dynamic range (kT): 5.9113
+norm = 1, error in norm = 0 (0*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+
+Reweighting using a different bin mapper than simulation:
+<RectilinearBinMapper at 0x7f6cad81e730 with 8 bins>
+Averaging rates
+Calculating reweighting using window size of 15
+
+Bin probabilities prior to reweighting:
+[0.00000000e+00 6.91212046e-03 4.77988245e-01 2.69336913e-01
+ 2.45377685e-01 3.85036511e-04 0.00000000e+00 0.00000000e+00]
+WESS: M*p = [[ 2.11419424e-17]
+ [-5.20417043e-17]
+ [ 0.00000000e+00]
+ [-1.38777878e-16]
+ [ 1.47451495e-17]
+ [ 1.00000000e+00]]
+WESS: max = 1.0
+WESS NNLS norm: 0.0
+
+Bin populations after reweighting:
+[0.         0.04413785 0.45865903 0.36939455 0.1225177  0.00529087
+ 0.         0.        ]
+Iteration completed successfully
+Iteration wallclock: 0:03:44.858287, cputime: 0:17:50.074436
+
+
+Fri Jun  9 14:49:31 2023
+Iteration 22 (500 requested)
+Beginning iteration 22
+56 segments remain in iteration 22 (56 total)
+12 of 40 (30.000000%) active bins are populated
+per-bin minimum non-zero probability:       0.00192665
+per-bin maximum probability:                0.305083
+per-bin probability dynamic range (kT):     5.0648
+per-segment minimum non-zero probability:   0.00019225
+per-segment maximum non-zero probability:   0.0794159
+per-segment probability dynamic range (kT): 6.02366
+norm = 1, error in norm = 0 (0*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+
+Reweighting using a different bin mapper than simulation:
+<RectilinearBinMapper at 0x7f6cad81e730 with 8 bins>
+Averaging rates
+Calculating reweighting using window size of 16
+
+Bin probabilities prior to reweighting:
+[0.         0.04182172 0.51533541 0.41588241 0.02696046 0.
+ 0.         0.        ]
+WESS: M*p = [[ 1.08094957e-16]
+ [-3.81639165e-17]
+ [-1.38777878e-16]
+ [ 1.11022302e-16]
+ [ 1.30104261e-18]
+ [ 1.00000000e+00]]
+WESS: max = 1.0
+WESS NNLS norm: 0.0
+
+Bin populations after reweighting:
+[0.         0.04297292 0.46239953 0.37803015 0.11659739 0.
+ 0.         0.        ]
+Iteration completed successfully
+Iteration wallclock: 0:03:52.068909, cputime: 0:19:15.662156
+
+
+Fri Jun  9 14:53:23 2023
+Iteration 23 (500 requested)
+Beginning iteration 23
+48 segments remain in iteration 23 (48 total)
+13 of 40 (32.500000%) active bins are populated
+per-bin minimum non-zero probability:       0.00049492
+per-bin maximum probability:                0.272267
+per-bin probability dynamic range (kT):     6.31014
+per-segment minimum non-zero probability:   0.00012373
+per-segment maximum non-zero probability:   0.099711
+per-segment probability dynamic range (kT): 6.69193
+norm = 1, error in norm = 0 (0*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+
+Reweighting using a different bin mapper than simulation:
+<RectilinearBinMapper at 0x7f6cad81e730 with 8 bins>
+Averaging rates
+Calculating reweighting using window size of 17
+
+Bin probabilities prior to reweighting:
+[0.         0.02029899 0.44547094 0.37910892 0.14940072 0.00572043
+ 0.         0.        ]
+WESS: M*p = [[ 6.07153217e-18]
+ [-6.24500451e-17]
+ [ 0.00000000e+00]
+ [ 2.77555756e-17]
+ [-1.86482774e-17]
+ [ 1.00000000e+00]]
+WESS: max = 1.0
+WESS NNLS norm: 0.0
+
+Bin populations after reweighting:
+[0.         0.03978857 0.45524544 0.3766746  0.12316011 0.00513129
+ 0.         0.        ]
+Iteration completed successfully
+Iteration wallclock: 0:03:21.902328, cputime: 0:16:30.054472
+
+
+Fri Jun  9 14:56:45 2023
+Iteration 24 (500 requested)
+Beginning iteration 24
+52 segments remain in iteration 24 (52 total)
+13 of 40 (32.500000%) active bins are populated
+per-bin minimum non-zero probability:       0.000242526
+per-bin maximum probability:                0.301397
+per-bin probability dynamic range (kT):     7.12507
+per-segment minimum non-zero probability:   6.06316e-05
+per-segment maximum non-zero probability:   0.0907992
+per-segment probability dynamic range (kT): 7.31159
+norm = 1, error in norm = 0 (0*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+
+Reweighting using a different bin mapper than simulation:
+<RectilinearBinMapper at 0x7f6cad81e730 with 8 bins>
+Averaging rates
+Calculating reweighting using window size of 18
+
+Bin probabilities prior to reweighting:
+[0.00093873 0.03113301 0.7418516  0.22345038 0.         0.00262628
+ 0.         0.        ]
+WESS: M*p = [[-8.44051391e-17]
+ [ 1.59594560e-16]
+ [-8.32667268e-17]
+ [ 5.55111512e-17]
+ [-4.03323208e-17]
+ [ 1.00000000e+00]]
+WESS: max = 1.0
+WESS NNLS norm: 0.0
+
+Bin populations after reweighting:
+[0.00074961 0.04429295 0.51800385 0.43134921 0.         0.00560438
+ 0.         0.        ]
+Iteration completed successfully
+Iteration wallclock: 0:03:42.251036, cputime: 0:17:50.518040
+
+
+Fri Jun  9 15:00:27 2023
+Iteration 25 (500 requested)
+Beginning iteration 25
+48 segments remain in iteration 25 (48 total)
+12 of 40 (30.000000%) active bins are populated
+per-bin minimum non-zero probability:       0.00074961
+per-bin maximum probability:                0.379092
+per-bin probability dynamic range (kT):     6.22598
+per-segment minimum non-zero probability:   0.000187403
+per-segment maximum non-zero probability:   0.117511
+per-segment probability dynamic range (kT): 6.44103
+norm = 1, error in norm = 2.22045e-16 (1*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+
+Reweighting using a different bin mapper than simulation:
+<RectilinearBinMapper at 0x7f6cad81e730 with 8 bins>
+Averaging rates
+Calculating reweighting using window size of 18
+
+Bin probabilities prior to reweighting:
+[0.         0.04222688 0.66203186 0.2885747  0.00579781 0.00136875
+ 0.         0.        ]
+WESS: M*p = [[ 1.00000000e+00]
+ [-1.73472348e-17]
+ [ 1.66533454e-16]
+ [ 2.77555756e-17]
+ [-1.38777878e-17]
+ [ 0.00000000e+00]]
+WESS: max = 1.0
+WESS NNLS norm: 0.0
+
+Bin populations after reweighting:
+[0.         0.03375143 0.46037126 0.38955099 0.11129996 0.00502636
+ 0.         0.        ]
+Iteration completed successfully
+Iteration wallclock: 0:03:15.873237, cputime: 0:16:30.683682
+
+
+Fri Jun  9 15:03:43 2023
+Iteration 26 (500 requested)
+Beginning iteration 26
+56 segments remain in iteration 26 (56 total)
+14 of 40 (35.000000%) active bins are populated
+per-bin minimum non-zero probability:       0.00143113
+per-bin maximum probability:                0.44992
+per-bin probability dynamic range (kT):     5.7506
+per-segment minimum non-zero probability:   0.000357783
+per-segment maximum non-zero probability:   0.236612
+per-segment probability dynamic range (kT): 6.49425
+norm = 1, error in norm = 0 (0*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+
+Reweighting using a different bin mapper than simulation:
+<RectilinearBinMapper at 0x7f6cad81e730 with 8 bins>
+Averaging rates
+Calculating reweighting using window size of 19
+
+Bin probabilities prior to reweighting:
+[0.         0.03764789 0.58540088 0.31741866 0.05827598 0.00125659
+ 0.         0.        ]
+WESS: M*p = [[ 1.00000000e+00]
+ [ 9.02056208e-17]
+ [ 0.00000000e+00]
+ [ 1.11022302e-16]
+ [-2.08166817e-17]
+ [ 0.00000000e+00]]
+WESS: max = 1.0
+WESS NNLS norm: 0.0
+
+Bin populations after reweighting:
+[0.         0.03411594 0.46614825 0.38750564 0.10747606 0.00475411
+ 0.         0.        ]
+Iteration completed successfully
+Iteration wallclock: 0:03:46.329594, cputime: 0:19:15.016061
+
+
+Fri Jun  9 15:07:29 2023
+Iteration 27 (500 requested)
+Beginning iteration 27
+56 segments remain in iteration 27 (56 total)
+13 of 40 (32.500000%) active bins are populated
+per-bin minimum non-zero probability:       0.000767025
+per-bin maximum probability:                0.587682
+per-bin probability dynamic range (kT):     6.64142
+per-segment minimum non-zero probability:   0.000191756
+per-segment maximum non-zero probability:   0.167198
+per-segment probability dynamic range (kT): 6.77071
+norm = 1, error in norm = 0 (0*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+
+Reweighting using a different bin mapper than simulation:
+<RectilinearBinMapper at 0x7f6cad81e730 with 8 bins>
+Averaging rates
+Calculating reweighting using window size of 20
+
+Bin probabilities prior to reweighting:
+[0.         0.02271818 0.20505898 0.33388227 0.42808172 0.01025885
+ 0.         0.        ]
+WESS: M*p = [[ 1.00000000e+00]
+ [-3.81639165e-17]
+ [ 2.77555756e-17]
+ [-2.77555756e-17]
+ [-2.73218947e-17]
+ [ 8.67361738e-19]]
+WESS: max = 1.0000000000000002
+WESS NNLS norm: 0.0
+
+Bin populations after reweighting:
+[0.         0.03262017 0.45321775 0.37993772 0.12863498 0.00558939
+ 0.         0.        ]
+Iteration completed successfully
+Iteration wallclock: 0:03:51.355437, cputime: 0:19:16.185511
+
+
+Fri Jun  9 15:11:21 2023
+Iteration 28 (500 requested)
+Beginning iteration 28
+52 segments remain in iteration 28 (52 total)
+13 of 40 (32.500000%) active bins are populated
+per-bin minimum non-zero probability:       0.00109231
+per-bin maximum probability:                0.250662
+per-bin probability dynamic range (kT):     5.43581
+per-segment minimum non-zero probability:   0.000273077
+per-segment maximum non-zero probability:   0.15043
+per-segment probability dynamic range (kT): 6.3115
+norm = 1, error in norm = -1.11022e-16 (-0.5*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+
+Reweighting using a different bin mapper than simulation:
+<RectilinearBinMapper at 0x7f6cad81e730 with 8 bins>
+Averaging rates
+Calculating reweighting using window size of 21
+
+Bin probabilities prior to reweighting:
+[0.         0.02573647 0.69832892 0.10880704 0.16712756 0.
+ 0.         0.        ]
+WESS: M*p = [[ 1.00000000e+00]
+ [ 4.85722573e-17]
+ [-5.55111512e-17]
+ [ 1.94289029e-16]
+ [-1.86482774e-17]
+ [ 1.73472348e-18]]
+WESS: max = 1.0
+WESS NNLS norm: 0.0
+
+Bin populations after reweighting:
+[0.         0.03273844 0.46406718 0.37138724 0.13180713 0.
+ 0.         0.        ]
+Iteration completed successfully
+Iteration wallclock: 0:03:42.928392, cputime: 0:17:53.253167
+
+
+Fri Jun  9 15:15:04 2023
+Iteration 29 (500 requested)
+Beginning iteration 29
+48 segments remain in iteration 29 (48 total)
+13 of 40 (32.500000%) active bins are populated
+per-bin minimum non-zero probability:       0.000215366
+per-bin maximum probability:                0.377649
+per-bin probability dynamic range (kT):     7.46938
+per-segment minimum non-zero probability:   5.38414e-05
+per-segment maximum non-zero probability:   0.118447
+per-segment probability dynamic range (kT): 7.69618
+norm = 1, error in norm = -2.22045e-16 (-1*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+
+Reweighting using a different bin mapper than simulation:
+<RectilinearBinMapper at 0x7f6cad81e730 with 8 bins>
+Averaging rates
+Calculating reweighting using window size of 21
+
+Bin probabilities prior to reweighting:
+[0.00199961 0.06604275 0.21751173 0.57996837 0.13447754 0.
+ 0.         0.        ]
+WESS: M*p = [[ 1.00000000e+00]
+ [-8.32667268e-17]
+ [ 5.55111512e-17]
+ [ 1.11022302e-16]
+ [ 1.56125113e-17]
+ [-1.73472348e-18]]
+WESS: max = 0.9999999999999998
+WESS NNLS norm: 0.0
+
+Bin populations after reweighting:
+[0.00065372 0.03844869 0.46615922 0.36440476 0.13033361 0.
+ 0.         0.        ]
+Iteration completed successfully
+Iteration wallclock: 0:03:12.787853, cputime: 0:16:29.000607
+
+
+Fri Jun  9 15:18:16 2023
+Iteration 30 (500 requested)
+Beginning iteration 30
+52 segments remain in iteration 30 (52 total)
+14 of 40 (35.000000%) active bins are populated
+per-bin minimum non-zero probability:       3.38296e-05
+per-bin maximum probability:                0.459123
+per-bin probability dynamic range (kT):     9.51574
+per-segment minimum non-zero probability:   8.45739e-06
+per-segment maximum non-zero probability:   0.214243
+per-segment probability dynamic range (kT): 10.1398
+norm = 1, error in norm = 2.22045e-16 (1*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+
+Reweighting using a different bin mapper than simulation:
+<RectilinearBinMapper at 0x7f6cad81e730 with 8 bins>
+Averaging rates
+Calculating reweighting using window size of 22
+
+Bin probabilities prior to reweighting:
+[0.00132756 0.07276172 0.22441987 0.64349193 0.05799892 0.
+ 0.         0.        ]
+WESS: M*p = [[ 1.00000000e+00]
+ [ 4.51028104e-17]
+ [ 8.32667268e-17]
+ [-2.77555756e-17]
+ [-6.54858112e-17]
+ [ 0.00000000e+00]]
+WESS: max = 0.9999999999999998
+WESS NNLS norm: 0.0
+
+Bin populations after reweighting:
+[0.00065513 0.03983268 0.45460853 0.37692096 0.1279827  0.
+ 0.         0.        ]
+Iteration completed successfully
+Iteration wallclock: 0:03:45.479238, cputime: 0:17:55.734820
+
+
+Fri Jun  9 15:22:02 2023
+Iteration 31 (500 requested)
+Beginning iteration 31
+56 segments remain in iteration 31 (56 total)
+14 of 40 (35.000000%) active bins are populated
+per-bin minimum non-zero probability:       3.73248e-05
+per-bin maximum probability:                0.316134
+per-bin probability dynamic range (kT):     9.04426
+per-segment minimum non-zero probability:   9.33121e-06
+per-segment maximum non-zero probability:   0.180438
+per-segment probability dynamic range (kT): 9.86978
+norm = 1, error in norm = -2.22045e-16 (-1*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+
+Reweighting using a different bin mapper than simulation:
+<RectilinearBinMapper at 0x7f6cad81e730 with 8 bins>
+Averaging rates
+Calculating reweighting using window size of 23
+
+Bin probabilities prior to reweighting:
+[0.00000000e+00 5.19096213e-02 6.70258159e-01 1.94570792e-01
+ 8.30618773e-02 1.99549785e-04 0.00000000e+00 0.00000000e+00]
+WESS: M*p = [[ 1.00000000e+00]
+ [ 1.73472348e-17]
+ [ 2.77555756e-17]
+ [-2.77555756e-17]
+ [-2.60208521e-18]
+ [-1.73472348e-18]]
+WESS: max = 1.0000000000000002
+WESS NNLS norm: 0.0
+
+Bin populations after reweighting:
+[0.         0.04211491 0.46162935 0.36801255 0.12357628 0.0046669
+ 0.         0.        ]
+Iteration completed successfully
+Iteration wallclock: 0:03:46.377478, cputime: 0:19:16.010433
+
+
+Fri Jun  9 15:25:48 2023
+Iteration 32 (500 requested)
+Beginning iteration 32
+56 segments remain in iteration 32 (56 total)
+14 of 40 (35.000000%) active bins are populated
+per-bin minimum non-zero probability:       1.38826e-05
+per-bin maximum probability:                0.255059
+per-bin probability dynamic range (kT):     9.81861
+per-segment minimum non-zero probability:   3.47065e-06
+per-segment maximum non-zero probability:   0.124274
+per-segment probability dynamic range (kT): 10.4859
+norm = 1, error in norm = 0 (0*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+
+Reweighting using a different bin mapper than simulation:
+<RectilinearBinMapper at 0x7f6cad81e730 with 8 bins>
+Averaging rates
+Calculating reweighting using window size of 24
+
+Bin probabilities prior to reweighting:
+[0.         0.0826155  0.4789215  0.43729281 0.0011702  0.
+ 0.         0.        ]
+WESS: M*p = [[-5.96311195e-19]
+ [ 8.32667268e-17]
+ [ 1.94289029e-16]
+ [ 8.32667268e-17]
+ [-5.89805982e-17]
+ [ 1.00000000e+00]]
+WESS: max = 1.0
+WESS NNLS norm: 0.0
+
+Bin populations after reweighting:
+[0.         0.0419058  0.46736708 0.37294657 0.11778055 0.
+ 0.         0.        ]
+Iteration completed successfully
+Iteration wallclock: 0:03:48.056043, cputime: 0:19:16.415030
+
+
+Fri Jun  9 15:29:36 2023
+Iteration 33 (500 requested)
+Beginning iteration 33
+52 segments remain in iteration 33 (52 total)
+13 of 40 (32.500000%) active bins are populated
+per-bin minimum non-zero probability:       7.01042e-05
+per-bin maximum probability:                0.433873
+per-bin probability dynamic range (kT):     8.73052
+per-segment minimum non-zero probability:   1.7526e-05
+per-segment maximum non-zero probability:   0.14405
+per-segment probability dynamic range (kT): 9.01423
+norm = 1, error in norm = 2.22045e-16 (1*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+
+Reweighting using a different bin mapper than simulation:
+<RectilinearBinMapper at 0x7f6cad81e730 with 8 bins>
+Averaging rates
+Calculating reweighting using window size of 24
+
+Bin probabilities prior to reweighting:
+[0.         0.03108559 0.38093425 0.55831672 0.02966345 0.
+ 0.         0.        ]
+WESS: M*p = [[ 9.42713789e-17]
+ [-7.97972799e-17]
+ [-1.38777878e-16]
+ [ 2.77555756e-17]
+ [ 3.64291930e-17]
+ [ 1.00000000e+00]]
+WESS: max = 1.0
+WESS NNLS norm: 0.0
+
+Bin populations after reweighting:
+[0.         0.03939919 0.4479924  0.3903195  0.12228891 0.
+ 0.         0.        ]
+Iteration completed successfully
+Iteration wallclock: 0:03:49.551758, cputime: 0:17:55.114202
+
+
+Fri Jun  9 15:33:26 2023
+Iteration 34 (500 requested)
+Beginning iteration 34
+56 segments remain in iteration 34 (56 total)
+14 of 40 (35.000000%) active bins are populated
+per-bin minimum non-zero probability:       2.22132e-05
+per-bin maximum probability:                0.368904
+per-bin probability dynamic range (kT):     9.7176
+per-segment minimum non-zero probability:   5.55331e-06
+per-segment maximum non-zero probability:   0.126954
+per-segment probability dynamic range (kT): 10.0372
+norm = 1, error in norm = 0 (0*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+
+Reweighting using a different bin mapper than simulation:
+<RectilinearBinMapper at 0x7f6cad81e730 with 8 bins>
+Averaging rates
+Calculating reweighting using window size of 25
+
+Bin probabilities prior to reweighting:
+[0.         0.04922084 0.16732849 0.57444576 0.1776938  0.03131111
+ 0.         0.        ]
+WESS: M*p = [[ 4.23380948e-17]
+ [-8.67361738e-17]
+ [ 2.77555756e-17]
+ [ 2.77555756e-17]
+ [ 3.07913417e-17]
+ [ 1.00000000e+00]]
+WESS: max = 1.0
+WESS NNLS norm: 0.0
+
+Bin populations after reweighting:
+[0.         0.03903583 0.43316066 0.39411065 0.12794379 0.00574908
+ 0.         0.        ]
+Iteration completed successfully
+Iteration wallclock: 0:03:52.594116, cputime: 0:19:18.031443
+
+
+Fri Jun  9 15:37:18 2023
+Iteration 35 (500 requested)
+Beginning iteration 35
+48 segments remain in iteration 35 (48 total)
+13 of 40 (32.500000%) active bins are populated
+per-bin minimum non-zero probability:       2.8025e-06
+per-bin maximum probability:                0.520983
+per-bin probability dynamic range (kT):     12.133
+per-segment minimum non-zero probability:   7.00626e-07
+per-segment maximum non-zero probability:   0.224806
+per-segment probability dynamic range (kT): 12.6788
+norm = 1, error in norm = 0 (0*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+
+Reweighting using a different bin mapper than simulation:
+<RectilinearBinMapper at 0x7f6cad81e730 with 8 bins>
+Averaging rates
+Calculating reweighting using window size of 26
+
+Bin probabilities prior to reweighting:
+[1.10104848e-06 6.13170530e-02 3.88227765e-01 4.52092992e-01
+ 9.69714941e-02 1.38959469e-03 0.00000000e+00 0.00000000e+00]
+WESS: M*p = [[ 1.00000000e+00]
+ [-1.49186219e-16]
+ [ 1.11022302e-16]
+ [-5.55111512e-17]
+ [ 3.20923843e-17]
+ [-1.73472348e-18]]
+WESS: max = 1.0
+WESS NNLS norm: 0.0
+
+Bin populations after reweighting:
+[0.00054115 0.04002253 0.4279032  0.39902641 0.12694635 0.00556037
+ 0.         0.        ]
+Iteration completed successfully
+Iteration wallclock: 0:03:30.896369, cputime: 0:16:35.778064
+
+
+Fri Jun  9 15:40:49 2023
+Iteration 36 (500 requested)
+Beginning iteration 36
+56 segments remain in iteration 36 (56 total)
+14 of 40 (35.000000%) active bins are populated
+per-bin minimum non-zero probability:       9.17196e-07
+per-bin maximum probability:                0.416269
+per-bin probability dynamic range (kT):     13.0255
+per-segment minimum non-zero probability:   2.29299e-07
+per-segment maximum non-zero probability:   0.158509
+per-segment probability dynamic range (kT): 13.4463
+norm = 1, error in norm = 0 (0*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+
+Reweighting using a different bin mapper than simulation:
+<RectilinearBinMapper at 0x7f6cad81e730 with 8 bins>
+Averaging rates
+Calculating reweighting using window size of 27
+
+Bin probabilities prior to reweighting:
+[0.00000000e+00 2.80893568e-02 6.56670295e-01 1.95385024e-01
+ 1.19855096e-01 2.29298989e-07 0.00000000e+00 0.00000000e+00]
+WESS: M*p = [[ 1.00000000e+00]
+ [-6.59194921e-17]
+ [ 1.11022302e-16]
+ [ 2.77555756e-17]
+ [-1.51788304e-17]
+ [-8.67361738e-19]]
+WESS: max = 1.0
+WESS NNLS norm: 0.0
+
+Bin populations after reweighting:
+[0.         0.03989401 0.43506657 0.39228578 0.12746485 0.00528878
+ 0.         0.        ]
+Iteration completed successfully
+Iteration wallclock: 0:03:46.533325, cputime: 0:19:18.814680
+
+
+Fri Jun  9 15:44:36 2023
+Iteration 37 (500 requested)
+Beginning iteration 37
+56 segments remain in iteration 37 (56 total)
+14 of 40 (35.000000%) active bins are populated
+per-bin minimum non-zero probability:       0.000192142
+per-bin maximum probability:                0.28687
+per-bin probability dynamic range (kT):     7.30855
+per-segment minimum non-zero probability:   3.57336e-05
+per-segment maximum non-zero probability:   0.104423
+per-segment probability dynamic range (kT): 7.98011
+norm = 1, error in norm = -3.33067e-16 (-1.5*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+
+Reweighting using a different bin mapper than simulation:
+<RectilinearBinMapper at 0x7f6cad81e730 with 8 bins>
+Averaging rates
+Calculating reweighting using window size of 27
+
+Bin probabilities prior to reweighting:
+[0.         0.04691472 0.46703014 0.27474215 0.20999079 0.0013222
+ 0.         0.        ]
+WESS: M*p = [[ 1.00000000e+00]
+ [-9.02056208e-17]
+ [-5.55111512e-17]
+ [ 5.55111512e-17]
+ [-1.30104261e-17]
+ [ 0.00000000e+00]]
+WESS: max = 1.0
+WESS NNLS norm: 0.0
+
+Bin populations after reweighting:
+[0.         0.03564165 0.4341142  0.39526096 0.12982035 0.00516283
+ 0.         0.        ]
+Iteration completed successfully
+Iteration wallclock: 0:03:47.770258, cputime: 0:19:17.646428
+
+
+Fri Jun  9 15:48:24 2023
+Iteration 38 (500 requested)
+Beginning iteration 38
+52 segments remain in iteration 38 (52 total)
+13 of 40 (32.500000%) active bins are populated
+per-bin minimum non-zero probability:       3.64931e-05
+per-bin maximum probability:                0.47203
+per-bin probability dynamic range (kT):     9.46767
+per-segment minimum non-zero probability:   9.12328e-06
+per-segment maximum non-zero probability:   0.15745
+per-segment probability dynamic range (kT): 9.75603
+norm = 1, error in norm = -2.22045e-16 (-1*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+
+Reweighting using a different bin mapper than simulation:
+<RectilinearBinMapper at 0x7f6cad81e730 with 8 bins>
+Averaging rates
+Calculating reweighting using window size of 28
+
+Bin probabilities prior to reweighting:
+[9.12328150e-06 5.87120810e-02 5.62551160e-01 1.91981627e-01
+ 1.54836454e-01 3.19095548e-02 0.00000000e+00 0.00000000e+00]
+WESS: M*p = [[ 1.00000000e+00]
+ [ 1.63064007e-16]
+ [-1.66533454e-16]
+ [-1.38777878e-16]
+ [-7.80625564e-18]
+ [ 2.60208521e-18]]
+WESS: max = 1.0
+WESS NNLS norm: 0.0
+
+Bin populations after reweighting:
+[3.85462526e-04 3.43925593e-02 4.26859125e-01 3.88889743e-01
+ 1.42958194e-01 6.51491552e-03 0.00000000e+00 0.00000000e+00]
+Iteration completed successfully
+Iteration wallclock: 0:03:45.972897, cputime: 0:17:56.668837
+
+
+Fri Jun  9 15:52:10 2023
+Iteration 39 (500 requested)
+Beginning iteration 39
+52 segments remain in iteration 39 (52 total)
+14 of 40 (35.000000%) active bins are populated
+per-bin minimum non-zero probability:       5.34427e-06
+per-bin maximum probability:                0.342406
+per-bin probability dynamic range (kT):     11.0677
+per-segment minimum non-zero probability:   1.33607e-06
+per-segment maximum non-zero probability:   0.127927
+per-segment probability dynamic range (kT): 11.4695
+norm = 1, error in norm = 2.22045e-16 (1*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+
+Reweighting using a different bin mapper than simulation:
+<RectilinearBinMapper at 0x7f6cad81e730 with 8 bins>
+Averaging rates
+Calculating reweighting using window size of 29
+
+Bin probabilities prior to reweighting:
+[1.33606659e-06 6.05236432e-02 2.97830133e-01 4.97472648e-01
+ 1.44172239e-01 0.00000000e+00 0.00000000e+00 0.00000000e+00]
+WESS: M*p = [[ 1.00000000e+00]
+ [-8.67361738e-17]
+ [ 0.00000000e+00]
+ [-2.77555756e-17]
+ [-4.33680869e-17]
+ [ 8.67361738e-19]]
+WESS: max = 0.9999999999999998
+WESS NNLS norm: 0.0
+
+Bin populations after reweighting:
+[3.92668203e-04 3.65770906e-02 4.23946037e-01 3.93901714e-01
+ 1.45182490e-01 0.00000000e+00 0.00000000e+00 0.00000000e+00]
+Iteration completed successfully
+Iteration wallclock: 0:03:47.015399, cputime: 0:17:53.945764
+
+
+Fri Jun  9 15:55:57 2023
+Iteration 40 (500 requested)
+Beginning iteration 40
+56 segments remain in iteration 40 (56 total)
+13 of 40 (32.500000%) active bins are populated
+per-bin minimum non-zero probability:       2.42233e-06
+per-bin maximum probability:                0.316792
+per-bin probability dynamic range (kT):     11.7813
+per-segment minimum non-zero probability:   4.03722e-07
+per-segment maximum non-zero probability:   0.101293
+per-segment probability dynamic range (kT): 12.4328
+norm = 1, error in norm = 0 (0*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+
+Reweighting using a different bin mapper than simulation:
+<RectilinearBinMapper at 0x7f6cad81e730 with 8 bins>
+Averaging rates
+Calculating reweighting using window size of 30
+
+Bin probabilities prior to reweighting:
+[9.81670508e-05 1.22306774e-02 4.82276100e-01 4.44440800e-01
+ 6.09542556e-02 0.00000000e+00 0.00000000e+00 0.00000000e+00]
+WESS: M*p = [[ 1.00000000e+00]
+ [-1.43982049e-16]
+ [ 5.55111512e-17]
+ [-2.77555756e-17]
+ [ 1.04083409e-17]
+ [ 1.73472348e-18]]
+WESS: max = 1.0
+WESS NNLS norm: 0.0
+
+Bin populations after reweighting:
+[3.65039354e-04 3.48914371e-02 4.27375862e-01 3.96027753e-01
+ 1.41339909e-01 0.00000000e+00 0.00000000e+00 0.00000000e+00]
+Iteration completed successfully
+Iteration wallclock: 0:03:49.185687, cputime: 0:19:16.632481
+
+
+Fri Jun  9 15:59:46 2023
+Iteration 41 (500 requested)
+Beginning iteration 41
+52 segments remain in iteration 41 (52 total)
+14 of 40 (35.000000%) active bins are populated
+per-bin minimum non-zero probability:       0.000280049
+per-bin maximum probability:                0.346702
+per-bin probability dynamic range (kT):     7.12126
+per-segment minimum non-zero probability:   5.75865e-06
+per-segment maximum non-zero probability:   0.143126
+per-segment probability dynamic range (kT): 10.1208
+norm = 1, error in norm = -1.11022e-16 (-0.5*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+
+Reweighting using a different bin mapper than simulation:
+<RectilinearBinMapper at 0x7f6cad81e730 with 8 bins>
+Averaging rates
+Calculating reweighting using window size of 30
+
+Bin probabilities prior to reweighting:
+[0.00058083 0.02584826 0.52902335 0.35654249 0.0548237  0.03318136
+ 0.         0.        ]
+WESS: M*p = [[-8.94466792e-18]
+ [-4.33680869e-17]
+ [-5.55111512e-17]
+ [ 5.55111512e-17]
+ [ 2.77555756e-17]
+ [ 1.00000000e+00]]
+WESS: max = 1.0
+WESS NNLS norm: 0.0
+
+Bin populations after reweighting:
+[3.73308573e-04 3.58236700e-02 4.15113177e-01 3.99586155e-01
+ 1.41795522e-01 7.30816717e-03 0.00000000e+00 0.00000000e+00]
+Iteration completed successfully
+Iteration wallclock: 0:03:46.578222, cputime: 0:17:57.548417
+
+
+Fri Jun  9 16:03:32 2023
+Iteration 42 (500 requested)
+Beginning iteration 42
+56 segments remain in iteration 42 (56 total)
+14 of 40 (35.000000%) active bins are populated
+per-bin minimum non-zero probability:       5.86536e-05
+per-bin maximum probability:                0.467242
+per-bin probability dynamic range (kT):     8.98295
+per-segment minimum non-zero probability:   1.46634e-05
+per-segment maximum non-zero probability:   0.100599
+per-segment probability dynamic range (kT): 8.83354
+norm = 1, error in norm = 0 (0*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+
+Reweighting using a different bin mapper than simulation:
+<RectilinearBinMapper at 0x7f6cad81e730 with 8 bins>
+Averaging rates
+Calculating reweighting using window size of 31
+
+Bin probabilities prior to reweighting:
+[0.         0.07921881 0.29036858 0.45784578 0.16160448 0.0008341
+ 0.01012825 0.        ]
+
+Bin populations after reweighting:
+[0.         0.07921881 0.29036858 0.45784578 0.16160448 0.0008341
+ 0.01012825 0.        ]
+Iteration completed successfully
+Iteration wallclock: 0:03:52.957557, cputime: 0:19:19.209431
+
+
+Fri Jun  9 16:07:25 2023
+Iteration 43 (500 requested)
+Beginning iteration 43
+52 segments remain in iteration 43 (52 total)
+12 of 40 (30.000000%) active bins are populated
+per-bin minimum non-zero probability:       1.46634e-05
+per-bin maximum probability:                0.490765
+per-bin probability dynamic range (kT):     10.4184
+per-segment minimum non-zero probability:   3.66585e-06
+per-segment maximum non-zero probability:   0.158414
+per-segment probability dynamic range (kT): 10.6739
+norm = 1, error in norm = 0 (0*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+
+Reweighting using a different bin mapper than simulation:
+<RectilinearBinMapper at 0x7f6cad81e730 with 8 bins>
+Averaging rates
+Calculating reweighting using window size of 32
+
+Bin probabilities prior to reweighting:
+[3.66585312e-06 8.27385371e-02 4.47061994e-01 2.44911352e-01
+ 2.20220326e-01 5.06412577e-03 0.00000000e+00 0.00000000e+00]
+WESS: M*p = [[ 1.00000000e+00]
+ [ 1.96023753e-16]
+ [ 2.77555756e-17]
+ [-2.77555756e-17]
+ [-2.03287907e-18]
+ [ 2.30392962e-18]
+ [ 5.42101086e-20]]
+WESS: max = 1.0000000000000002
+WESS NNLS norm: 0.0
+
+Bin populations after reweighting:
+[0.00043352 0.04245827 0.41581399 0.39115969 0.1430362  0.00709834
+ 0.         0.        ]
+Iteration completed successfully
+Iteration wallclock: 0:03:51.453246, cputime: 0:17:57.492073
+
+
+Fri Jun  9 16:11:17 2023
+Iteration 44 (500 requested)
+Beginning iteration 44
+60 segments remain in iteration 44 (60 total)
+15 of 40 (37.500000%) active bins are populated
+per-bin minimum non-zero probability:       0.00026166
+per-bin maximum probability:                0.294393
+per-bin probability dynamic range (kT):     7.02563
+per-segment minimum non-zero probability:   6.5415e-05
+per-segment maximum non-zero probability:   0.167848
+per-segment probability dynamic range (kT): 7.85006
+norm = 1, error in norm = 2.22045e-16 (1*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+
+Reweighting using a different bin mapper than simulation:
+<RectilinearBinMapper at 0x7f6cad81e730 with 8 bins>
+Averaging rates
+Calculating reweighting using window size of 33
+
+Bin probabilities prior to reweighting:
+[0.         0.06781366 0.34316479 0.40568396 0.18121837 0.00211922
+ 0.         0.        ]
+WESS: M*p = [[ 1.00000000e+00]
+ [ 1.31838984e-16]
+ [-2.77555756e-17]
+ [-8.32667268e-17]
+ [-8.75493254e-18]
+ [-8.13151629e-20]
+ [ 5.42101086e-20]]
+WESS: max = 1.0
+WESS NNLS norm: 0.0
+
+Bin populations after reweighting:
+[0.         0.04191926 0.41423335 0.39335417 0.14346542 0.00702779
+ 0.         0.        ]
+Iteration completed successfully
+Iteration wallclock: 0:04:18.249258, cputime: 0:20:45.694369
+
+
+Fri Jun  9 16:15:35 2023
+Iteration 45 (500 requested)
+Beginning iteration 45
+60 segments remain in iteration 45 (60 total)
+15 of 40 (37.500000%) active bins are populated
+per-bin minimum non-zero probability:       6.69959e-05
+per-bin maximum probability:                0.392396
+per-bin probability dynamic range (kT):     8.6754
+per-segment minimum non-zero probability:   1.6749e-05
+per-segment maximum non-zero probability:   0.107409
+per-segment probability dynamic range (kT): 8.76606
+norm = 1, error in norm = -1.11022e-16 (-0.5*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+
+Reweighting using a different bin mapper than simulation:
+<RectilinearBinMapper at 0x7f6cad81e730 with 8 bins>
+Averaging rates
+Calculating reweighting using window size of 33
+
+Bin probabilities prior to reweighting:
+[0.00604284 0.03864376 0.42736652 0.27463147 0.17232213 0.08099328
+ 0.         0.        ]
+WESS: M*p = [[ 1.00000000e+00]
+ [ 7.97972799e-17]
+ [ 0.00000000e+00]
+ [-2.77555756e-17]
+ [-2.76471554e-18]
+ [ 2.43945489e-18]
+ [ 5.42101086e-20]]
+WESS: max = 1.0
+WESS NNLS norm: 0.0
+
+Bin populations after reweighting:
+[0.00053147 0.03904044 0.41375676 0.38983319 0.14807666 0.00876149
+ 0.         0.        ]
+Iteration completed successfully
+Iteration wallclock: 0:04:17.474241, cputime: 0:20:47.499321
+
+
+Fri Jun  9 16:19:52 2023
+Iteration 46 (500 requested)
+Beginning iteration 46
+52 segments remain in iteration 46 (52 total)
+13 of 40 (32.500000%) active bins are populated
+per-bin minimum non-zero probability:       1.69209e-05
+per-bin maximum probability:                0.342329
+per-bin probability dynamic range (kT):     9.91498
+per-segment minimum non-zero probability:   4.23022e-06
+per-segment maximum non-zero probability:   0.140029
+per-segment probability dynamic range (kT): 10.4074
+norm = 1, error in norm = 2.22045e-16 (1*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+
+Reweighting using a different bin mapper than simulation:
+<RectilinearBinMapper at 0x7f6cad81e730 with 8 bins>
+Averaging rates
+Calculating reweighting using window size of 34
+
+Bin probabilities prior to reweighting:
+[1.23277401e-04 1.73624782e-02 6.97529515e-01 1.89088900e-01
+ 9.47667755e-02 1.12905414e-03 0.00000000e+00 0.00000000e+00]
+WESS: M*p = [[ 1.00000000e+00]
+ [-5.37764278e-17]
+ [-5.55111512e-17]
+ [ 2.77555756e-17]
+ [ 2.95445092e-17]
+ [-3.41523684e-18]
+ [-5.42101086e-20]]
+WESS: max = 1.0
+WESS NNLS norm: 0.0
+
+Bin populations after reweighting:
+[0.00052396 0.03861257 0.42805546 0.38065213 0.14387873 0.00827715
+ 0.         0.        ]
+Iteration completed successfully
+Iteration wallclock: 0:03:52.092973, cputime: 0:17:57.095632
+
+
+Fri Jun  9 16:23:45 2023
+Iteration 47 (500 requested)
+Beginning iteration 47
+56 segments remain in iteration 47 (56 total)
+14 of 40 (35.000000%) active bins are populated
+per-bin minimum non-zero probability:       1.79795e-05
+per-bin maximum probability:                0.319587
+per-bin probability dynamic range (kT):     9.78555
+per-segment minimum non-zero probability:   4.49488e-06
+per-segment maximum non-zero probability:   0.194851
+per-segment probability dynamic range (kT): 10.6771
+norm = 1, error in norm = 0 (0*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+
+Reweighting using a different bin mapper than simulation:
+<RectilinearBinMapper at 0x7f6cad81e730 with 8 bins>
+Averaging rates
+Calculating reweighting using window size of 35
+
+Bin probabilities prior to reweighting:
+[1.39979766e-04 2.87291717e-02 5.85061341e-01 3.18682575e-01
+ 2.40106746e-02 4.33762579e-02 0.00000000e+00 0.00000000e+00]
+WESS: M*p = [[ 7.13133979e-17]
+ [ 1.05818132e-16]
+ [-1.11022302e-16]
+ [ 0.00000000e+00]
+ [ 1.53143557e-17]
+ [ 1.00000000e+00]
+ [ 0.00000000e+00]]
+WESS: max = 0.9999999999999998
+WESS NNLS norm: 0.0
+
+Bin populations after reweighting:
+[0.00051292 0.03846409 0.43501618 0.37631851 0.14095247 0.00873582
+ 0.         0.        ]
+Iteration completed successfully
+Iteration wallclock: 0:03:46.538110, cputime: 0:19:20.221181
+
+
+Fri Jun  9 16:27:31 2023
+Iteration 48 (500 requested)
+Beginning iteration 48
+56 segments remain in iteration 48 (56 total)
+14 of 40 (35.000000%) active bins are populated
+per-bin minimum non-zero probability:       6.01798e-06
+per-bin maximum probability:                0.352699
+per-bin probability dynamic range (kT):     10.9786
+per-segment minimum non-zero probability:   1.50449e-06
+per-segment maximum non-zero probability:   0.118956
+per-segment probability dynamic range (kT): 11.2781
+norm = 1, error in norm = 0 (0*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+
+Reweighting using a different bin mapper than simulation:
+<RectilinearBinMapper at 0x7f6cad81e730 with 8 bins>
+Averaging rates
+Calculating reweighting using window size of 36
+
+Bin probabilities prior to reweighting:
+[1.21500441e-04 2.97500054e-02 3.58490537e-01 4.01130357e-01
+ 1.66856230e-01 4.36513706e-02 0.00000000e+00 0.00000000e+00]
+WESS: M*p = [[ 1.00000000e+00]
+ [-9.19403442e-17]
+ [ 5.55111512e-17]
+ [-5.55111512e-17]
+ [ 3.10081821e-17]
+ [ 1.51788304e-18]
+ [-5.42101086e-20]]
+WESS: max = 1.0
+WESS NNLS norm: 0.0
+
+Bin populations after reweighting:
+[0.00049844 0.03658927 0.4285851  0.3766739  0.1465924  0.01106089
+ 0.         0.        ]
+Iteration completed successfully
+Iteration wallclock: 0:03:47.799107, cputime: 0:19:19.056119
+
+
+Fri Jun  9 16:31:19 2023
+Iteration 49 (500 requested)
+Beginning iteration 49
+56 segments remain in iteration 49 (56 total)
+13 of 40 (32.500000%) active bins are populated
+per-bin minimum non-zero probability:       8.26962e-07
+per-bin maximum probability:                0.447658
+per-bin probability dynamic range (kT):     13.2018
+per-segment minimum non-zero probability:   2.06741e-07
+per-segment maximum non-zero probability:   0.145257
+per-segment probability dynamic range (kT): 13.4626
+norm = 1, error in norm = -2.22045e-16 (-1*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+
+Reweighting using a different bin mapper than simulation:
+<RectilinearBinMapper at 0x7f6cad81e730 with 8 bins>
+Averaging rates
+Calculating reweighting using window size of 36
+
+Bin probabilities prior to reweighting:
+[1.68918906e-05 2.17983885e-02 4.79139166e-01 2.93072797e-01
+ 1.28749490e-01 7.72232673e-02 0.00000000e+00 0.00000000e+00]
+WESS: M*p = [[ 1.00000000e+00]
+ [ 2.34187669e-16]
+ [ 5.55111512e-17]
+ [-8.32667268e-17]
+ [-1.62630326e-17]
+ [-6.50521303e-19]
+ [ 1.08420217e-19]]
+WESS: max = 1.0
+WESS NNLS norm: 0.0
+
+Bin populations after reweighting:
+[0.00044096 0.03701918 0.4229877  0.37368355 0.1516936  0.01417502
+ 0.         0.        ]
+Iteration completed successfully
+Iteration wallclock: 0:03:49.437269, cputime: 0:19:21.001289
+
+
+Fri Jun  9 16:35:08 2023
+Iteration 50 (500 requested)
+Beginning iteration 50
+60 segments remain in iteration 50 (60 total)
+15 of 40 (37.500000%) active bins are populated
+per-bin minimum non-zero probability:       3.79491e-08
+per-bin maximum probability:                0.451105
+per-bin probability dynamic range (kT):     16.291
+per-segment minimum non-zero probability:   9.48727e-09
+per-segment maximum non-zero probability:   0.110425
+per-segment probability dynamic range (kT): 16.2699
+norm = 1, error in norm = 2.22045e-16 (1*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+
+Reweighting using a different bin mapper than simulation:
+<RectilinearBinMapper at 0x7f6cad81e730 with 8 bins>
+Averaging rates
+Calculating reweighting using window size of 37
+
+Bin probabilities prior to reweighting:
+[4.71853323e-04 2.33734550e-02 6.57960628e-01 3.05432915e-01
+ 4.42129127e-03 8.33985779e-03 0.00000000e+00 0.00000000e+00]
+WESS: M*p = [[ 1.00000000e+00]
+ [ 2.60208521e-17]
+ [-5.55111512e-17]
+ [ 8.32667268e-17]
+ [-7.29125961e-18]
+ [ 6.58652820e-18]
+ [ 0.00000000e+00]]
+WESS: max = 0.9999999999999998
+WESS NNLS norm: 0.0
+
+Bin populations after reweighting:
+[0.00045165 0.03649663 0.43228987 0.37125913 0.14535574 0.01414697
+ 0.         0.        ]
+Iteration completed successfully
+Iteration wallclock: 0:04:16.343687, cputime: 0:20:44.246445
+
+
+Fri Jun  9 16:39:25 2023
+Iteration 51 (500 requested)
+Beginning iteration 51
+60 segments remain in iteration 51 (60 total)
+14 of 40 (35.000000%) active bins are populated
+per-bin minimum non-zero probability:       2.638e-05
+per-bin maximum probability:                0.371259
+per-bin probability dynamic range (kT):     9.55205
+per-segment minimum non-zero probability:   6.595e-06
+per-segment maximum non-zero probability:   0.120185
+per-segment probability dynamic range (kT): 9.81048
+norm = 1, error in norm = 2.22045e-16 (1*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+
+Reweighting using a different bin mapper than simulation:
+<RectilinearBinMapper at 0x7f6cad81e730 with 8 bins>
+Averaging rates
+Calculating reweighting using window size of 38
+
+Bin probabilities prior to reweighting:
+[2.79384602e-04 3.32390754e-02 2.88364827e-01 4.26469742e-01
+ 2.41096882e-01 1.05500893e-02 0.00000000e+00 0.00000000e+00]
+WESS: M*p = [[ 1.00000000e+00]
+ [-2.08166817e-16]
+ [-2.77555756e-17]
+ [ 1.11022302e-16]
+ [-4.43709739e-17]
+ [ 2.46655994e-18]
+ [ 1.08420217e-19]]
+WESS: max = 1.0000000000000002
+WESS NNLS norm: 0.0
+
+Bin populations after reweighting:
+[0.00044396 0.03586953 0.42483807 0.37517636 0.14902921 0.01464286
+ 0.         0.        ]
+Iteration completed successfully
+Iteration wallclock: 0:04:29.905268, cputime: 0:20:45.406554
+
+
+Fri Jun  9 16:43:55 2023
+Iteration 52 (500 requested)
+Beginning iteration 52
+56 segments remain in iteration 52 (56 total)
+14 of 40 (35.000000%) active bins are populated
+per-bin minimum non-zero probability:       1.04799e-05
+per-bin maximum probability:                0.539817
+per-bin probability dynamic range (kT):     10.8495
+per-segment minimum non-zero probability:   2.61997e-06
+per-segment maximum non-zero probability:   0.16464
+per-segment probability dynamic range (kT): 11.0484
+norm = 1, error in norm = 0 (0*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+
+Reweighting using a different bin mapper than simulation:
+<RectilinearBinMapper at 0x7f6cad81e730 with 8 bins>
+Averaging rates
+Calculating reweighting using window size of 39
+
+Bin probabilities prior to reweighting:
+[0.0005009  0.00824499 0.31177626 0.37996797 0.29103178 0.00399886
+ 0.00447924 0.        ]
+WESS: M*p = [[ 1.00000000e+00]
+ [ 2.94902991e-16]
+ [ 0.00000000e+00]
+ [ 2.77555756e-17]
+ [-5.63514079e-17]
+ [ 2.62919027e-18]
+ [ 1.08420217e-19]]
+WESS: max = 0.9999999999999999
+WESS NNLS norm: 0.0
+
+Bin populations after reweighting:
+[0.00043463 0.03364202 0.42088829 0.37409296 0.15529218 0.01517595
+ 0.00047397 0.        ]
+Iteration completed successfully
+Iteration wallclock: 0:03:48.954484, cputime: 0:19:22.555711
+
+
+Fri Jun  9 16:47:44 2023
+Iteration 53 (500 requested)
+Beginning iteration 53
+56 segments remain in iteration 53 (56 total)
+14 of 40 (35.000000%) active bins are populated
+per-bin minimum non-zero probability:       4.84986e-05
+per-bin maximum probability:                0.513335
+per-bin probability dynamic range (kT):     9.26715
+per-segment minimum non-zero probability:   1.21246e-05
+per-segment maximum non-zero probability:   0.161414
+per-segment probability dynamic range (kT): 9.49648
+norm = 1, error in norm = 2.22045e-16 (1*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+
+Reweighting using a different bin mapper than simulation:
+<RectilinearBinMapper at 0x7f6cad81e730 with 8 bins>
+Averaging rates
+Calculating reweighting using window size of 39
+
+Bin probabilities prior to reweighting:
+[2.98497281e-04 5.40450255e-03 4.43238202e-01 3.29125383e-01
+ 2.18834109e-01 3.09930600e-03 0.00000000e+00 0.00000000e+00]
+WESS: M*p = [[ 5.10117122e-17]
+ [ 6.93889390e-17]
+ [ 2.77555756e-17]
+ [-2.77555756e-17]
+ [-2.00577402e-17]
+ [ 5.42101086e-19]
+ [ 1.00000000e+00]]
+WESS: max = 0.9999999999999999
+WESS NNLS norm: 0.0
+
+Bin populations after reweighting:
+[0.00043253 0.0321531  0.41919874 0.37912523 0.15381983 0.01527057
+ 0.         0.        ]
+Iteration completed successfully
+Iteration wallclock: 0:03:46.373097, cputime: 0:19:19.820920
+
+
+Fri Jun  9 16:51:30 2023
+Iteration 54 (500 requested)
+Beginning iteration 54
+56 segments remain in iteration 54 (56 total)
+13 of 40 (32.500000%) active bins are populated
+per-bin minimum non-zero probability:       7.35703e-05
+per-bin maximum probability:                0.419655
+per-bin probability dynamic range (kT):     8.64895
+per-segment minimum non-zero probability:   1.7569e-05
+per-segment maximum non-zero probability:   0.167425
+per-segment probability dynamic range (kT): 9.16215
+norm = 1, error in norm = 0 (0*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+
+Reweighting using a different bin mapper than simulation:
+<RectilinearBinMapper at 0x7f6cad81e730 with 8 bins>
+Averaging rates
+Calculating reweighting using window size of 40
+
+Bin probabilities prior to reweighting:
+[0.00170314 0.0009214  0.57860142 0.18369477 0.22247266 0.01260661
+ 0.         0.        ]
+WESS: M*p = [[-5.78963960e-17]
+ [-8.50014503e-17]
+ [ 2.77555756e-17]
+ [-5.55111512e-17]
+ [-4.30970364e-18]
+ [-1.62630326e-18]
+ [ 1.00000000e+00]]
+WESS: max = 1.0
+WESS NNLS norm: 0.0
+
+Bin populations after reweighting:
+[0.00044037 0.03037067 0.42216033 0.37636581 0.15540418 0.01525864
+ 0.         0.        ]
+Iteration completed successfully
+Iteration wallclock: 0:03:45.493383, cputime: 0:19:15.910731
+
+
+Fri Jun  9 16:55:15 2023
+Iteration 55 (500 requested)
+Beginning iteration 55
+60 segments remain in iteration 55 (60 total)
+15 of 40 (37.500000%) active bins are populated
+per-bin minimum non-zero probability:       4.54271e-06
+per-bin maximum probability:                0.49032
+per-bin probability dynamic range (kT):     11.5893
+per-segment minimum non-zero probability:   1.13568e-06
+per-segment maximum non-zero probability:   0.174853
+per-segment probability dynamic range (kT): 11.9445
+norm = 1, error in norm = -3.33067e-16 (-1.5*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+
+Reweighting using a different bin mapper than simulation:
+<RectilinearBinMapper at 0x7f6cad81e730 with 8 bins>
+Averaging rates
+Calculating reweighting using window size of 41
+
+Bin probabilities prior to reweighting:
+[1.68548554e-04 1.54571573e-02 4.64500767e-01 2.12900935e-01
+ 3.03595356e-01 3.37723516e-03 0.00000000e+00 0.00000000e+00]
+WESS: M*p = [[-1.00559751e-17]
+ [ 1.90819582e-17]
+ [ 2.77555756e-17]
+ [ 5.55111512e-17]
+ [ 4.87213351e-17]
+ [-3.03576608e-18]
+ [ 1.00000000e+00]]
+WESS: max = 1.0
+WESS NNLS norm: 0.0
+
+Bin populations after reweighting:
+[0.00043061 0.02999737 0.42354779 0.37181657 0.15876672 0.01544093
+ 0.         0.        ]
+Iteration completed successfully
+Iteration wallclock: 0:04:14.591053, cputime: 0:20:40.071302
+
+
+Fri Jun  9 16:59:30 2023
+Iteration 56 (500 requested)
+Beginning iteration 56
+56 segments remain in iteration 56 (56 total)
+14 of 40 (35.000000%) active bins are populated
+per-bin minimum non-zero probability:       2.90146e-06
+per-bin maximum probability:                0.423548
+per-bin probability dynamic range (kT):     11.8912
+per-segment minimum non-zero probability:   7.25364e-07
+per-segment maximum non-zero probability:   0.164605
+per-segment probability dynamic range (kT): 12.3324
+norm = 1, error in norm = 0 (0*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+
+Reweighting using a different bin mapper than simulation:
+<RectilinearBinMapper at 0x7f6cad81e730 with 8 bins>
+Averaging rates
+Calculating reweighting using window size of 42
+
+Bin probabilities prior to reweighting:
+[4.30834889e-04 2.96120206e-04 6.66092169e-01 9.05215049e-02
+ 2.36119305e-01 5.21966743e-03 1.32039853e-03 0.00000000e+00]
+WESS: M*p = [[ 9.51116356e-17]
+ [ 1.09287579e-16]
+ [-1.38777878e-16]
+ [-2.77555756e-17]
+ [-2.67255836e-17]
+ [ 5.69206141e-18]
+ [ 1.00000000e+00]]
+WESS: max = 1.0
+WESS NNLS norm: 0.0
+
+Bin populations after reweighting:
+[0.00069135 0.0305138  0.43183469 0.36399247 0.15741036 0.01506884
+ 0.00048848 0.        ]
+Iteration completed successfully
+Iteration wallclock: 0:03:52.201060, cputime: 0:19:20.306776
+
+
+Fri Jun  9 17:03:22 2023
+Iteration 57 (500 requested)
+Beginning iteration 57
+60 segments remain in iteration 57 (60 total)
+14 of 40 (35.000000%) active bins are populated
+per-bin minimum non-zero probability:       1.86757e-05
+per-bin maximum probability:                0.36374
+per-bin probability dynamic range (kT):     9.87697
+per-segment minimum non-zero probability:   4.66892e-06
+per-segment maximum non-zero probability:   0.0910799
+per-segment probability dynamic range (kT): 9.87856
+norm = 1, error in norm = 2.22045e-16 (1*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+
+Reweighting using a different bin mapper than simulation:
+<RectilinearBinMapper at 0x7f6cad81e730 with 8 bins>
+Averaging rates
+Calculating reweighting using window size of 42
+
+Bin probabilities prior to reweighting:
+[6.41672663e-03 4.31062746e-02 3.77199581e-01 5.44317656e-01
+ 2.87595312e-02 2.00229859e-04 0.00000000e+00 0.00000000e+00]
+WESS: M*p = [[ 1.35796322e-17]
+ [-2.77555756e-17]
+ [-2.49800181e-16]
+ [ 5.55111512e-17]
+ [ 3.16044933e-17]
+ [ 4.33680869e-19]
+ [ 1.00000000e+00]]
+WESS: max = 1.0000000000000002
+WESS NNLS norm: 0.0
+
+Bin populations after reweighting:
+[0.00091112 0.0330629  0.43045332 0.3676725  0.15385702 0.01404315
+ 0.         0.        ]
+Iteration completed successfully
+Iteration wallclock: 0:04:15.924488, cputime: 0:20:43.205336
+
+
+Fri Jun  9 17:07:38 2023
+Iteration 58 (500 requested)
+Beginning iteration 58
+60 segments remain in iteration 58 (60 total)
+15 of 40 (37.500000%) active bins are populated
+per-bin minimum non-zero probability:       3.54208e-06
+per-bin maximum probability:                0.393767
+per-bin probability dynamic range (kT):     11.6188
+per-segment minimum non-zero probability:   8.85519e-07
+per-segment maximum non-zero probability:   0.131892
+per-segment probability dynamic range (kT): 11.9113
+norm = 1, error in norm = 0 (0*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+
+Reweighting using a different bin mapper than simulation:
+<RectilinearBinMapper at 0x7f6cad81e730 with 8 bins>
+Averaging rates
+Calculating reweighting using window size of 43
+
+Bin probabilities prior to reweighting:
+[0.00454472 0.01529588 0.5114656  0.36057244 0.10521135 0.00291002
+ 0.         0.        ]
+WESS: M*p = [[ 1.50433051e-17]
+ [ 1.23165367e-16]
+ [-1.11022302e-16]
+ [ 0.00000000e+00]
+ [-1.56667214e-17]
+ [-2.11419424e-18]
+ [ 1.00000000e+00]]
+WESS: max = 0.9999999999999999
+WESS NNLS norm: 0.0
+
+Bin populations after reweighting:
+[0.00115534 0.03241462 0.43078677 0.3702685  0.15177057 0.0136042
+ 0.         0.        ]
+Iteration completed successfully
+Iteration wallclock: 0:04:16.261392, cputime: 0:20:42.420958
+
+
+Fri Jun  9 17:11:54 2023
+Iteration 59 (500 requested)
+Beginning iteration 59
+56 segments remain in iteration 59 (56 total)
+14 of 40 (35.000000%) active bins are populated
+per-bin minimum non-zero probability:       9.00453e-07
+per-bin maximum probability:                0.547051
+per-bin probability dynamic range (kT):     13.3172
+per-segment minimum non-zero probability:   2.25113e-07
+per-segment maximum non-zero probability:   0.176334
+per-segment probability dynamic range (kT): 13.5713
+norm = 1, error in norm = 0 (0*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+
+Reweighting using a different bin mapper than simulation:
+<RectilinearBinMapper at 0x7f6cad81e730 with 8 bins>
+Averaging rates
+Calculating reweighting using window size of 44
+
+Bin probabilities prior to reweighting:
+[0.02039481 0.01755106 0.34929806 0.33010033 0.18195838 0.09790778
+ 0.00278958 0.        ]
+WESS: M*p = [[ 7.22349697e-17]
+ [-3.29597460e-17]
+ [-1.38777878e-16]
+ [ 5.55111512e-17]
+ [-1.35525272e-18]
+ [-1.40946282e-18]
+ [ 1.00000000e+00]]
+WESS: max = 0.9999999999999999
+WESS NNLS norm: 0.0
+
+Bin populations after reweighting:
+[0.00180209 0.03225864 0.42481046 0.36948594 0.15379196 0.01728594
+ 0.00056496 0.        ]
+Iteration completed successfully
+Iteration wallclock: 0:03:50.073767, cputime: 0:19:17.928678
+
+
+Fri Jun  9 17:15:44 2023
+Iteration 60 (500 requested)
+Beginning iteration 60
+56 segments remain in iteration 60 (56 total)
+14 of 40 (35.000000%) active bins are populated
+per-bin minimum non-zero probability:       9.35777e-05
+per-bin maximum probability:                0.628004
+per-bin probability dynamic range (kT):     8.81151
+per-segment minimum non-zero probability:   5.96732e-08
+per-segment maximum non-zero probability:   0.197373
+per-segment probability dynamic range (kT): 15.0117
+norm = 1, error in norm = -1.11022e-16 (-0.5*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+
+Reweighting using a different bin mapper than simulation:
+<RectilinearBinMapper at 0x7f6cad81e730 with 8 bins>
+Averaging rates
+Calculating reweighting using window size of 45
+
+Bin probabilities prior to reweighting:
+[8.52368138e-04 1.79759528e-02 2.29628464e-01 6.20901248e-01
+ 6.21546622e-02 6.83460635e-02 1.41240847e-04 0.00000000e+00]
+WESS: M*p = [[ 9.53284760e-17]
+ [-1.07552856e-16]
+ [ 8.32667268e-17]
+ [-2.77555756e-17]
+ [ 4.97648797e-17]
+ [-2.38524478e-18]
+ [ 1.00000000e+00]]
+WESS: max = 0.9999999999999999
+WESS NNLS norm: 0.0
+
+Bin populations after reweighting:
+[0.0017063  0.03087118 0.41716047 0.37409433 0.15641442 0.01912148
+ 0.00063183 0.        ]
+Iteration completed successfully
+Iteration wallclock: 0:03:45.837092, cputime: 0:19:17.200276
+
+
+Fri Jun  9 17:19:30 2023
+Iteration 61 (500 requested)
+Beginning iteration 61
+56 segments remain in iteration 61 (56 total)
+15 of 40 (37.500000%) active bins are populated
+per-bin minimum non-zero probability:       4.01766e-05
+per-bin maximum probability:                0.55231
+per-bin probability dynamic range (kT):     9.52858
+per-segment minimum non-zero probability:   1.00442e-05
+per-segment maximum non-zero probability:   0.245438
+per-segment probability dynamic range (kT): 10.1038
+norm = 1, error in norm = 0 (0*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+
+Reweighting using a different bin mapper than simulation:
+<RectilinearBinMapper at 0x7f6cad81e730 with 8 bins>
+Averaging rates
+Calculating reweighting using window size of 45
+
+Bin probabilities prior to reweighting:
+[7.28578022e-03 1.35964330e-02 6.34529455e-01 2.15744118e-01
+ 1.23805948e-01 4.72235112e-03 3.15914458e-04 0.00000000e+00]
+WESS: M*p = [[-4.36391374e-17]
+ [-2.46330734e-16]
+ [ 5.55111512e-17]
+ [ 1.38777878e-16]
+ [ 4.14707331e-18]
+ [ 2.71050543e-19]
+ [ 1.00000000e+00]]
+WESS: max = 0.9999999999999999
+WESS NNLS norm: 0.0
+
+Bin populations after reweighting:
+[0.00177996 0.03081928 0.42294435 0.36926251 0.1554021  0.01909846
+ 0.00069334 0.        ]
+Iteration completed successfully
+Iteration wallclock: 0:03:46.861337, cputime: 0:19:15.926284
+
+
+Fri Jun  9 17:23:17 2023
+Iteration 62 (500 requested)
+Beginning iteration 62
+52 segments remain in iteration 62 (52 total)
+14 of 40 (35.000000%) active bins are populated
+per-bin minimum non-zero probability:       2.45384e-06
+per-bin maximum probability:                0.267093
+per-bin probability dynamic range (kT):     11.5977
+per-segment minimum non-zero probability:   6.13461e-07
+per-segment maximum non-zero probability:   0.155221
+per-segment probability dynamic range (kT): 12.4412
+norm = 1, error in norm = 2.22045e-16 (1*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+
+Reweighting using a different bin mapper than simulation:
+<RectilinearBinMapper at 0x7f6cad81e730 with 8 bins>
+Averaging rates
+Calculating reweighting using window size of 46
+
+Bin probabilities prior to reweighting:
+[5.33342341e-05 1.93479121e-02 2.71161582e-01 6.95170272e-01
+ 3.84639736e-03 1.03049451e-02 1.15557316e-04 0.00000000e+00]
+WESS: M*p = [[-2.05998413e-17]
+ [-6.24500451e-17]
+ [-8.32667268e-17]
+ [-8.32667268e-17]
+ [ 3.83265468e-17]
+ [-8.02309608e-18]
+ [ 1.00000000e+00]]
+WESS: max = 1.0
+WESS NNLS norm: 0.0
+
+Bin populations after reweighting:
+[0.00163833 0.02920497 0.41874631 0.37661926 0.15420021 0.01891689
+ 0.00067402 0.        ]
+Iteration completed successfully
+Iteration wallclock: 0:03:44.716512, cputime: 0:17:53.277268
+
+
+Fri Jun  9 17:27:02 2023
+Iteration 63 (500 requested)
+Beginning iteration 63
+60 segments remain in iteration 63 (60 total)
+14 of 40 (35.000000%) active bins are populated
+per-bin minimum non-zero probability:       0.00040016
+per-bin maximum probability:                0.375869
+per-bin probability dynamic range (kT):     6.84513
+per-segment minimum non-zero probability:   3.76888e-05
+per-segment maximum non-zero probability:   0.107274
+per-segment probability dynamic range (kT): 7.95378
+norm = 1, error in norm = 2.22045e-16 (1*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+
+Reweighting using a different bin mapper than simulation:
+<RectilinearBinMapper at 0x7f6cad81e730 with 8 bins>
+Averaging rates
+Calculating reweighting using window size of 47
+
+Bin probabilities prior to reweighting:
+[0.0010004  0.02974286 0.42510392 0.16102235 0.38082106 0.0023094
+ 0.         0.        ]
+WESS: M*p = [[-1.65069781e-17]
+ [ 8.15320034e-17]
+ [-5.55111512e-17]
+ [ 0.00000000e+00]
+ [-8.34835673e-18]
+ [ 2.27682456e-18]
+ [ 1.00000000e+00]]
+WESS: max = 1.0
+WESS NNLS norm: 0.0
+
+Bin populations after reweighting:
+[0.00154429 0.02778958 0.41788466 0.37436493 0.15945479 0.01896176
+ 0.         0.        ]
+Iteration completed successfully
+Iteration wallclock: 0:04:14.459017, cputime: 0:20:36.962854
+
+
+Fri Jun  9 17:31:16 2023
+Iteration 64 (500 requested)
+Beginning iteration 64
+52 segments remain in iteration 64 (52 total)
+15 of 40 (37.500000%) active bins are populated
+per-bin minimum non-zero probability:       0.000154429
+per-bin maximum probability:                0.293242
+per-bin probability dynamic range (kT):     7.54902
+per-segment minimum non-zero probability:   3.86071e-05
+per-segment maximum non-zero probability:   0.174487
+per-segment probability dynamic range (kT): 8.41617
+norm = 1, error in norm = 0 (0*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+
+Reweighting using a different bin mapper than simulation:
+<RectilinearBinMapper at 0x7f6cad81e730 with 8 bins>
+Averaging rates
+Calculating reweighting using window size of 48
+
+Bin probabilities prior to reweighting:
+[0.00230305 0.00876253 0.30833609 0.46520436 0.18739474 0.02696158
+ 0.00103766 0.        ]
+WESS: M*p = [[ 2.68340038e-17]
+ [-3.64291930e-17]
+ [-5.55111512e-17]
+ [ 1.66533454e-16]
+ [-5.17977588e-17]
+ [-3.25260652e-18]
+ [ 1.00000000e+00]]
+WESS: max = 0.9999999999999998
+WESS NNLS norm: 0.0
+
+Bin populations after reweighting:
+[0.0014796  0.02622752 0.41233131 0.37663956 0.16305315 0.01958662
+ 0.00068224 0.        ]
+Iteration completed successfully
+Iteration wallclock: 0:03:44.463061, cputime: 0:17:51.072534
+
+
+Fri Jun  9 17:35:01 2023
+Iteration 65 (500 requested)
+Beginning iteration 65
+60 segments remain in iteration 65 (60 total)
+13 of 40 (32.500000%) active bins are populated
+per-bin minimum non-zero probability:       9.92132e-05
+per-bin maximum probability:                0.478741
+per-bin probability dynamic range (kT):     8.48164
+per-segment minimum non-zero probability:   2.48033e-05
+per-segment maximum non-zero probability:   0.175791
+per-segment probability dynamic range (kT): 8.86607
+norm = 1, error in norm = 0 (0*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+
+Reweighting using a different bin mapper than simulation:
+<RectilinearBinMapper at 0x7f6cad81e730 with 8 bins>
+Averaging rates
+Calculating reweighting using window size of 48
+
+Bin probabilities prior to reweighting:
+[5.17801699e-03 2.10133451e-02 5.97624401e-01 1.45925772e-01
+ 2.23833602e-01 6.31115606e-03 1.13706487e-04 0.00000000e+00]
+WESS: M*p = [[-1.65611882e-17]
+ [ 7.80625564e-17]
+ [ 1.94289029e-16]
+ [ 0.00000000e+00]
+ [-3.21736995e-17]
+ [ 2.00577402e-18]
+ [ 1.00000000e+00]]
+WESS: max = 1.0000000000000002
+WESS NNLS norm: 0.0
+
+Bin populations after reweighting:
+[0.00133541 0.02355587 0.40395659 0.37693319 0.17342921 0.02007302
+ 0.00071671 0.        ]
+Iteration completed successfully
+Iteration wallclock: 0:04:16.442284, cputime: 0:20:40.730875
+
+
+Fri Jun  9 17:39:17 2023
+Iteration 66 (500 requested)
+Beginning iteration 66
+60 segments remain in iteration 66 (60 total)
+15 of 40 (37.500000%) active bins are populated
+per-bin minimum non-zero probability:       6.39675e-06
+per-bin maximum probability:                0.55341
+per-bin probability dynamic range (kT):     11.3681
+per-segment minimum non-zero probability:   1.59919e-06
+per-segment maximum non-zero probability:   0.364903
+per-segment probability dynamic range (kT): 12.3379
+norm = 1, error in norm = -3.33067e-16 (-1.5*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+
+Reweighting using a different bin mapper than simulation:
+<RectilinearBinMapper at 0x7f6cad81e730 with 8 bins>
+Averaging rates
+Calculating reweighting using window size of 49
+
+Bin probabilities prior to reweighting:
+[4.99231245e-05 2.45108732e-02 2.31514997e-01 2.42891988e-01
+ 4.95235258e-01 4.51526806e-03 1.28169193e-03 0.00000000e+00]
+WESS: M*p = [[ 1.03974988e-16]
+ [ 8.15320034e-17]
+ [-1.38777878e-16]
+ [ 8.32667268e-17]
+ [-3.49113100e-17]
+ [-7.75204553e-18]
+ [ 1.00000000e+00]]
+WESS: max = 0.9999999999999999
+WESS NNLS norm: 0.0
+
+Bin populations after reweighting:
+[0.00126697 0.02306484 0.39535442 0.37550002 0.18318818 0.02085176
+ 0.00077381 0.        ]
+Iteration completed successfully
+Iteration wallclock: 0:04:16.115536, cputime: 0:20:42.256931
+
+
+Fri Jun  9 17:43:33 2023
+Iteration 67 (500 requested)
+Beginning iteration 67
+60 segments remain in iteration 67 (60 total)
+15 of 40 (37.500000%) active bins are populated
+per-bin minimum non-zero probability:       4.05849e-05
+per-bin maximum probability:                0.27531
+per-bin probability dynamic range (kT):     8.82226
+per-segment minimum non-zero probability:   1.01462e-05
+per-segment maximum non-zero probability:   0.226733
+per-segment probability dynamic range (kT): 10.0144
+norm = 1, error in norm = 0 (0*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+
+Reweighting using a different bin mapper than simulation:
+<RectilinearBinMapper at 0x7f6cad81e730 with 8 bins>
+Averaging rates
+Calculating reweighting using window size of 50
+
+Bin probabilities prior to reweighting:
+[6.79797268e-04 2.33774785e-02 3.43514298e-01 5.62252682e-01
+ 6.92076940e-02 9.54528607e-04 1.35221551e-05 0.00000000e+00]
+WESS: M*p = [[-7.74933503e-17]
+ [ 2.18575158e-16]
+ [ 0.00000000e+00]
+ [-8.32667268e-17]
+ [-2.53974359e-17]
+ [ 1.42030485e-17]
+ [ 1.00000000e+00]]
+WESS: max = 1.0
+WESS NNLS norm: 0.0
+
+Bin populations after reweighting:
+[0.00126126 0.02314302 0.39687822 0.37769317 0.18011805 0.02017695
+ 0.00072933 0.        ]
+Iteration completed successfully
+Iteration wallclock: 0:04:17.526855, cputime: 0:20:41.337946
+
+
+Fri Jun  9 17:47:51 2023
+Iteration 68 (500 requested)
+Beginning iteration 68
+60 segments remain in iteration 68 (60 total)
+14 of 40 (35.000000%) active bins are populated
+per-bin minimum non-zero probability:       0.000301196
+per-bin maximum probability:                0.374351
+per-bin probability dynamic range (kT):     7.12519
+per-segment minimum non-zero probability:   5.64742e-05
+per-segment maximum non-zero probability:   0.208156
+per-segment probability dynamic range (kT): 8.21226
+norm = 1, error in norm = -1.11022e-16 (-0.5*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+
+Reweighting using a different bin mapper than simulation:
+<RectilinearBinMapper at 0x7f6cad81e730 with 8 bins>
+Averaging rates
+Calculating reweighting using window size of 51
+
+Bin probabilities prior to reweighting:
+[7.89962081e-03 1.47894122e-02 4.57596108e-01 2.68283301e-01
+ 2.39323769e-01 1.19254569e-02 1.82331359e-04 0.00000000e+00]
+WESS: M*p = [[ 1.62901376e-16]
+ [-3.98986399e-17]
+ [-8.32667268e-17]
+ [-2.77555756e-17]
+ [-6.05255863e-17]
+ [ 9.75781955e-18]
+ [ 1.00000000e+00]]
+WESS: max = 1.0
+WESS NNLS norm: 0.0
+
+Bin populations after reweighting:
+[0.00142663 0.02250808 0.39621837 0.37590729 0.18268109 0.02052637
+ 0.00073217 0.        ]
+Iteration completed successfully
+Iteration wallclock: 0:04:21.171257, cputime: 0:20:37.691197
+
+
+Fri Jun  9 17:52:12 2023
+Iteration 69 (500 requested)
+Beginning iteration 69
+60 segments remain in iteration 69 (60 total)
+14 of 40 (35.000000%) active bins are populated
+per-bin minimum non-zero probability:       1.35986e-05
+per-bin maximum probability:                0.372752
+per-bin probability dynamic range (kT):     10.2187
+per-segment minimum non-zero probability:   3.39964e-06
+per-segment maximum non-zero probability:   0.124547
+per-segment probability dynamic range (kT): 10.5088
+norm = 1, error in norm = -1.11022e-16 (-0.5*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+
+Reweighting using a different bin mapper than simulation:
+<RectilinearBinMapper at 0x7f6cad81e730 with 8 bins>
+Averaging rates
+Calculating reweighting using window size of 51
+
+Bin probabilities prior to reweighting:
+[0.00044179 0.02802312 0.26986283 0.42192001 0.26068064 0.01553915
+ 0.00353246 0.        ]
+WESS: M*p = [[ 7.05544564e-17]
+ [-1.90819582e-16]
+ [ 1.24900090e-16]
+ [ 5.55111512e-17]
+ [-6.09050570e-17]
+ [ 6.72205347e-18]
+ [ 1.00000000e+00]]
+WESS: max = 1.0
+WESS NNLS norm: 0.0
+
+Bin populations after reweighting:
+[0.00145073 0.0226801  0.39066479 0.37417249 0.18860535 0.02157507
+ 0.00085148 0.        ]
+Iteration completed successfully
+Iteration wallclock: 0:04:18.753567, cputime: 0:20:40.847375
+
+
+Fri Jun  9 17:56:31 2023
+Iteration 70 (500 requested)
+Beginning iteration 70
+60 segments remain in iteration 70 (60 total)
+15 of 40 (37.500000%) active bins are populated
+per-bin minimum non-zero probability:       1.11636e-05
+per-bin maximum probability:                0.453708
+per-bin probability dynamic range (kT):     10.6126
+per-segment minimum non-zero probability:   2.79089e-06
+per-segment maximum non-zero probability:   0.174011
+per-segment probability dynamic range (kT): 11.0405
+norm = 1, error in norm = 4.44089e-16 (2*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+
+Reweighting using a different bin mapper than simulation:
+<RectilinearBinMapper at 0x7f6cad81e730 with 8 bins>
+Averaging rates
+Calculating reweighting using window size of 52
+
+Bin probabilities prior to reweighting:
+[0.00117492 0.0236416  0.43078954 0.35869108 0.16909705 0.01196251
+ 0.00464331 0.        ]
+WESS: M*p = [[-1.58022467e-17]
+ [-1.21430643e-17]
+ [ 8.32667268e-17]
+ [-8.32667268e-17]
+ [ 4.97106696e-17]
+ [-9.75781955e-18]
+ [ 1.00000000e+00]]
+WESS: max = 0.9999999999999999
+WESS NNLS norm: 0.0
+
+Bin populations after reweighting:
+[0.00142142 0.0226791  0.39051211 0.37325559 0.18961764 0.02152277
+ 0.00099137 0.        ]
+Iteration completed successfully
+Iteration wallclock: 0:04:19.697870, cputime: 0:20:43.131574
+
+
+Fri Jun  9 18:00:51 2023
+Iteration 71 (500 requested)
+Beginning iteration 71
+60 segments remain in iteration 71 (60 total)
+15 of 40 (37.500000%) active bins are populated
+per-bin minimum non-zero probability:       3.37644e-06
+per-bin maximum probability:                0.397654
+per-bin probability dynamic range (kT):     11.6765
+per-segment minimum non-zero probability:   8.44111e-07
+per-segment maximum non-zero probability:   0.181944
+per-segment probability dynamic range (kT): 12.2809
+norm = 1, error in norm = 2.22045e-16 (1*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+
+Reweighting using a different bin mapper than simulation:
+<RectilinearBinMapper at 0x7f6cad81e730 with 8 bins>
+Averaging rates
+Calculating reweighting using window size of 53
+
+Bin probabilities prior to reweighting:
+[3.91787059e-04 1.49712622e-02 2.56780431e-01 3.82514526e-01
+ 3.44046414e-01 8.10424721e-04 2.42577516e-04 2.42577516e-04]
+WESS: M*p = [[ 4.85722573e-17]
+ [-4.16333634e-17]
+ [-1.66533454e-16]
+ [-2.77555756e-17]
+ [-4.58075418e-18]
+ [ 6.50521303e-19]
+ [ 1.00000000e+00]]
+WESS: max = 1.0
+WESS NNLS norm: 0.0
+exception caught; shutting down
+-- ERROR    [w_run] -- error message: populated bin reweighted to zero probability
+-- ERROR    [w_run] -- Traceback (most recent call last):
+  File "/ihome/lchong/dty7/Apps/westpa/src/westpa/cli/core/w_run.py", line 62, in run_simulation
+    sim_manager.run()
+  File "/ihome/lchong/dty7/Apps/westpa/src/westpa/core/sim_manager.py", line 765, in run
+    self.prepare_new_iteration()
+  File "/ihome/lchong/dty7/Apps/westpa/src/westpa/core/sim_manager.py", line 712, in prepare_new_iteration
+    self.invoke_callbacks(self.prepare_new_iteration)
+  File "/ihome/lchong/dty7/Apps/westpa/src/westpa/core/sim_manager.py", line 141, in invoke_callbacks
+    fn(*args, **kwargs)
+  File "/ihome/lchong/dty7/Apps/westpa/src/westpa/westext/wess/wess_driver.py", line 187, in prepare_new_iteration
+    assert (~((orig_binprobs > 0) & (binprobs == 0))).all(), 'populated bin reweighted to zero probability'
+AssertionError: populated bin reweighted to zero probability
+

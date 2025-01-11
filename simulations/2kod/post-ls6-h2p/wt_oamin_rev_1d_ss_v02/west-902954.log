@@ -1,0 +1,55 @@
+Updating system with the options from the configuration file
+Maximum wallclock time: 1 day, 0:00:00
+
+Mon May 20 15:55:09 2024
+Iteration 599 (600 requested)
+Continuing iteration 599
+48 segments remain in iteration 599 (128 total)
+31 of 33 (93.939394%) active bins are populated
+per-bin minimum non-zero probability:       0.0012957
+per-bin maximum probability:                0.143964
+per-bin probability dynamic range (kT):     4.71051
+per-segment minimum non-zero probability:   0.000312944
+per-segment maximum non-zero probability:   0.0542682
+per-segment probability dynamic range (kT): 5.15567
+norm = 1, error in norm = -2.22045e-16 (-1*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+################ MAB stats ################
+minima in each dimension:      [0.1751]
+maxima in each dimension:      [38.3025]
+direction in each dimension:   [86]
+skip in each dimension:        [0]
+###########################################
+Iteration completed successfully
+Iteration wallclock: 0:04:24.606438, cputime: 0:34:57.544736
+
+
+Mon May 20 15:59:33 2024
+Iteration 600 (600 requested)
+Beginning iteration 600
+112 segments remain in iteration 600 (112 total)
+29 of 33 (87.878788%) active bins are populated
+per-bin minimum non-zero probability:       0.000315811
+per-bin maximum probability:                0.112782
+per-bin probability dynamic range (kT):     5.87807
+per-segment minimum non-zero probability:   8.36763e-05
+per-segment maximum non-zero probability:   0.0408979
+per-segment probability dynamic range (kT): 6.19188
+norm = 1, error in norm = -2.22045e-16 (-1*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+################ MAB stats ################
+minima in each dimension:      [1.4695]
+maxima in each dimension:      [34.6953]
+direction in each dimension:   [86]
+skip in each dimension:        [0]
+###########################################
+Iteration completed successfully
+Iteration wallclock: 0:06:17.956733, cputime: 0:30:46.753434
+
+
+Mon May 20 16:05:51 2024
+WEST run complete.

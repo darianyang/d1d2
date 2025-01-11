@@ -1,0 +1,63 @@
+Resetting modules to system default. Resetting $MODULEPATH back to system default. All extra directories will be removed from $MODULEPATH.
+BEGIN INSIDE ENV.SH
+
+Currently Loaded Modules:
+  1) cmake/3.24.2   6) impi/19.0.9          11) openmm/7.7.0_a
+  2) pmix/3.2.3     7) cuda/11.3       (g)  12) swig/4.1.1_b
+  3) xalt/2.10.32   8) conda/4.12.0_a       13) boost/1.72.0_a
+  4) TACC           9) envwestpa/1.0_b      14) amber/22_a
+  5) intel/19.1.1  10) fftw/3.3.10_a        15) westpa/22.06_b
+
+  Where:
+   g:  built for GPU
+
+ 
+
+/work/09416/dty7/ls6/module_build_we_amber/modules/envwestpa/1.0_b/bin/python
+END   INSIDE ENV.SH
+starting WEST client processes on: 
+c317-011.ls6.tacc.utexas.edu
+current directory is /home1/09416/dty7/scratch/d1d2/2kod/ls6-we/stability_test_v00
+environment is: 
+CUDA_VISIBLE_DEVICES =  0,1,2
+-- INFO     [westpa.rc] -- loading system driver 'westpa.core.systems.WESTSystem'
+-- INFO     [westpa.rc] -- Loading system options from configuration file
+Updating system with the options from the configuration file
+-- INFO     [westpa.rc] -- Overwriting system option: pcoord_ndim
+-- INFO     [westpa.rc] -- Overwriting system option: pcoord_len
+-- INFO     [westpa.rc] -- Overwriting system option: pcoord_dtype
+-- INFO     [westpa.rc] -- Overwriting system option: bin_mapper
+-- INFO     [westpa.rc] -- Overwriting system option: bin_target_counts
+-- INFO     [driver] -- Adjust counts to exactly match target_counts: True
+-- INFO     [driver] -- Split threshold: 2.0
+-- INFO     [driver] -- Merge cutoff: 1.0
+-- INFO     [westpa.work_managers.zeromq.core.ZMQWorker.809fcc2d-67f5-4593-aa43-fcf43e340522] -- This is ZMQWorker on c317-012.ls6.tacc.utexas.edu at PID 2673494
+-- INFO     [westpa.work_managers.zeromq.core.ZMQWorker.b9fe1be3-9445-4803-ad7d-848201c415be] -- This is ZMQWorker on c317-012.ls6.tacc.utexas.edu at PID 2673494
+-- INFO     [westpa.work_managers.zeromq.core.ZMQExecutor.e96c732f-2036-4988-bd8c-afc8bcd34d3d] -- This is ZMQExecutor on c317-012.ls6.tacc.utexas.edu at PID 2673496
+-- INFO     [westpa.work_managers.zeromq.core.ZMQExecutor.b1efab8a-a928-4334-b44f-e7e0e04de247] -- This is ZMQExecutor on c317-012.ls6.tacc.utexas.edu at PID 2673499
+-- INFO     [westpa.work_managers.zeromq.core.ZMQWorker.ff86b09f-2e06-4fba-9e5e-a9b00264035a] -- This is ZMQWorker on c317-012.ls6.tacc.utexas.edu at PID 2673494
+-- INFO     [westpa.work_managers.zeromq.core.ZMQExecutor.2d89c48e-1508-4491-b52e-a202f1586fbc] -- This is ZMQExecutor on c317-012.ls6.tacc.utexas.edu at PID 2673510
+-- WARNING  [westpa.work_managers.zeromq.core] -- sending SIGKILL to worker process 2673496
+-- WARNING  [westpa.work_managers.zeromq.core] -- sending SIGKILL to worker process 2673499
+-- WARNING  [westpa.work_managers.zeromq.core] -- sending SIGKILL to worker process 2673510
+Shutting down.  Hopefully this was on purpose?
+917, in run
+    self._target(*self._args, **self._kwargs)
+  File "/work/09416/dty7/ls6/module_build_we_amber/modules/envwestpa/1.0_b/lib/python3.9/site-packages/zmq/devices/basedevice.py", line 247, in run
+    self.run_device()
+  File "/work/09416/dty7/ls6/module_build_we_amber/modules/envwestpa/1.0_b/lib/python3.9/site-packages/zmq/devices/proxydevice.py", line 74, in run_device
+    ins, outs, mons = self._setup_sockets()
+  File "/work/09416/dty7/ls6/module_build_we_amber/modules/envwestpa/1.0_b/lib/python3.9/site-packages/zmq/devices/proxydevice.py", line 56, in _setup_sockets
+    ins, outs = Device._setup_sockets(self)
+  File "/work/09416/dty7/ls6/module_build_we_amber/modules/envwestpa/1.0_b/lib/python3.9/site-packages/zmq/devices/basedevice.py", line 221, in _setup_sockets
+    outs.bind(iface)
+  File "/work/09416/dty7/ls6/module_build_we_amber/modules/envwestpa/1.0_b/lib/python3.9/site-packages/zmq/sugar/socket.py", line 302, in bind
+    super().bind(addr)
+  File "zmq/backend/cython/socket.pyx", line 564, in zmq.backend.cython.socket.Socket.bind
+  File "zmq/backend/cython/checkrc.pxd", line 28, in zmq.backend.cython.checkrc._check_rc
+zmq.error.ZMQError: Address already in use (addr='tcp://127.0.0.1:34949')
+-- ERROR    [westpa.work_managers.zeromq.core.ZMQWorker.b41b13f6-c196-4f15-a2d2-dc3773b981d2] -- startup phase elapsed with no contact from master; shutting down
+-- ERROR    [westpa.work_managers.zeromq.core.ZMQWorker.3cdd5f3c-223e-4092-b7e8-38df579cdb69] -- startup phase elapsed with no contact from master; shutting down
+-- ERROR    [westpa.work_managers.zeromq.core.ZMQNode.c44b780d-ad04-4605-8c6a-3e8d8100fd8b] -- startup phase elapsed with no contact from peer; shutting down
+-- ERROR    [westpa.work_managers.zeromq.core.ZMQWorker.51226666-dba9-41e8-abca-88d6f8cee014] -- startup phase elapsed with no contact from master; shutting down
+Shutting down.  Hopefully this was on purpose?

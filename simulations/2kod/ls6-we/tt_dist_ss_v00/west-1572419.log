@@ -1,0 +1,100 @@
+MPI startup(): PMI server not found. Please set I_MPI_PMI_LIBRARY variable if it is not a singleton case.
+Updating system with the options from the configuration file
+Maximum wallclock time: 2:00:00
+
+Wed Mar 13 20:01:00 2024
+Iteration 1058 (1500 requested)
+Beginning iteration 1058
+204 segments remain in iteration 1058 (204 total)
+34 of 34 (100.000000%) active bins are populated
+per-bin minimum non-zero probability:       7.46246e-07
+per-bin maximum probability:                0.608838
+per-bin probability dynamic range (kT):     13.612
+per-segment minimum non-zero probability:   1.07636e-07
+per-segment maximum non-zero probability:   0.139691
+per-segment probability dynamic range (kT): 14.0762
+norm = 1, error in norm = -1.11022e-16 (-0.5*epsilon)
+Recycled 3.27951e-06 probability (7 walkers) from target state 'D2'
+Iteration wallclock: 0:20:16.416595, cputime: 1:42:48.007374
+
+
+Wed Mar 13 20:21:17 2024
+Iteration 1059 (1500 requested)
+Beginning iteration 1059
+198 segments remain in iteration 1059 (198 total)
+33 of 34 (97.058824%) active bins are populated
+per-bin minimum non-zero probability:       3.09278e-07
+per-bin maximum probability:                0.659013
+per-bin probability dynamic range (kT):     14.572
+per-segment minimum non-zero probability:   5.15463e-08
+per-segment maximum non-zero probability:   0.139691
+per-segment probability dynamic range (kT): 14.8125
+norm = 1, error in norm = -1.11022e-16 (-0.5*epsilon)
+Recycled 1.04775e-06 probability (2 walkers) from target state 'D2'
+Iteration wallclock: 0:18:48.257274, cputime: 1:39:52.773183
+
+
+Wed Mar 13 20:40:05 2024
+Iteration 1060 (1500 requested)
+Beginning iteration 1060
+198 segments remain in iteration 1060 (198 total)
+33 of 34 (97.058824%) active bins are populated
+per-bin minimum non-zero probability:       3.531e-07
+per-bin maximum probability:                0.608834
+per-bin probability dynamic range (kT):     14.3603
+per-segment minimum non-zero probability:   5.885e-08
+per-segment maximum non-zero probability:   0.139691
+per-segment probability dynamic range (kT): 14.6799
+norm = 1, error in norm = 0 (0*epsilon)
+Recycled 3.13516e-06 probability (4 walkers) from target state 'D2'
+Iteration wallclock: 0:18:49.139998, cputime: 1:40:03.710372
+
+
+Wed Mar 13 20:58:54 2024
+Iteration 1061 (1500 requested)
+Beginning iteration 1061
+198 segments remain in iteration 1061 (198 total)
+33 of 34 (97.058824%) active bins are populated
+per-bin minimum non-zero probability:       3.58786e-07
+per-bin maximum probability:                0.646172
+per-bin probability dynamic range (kT):     14.4038
+per-segment minimum non-zero probability:   5.97977e-08
+per-segment maximum non-zero probability:   0.139691
+per-segment probability dynamic range (kT): 14.664
+norm = 1, error in norm = -1.11022e-16 (-0.5*epsilon)
+Recycled 2.00901e-06 probability (4 walkers) from target state 'D2'
+Iteration wallclock: 0:18:50.653978, cputime: 1:40:24.141564
+
+
+Wed Mar 13 21:17:45 2024
+Iteration 1062 (1500 requested)
+Beginning iteration 1062
+186 segments remain in iteration 1062 (186 total)
+31 of 34 (91.176471%) active bins are populated
+per-bin minimum non-zero probability:       4.06724e-07
+per-bin maximum probability:                0.608833
+per-bin probability dynamic range (kT):     14.2189
+per-segment minimum non-zero probability:   6.77873e-08
+per-segment maximum non-zero probability:   0.139691
+per-segment probability dynamic range (kT): 14.5386
+norm = 1, error in norm = -2.22045e-16 (-1*epsilon)
+Recycled 8.68521e-08 probability (1 walkers) from target state 'D2'
+Iteration wallclock: 0:18:10.753046, cputime: 1:34:14.666092
+
+
+Wed Mar 13 21:35:56 2024
+Iteration 1063 (1500 requested)
+Beginning iteration 1063
+186 segments remain in iteration 1063 (186 total)
+31 of 34 (91.176471%) active bins are populated
+per-bin minimum non-zero probability:       6.77873e-08
+per-bin maximum probability:                0.68131
+per-bin probability dynamic range (kT):     16.1232
+per-segment minimum non-zero probability:   1.12979e-08
+per-segment maximum non-zero probability:   0.139691
+per-segment probability dynamic range (kT): 16.3303
+norm = 1, error in norm = -3.33067e-16 (-1.5*epsilon)
+Recycled 1.30027e-06 probability (4 walkers) from target state 'D2'
+Iteration wallclock: 0:17:59.326804, cputime: 1:34:33.318387
+
+Iteration 1064 would require more than the allotted time. Ending run.

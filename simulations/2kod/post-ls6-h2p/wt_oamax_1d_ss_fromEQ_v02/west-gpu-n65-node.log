@@ -1,0 +1,7 @@
+Updating system with the options from the configuration file
+-- ERROR    [westpa.work_managers.zeromq.core.ZMQWorker.75cc4573-d8cd-475e-ba32-1c35db73cd7f] -- message validation falied: 
+-- ERROR    [westpa.work_managers.zeromq.core.ZMQWorker.904187d4-8a7e-4158-a4e8-1184b71d3fc1] -- message validation falied: 
+-- ERROR    [westpa.work_managers.zeromq.core.ZMQWorker.bfe88752-84aa-40cd-b326-76ff3e11673b] -- message validation falied: 
+-- ERROR    [westpa.work_managers.zeromq.core.ZMQWorker.4a58f7cf-781e-402e-ab74-db611582c4b0] -- message validation falied: 
+-- WARNING  [westpa.work_managers.zeromq.core.ZMQWorker.904187d4-8a7e-4158-a4e8-1184b71d3fc1] -- sending SIGKILL to worker process 31595
+-- WARNING  [westpa.work_managers.zeromq.core.ZMQWorker.75cc4573-d8cd-475e-ba32-1c35db73cd7f] -- sending SIGKILL to worker process 31602

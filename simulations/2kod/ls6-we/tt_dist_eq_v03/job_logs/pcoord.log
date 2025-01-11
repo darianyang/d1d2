@@ -1,0 +1,71 @@
+
+CPPTRAJ: Trajectory Analysis. V6.4.4 (AmberTools)
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 01/30/24 21:57:52
+| Available memory: 265.515 GB
+
+INPUT: Reading input from 'STDIN'
+  [parm /home1/09416/dty7/scratch/d1d2/2kod/ls6-we/tt_dist_eq_v03/common_files/m01_2kod_12A.prmtop]
+	Reading '/home1/09416/dty7/scratch/d1d2/2kod/ls6-we/tt_dist_eq_v03/common_files/m01_2kod_12A.prmtop' as Amber Topology
+	Radius Set: modified Bondi radii (mbondi)
+  [trajin /home1/09416/dty7/scratch/d1d2/2kod/ls6-we/tt_dist_eq_v03/bstates/09_prod.rst]
+	Reading '/home1/09416/dty7/scratch/d1d2/2kod/ls6-we/tt_dist_eq_v03/bstates/09_prod.rst' as Amber NC Restart
+  [autoimage]
+    AUTOIMAGE: To box center based on center of mass, anchor is first molecule.
+  [distance T45-T133 :45&!@CA,C,O,N,H :133&!@CA,C,O,N,H out pcoord.dat]
+    DISTANCE: :45&!@CA,C,O,N,H to :133&!@CA,C,O,N,H, center of mass.
+  [go]
+---------- RUN BEGIN -------------------------------------------------
+
+PARAMETER FILES (1 total):
+ 0: m01_2kod_12A.prmtop, 54644 atoms, 17472 res, box: Truncated octahedron, 17298 mol, 17294 solvent
+
+INPUT TRAJECTORIES (1 total):
+ 0: '09_prod.rst' is a NetCDF AMBER restart file with coordinates, velocities, time, box, Parm m01_2kod_12A.prmtop (Truncated octahedron box) (reading 1 of 1)
+  Coordinate processing will occur on 1 frames.
+
+BEGIN TRAJECTORY PROCESSING:
+.....................................................
+ACTION SETUP FOR PARM 'm01_2kod_12A.prmtop' (2 actions):
+  0: [autoimage]
+	Original box is truncated octahedron, turning on 'familiar'.
+	Using first molecule as anchor.
+	1 molecules are fixed to anchor: 2
+	17296 molecules are mobile.
+  1: [distance T45-T133 :45&!@CA,C,O,N,H :133&!@CA,C,O,N,H out pcoord.dat]
+	:45&!@CA,C,O,N,H (9 atoms) to :133&!@CA,C,O,N,H (9 atoms), imaged.
+----- 09_prod.rst (1-1, 1) -----
+100% Complete.
+
+Read 1 frames and processed 1 frames.
+TIME: Avg. throughput= 4.2730 frames / second.
+
+ACTION OUTPUT:
+TIME: Analyses took 0.0000 seconds.
+
+DATASETS (1 total):
+	T45-T133 "T45-T133" (double, distance), size is 1 (0.008 kB)
+    Total data set memory usage is at least 0.008 kB
+
+DATAFILES (1 total):
+  pcoord.dat (Standard Data File):  T45-T133
+
+RUN TIMING:
+TIME:		Init               : 0.0001 s (  0.02%)
+TIME:		Trajectory Process : 0.2340 s ( 52.28%)
+TIME:		Action Post        : 0.0000 s (  0.00%)
+TIME:		Analysis           : 0.0000 s (  0.00%)
+TIME:		Data File Write    : 0.2132 s ( 47.63%)
+TIME:		Other              : 0.0003 s (  0.00%)
+TIME:	Run Total 0.4476 s
+---------- RUN END ---------------------------------------------------
+TIME: Total execution time: 0.7709 seconds.
+--------------------------------------------------------------------------------
+To cite CPPTRAJ use:
+Daniel R. Roe and Thomas E. Cheatham, III, "PTRAJ and CPPTRAJ: Software for
+  Processing and Analysis of Molecular Dynamics Trajectory Data". J. Chem.
+  Theory Comput., 2013, 9 (7), pp 3084-3095.
+

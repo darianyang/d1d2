@@ -1,0 +1,51 @@
+Updating system with the options from the configuration file
+Maximum wallclock time: 3 days, 0:00:00
+
+Fri Apr 12 21:51:43 2024
+Iteration 1 (500 requested)
+Continuing iteration 1
+2 segments remain in iteration 1 (4 total)
+3 of 25 (12.000000%) active bins are populated
+per-bin minimum non-zero probability:       0.2
+per-bin maximum probability:                0.6
+per-bin probability dynamic range (kT):     1.09861
+per-segment minimum non-zero probability:   0.2
+per-segment maximum non-zero probability:   0.4
+per-segment probability dynamic range (kT): 0.693147
+norm = 1, error in norm = 0 (0*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+Iteration completed successfully
+Iteration wallclock: 0:04:41.726655, cputime: 0:07:53.210400
+
+
+Fri Apr 12 21:56:24 2024
+Iteration 2 (500 requested)
+Beginning iteration 2
+16 segments remain in iteration 2 (16 total)
+4 of 25 (16.000000%) active bins are populated
+per-bin minimum non-zero probability:       0.2
+per-bin maximum probability:                0.4
+per-bin probability dynamic range (kT):     0.693147
+per-segment minimum non-zero probability:   0.05
+per-segment maximum non-zero probability:   0.1
+per-segment probability dynamic range (kT): 0.693147
+norm = 1, error in norm = 0 (0*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+-- ERROR    [westpa.core.sim_manager] -- propagation failed for 2 segment(s):
+0  
+1
+exception caught; shutting down
+-- ERROR    [w_run] -- error message: propagation failed for 2 segments
+-- ERROR    [w_run] -- Traceback (most recent call last):
+  File "/ihome/lchong/dty7/Apps/westpa/src/westpa/cli/core/w_run.py", line 61, in run_simulation
+    sim_manager.run()
+  File "/ihome/lchong/dty7/Apps/westpa/src/westpa/core/sim_manager.py", line 752, in run
+    self.check_propagation()
+  File "/ihome/lchong/dty7/Apps/westpa/src/westpa/core/sim_manager.py", line 650, in check_propagation
+    raise PropagationError('propagation failed for {:d} segments'.format(len(failed_segments)))
+westpa.core.sim_manager.PropagationError: propagation failed for 2 segments
+

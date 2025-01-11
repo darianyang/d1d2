@@ -1,0 +1,168 @@
+reduce: version 3.3 06/02/2016, Copyright 1997-2016, J. Michael Word
+Processing file: --standard input--
+Database of HETATM connections: "/ihome/lchong/dty7/Apps/anaconda3/envs/md//dat/reduce_wwPDB_het_dict.txt"
+VDW dot density = 16/A^2
+Orientation penalty scale = 9999 (999900%)
+Eliminate contacts within 3 bonds.
+Ignore atoms with |occupancy| <= 0.01 during adjustments.
+Waters ignored if B-Factor >= 40 or |occupancy| < 0.66
+Aromatic rings in amino acids accept hydrogen bonds.
+Building His ring NH Hydrogens.
+Flipping Asn, Gln and His groups.
+For each flip state, bumps where gap is more than 0.4A are indicated with '!'.
+Building or keeping OH & SH Hydrogens.
+Rotating existing OH & SH Hydrogens
+Rotating NH3 Hydrogens.
+Not processing Met methyls.
+WARNING: atom HAHA from HID will be treated as hydrogen
+WARNING: atom HAHA from HID will be treated as hydrogen
+WARNING: atom HAHA from HID will be treated as hydrogen
+WARNING: atom HNAI from HID will be treated as hydrogen
+WARNING: atom HNAI from HID will be treated as hydrogen
+WARNING: atom HNAI from HID will be treated as hydrogen
+WARNING: atom HAHA from HID will be treated as hydrogen
+WARNING: atom HAHA from HID will be treated as hydrogen
+WARNING: atom HAHA from HID will be treated as hydrogen
+WARNING: atom HAHA from HID will be treated as hydrogen
+WARNING: atom HAHA from HID will be treated as hydrogen
+WARNING: atom HAHA from HID will be treated as hydrogen
+WARNING: atom HNAI from HID will be treated as hydrogen
+WARNING: atom HNAI from HID will be treated as hydrogen
+WARNING: atom HNAI from HID will be treated as hydrogen
+WARNING: atom HAHA from HID will be treated as hydrogen
+WARNING: atom HAHA from HID will be treated as hydrogen
+WARNING: atom HAHA from HID will be treated as hydrogen
+ Singles(size 46): A   1 MET N   : A   2 TYR OH  : A   3 SER OG  : A   5 THR OG1 
+  : A   6 SER OG  : A  12 GLN     : A  15 LYS NZ  : A  21 TYR OH  : A  27 LYS NZ  
+  : A  28 THR OG1 : A  33 GLN     : A  35 SER OG  : A  39 LYS NZ  : A  45 THR OG1 
+  : A  50 ASN     : A  52 ASN     : A  56 LYS NZ  : A  57 THR OG1 : A  60 LYS NZ  
+  : A  67 THR OG1 : A  73 THR OG1 : A  76 GLN     : A  84 LYS NZ  : B  89 MET N   
+  : B  90 TYR OH  : B  91 SER OG  : B  93 THR OG1 : B  94 SER OG  : B 100 GLN     
+  : B 103 LYS NZ  : B 109 TYR OH  : B 115 LYS NZ  : B 116 THR OG1 : B 121 GLN     
+  : B 123 SER OG  : B 127 LYS NZ  : B 133 THR OG1 : B 138 ASN     : B 140 ASN     
+  : B 144 LYS NZ  : B 145 THR OG1 : B 148 LYS NZ  : B 155 THR OG1 : B 161 THR OG1 
+  : B 164 GLN     : B 172 LYS NZ  
+ Set 1 (size 2): B 137 GLN     : A  49 GLN     
+ Set 2 (size 2): B 124 GLN     : B 128 ASN     
+ Set 3 (size 2): B 114 TYR OH  : B 131 THR OG1 
+ Set 4 (size 2): A  43 THR OG1 : A  26 TYR OH  
+ Set 5 (size 2): A  40 ASN     : A  36 GLN     
+ orientation 1: A   1 MET N   :NH3+    180: bump=0.000, HB=0.000, total=0.000
+ orientation 15: A   2 TYR OH  :   rot -174: bump=-0.021, HB=1.287, total=1.267
+ orientation 2: A   3 SER OG  :   rot  100: bump=-0.331, HB=1.373, total=1.042
+ orientation 7: A   5 THR OG1 :   rot -166: bump=-0.880, HB=1.327, total=0.447
+ orientation 1: A   6 SER OG  :   rot  170: bump=-1.637, HB=0.910, total=-0.727, BADBUMP
+ orientation 1: A  12 GLN     :      amide: bump=-0.111, HB=1.209, total=1.098
+ orientation 1: A  15 LYS NZ  :NH3+    180: bump=0.000, HB=0.000, total=0.000
+ orientation 1: A  21 TYR OH  :   rot  165: bump=-0.611, HB=1.190, total=0.579
+ orientation 1: A  27 LYS NZ  :NH3+    180: bump=0.000, HB=0.000, total=0.000
+ orientation 1: A  28 THR OG1 :   rot -170: bump=0.000, HB=0.000, total=0.000
+ orientation 1: A  33 GLN     :      amide: bump=-0.270, HB=0.000, total=-0.270
+ orientation 3: A  35 SER OG  :   rot  143: bump=-0.068, HB=1.286, total=1.218
+ orientation 1: A  39 LYS NZ  :NH3+    180: bump=0.000, HB=0.000, total=0.000
+ orientation 2: A  45 THR OG1 :   rot  -72: bump=-0.170, HB=1.952, total=1.782
+ orientation 1: A  50 ASN     :      amide: bump=0.000, HB=0.819, total=0.819
+ orientation 1: A  52 ASN     :      amide: bump=-0.424, HB=1.274, total=0.850
+ orientation 3: A  56 LYS NZ  :NH3+    162: bump=0.000, HB=0.214, total=0.214
+ orientation 2: A  57 THR OG1 :   rot   76: bump=0.000, HB=0.085, total=0.085
+ orientation 1: A  60 LYS NZ  :NH3+    180: bump=0.000, HB=0.000, total=0.000
+ orientation 1: A  67 THR OG1 :   rot  180: bump=-0.162, HB=0.175, total=0.014
+ orientation 2: A  73 THR OG1 :   rot   72: bump=0.000, HB=0.715, total=0.715
+ orientation 1: A  76 GLN     :      amide: bump=0.000, HB=0.607, total=0.607
+ orientation 3: A  84 LYS NZ  :NH3+    147: bump=-0.248, HB=1.369, total=1.121
+ orientation 1: B  89 MET N   :NH3+    180: bump=0.000, HB=0.000, total=0.000
+ orientation 2: B  90 TYR OH  :   rot  163: bump=-0.134, HB=1.397, total=1.262
+ orientation 2: B  91 SER OG  :   rot  105: bump=-0.276, HB=1.308, total=1.031
+ orientation 7: B  93 THR OG1 :   rot -167: bump=-0.866, HB=1.355, total=0.489
+ orientation 2: B  94 SER OG  :   rot  169: bump=-1.725, HB=1.086, total=-0.639, BADBUMP
+ orientation 1: B 100 GLN     :      amide: bump=-0.109, HB=1.208, total=1.099
+ orientation 1: B 103 LYS NZ  :NH3+    180: bump=0.000, HB=0.000, total=0.000
+ orientation 1: B 109 TYR OH  :   rot  175: bump=-0.628, HB=1.251, total=0.623
+ orientation 1: B 115 LYS NZ  :NH3+    180: bump=0.000, HB=0.000, total=0.000
+ orientation 1: B 116 THR OG1 :   rot -170: bump=0.000, HB=0.000, total=0.000
+ orientation 1: B 121 GLN     :      amide: bump=-0.254, HB=0.000, total=-0.254
+ orientation 1: B 123 SER OG  :   rot  176: bump=-0.131, HB=1.335, total=1.205
+ orientation 1: B 127 LYS NZ  :NH3+    180: bump=0.000, HB=0.000, total=0.000
+ orientation 2: B 133 THR OG1 :   rot  -78: bump=-0.108, HB=1.989, total=1.881
+ orientation 1: B 138 ASN     :      amide: bump=-0.000, HB=0.827, total=0.827
+ orientation 1: B 140 ASN     :      amide: bump=-0.393, HB=1.295, total=0.902
+ orientation 2: B 144 LYS NZ  :NH3+   -137: bump=0.000, HB=0.217, total=0.217
+ orientation 2: B 145 THR OG1 :   rot   75: bump=0.000, HB=0.087, total=0.087
+ orientation 1: B 148 LYS NZ  :NH3+    180: bump=0.000, HB=0.000, total=0.000
+ orientation 1: B 155 THR OG1 :   rot  180: bump=-0.166, HB=0.176, total=0.010
+ orientation 2: B 161 THR OG1 :   rot   72: bump=0.000, HB=0.719, total=0.719
+ orientation 1: B 164 GLN     :      amide: bump=0.000, HB=0.617, total=0.617
+ orientation 2: B 172 LYS NZ  :NH3+   -153: bump=-0.208, HB=1.347, total=1.139
+
+ Processing set: B 137 GLN     [2]: A  49 GLN     [2]
+ permutations: 4
+ Computing dot scores
+ Num optimizations problems to be solved for this clique: 4
+ Beginning Optimization
+ Dynamic programming succeeded to fully optimize hypergraph
+ Beginning Optimization
+ Dynamic programming succeeded to fully optimize hypergraph
+ Optimal score following low resolution optimization: 0.807
+ Beginning Optimization
+ Dynamic programming succeeded to fully optimize hypergraph
+ Beginning Optimization
+ Dynamic programming succeeded to fully optimize hypergraph
+ Optimal score following high resolution, local optimization: 0.807
+
+ Processing set: B 124 GLN     [2]: B 128 ASN     [2]
+ permutations: 4
+ Computing dot scores
+ Num optimizations problems to be solved for this clique: 4
+ Beginning Optimization
+ Dynamic programming succeeded to fully optimize hypergraph
+ Beginning Optimization
+ Dynamic programming succeeded to fully optimize hypergraph
+ Optimal score following low resolution optimization: 0.286
+ Beginning Optimization
+ Dynamic programming succeeded to fully optimize hypergraph
+ Beginning Optimization
+ Dynamic programming succeeded to fully optimize hypergraph
+ Optimal score following high resolution, local optimization: 0.286
+
+ Processing set: B 114 TYR OH  [16]: B 131 THR OG1 [3]
+ permutations: 48
+ Computing dot scores
+ Num optimizations problems to be solved for this clique: 1
+ Beginning Optimization
+ Dynamic programming succeeded to fully optimize hypergraph
+ Optimal score following low resolution optimization: 1.242
+> : 1.242       > : 1.242       > : 1.243       > : 1.243       > : 1.243       > : 1.243       > : 1.243       > : 1.243       > : 1.243       > : 1.243       > : 1.243       > : 1.243       > : 1.243       > : 1.243       > : 1.243       > : 1.243       > : 1.243       > : 1.243       > : 1.243       > : 1.243       > : 1.243       > : 1.243       > : 1.243       > : 1.243       > : 1.243       > : 1.243       > : 1.243       > : 1.243       > : 1.243       > : 1.295       > : 1.295       > : 1.295       > : 1.295       > : 1.295       > : 1.295       > : 1.295       > : 1.295       > : 1.295       > : 1.295       > : 1.295       
+ Optimal score following high resolution, local optimization: 1.295
+
+ Processing set: A  43 THR OG1 [3]: A  26 TYR OH  [16]
+ permutations: 48
+ Computing dot scores
+ Num optimizations problems to be solved for this clique: 1
+ Beginning Optimization
+ Dynamic programming succeeded to fully optimize hypergraph
+ Optimal score following low resolution optimization: 1.239
+> : 1.239       > : 1.239       > : 1.239       > : 1.239       > : 1.239       > : 1.239       > : 1.239       > : 1.239       > : 1.239       > : 1.239       > : 1.239       > : 1.283       > : 1.283       > : 1.283       > : 1.283       > : 1.283       > : 1.283       > : 1.283       > : 1.283       > : 1.283       > : 1.283       > : 1.283       > : 1.284       > : 1.284       > : 1.284       > : 1.284       > : 1.284       > : 1.284       > : 1.284       > : 1.284       > : 1.284       > : 1.284       > : 1.284       > : 1.284       > : 1.284       > : 1.284       > : 1.284       > : 1.284       > : 1.284       > : 1.284       
+ Optimal score following high resolution, local optimization: 1.284
+
+ Processing set: A  40 ASN     [2]: A  36 GLN     [2]
+ permutations: 4
+ Computing dot scores
+ Num optimizations problems to be solved for this clique: 4
+ Beginning Optimization
+ Dynamic programming succeeded to fully optimize hypergraph
+ Beginning Optimization
+ Dynamic programming succeeded to fully optimize hypergraph
+ Optimal score following low resolution optimization: 0.242
+ Beginning Optimization
+ Dynamic programming succeeded to fully optimize hypergraph
+ Beginning Optimization
+ Dynamic programming succeeded to fully optimize hypergraph
+ Optimal score following high resolution, local optimization: 0.242
+Found 1375 hydrogens (0 hets)
+Standardized 1789 hydrogens (0 hets)
+Added 3 hydrogens (0 hets)
+Removed 0 hydrogens (0 hets)
+Adjusted 30 group(s)
+If you publish work which uses reduce, please cite:
+Word, et. al. (1999) J. Mol. Biol. 285, 1735-1747.
+For more information see http://kinemage.biochem.duke.edu
