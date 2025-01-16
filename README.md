@@ -6,7 +6,17 @@ Simulation, analysis, and data files to accompany the following publication:
 
 Darian T. Yang, Lillian T. Chong, and Angela M. Gronenborn
 
-(2025)
+(2025) - PNAS (*in press*)
+
+Citation:
+```
+@article{yang_hiv-1_2025,
+	title = {Illuminating an Invisible State of the {HIV}-1 Capsid Protein CTD Dimer using \textsuperscript{19}F NMR and Weighted Ensemble Simulations},
+	journal = {Proceedings of the National Academy of Sciences},
+	author = {Yang, Darian T. and Chong, Lillian T. and Gronenborn, Angela M.},
+	year = {2025},
+}
+```
 
 ### Directory File Structure
 * `simulations` = MD and WE simulation files
