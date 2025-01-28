@@ -1,5 +1,7 @@
 # HIV-1 CA-CTD D1D2
 
+[![DOI](https://zenodo.org/badge/536708163.svg)](https://doi.org/10.5281/zenodo.14754835)
+
 Simulation, analysis, and data files to accompany the following publication:
 
 **Illuminating an Invisible State of the HIV-1 Capsid Protein CTD Dimer using <sup>19</sup>F NMR and Weighted Ensemble Simulations**
