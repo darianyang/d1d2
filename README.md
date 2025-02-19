@@ -15,7 +15,7 @@ Proc. Natl. Acad. Sci. U.S.A. 122 (8) e2420371122, https://doi.org/10.1073/pnas.
 
 Citation:
 ```
-@article{yang_hiv-1_2025
+@article{yang_hiv-1_2025,
 	doi:10.1073/pnas.2420371122,
 	author = {Darian T. Yang  and Lillian T. Chong  and Angela M. Gronenborn },
 	title = {Illuminating an invisible state of the HIV-1 capsid protein CTD dimer using <sup>19</sup>F NMR and weighted ensemble simulations},
