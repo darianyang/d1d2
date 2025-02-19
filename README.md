@@ -2,21 +2,31 @@
 
 [![DOI](https://zenodo.org/badge/536708163.svg)](https://doi.org/10.5281/zenodo.14754835)
 
+[![PNAS Paper](https://img.shields.io/badge/PNAS%20Paper%20-%20https%3A%2F%2Fdoi.org%2F10.1073%2Fpnas.2420371122%20-%20mediumpurple
+)](https://doi.org/10.1073/pnas.2420371122)
+
 Simulation, analysis, and data files to accompany the following publication:
 
 **Illuminating an Invisible State of the HIV-1 Capsid Protein CTD Dimer using <sup>19</sup>F NMR and Weighted Ensemble Simulations**
 
 Darian T. Yang, Lillian T. Chong, and Angela M. Gronenborn
 
-(2025) - PNAS (*in press*)
+Proc. Natl. Acad. Sci. U.S.A. 122 (8) e2420371122, https://doi.org/10.1073/pnas.2420371122 (2025).
 
 Citation:
 ```
-@article{yang_hiv-1_2025,
-	title = {Illuminating an Invisible State of the {HIV}-1 Capsid Protein CTD Dimer using \textsuperscript{19}F NMR and Weighted Ensemble Simulations},
+@article{yang_hiv-1_2025
+	doi:10.1073/pnas.2420371122,
+	author = {Darian T. Yang  and Lillian T. Chong  and Angela M. Gronenborn },
+	title = {Illuminating an invisible state of the HIV-1 capsid protein CTD dimer using <sup>19</sup>F NMR and weighted ensemble simulations},
 	journal = {Proceedings of the National Academy of Sciences},
-	author = {Yang, Darian T. and Chong, Lillian T. and Gronenborn, Angela M.},
+	volume = {122},
+	number = {8},
+	pages = {e2420371122},
 	year = {2025},
+	doi = {10.1073/pnas.2420371122},
+	URL = {https://www.pnas.org/doi/abs/10.1073/pnas.2420371122},
+	eprint = {https://www.pnas.org/doi/pdf/10.1073/pnas.2420371122},
 }
 ```
 
