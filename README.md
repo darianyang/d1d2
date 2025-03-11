@@ -32,7 +32,7 @@ Citation:
 
 ### Directory File Structure
 * `simulations` = MD and WE simulation files
-* `pdbs` = final representative snapshots of D1, D2, and the transition intermediate states
+* `d1d2_pdbs` = final representative snapshots of D1, D2, and the transition intermediate states
 * `d1d2_paths` = files for the direct and indirect transition pathways between d1 and d2
 * `rkif` = KIF analysis scripts and output data
 * `gamd-plot` = GaMD simulation files and plotting/reweighting/analysis scripts
